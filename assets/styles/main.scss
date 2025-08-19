@@ -1,0 +1,49 @@
+/* Base reset & typography */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --page-max: 1200px;
+}
+
+html, body {
+  @apply bg-white text-zinc-900 antialiased;
+}
+
+.dark html, .dark body { @apply bg-zinc-900 text-zinc-100; }
+
+a { @apply text-brand-600 hover:text-brand-700 underline-offset-2; }
+
+/* Layout helpers */
+.container-x {
+  max-width: var(--page-max);
+  @apply mx-auto px-4 md:px-6;
+}
+
+.btn {
+  @apply inline-flex items-center gap-2 rounded-lg border px-4 py-2 text-sm font-medium transition;
+  @apply border-zinc-300 bg-white hover:bg-zinc-50;
+}
+.btn-primary {
+  @apply border-brand-600 bg-brand-600 text-white hover:bg-brand-700;
+}
+.btn-ghost {
+  @apply border-transparent bg-transparent hover:bg-zinc-100;
+}
+
+.badge { @apply inline-block rounded-full px-3 py-1 text-xs bg-zinc-100; }
+.card { @apply rounded-2xl border border-zinc-200 p-6 shadow-sm bg-white; }
+
+/* Table scaffold */
+.table { @apply w-full border-collapse; }
+.table thead th { @apply text-left text-xs font-semibold uppercase text-zinc-500; }
+.table th, .table td { @apply border-b border-zinc-200 py-3; }
+
+/* Hero */
+.hero {
+  @apply relative overflow-hidden;
+  .title { @apply text-3xl md:text-5xl font-extrabold tracking-tight; }
+  .subtitle { @apply mt-4 text-lg md:text-xl text-zinc-600; }
+  .cta { @apply mt-8 flex gap-3; }
+}
