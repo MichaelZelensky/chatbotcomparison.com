@@ -106,3 +106,13 @@ a:hover { text-decoration: underline; }
   border-radius: 12px;
   padding: 1rem;
 }
+
+/* Prevent flex children from forcing horizontal overflow */
+main, .container, .content, .page-root, .flex, .flex > * {
+  min-width: 0;
+}
+
+/* If you want a belt-and-suspenders guard: */
+html, body {
+  overflow-x: hidden; /* optional; use if any third-party UI leaks width */
+}
