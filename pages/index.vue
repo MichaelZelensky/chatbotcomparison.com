@@ -1,16 +1,16 @@
 <template>
   <section class="flex flex-col gap-6">
 
-    <FeatureTable :features="features" :bots="bots" />
+    <!-- <FeatureTable :features="features" :bots="bots" /> -->
 
     <section class="grid md:grid-cols-2 gap-4">
       <div class="card">
         <h2 class="text-lg font-semibold mb-2">Popular comparisons</h2>
         <ul class="list-disc pl-5">
-          <li><NuxtLink to="/compare/chatgpt-vs-gemini">ChatGPT vs Gemini</NuxtLink></li>
+          <!-- <li><NuxtLink to="/compare/chatgpt-vs-gemini">ChatGPT vs Gemini</NuxtLink></li>
           <li><NuxtLink to="/compare/claude-vs-chatgpt">Claude vs ChatGPT</NuxtLink></li>
           <li><NuxtLink to="/compare/claude-vs-gemini">Claude vs Gemini</NuxtLink></li>
-          <li><NuxtLink to="/compare/perplexity-vs-chatgpt">Perplexity vs ChatGPT</NuxtLink></li>
+          <li><NuxtLink to="/compare/perplexity-vs-chatgpt">Perplexity vs ChatGPT</NuxtLink></li> -->
         </ul>
       </div>
 

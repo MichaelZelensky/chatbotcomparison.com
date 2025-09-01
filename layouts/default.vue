@@ -2,7 +2,7 @@
   <div class="min-h-screen flex flex-col">
     <SiteHeader />
     <main class="container flex-1 py-8">
-      <slot />
+      <NuxtPage />
     </main>
     <SiteFooter />
   </div>

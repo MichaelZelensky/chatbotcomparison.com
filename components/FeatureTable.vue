@@ -1,47 +1,66 @@
+<!-- pages/index.vue -->
+<template>
+  <section class="container">
+    <h1 class="title">Chatbot Comparison</h1>
+
+    <FeatureTable
+      v-if="bots.length && features.length"
+      :bots="bots"
+      :features="features"
+    />
+    <p v-else class="muted">Loading comparison…</p>
+  </section>
+</template>
+
 <script setup lang="ts">
-type Feature = { key: string; label: string; type: 'boolean' | 'text' };
-type Bot = Record<string, any> & { name: string; slug: string; homepage?: string };
+import FeatureTable from '@/components/FeatureTable.vue'
 
-const props = defineProps<{
-  features: Feature[];
-  bots: Bot[];
-}>();
+const { data: bots } = await useAsyncData('bots', async () => [
+  { name: 'ChatGPT', slug: 'chatgpt', contextWindow: '128k', api: true },
+  { name: 'Claude', slug: 'claude', contextWindow: '200k', api: true },
+  { name: 'Gemini', slug: 'gemini', contextWindow: '1M (Pro)', api: true }
+])
 
-const check = '✓';
-const minus = '—';
+const features = [
+  { key: 'contextWindow', label: 'Context window', type: 'text' },
+  { key: 'api',            label: 'API available',  type: 'boolean' }
+]
+
+// JSON-LD MUST NOT be in the template; put it in head:
+useHead({
+  script: [{
+    type: 'application/ld+json',
+    // @ts-expect-error: innerHTML is allowed by useHead
+    innerHTML: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Chatbot Comparison',
+      url: 'https://chatbotcomparison.com'
+    })
+  }]
+})
 </script>
 
-<template>
-  <div class="table-wrap">
-    <table class="compare" aria-describedby="tableDescription">
-      <caption id="tableDescription" class="sr-only">
-        Feature comparison of popular AI chatbots
-      </caption>
-      <thead>
-        <tr>
-          <th scope="col">Feature</th>
-          <th v-for="bot in bots" :key="bot.slug" scope="col">
-            <div class="flex items-center gap-2">
-              <NuxtLink :to="`/compare/${bot.slug}-vs-${bots[0].slug === bot.slug ? (bots[1]?.slug ?? bots[0].slug) : bots[0].slug}`">
-                {{ bot.name }}
-              </NuxtLink>
-            </div>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="f in features" :key="f.key">
-          <th scope="row">{{ f.label }}</th>
-          <td v-for="bot in bots" :key="bot.slug + f.key">
-            <template v-if="f.type === 'boolean'">
-              <span :aria-label="bot[f.key] ? 'Yes' : 'No'">{{ bot[f.key] ? check : minus }}</span>
-            </template>
-            <template v-else>
-              <span>{{ bot[f.key] ?? '—' }}</span>
-            </template>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</template>
+<style lang="scss" scoped>
+/* assets/styles/table.scss */
+.table-wrap { overflow-x: auto; }
+.compare {
+  width: 100%;
+  border-collapse: collapse;
+}
+.compare th, .compare td {
+  padding: .5rem .75rem;
+  border: 1px solid var(--border, #e2e8f0);
+  vertical-align: top;
+}
+.compare thead th {
+  position: sticky; top: 0;
+  background: var(--card, #f8fafc);
+  z-index: 1;
+}
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+</style>

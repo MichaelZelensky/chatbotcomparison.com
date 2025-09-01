@@ -6,8 +6,8 @@
       </NuxtLink>
       <nav class="text-sm small flex items-center gap-4">
         <NuxtLink to="/">Home</NuxtLink>
-        <NuxtLink to="/compare/chatgpt-vs-gemini">ChatGPT vs Gemini</NuxtLink>
-        <NuxtLink to="/compare/claude-vs-chatgpt">Claude vs ChatGPT</NuxtLink>
+        <!-- <NuxtLink to="/compare/chatgpt-vs-gemini">ChatGPT vs Gemini</NuxtLink>
+        <NuxtLink to="/compare/claude-vs-chatgpt">Claude vs ChatGPT</NuxtLink> -->
       </nav>
     </div>
   </header>
