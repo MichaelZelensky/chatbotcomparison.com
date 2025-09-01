@@ -1,0 +1,8 @@
+[
+  { "key": "price", "label": "Pricing", "type": "text" },
+  { "key": "freeTier", "label": "Free Tier", "type": "boolean" },
+  { "key": "webBrowsing", "label": "Web Browsing", "type": "boolean" },
+  { "key": "imageUnderstanding", "label": "Image Understanding", "type": "boolean" },
+  { "key": "apiAvailable", "label": "API Available", "type": "boolean" },
+  { "key": "notes", "label": "Notes", "type": "text" }
+]

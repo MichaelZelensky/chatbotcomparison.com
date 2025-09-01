@@ -1,0 +1,46 @@
+[
+  {
+    "name": "ChatGPT",
+    "slug": "chatgpt",
+    "homepage": "https://chat.openai.com/",
+    "price": "Free, Plus",
+    "freeTier": true,
+    "webBrowsing": true,
+    "imageUnderstanding": true,
+    "apiAvailable": true,
+    "notes": "General-purpose, strong ecosystem."
+  },
+  {
+    "name": "Gemini",
+    "slug": "gemini",
+    "homepage": "https://gemini.google.com/",
+    "price": "Free, Advanced",
+    "freeTier": true,
+    "webBrowsing": true,
+    "imageUnderstanding": true,
+    "apiAvailable": true,
+    "notes": "Deep Google integration."
+  },
+  {
+    "name": "Claude",
+    "slug": "claude",
+    "homepage": "https://claude.ai/",
+    "price": "Free, Pro",
+    "freeTier": true,
+    "webBrowsing": true,
+    "imageUnderstanding": true,
+    "apiAvailable": true,
+    "notes": "Great writing & long context."
+  },
+  {
+    "name": "Perplexity",
+    "slug": "perplexity",
+    "homepage": "https://www.perplexity.ai/",
+    "price": "Free, Pro",
+    "freeTier": true,
+    "webBrowsing": true,
+    "imageUnderstanding": true,
+    "apiAvailable": true,
+    "notes": "Strong search-centric answers."
+  }
+]
