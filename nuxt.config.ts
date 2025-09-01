@@ -85,6 +85,10 @@ export default defineNuxtConfig({
       autoprefixer: {}
     }
   },
-  modules: ['@nuxtjs/sitemap', 'nuxt-seo-utils', '@nuxt/icon'],
+  modules: ['@nuxtjs/sitemap', 'nuxt-seo-utils', '@nuxt/icon', 'nuxt-gtag'],
+  gtag: {
+    id: 'G-D655E1QKNB',
+    enabled: process.env.NODE_ENV === 'production'
+  },
   plugins: ['~/plugins/seo.ts'],
 })
