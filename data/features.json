@@ -1,22 +1,22 @@
 [
   {
-    "key": "free",
-    "label": "Free",
+    "key": "pricingModel",
+    "label": "Pricing Model",
     "type": "text"
   },
   {
-    "key": "Month, $",
-    "label": "Month, $",
+    "key": "freeTrialOrTier",
+    "label": "Free Trial / Tier",
     "type": "text"
   },
   {
     "key": "channels",
-    "label": "Channels",
+    "label": "Channels Supported",
     "type": "text"
   },
   {
-    "key": "products",
-    "label": "Products",
+    "key": "aiCapabilities",
+    "label": "AI Capabilities",
     "type": "text"
   },
   {
@@ -25,53 +25,18 @@
     "type": "text"
   },
   {
-    "key": "weakness",
-    "label": "Weakness",
+    "key": "builderUX",
+    "label": "Customization & Builder",
     "type": "text"
   },
   {
-    "key": "strength",
-    "label": "Strength",
+    "key": "analytics",
+    "label": "Analytics & Reporting",
     "type": "text"
   },
   {
-    "key": "How to overcome",
-    "label": "How To Overcome",
-    "type": "text"
-  },
-  {
-    "key": "What can I use",
-    "label": "What Can I Use",
-    "type": "text"
-  },
-  {
-    "key": "Good ideas",
-    "label": "Good Ideas",
-    "type": "text"
-  },
-  {
-    "key": "Claimed customer base",
-    "label": "Claimed Customer Base",
-    "type": "text"
-  },
-  {
-    "key": "web chat demo",
-    "label": "Web Chat Demo",
-    "type": "text"
-  },
-  {
-    "key": "Features",
-    "label": "Features",
-    "type": "text"
-  },
-  {
-    "key": "Is Leader?",
-    "label": "Is Leader?",
-    "type": "boolean"
-  },
-  {
-    "key": "comments",
-    "label": "Comments",
+    "key": "targetMarket",
+    "label": "Target Market",
     "type": "text"
   }
 ]

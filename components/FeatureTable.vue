@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section>
     <h1 class="title">Chatbot Comparison</h1>
 
     <div v-if="chatbots.length && featureDefs.length" class="table-wrap">

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Minimalist tokens */
 :root {
   color-scheme: light dark;
@@ -37,6 +41,15 @@ body {
   font-family: theme('fontFamily.sans');
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  @apply font-bold;
+}
+
+h1 {
+  @apply mb-4;
+  @apply text-lg;
 }
 
 /* Container */
@@ -100,12 +113,17 @@ a:hover { text-decoration: underline; }
 }
 
 /* Simple card */
-.card {
-  border: 1px solid var(--border);
-  background: var(--card);
-  border-radius: 12px;
-  padding: 1rem;
+@layer components {
+  .card {
+    /* structure + default padding if you want */
+    border: 1px solid var(--border);
+    background: var(--card);
+    border-radius: 12px;
+    /* optional defaults that utilities can override */
+    padding: .75rem 1rem; /* can keep or remove; utilities still win */
+  }
 }
+
 
 /* Prevent flex children from forcing horizontal overflow */
 main, .container, .content, .page-root, .flex, .flex > * {

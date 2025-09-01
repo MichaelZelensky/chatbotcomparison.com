@@ -1,27 +1,23 @@
 <template>
-  <section class="flex flex-col gap-6">
-
+  <section class="flex flex-col gap-4">
     <FeatureTable />
-
     <section class="grid md:grid-cols-2 gap-4">
-      <div class="card">
+      <!-- <div class="card">
         <h2 class="text-lg font-semibold mb-2">Popular comparisons</h2>
         <ul class="list-disc pl-5">
-          <!-- <li><NuxtLink to="/compare/chatgpt-vs-gemini">ChatGPT vs Gemini</NuxtLink></li>
+          <li><NuxtLink to="/compare/chatgpt-vs-gemini">ChatGPT vs Gemini</NuxtLink></li>
           <li><NuxtLink to="/compare/claude-vs-chatgpt">Claude vs ChatGPT</NuxtLink></li>
           <li><NuxtLink to="/compare/claude-vs-gemini">Claude vs Gemini</NuxtLink></li>
-          <li><NuxtLink to="/compare/perplexity-vs-chatgpt">Perplexity vs ChatGPT</NuxtLink></li> -->
+          <li><NuxtLink to="/compare/perplexity-vs-chatgpt">Perplexity vs ChatGPT</NuxtLink></li>
         </ul>
-      </div>
-
-      <div class="card small">
-        <strong>Disclaimer:</strong> This site provides independent summaries. Features and pricing change frequently—please verify on the vendor website before deciding.
-      </div>
+      </div> -->
     </section>
+    <Disclaimer />
   </section>
 </template>
 
 <script setup lang="ts">
+import Disclaimer from '~/components/Disclaimer.vue';
 
 const title = 'Chatbot Comparison — Feature table of popular AI chatbots';
 const description = 'Compare ChatGPT, Gemini, Claude, Perplexity and more. Quickly scan pricing, free tiers, web browsing, image understanding, API access, and other key features.';
