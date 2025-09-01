@@ -1,8 +1,77 @@
 [
-  { "key": "price", "label": "Pricing", "type": "text" },
-  { "key": "freeTier", "label": "Free Tier", "type": "boolean" },
-  { "key": "webBrowsing", "label": "Web Browsing", "type": "boolean" },
-  { "key": "imageUnderstanding", "label": "Image Understanding", "type": "boolean" },
-  { "key": "apiAvailable", "label": "API Available", "type": "boolean" },
-  { "key": "notes", "label": "Notes", "type": "text" }
+  {
+    "key": "free",
+    "label": "Free",
+    "type": "text"
+  },
+  {
+    "key": "Month, $",
+    "label": "Month, $",
+    "type": "text"
+  },
+  {
+    "key": "channels",
+    "label": "Channels",
+    "type": "text"
+  },
+  {
+    "key": "products",
+    "label": "Products",
+    "type": "text"
+  },
+  {
+    "key": "integrations",
+    "label": "Integrations",
+    "type": "text"
+  },
+  {
+    "key": "weakness",
+    "label": "Weakness",
+    "type": "text"
+  },
+  {
+    "key": "strength",
+    "label": "Strength",
+    "type": "text"
+  },
+  {
+    "key": "How to overcome",
+    "label": "How To Overcome",
+    "type": "text"
+  },
+  {
+    "key": "What can I use",
+    "label": "What Can I Use",
+    "type": "text"
+  },
+  {
+    "key": "Good ideas",
+    "label": "Good Ideas",
+    "type": "text"
+  },
+  {
+    "key": "Claimed customer base",
+    "label": "Claimed Customer Base",
+    "type": "text"
+  },
+  {
+    "key": "web chat demo",
+    "label": "Web Chat Demo",
+    "type": "text"
+  },
+  {
+    "key": "Features",
+    "label": "Features",
+    "type": "text"
+  },
+  {
+    "key": "Is Leader?",
+    "label": "Is Leader?",
+    "type": "boolean"
+  },
+  {
+    "key": "comments",
+    "label": "Comments",
+    "type": "text"
+  }
 ]

@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col gap-6">
 
-    <!-- <FeatureTable :features="features" :bots="bots" /> -->
+    <FeatureTable />
 
     <section class="grid md:grid-cols-2 gap-4">
       <div class="card">
@@ -22,8 +22,6 @@
 </template>
 
 <script setup lang="ts">
-import bots from '~/data/chatbots.json';
-import features from '~/data/features.json';
 
 const title = 'Chatbot Comparison — Feature table of popular AI chatbots';
 const description = 'Compare ChatGPT, Gemini, Claude, Perplexity and more. Quickly scan pricing, free tiers, web browsing, image understanding, API access, and other key features.';
