@@ -1,11 +1,5 @@
 <template>
   <section class="flex flex-col gap-6">
-    <header class="flex flex-col gap-2">
-      <h1 class="text-2xl md:text-3xl font-semibold">Chatbot Comparison</h1>
-      <p class="small max-w-3xl">
-        Snapshot comparison of leading AI chatbots. Use the table below or open detailed “A vs B” pages.
-      </p>
-    </header>
 
     <FeatureTable :features="features" :bots="bots" />
 
