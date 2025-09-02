@@ -1,0 +1,57 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ArtifactsBucketAccess",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:PutObjectAcl",
+        "s3:GetBucketLocation",
+        "s3:ListBucket"
+      ],
+      "Resource": [
+        "arn:aws:s3:::codepipeline-us-east-1-75833081970",
+        "arn:aws:s3:::codepipeline-us-east-1-75833081970/*"
+      ]
+    },
+    {
+      "Sid": "StartAndReadBuilds",
+      "Effect": "Allow",
+      "Action": [
+        "codebuild:StartBuild",
+        "codebuild:BatchGetBuilds",
+        "codebuild:BatchGetProjects"
+      ],
+      "Resource": [
+        "arn:aws:codebuild:us-east-1:152441549920:project/deploy-chatbotcomparison-com"
+      ]
+    },
+    {
+      "Sid": "UseGitHubConnection",
+      "Effect": "Allow",
+      "Action": [
+        "codeconnections:UseConnection",
+        "codestar-connections:UseConnection"
+      ],
+      "Resource": "arn:aws:codeconnections:us-east-1:152441549920:connection/288b5ff5-0060-4752-b497-5cef07036b0b"
+    },
+    {
+      "Sid": "PassCodeBuildRole",
+      "Effect": "Allow",
+      "Action": "iam:PassRole",
+      "Resource": "arn:aws:iam::152441549920:role/codebuild-deploy-chatbotcomparison-com-service-role"
+    },
+    {
+      "Sid": "PipelineLogsOptional",
+      "Effect": "Allow",
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Resource": "arn:aws:logs:us-east-1:152441549920:log-group:/aws/codepipeline/deploy-chatbotcomparison-com:*"
+    }
+  ]
+}

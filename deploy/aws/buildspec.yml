@@ -1,0 +1,41 @@
+version: 0.2
+
+env:
+  variables:
+    BUCKET: chatbotcomparison.com
+    DIST_ID: E3HHJO4OH596DF
+
+phases:
+  install:
+    commands:
+      - n 22.18.0
+      - echo "Installing dependencies..."
+      - npm ci
+  build:
+    commands:
+      - echo "Building the Nuxt project..."
+      - npm run generate
+  post_build:
+    commands:
+      - echo "Uploading with proper Cache-Control..."
+
+      # 0) (optional) clean old hashed assets
+      # - aws s3 rm s3://$BUCKET/_nuxt/ --recursive || true
+
+      # 1) HTML: short TTL (browser 0, edge 5m)
+      - aws s3 cp ./.output/public s3://$BUCKET --recursive --exclude "*" --include "*.html" --cache-control "public, max-age=0, s-maxage=300, must-revalidate" --content-type "text/html; charset=utf-8" --metadata-directive REPLACE --no-progress
+
+      # 2) Hashed assets: 1y + immutable
+      - aws s3 cp ./.output/public/_nuxt s3://$BUCKET/_nuxt --recursive --cache-control "public, max-age=31536000, immutable" --metadata-directive REPLACE --no-progress
+
+      # 3) Everything else (not HTML, not /_nuxt): long TTL + immutable
+      - aws s3 cp ./.output/public s3://$BUCKET --recursive --exclude "_nuxt/*" --exclude "*.html" --cache-control "public, max-age=31536000, immutable" --metadata-directive REPLACE --no-progress
+
+      # 4) CloudFront: invalidate HTML + payloads only
+      - echo "Invalidating CloudFront..."
+      - aws cloudfront create-invalidation --distribution-id $DIST_ID --paths "/*.html" "/_payload.json" "/index.html"
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: .output/public
