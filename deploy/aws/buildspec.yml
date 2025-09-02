@@ -8,7 +8,7 @@ env:
 phases:
   install:
     commands:
-      - n 21.18.0
+      - n 22.18.0
       - echo "Installing dependencies..."
       - npm ci
   build:
