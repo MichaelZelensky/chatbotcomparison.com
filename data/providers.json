@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Crisp",
+    "slug": "crisp",
+    "homepage": "https://crisp.chat",
+    "plans": [
+      { "name": "Free", "slug": "free" },
+      { "name": "Mini", "slug": "mini" },
+      { "name": "Essentials", "slug": "essentials" },
+      { "name": "Plus", "slug": "plus" }
+    ]
+  },
+  {
+    "name": "Intercom",
+    "slug": "intercom",
+    "homepage": "https://www.intercom.com/",
+    "plans": [
+      { "name": "Starter", "slug": "starter" },
+      { "name": "Pro", "slug": "pro" }
+    ]
+  }
+]

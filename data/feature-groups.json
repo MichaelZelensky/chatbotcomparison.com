@@ -1,0 +1,188 @@
+[
+  {
+    "id": "pricing",
+    "label": "Pricing",
+    "rows": [
+      { "key": "planPrice", "label": "Plan Price (per month)", "type": "text" },
+      { "key": "agentsIncluded", "label": "Agents included", "type": "number" },
+      { "key": "additionalAgentPrice", "label": "Additional agents (per month)", "type": "text" },
+      { "key": "customerProfiles", "label": "Customer Profiles", "type": "number" },
+      { "key": "aiUsage", "label": "AI Usage", "type": "text" }
+    ]
+  },
+  {
+    "id": "teamInbox",
+    "label": "Team Inbox",
+    "rows": [
+      { "key": "cloudBased", "label": "Cloud-based", "type": "boolean" },
+      { "key": "mobileApps", "label": "Mobile Apps", "type": "boolean" },
+      { "key": "desktopApps", "label": "Desktop Apps", "type": "boolean" },
+      { "key": "realtimeNotif", "label": "Real-time notifications", "type": "boolean" },
+      { "key": "developerApis", "label": "Developer APIs", "type": "boolean" },
+      { "key": "liveMap", "label": "Live Geolocation map", "type": "boolean" },
+      { "key": "transcript", "label": "Conversation transcript", "type": "boolean" },
+      { "key": "triage", "label": "Conversation Triage", "type": "boolean" },
+      { "key": "workingHours", "label": "Working hours settings", "type": "boolean" },
+      { "key": "unlimitedConvos", "label": "Unlimited conversations", "type": "boolean" },
+      { "key": "customEmailDomain", "label": "Custom email domain", "type": "boolean" },
+      { "key": "fullHistory", "label": "Full conversations' history", "type": "boolean" },
+      { "key": "internalNotes", "label": "Internal notes", "type": "boolean" },
+      { "key": "banning", "label": "Visitor Banning", "type": "boolean" },
+      { "key": "fileSharing", "label": "File Sharing", "type": "boolean" },
+      { "key": "cannedResponses", "label": "Canned responses", "type": "boolean" },
+      { "key": "ratings", "label": "Conversation ratings", "type": "boolean" },
+      { "key": "followups", "label": "Follow-up reminders", "type": "boolean" },
+      { "key": "roundRobin", "label": "Round-robin routing", "type": "boolean" },
+      { "key": "customerPortal", "label": "Customer Portal", "type": "boolean" }
+    ]
+  },
+  {
+    "id": "channels",
+    "label": "Channels",
+    "rows": [
+      { "key": "chatWidget", "label": "Chat widget", "type": "boolean" },
+      { "key": "contactForm", "label": "Contact Form", "type": "boolean" },
+      { "key": "email", "label": "Email", "type": "boolean" },
+      { "key": "telegram", "label": "Telegram", "type": "boolean" },
+      { "key": "messenger", "label": "Messenger", "type": "boolean" },
+      { "key": "xTwitter", "label": "X (Twitter)", "type": "boolean" },
+      { "key": "instagram", "label": "Instagram", "type": "boolean" },
+      { "key": "sms", "label": "SMS", "type": "boolean" },
+      { "key": "viber", "label": "Viber", "type": "boolean" },
+      { "key": "phone", "label": "Phone", "type": "boolean" },
+      { "key": "line", "label": "Line", "type": "boolean" },
+      { "key": "whatsappBiz", "label": "WhatsApp Business", "type": "boolean" }
+    ]
+  },
+  {
+    "id": "integrations",
+    "label": "Integrations & Apps",
+    "rows": [
+      { "key": "wordpress", "label": "WordPress", "type": "boolean" },
+      { "key": "shopify", "label": "Shopify", "type": "boolean" },
+      { "key": "woocommerce", "label": "WooCommerce", "type": "boolean" },
+      { "key": "adobeCommerce", "label": "Adobe Commerce", "type": "boolean" },
+      { "key": "prestashop", "label": "Prestashop", "type": "boolean" },
+      { "key": "slack", "label": "Slack", "type": "boolean" },
+      { "key": "hubspot", "label": "HubSpot", "type": "boolean" },
+      { "key": "pipedrive", "label": "Pipedrive", "type": "boolean" },
+      { "key": "zoho", "label": "Zoho CRM", "type": "boolean" },
+      { "key": "segment", "label": "Segment", "type": "boolean" },
+      { "key": "zapier", "label": "Zapier", "type": "boolean" },
+      { "key": "make", "label": "Make", "type": "boolean" },
+      { "key": "n8n", "label": "n8n", "type": "boolean" },
+      { "key": "stripe", "label": "Stripe", "type": "boolean" },
+      { "key": "salesforce", "label": "Salesforce", "type": "boolean" }
+    ]
+  },
+  {
+    "id": "chatWidget",
+    "label": "Chat Widget",
+    "rows": [
+      { "key": "chatSDKs", "label": "Chat SDKs", "type": "boolean" },
+      { "key": "liveTyping", "label": "Live Typing preview", "type": "boolean" },
+      { "key": "typingIndicator", "label": "Typing status indicator", "type": "boolean" },
+      { "key": "widgetCustomization", "label": "Widget customization", "type": "boolean" },
+      { "key": "proactive", "label": "Proactive chat messages", "type": "boolean" },
+      { "key": "magicBrowse", "label": "MagicBrowse", "type": "boolean" },
+      { "key": "liveTranslate", "label": "LiveTranslate", "type": "boolean" },
+      { "key": "avChat", "label": "Video & Audio chat", "type": "boolean" },
+      { "key": "helpWidget", "label": "Help widget", "type": "boolean" },
+      { "key": "whiteLabel", "label": "White label", "type": "boolean" }
+    ]
+  },
+  {
+    "id": "ai",
+    "label": "Artificial intelligence",
+    "rows": [
+      { "key": "aiKnowledge", "label": "AI Knowledge training", "type": "boolean" },
+      { "key": "internalCopilot", "label": "Internal AI Copilot", "type": "boolean" },
+      { "key": "voiceToText", "label": "Voice-to-text", "type": "boolean" },
+      { "key": "multilingualAI", "label": "Multilingual AI", "type": "boolean" },
+      { "key": "aiWriting", "label": "AI Writing Assistant", "type": "boolean" },
+      { "key": "siteSearch", "label": "AI-powered site search", "type": "boolean" },
+      { "key": "aiSpam", "label": "AI Inbox Spam filter", "type": "boolean" },
+      { "key": "mcpServer", "label": "MCP Server (soon)", "type": "boolean" },
+      { "key": "autoTags", "label": "Auto-tagging of conversations", "type": "boolean" },
+      { "key": "summary", "label": "Conversation summary", "type": "boolean" },
+      { "key": "aiAgent", "label": "AI Agent (soon)", "type": "boolean" }
+    ]
+  },
+  {
+    "id": "crm",
+    "label": "CRM",
+    "rows": [
+      { "key": "crmCustomAttrs", "label": "Custom attributes", "type": "boolean" },
+      { "key": "crmProfile", "label": "Customer Profile", "type": "boolean" },
+      { "key": "crmSegmentation", "label": "Customer Segmentation", "type": "boolean" },
+      { "key": "crmSmartFilters", "label": "Smart filters", "type": "boolean" },
+      { "key": "crmNotes", "label": "Customer-based notes", "type": "boolean" },
+      { "key": "crmLifecycle", "label": "Customer lifecycle tracking", "type": "boolean" },
+      { "key": "crmTimeline", "label": "Customer timeline activity", "type": "boolean" }
+    ]
+  },
+  {
+    "id": "workflow",
+    "label": "Workflow",
+    "rows": [
+      { "key": "noCodeBuilder", "label": "No-code AI chatbot builder", "type": "boolean" },
+      { "key": "aiAnswers", "label": "AI-generated answers", "type": "boolean" },
+      { "key": "scenarioDrafts", "label": "Scenario drafts", "type": "boolean" },
+      { "key": "customInputs", "label": "Custom Input fields", "type": "boolean" },
+      { "key": "conditionalFlows", "label": "Conditional flows", "type": "boolean" },
+      { "key": "keywordTriggers", "label": "Keyword-based triggers", "type": "boolean" },
+      { "key": "apiAutomation", "label": "Automation via APIs", "type": "boolean" },
+      { "key": "webhooks", "label": "Webhook actions", "type": "boolean" },
+      { "key": "crmTriggers", "label": "CRM-based triggers", "type": "boolean" },
+      { "key": "iframes", "label": "Iframes", "type": "boolean" },
+      { "key": "unlimitedTemplates", "label": "Unlimited AI chatbot templates", "type": "boolean" },
+      { "key": "aiTriggers", "label": "AI-based triggers", "type": "boolean" },
+      { "key": "aiBlocks", "label": "AI-agent blocks", "type": "boolean" }
+    ]
+  },
+  {
+    "id": "helpCenter",
+    "label": "Help Center",
+    "rows": [
+      { "key": "hcArticles", "label": "Articles & Categories", "type": "boolean" },
+      { "key": "hcCustomization", "label": "Customization", "type": "boolean" },
+      { "key": "hcMultilingual", "label": "Multilingual help center", "type": "boolean" },
+      { "key": "hcSdk", "label": "Help center SDK", "type": "boolean" },
+      { "key": "hcSearch", "label": "Search", "type": "boolean" },
+      { "key": "hcFeedback", "label": "Article feedback", "type": "boolean" },
+      { "key": "hcDomain", "label": "Custom domain name", "type": "boolean" },
+      { "key": "hcSeo", "label": "Sitemap & SEO meta data", "type": "boolean" }
+    ]
+  },
+  {
+    "id": "analytics",
+    "label": "Analytics",
+    "rows": [
+      { "key": "prebuiltAnalytics", "label": "Prebuilt analytics", "type": "boolean" },
+      { "key": "dataExport", "label": "Data export", "type": "boolean" },
+      { "key": "customDash", "label": "Custom dashboards", "type": "boolean" },
+      { "key": "apiAnalytics", "label": "API Analytics", "type": "boolean" }
+    ]
+  },
+  {
+    "id": "status",
+    "label": "Status Page",
+    "rows": [
+      { "key": "nodeMonitoring", "label": "Node monitoring", "type": "boolean" },
+      { "key": "statusCustomization", "label": "Customization", "type": "boolean" },
+      { "key": "statusNotif", "label": "Notifications", "type": "boolean" },
+      { "key": "statusAnnouncement", "label": "Announcement", "type": "boolean" }
+    ]
+  },
+  {
+    "id": "security",
+    "label": "Data & Security",
+    "rows": [
+      { "key": "mfa", "label": "Double-Factor Authentication", "type": "boolean" },
+      { "key": "euHosted", "label": "EU-Hosted", "type": "boolean" },
+      { "key": "dpa", "label": "Data Processing Agreement", "type": "boolean" },
+      { "key": "tls", "label": "TLS Encryption", "type": "boolean" },
+      { "key": "replication", "label": "Data replication", "type": "boolean" }
+    ]
+  }
+]

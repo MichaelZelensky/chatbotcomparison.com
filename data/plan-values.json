@@ -1,0 +1,37 @@
+{
+  "crisp": {
+    "free": {
+      "planPrice": "$0",
+      "agentsIncluded": 2,
+      "customerProfiles": 100,
+      "aiUsage": "0",
+      "chatWidget": true
+    },
+    "mini": {
+      "planPrice": "$45",
+      "agentsIncluded": 4,
+      "customerProfiles": 5000,
+      "aiUsage": "0",
+      "chatWidget": true
+    },
+    "essentials": {
+      "planPrice": "$95",
+      "agentsIncluded": 10,
+      "customerProfiles": 50000,
+      "aiUsage": "50",
+      "chatWidget": true
+    },
+    "plus": {
+      "planPrice": "$295",
+      "agentsIncluded": "20+",
+      "additionalAgentPrice": "$10",
+      "customerProfiles": 200000,
+      "aiUsage": "unlimited",
+      "chatWidget": true
+    }
+  },
+  "intercom": {
+    "starter": {},
+    "pro": {}
+  }
+}
