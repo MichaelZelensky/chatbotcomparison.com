@@ -3,186 +3,186 @@
     "id": "pricing",
     "label": "Pricing",
     "rows": [
-      { "key": "planPrice", "label": "Plan Price (per month)", "type": "text" },
-      { "key": "agentsIncluded", "label": "Agents included", "type": "number" },
-      { "key": "additionalAgentPrice", "label": "Additional agents (per month)", "type": "text" },
-      { "key": "customerProfiles", "label": "Customer Profiles", "type": "number" },
-      { "key": "aiUsage", "label": "AI Usage", "type": "text" }
+      { "key": "planPrice", "label": "Plan Price (per month)", "type": "text", "description": "The monthly or yearly cost of your Crisp subscription plan." },
+      { "key": "agentsIncluded", "label": "Agents included", "type": "number", "description": "Number of agent licences included in your plan at no extra cost." },
+      { "key": "additionalAgentPrice", "label": "Additional agents (per month)", "type": "text", "description": "Add more seats to your plan and scale your team as needed." },
+      { "key": "customerProfiles", "label": "Customer Profiles", "type": "number", "description": "Maximum number of unique customer profiles you can manage in your workspace." },
+      { "key": "aiUsage", "label": "AI Usage", "type": "text", "description": "Number of AI-powered actions (like summaries or replies) available per day." }
     ]
   },
   {
     "id": "teamInbox",
     "label": "Team Inbox",
     "rows": [
-      { "key": "cloudBased", "label": "Cloud-based", "type": "boolean" },
-      { "key": "mobileApps", "label": "Mobile Apps", "type": "boolean" },
-      { "key": "desktopApps", "label": "Desktop Apps", "type": "boolean" },
-      { "key": "realtimeNotif", "label": "Real-time notifications", "type": "boolean" },
-      { "key": "developerApis", "label": "Developer APIs", "type": "boolean" },
-      { "key": "liveMap", "label": "Live Geolocation map", "type": "boolean" },
-      { "key": "transcript", "label": "Conversation transcript", "type": "boolean" },
-      { "key": "triage", "label": "Conversation Triage", "type": "boolean" },
-      { "key": "workingHours", "label": "Working hours settings", "type": "boolean" },
-      { "key": "unlimitedConvos", "label": "Unlimited conversations", "type": "boolean" },
-      { "key": "customEmailDomain", "label": "Custom email domain", "type": "boolean" },
-      { "key": "fullHistory", "label": "Full conversations' history", "type": "boolean" },
-      { "key": "internalNotes", "label": "Internal notes", "type": "boolean" },
-      { "key": "banning", "label": "Visitor Banning", "type": "boolean" },
-      { "key": "fileSharing", "label": "File Sharing", "type": "boolean" },
-      { "key": "cannedResponses", "label": "Canned responses", "type": "boolean" },
-      { "key": "ratings", "label": "Conversation ratings", "type": "boolean" },
-      { "key": "followups", "label": "Follow-up reminders", "type": "boolean" },
-      { "key": "roundRobin", "label": "Round-robin routing", "type": "boolean" },
-      { "key": "customerPortal", "label": "Customer Portal", "type": "boolean" }
+      { "key": "cloudBased", "label": "Cloud-based", "type": "boolean", "description": "Your Crisp data and conversations are securely hosted in the cloud, always accessible and backed up." },
+      { "key": "mobileApps", "label": "Mobile Apps", "type": "boolean", "description": "Get everything related to your customer service right in your pocket." },
+      { "key": "desktopApps", "label": "Desktop Apps", "type": "boolean", "description": "Use Crisp on Windows and Mac for a seamless desktop experience." },
+      { "key": "realtimeNotif", "label": "Real-time notifications", "type": "boolean", "description": "Receive alerts to stay up to date with your opened conversations." },
+      { "key": "developerApis", "label": "Developer APIs", "type": "boolean", "description": "Access Crisp APIs to build custom integrations and automate workflows." },
+      { "key": "liveMap", "label": "Live Geolocation map", "type": "boolean", "description": "See all your active website visitors in real time and start conversations." },
+      { "key": "transcript", "label": "Conversation transcript", "type": "boolean", "description": "Easily export or view the full transcript of customer conversations." },
+      { "key": "triage", "label": "Conversation Triage", "type": "boolean", "description": "Automatically sort and organize incoming conversations for efficient handling." },
+      { "key": "workingHours", "label": "Working hours settings", "type": "boolean", "description": "Define your business hours to set expectations and automate responses outside those times." },
+      { "key": "unlimitedConvos", "label": "Unlimited conversations", "type": "boolean", "description": "Handle as many customer conversations as you need, with no limits." },
+      { "key": "customEmailDomain", "label": "Custom email domain", "type": "boolean", "description": "Setup a custom domain to send your outbound emails and improve deliverability." },
+      { "key": "fullHistory", "label": "Full conversations' history", "type": "boolean", "description": "Access the full history of your customer conversations for context and insights." },
+      { "key": "internalNotes", "label": "Internal notes", "type": "boolean", "description": "Make internal collaboration easy, centralized and personalized for each conversation." },
+      { "key": "banning", "label": "Visitor Banning", "type": "boolean", "description": "Block users having disrespectful behavior on any channel." },
+      { "key": "fileSharing", "label": "File Sharing", "type": "boolean", "description": "Send and receive attachments directly within conversations." },
+      { "key": "cannedResponses", "label": "Canned responses", "type": "boolean", "description": "Create, manage and use a gallery of pre-existing messages that makes your team more efficient." },
+      { "key": "ratings", "label": "Conversation ratings", "type": "boolean", "description": "Send automated surveys that measure customer satisfaction score." },
+      { "key": "followups", "label": "Follow-up reminders", "type": "boolean", "description": "Schedule pre-defined or custom reminders on each conversation with detailed attached." },
+      { "key": "roundRobin", "label": "Round-robin routing", "type": "boolean", "description": "Assign conversations automatically to available agents in a fair, rotating manner." },
+      { "key": "customerPortal", "label": "Customer Portal", "type": "boolean", "description": "Offer a dedicated portal to your customers where they can open new tickets or follow existing ones." }
     ]
   },
   {
     "id": "channels",
     "label": "Channels",
     "rows": [
-      { "key": "chatWidget", "label": "Chat widget", "type": "boolean" },
-      { "key": "contactForm", "label": "Contact Form", "type": "boolean" },
-      { "key": "email", "label": "Email", "type": "boolean" },
-      { "key": "telegram", "label": "Telegram", "type": "boolean" },
-      { "key": "messenger", "label": "Messenger", "type": "boolean" },
-      { "key": "xTwitter", "label": "X (Twitter)", "type": "boolean" },
-      { "key": "instagram", "label": "Instagram", "type": "boolean" },
-      { "key": "sms", "label": "SMS", "type": "boolean" },
-      { "key": "viber", "label": "Viber", "type": "boolean" },
-      { "key": "phone", "label": "Phone", "type": "boolean" },
-      { "key": "line", "label": "Line", "type": "boolean" },
-      { "key": "whatsappBiz", "label": "WhatsApp Business", "type": "boolean" }
+      { "key": "chatWidget", "label": "Chat widget", "type": "boolean", "description": "Engage with people that are browsing your website and get closer to your customers." },
+      { "key": "contactForm", "label": "Contact Form", "type": "boolean", "description": "Centralize answers from customizable contact forms within your Crisp Inbox." },
+      { "key": "email", "label": "Email", "type": "boolean", "description": "Receive and reply to your team's emails straight from your Crisp Inbox." },
+      { "key": "telegram", "label": "Telegram", "type": "boolean", "description": "Receive and reply to Telegram messages straight in your Crisp Inbox." },
+      { "key": "messenger", "label": "Messenger", "type": "boolean", "description": "Receive and reply to Facebook Messenger messages straight in your Crisp Inbox." },
+      { "key": "xTwitter", "label": "X (Twitter)", "type": "boolean", "description": "Receive and reply to Twitter DMs straight in your Crisp Inbox." },
+      { "key": "instagram", "label": "Instagram", "type": "boolean", "description": "Reply to your Instagram Direct Messages and stories from Crisp dashboard." },
+      { "key": "sms", "label": "SMS", "type": "boolean", "description": "Receive and reply to SMS messages straight in your Crisp Inbox." },
+      { "key": "viber", "label": "Viber", "type": "boolean", "description": "Receive and reply to Viber messages straight in your Crisp Inbox." },
+      { "key": "phone", "label": "Phone", "type": "boolean", "description": "Answer phone calls and trigger outbound calls right from Crisp." },
+      { "key": "line", "label": "Line", "type": "boolean", "description": "Receive and reply to Line messages straight in your Crisp Inbox." },
+      { "key": "whatsappBiz", "label": "WhatsApp Business", "type": "boolean", "description": "Receive and reply to WhatsApp Business messages in your Crisp inbox." }
     ]
   },
   {
     "id": "integrations",
     "label": "Integrations & Apps",
     "rows": [
-      { "key": "wordpress", "label": "WordPress", "type": "boolean" },
-      { "key": "shopify", "label": "Shopify", "type": "boolean" },
-      { "key": "woocommerce", "label": "WooCommerce", "type": "boolean" },
-      { "key": "adobeCommerce", "label": "Adobe Commerce", "type": "boolean" },
-      { "key": "prestashop", "label": "Prestashop", "type": "boolean" },
-      { "key": "slack", "label": "Slack", "type": "boolean" },
-      { "key": "hubspot", "label": "HubSpot", "type": "boolean" },
-      { "key": "pipedrive", "label": "Pipedrive", "type": "boolean" },
-      { "key": "zoho", "label": "Zoho CRM", "type": "boolean" },
-      { "key": "segment", "label": "Segment", "type": "boolean" },
-      { "key": "zapier", "label": "Zapier", "type": "boolean" },
-      { "key": "make", "label": "Make", "type": "boolean" },
-      { "key": "n8n", "label": "n8n", "type": "boolean" },
-      { "key": "stripe", "label": "Stripe", "type": "boolean" },
-      { "key": "salesforce", "label": "Salesforce", "type": "boolean" }
+      { "key": "wordpress", "label": "WordPress", "type": "boolean", "description": "Easily install the Crisp chat widget on your WordPress website." },
+      { "key": "shopify", "label": "Shopify", "type": "boolean", "description": "Sync e-commerce data with your Crisp Inbox to benefit from dedicated features." },
+      { "key": "woocommerce", "label": "WooCommerce", "type": "boolean", "description": "Sync WooCommerce orders and customer data with Crisp for better support." },
+      { "key": "adobeCommerce", "label": "Adobe Commerce", "type": "boolean", "description": "Integrate Crisp with Adobe Commerce to centralize your customer communications." },
+      { "key": "prestashop", "label": "Prestashop", "type": "boolean", "description": "Integrate Crisp with Prestashop to sync orders and customer data." },
+      { "key": "slack", "label": "Slack", "type": "boolean", "description": "Reply to any of your incoming messages straight from your Slack Workspace." },
+      { "key": "hubspot", "label": "HubSpot", "type": "boolean", "description": "Synchronize Crisp with your Hubspot account." },
+      { "key": "pipedrive", "label": "Pipedrive", "type": "boolean", "description": "Synchronize Crisp with your Pipedrive account." },
+      { "key": "zoho", "label": "Zoho CRM", "type": "boolean", "description": "Synchronize Crisp with your Zoho account." },
+      { "key": "segment", "label": "Segment", "type": "boolean", "description": "Connect Crisp as a source and clip customer data from 200 platforms, effortlessly." },
+      { "key": "zapier", "label": "Zapier", "type": "boolean", "description": "Connect Crisp with more than 2000+ other apps without writing a line of code." },
+      { "key": "make", "label": "Make", "type": "boolean", "description": "Automate your workflows by connecting Crisp to hundreds of other apps with Make." },
+      { "key": "n8n", "label": "n8n", "type": "boolean", "description": "Integrate Crisp with your no-code automation workflows using n8n." },
+      { "key": "stripe", "label": "Stripe", "type": "boolean", "description": "Synchronize revenue details from Stripe straight in your Crisp inbox." },
+      { "key": "salesforce", "label": "Salesforce", "type": "boolean", "description": "Synchronize Crisp with your Salesforce account." }
     ]
   },
   {
     "id": "chatWidget",
     "label": "Chat Widget",
     "rows": [
-      { "key": "chatSDKs", "label": "Chat SDKs", "type": "boolean" },
-      { "key": "liveTyping", "label": "Live Typing preview", "type": "boolean" },
-      { "key": "typingIndicator", "label": "Typing status indicator", "type": "boolean" },
-      { "key": "widgetCustomization", "label": "Widget customization", "type": "boolean" },
-      { "key": "proactive", "label": "Proactive chat messages", "type": "boolean" },
-      { "key": "magicBrowse", "label": "MagicBrowse", "type": "boolean" },
-      { "key": "liveTranslate", "label": "LiveTranslate", "type": "boolean" },
-      { "key": "avChat", "label": "Video & Audio chat", "type": "boolean" },
-      { "key": "helpWidget", "label": "Help widget", "type": "boolean" },
-      { "key": "whiteLabel", "label": "White label", "type": "boolean" }
+      { "key": "chatSDKs", "label": "Chat SDKs", "type": "boolean", "description": "Integrate the chatbox widget and implement the behaviours you need to engage with your customers." },
+      { "key": "liveTyping", "label": "Live Typing preview", "type": "boolean", "description": "See what your users are typing before they hit send." },
+      { "key": "typingIndicator", "label": "Typing status indicator", "type": "boolean", "description": "See when a user or agent is typing a message in real-time." },
+      { "key": "widgetCustomization", "label": "Widget customization", "type": "boolean", "description": "Adapt colors, text and live chat position so it fits with your brand identity." },
+      { "key": "proactive", "label": "Proactive chat messages", "type": "boolean", "description": "Engage chat conversations automatically based on specific behaviors." },
+      { "key": "magicBrowse", "label": "MagicBrowse", "type": "boolean", "description": "Start a co-browsing session with people browsing on your website and share your screen if needed." },
+      { "key": "liveTranslate", "label": "LiveTranslate", "type": "boolean", "description": "Translate instantly your messages in more than 50 different languages." },
+      { "key": "avChat", "label": "Video & Audio chat", "type": "boolean", "description": "Engage with leads or customers through live audio or video message." },
+      { "key": "helpWidget", "label": "Help widget", "type": "boolean", "description": "Add a self-service help widget to your website for instant answers." },
+      { "key": "whiteLabel", "label": "White label", "type": "boolean", "description": "Get rid of the Crisp watermark 'We run on Crisp'." }
     ]
   },
   {
     "id": "ai",
     "label": "Artificial intelligence",
     "rows": [
-      { "key": "aiKnowledge", "label": "AI Knowledge training", "type": "boolean" },
-      { "key": "internalCopilot", "label": "Internal AI Copilot", "type": "boolean" },
-      { "key": "voiceToText", "label": "Voice-to-text", "type": "boolean" },
-      { "key": "multilingualAI", "label": "Multilingual AI", "type": "boolean" },
-      { "key": "aiWriting", "label": "AI Writing Assistant", "type": "boolean" },
-      { "key": "siteSearch", "label": "AI-powered site search", "type": "boolean" },
-      { "key": "aiSpam", "label": "AI Inbox Spam filter", "type": "boolean" },
-      { "key": "mcpServer", "label": "MCP Server (soon)", "type": "boolean" },
-      { "key": "autoTags", "label": "Auto-tagging of conversations", "type": "boolean" },
-      { "key": "summary", "label": "Conversation summary", "type": "boolean" },
-      { "key": "aiAgent", "label": "AI Agent (soon)", "type": "boolean" }
+      { "key": "aiKnowledge", "label": "AI Knowledge training", "type": "boolean", "description": "Ingest all your internal data to train a custom AI model." },
+      { "key": "internalCopilot", "label": "Internal AI Copilot", "type": "boolean", "description": "Your support agents can ask questions to an internal AI chat, trained on your internal data." },
+      { "key": "voiceToText", "label": "Voice-to-text", "type": "boolean", "description": "Get immediate voice-to-text transcription for every audio message or recorded phone calls." },
+      { "key": "multilingualAI", "label": "Multilingual AI", "type": "boolean", "description": "Translate your messages into over 50 languages on any channel." },
+      { "key": "aiWriting", "label": "AI Writing Assistant", "type": "boolean", "description": "Get AI-powered writing assistant tools for your teams." },
+      { "key": "siteSearch", "label": "AI-powered site search", "type": "boolean", "description": "Let your users use AI-powered search to get an answer before they contact your support." },
+      { "key": "aiSpam", "label": "AI Inbox Spam filter", "type": "boolean", "description": "Gain access to a custom spam filter powered by AI that gets trained based on your settings." },
+      { "key": "mcpServer", "label": "MCP Server (soon)", "type": "boolean", "description": "Dedicated AI infrastructure for high-performance and privacy." },
+      { "key": "autoTags", "label": "Auto-tagging of conversations", "type": "boolean", "description": "Let artificial intelligence classify your conversations automatically." },
+      { "key": "summary", "label": "Conversation summary", "type": "boolean", "description": "Get access to a conversations' summary everytime you need to." },
+      { "key": "aiAgent", "label": "AI Agent (soon)", "type": "boolean", "description": "Deploy a fully autonomous AI agent to handle customer conversations end-to-end." }
     ]
   },
   {
     "id": "crm",
     "label": "CRM",
     "rows": [
-      { "key": "crmCustomAttrs", "label": "Custom attributes", "type": "boolean" },
-      { "key": "crmProfile", "label": "Customer Profile", "type": "boolean" },
-      { "key": "crmSegmentation", "label": "Customer Segmentation", "type": "boolean" },
-      { "key": "crmSmartFilters", "label": "Smart filters", "type": "boolean" },
-      { "key": "crmNotes", "label": "Customer-based notes", "type": "boolean" },
-      { "key": "crmLifecycle", "label": "Customer lifecycle tracking", "type": "boolean" },
-      { "key": "crmTimeline", "label": "Customer timeline activity", "type": "boolean" }
+      { "key": "crmCustomAttrs", "label": "Custom attributes", "type": "boolean", "description": "Add and manage custom attributes to enrich your customer profiles." },
+      { "key": "crmProfile", "label": "Customer Profile", "type": "boolean", "description": "Store and manage detailed information about each of your customers." },
+      { "key": "crmSegmentation", "label": "Customer Segmentation", "type": "boolean", "description": "Group your users based on behavior, attributes, or custom tags." },
+      { "key": "crmSmartFilters", "label": "Smart filters", "type": "boolean", "description": "Search for messages, articles, contacts or plugins using advanced filters." },
+      { "key": "crmNotes", "label": "Customer-based notes", "type": "boolean", "description": "Leave internal notes on customer profiles for better team collaboration." },
+      { "key": "crmLifecycle", "label": "Customer lifecycle tracking", "type": "boolean", "description": "Track and analyze the journey of your users from lead to loyal customer." },
+      { "key": "crmTimeline", "label": "Customer timeline activity", "type": "boolean", "description": "View a chronological history of interactions and events for each customer." }
     ]
   },
   {
     "id": "workflow",
     "label": "Workflow",
     "rows": [
-      { "key": "noCodeBuilder", "label": "No-code AI chatbot builder", "type": "boolean" },
-      { "key": "aiAnswers", "label": "AI-generated answers", "type": "boolean" },
-      { "key": "scenarioDrafts", "label": "Scenario drafts", "type": "boolean" },
-      { "key": "customInputs", "label": "Custom Input fields", "type": "boolean" },
-      { "key": "conditionalFlows", "label": "Conditional flows", "type": "boolean" },
-      { "key": "keywordTriggers", "label": "Keyword-based triggers", "type": "boolean" },
-      { "key": "apiAutomation", "label": "Automation via APIs", "type": "boolean" },
-      { "key": "webhooks", "label": "Webhook actions", "type": "boolean" },
-      { "key": "crmTriggers", "label": "CRM-based triggers", "type": "boolean" },
-      { "key": "iframes", "label": "Iframes", "type": "boolean" },
-      { "key": "unlimitedTemplates", "label": "Unlimited AI chatbot templates", "type": "boolean" },
-      { "key": "aiTriggers", "label": "AI-based triggers", "type": "boolean" },
-      { "key": "aiBlocks", "label": "AI-agent blocks", "type": "boolean" }
+      { "key": "noCodeBuilder", "label": "No-code AI chatbot builder", "type": "boolean", "description": "Build super-advanced automation flows on any channels connected to Crisp." },
+      { "key": "aiAnswers", "label": "AI-generated answers", "type": "boolean", "description": "Provide instant, AI-powered answers to common customer queries." },
+      { "key": "scenarioDrafts", "label": "Scenario drafts", "type": "boolean", "description": "Design and test chatbot scenarios before going live." },
+      { "key": "customInputs", "label": "Custom Input fields", "type": "boolean", "description": "Collect structured data from users directly within the chat." },
+      { "key": "conditionalFlows", "label": "Conditional flows", "type": "boolean", "description": "Create advanced workflows that adapt based on user responses or attributes." },
+      { "key": "keywordTriggers", "label": "Keyword-based triggers", "type": "boolean", "description": "Trigger automated actions based on keywords detected in user messages." },
+      { "key": "apiAutomation", "label": "Automation via APIs", "type": "boolean", "description": "Integrate external services and trigger workflows using APIs." },
+      { "key": "webhooks", "label": "Webhook actions", "type": "boolean", "description": "Push data to external systems in real time as events happen in Crisp." },
+      { "key": "crmTriggers", "label": "CRM-based triggers", "type": "boolean", "description": "Automate actions in workflows based on CRM data or events." },
+      { "key": "iframes", "label": "Iframes", "type": "boolean", "description": "Embed external content or tools directly within the chat." },
+      { "key": "unlimitedTemplates", "label": "Unlimited AI chatbot templates", "type": "boolean", "description": "Build as many chatbot templates as your workflows require." },
+      { "key": "aiTriggers", "label": "AI-based triggers", "type": "boolean", "description": "Automatically detect user intent using artificial intelligence." },
+      { "key": "aiBlocks", "label": "AI-agent blocks", "type": "boolean", "description": "Use AI-powered blocks to build smarter multi-channel chatbot flows." }
     ]
   },
   {
     "id": "helpCenter",
     "label": "Help Center",
     "rows": [
-      { "key": "hcArticles", "label": "Articles & Categories", "type": "boolean" },
-      { "key": "hcCustomization", "label": "Customization", "type": "boolean" },
-      { "key": "hcMultilingual", "label": "Multilingual help center", "type": "boolean" },
-      { "key": "hcSdk", "label": "Help center SDK", "type": "boolean" },
-      { "key": "hcSearch", "label": "Search", "type": "boolean" },
-      { "key": "hcFeedback", "label": "Article feedback", "type": "boolean" },
-      { "key": "hcDomain", "label": "Custom domain name", "type": "boolean" },
-      { "key": "hcSeo", "label": "Sitemap & SEO meta data", "type": "boolean" }
+      { "key": "hcArticles", "label": "Articles & Categories", "type": "boolean", "description": "Write, manage and edit a dedicated help center that integrates deeply with Crisp." },
+      { "key": "hcCustomization", "label": "Customization", "type": "boolean", "description": "Adapt colors, text and layout of your help center to fit your brand." },
+      { "key": "hcMultilingual", "label": "Multilingual help center", "type": "boolean", "description": "Offer your help center in multiple languages to serve a global audience." },
+      { "key": "hcSdk", "label": "Help center SDK", "type": "boolean", "description": "Integrate your help center anywhere using our SDK." },
+      { "key": "hcSearch", "label": "Search", "type": "boolean", "description": "Search for messages, articles, contacts or plugins using advanced filters." },
+      { "key": "hcFeedback", "label": "Article feedback", "type": "boolean", "description": "Let users rate and comment on your help articles." },
+      { "key": "hcDomain", "label": "Custom domain name", "type": "boolean", "description": "Use your own branded domain for your help center." },
+      { "key": "hcSeo", "label": "Sitemap & SEO meta data", "type": "boolean", "description": "Optimize your help center for search engines with sitemaps and meta data." }
     ]
   },
   {
     "id": "analytics",
     "label": "Analytics",
     "rows": [
-      { "key": "prebuiltAnalytics", "label": "Prebuilt analytics", "type": "boolean" },
-      { "key": "dataExport", "label": "Data export", "type": "boolean" },
-      { "key": "customDash", "label": "Custom dashboards", "type": "boolean" },
-      { "key": "apiAnalytics", "label": "API Analytics", "type": "boolean" }
+      { "key": "prebuiltAnalytics", "label": "Prebuilt analytics", "type": "boolean", "description": "Measure conversational activity, customer satisfaction and operator's activity." },
+      { "key": "dataExport", "label": "Data export", "type": "boolean", "description": "Export your data for reporting, analysis or backup." },
+      { "key": "customDash", "label": "Custom dashboards", "type": "boolean", "description": "Build your own custom dashboard and analytics to fit with your company's metrics and objectives." },
+      { "key": "apiAnalytics", "label": "API Analytics", "type": "boolean", "description": "Access, export and analyze your data programmatically via API." }
     ]
   },
   {
     "id": "status",
     "label": "Status Page",
     "rows": [
-      { "key": "nodeMonitoring", "label": "Node monitoring", "type": "boolean" },
-      { "key": "statusCustomization", "label": "Customization", "type": "boolean" },
-      { "key": "statusNotif", "label": "Notifications", "type": "boolean" },
-      { "key": "statusAnnouncement", "label": "Announcement", "type": "boolean" }
+      { "key": "nodeMonitoring", "label": "Node monitoring", "type": "boolean", "description": "Monitor the health of your infrastructure and services in real time." },
+      { "key": "statusCustomization", "label": "Customization", "type": "boolean", "description": "Customize your status page to match your brand and communication style." },
+      { "key": "statusNotif", "label": "Notifications", "type": "boolean", "description": "Send alerts and updates to users when incidents or changes occur." },
+      { "key": "statusAnnouncement", "label": "Announcement", "type": "boolean", "description": "Publish important updates or news to your users via your status page." }
     ]
   },
   {
     "id": "security",
     "label": "Data & Security",
     "rows": [
-      { "key": "mfa", "label": "Double-Factor Authentication", "type": "boolean" },
-      { "key": "euHosted", "label": "EU-Hosted", "type": "boolean" },
-      { "key": "dpa", "label": "Data Processing Agreement", "type": "boolean" },
-      { "key": "tls", "label": "TLS Encryption", "type": "boolean" },
-      { "key": "replication", "label": "Data replication", "type": "boolean" }
+      { "key": "mfa", "label": "Double-Factor Authentication", "type": "boolean", "description": "Add an extra layer of security to your account login." },
+      { "key": "euHosted", "label": "EU-Hosted", "type": "boolean", "description": "Your data is hosted on European servers for compliance and privacy." },
+      { "key": "dpa", "label": "Data Processing Agreement", "type": "boolean", "description": "A legal agreement to ensure your data is handled according to regulations." },
+      { "key": "tls", "label": "TLS Encryption", "type": "boolean", "description": "All data is encrypted in transit using TLS." },
+      { "key": "replication", "label": "Data replication", "type": "boolean", "description": "Your data is backed up and replicated for increased reliability." }
     ]
   }
 ]
