@@ -19,22 +19,35 @@
         </thead>
 
         <tbody v-for="grp in featureGroups" :key="grp.id">
+          <!-- Group header now has scores aligned in the same row -->
           <tr class="group-row">
-            <th :colspan="1 + planColumns.length" class="p-0">
-              <button class="group-toggle" :aria-expanded="expandedByGroupId[grp.id] ? 'true' : 'false'" @click="toggleExpanded(grp.id)">
+            <th scope="row" class="p-0">
+              <button
+                class="group-toggle"
+                :aria-expanded="expandedByGroupId[grp.id] ? 'true' : 'false'"
+                @click="toggleExpanded(grp.id)"
+              >
                 <svg class="chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6 12 4-4-4-4"/>
                 </svg>
                 <span class="group-title">{{ grp.label }}</span>
-                <span class="scores">
-                  <span v-for="col in planColumns" :key="`${grp.id}-${col.key}`" class="score-chip" :title="`${scoreForGroupAndColumn(grp, col)}/${rowsOf(grp).length}`">
-                    {{ scoreForGroupAndColumn(grp, col) }} / {{ rowsOf(grp).length }}
-                  </span>
-                </span>
               </button>
             </th>
+
+            <!-- Per-column scores (aligned with headers) -->
+            <td
+              v-for="col in planColumns"
+              :key="`${grp.id}-${col.key}-score`"
+              class="score-cell"
+              :title="`${scoreForGroupAndColumn(grp, col)}/${rowsOf(grp).length}`"
+            >
+              <span class="score-chip">
+                {{ scoreForGroupAndColumn(grp, col) }} / {{ rowsOf(grp).length }}
+              </span>
+            </td>
           </tr>
 
+          <!-- Group rows -->
           <template v-if="expandedByGroupId[grp.id]">
             <tr v-for="row in rowsOf(grp)" :key="`${grp.id}-${row.key}`">
               <th scope="row" class="row-heading">{{ row.label }}</th>
@@ -84,10 +97,6 @@ const unwrapJsonModule = <T>(mod: unknown): T =>
 const providersJson = unwrapJsonModule<ProviderMeta[]>(providersJsonModule)
 const featureGroupsJson = unwrapJsonModule<FeatureGroup[]>(featureGroupsJsonModule)
 const planValuesJson = unwrapJsonModule<Record<string, Record<string, Record<string, unknown>>>>(planValuesJsonModule)
-
-console.log('providersJson', providersJson)
-console.log('featureGroupsJson', featureGroupsJson)
-console.log('planValuesJson', planValuesJson)
 
 const asArray = <T>(value: unknown, fallback: T[] = [] as T[]) =>
   Array.isArray(value) ? (value as T[]) : fallback
@@ -154,17 +163,20 @@ useHead({
 .table-wrap { max-width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; contain:content; }
 .compare { width:max-content; min-width:100%; border-collapse:separate; border-spacing:0; }
 .compare th, .compare td { @apply p-2; border:1px solid var(--border,#e2e8f0); vertical-align:top; word-break:break-word; overflow-wrap:anywhere; }
-.compare thead th, .compare thead td { position:sticky; top:0; z-index:3; background:var(--card,#f8fafc); @apply font-semibold; }
 .compare thead th:first-child { position:sticky; top:0; left:0; z-index:4; background:var(--card,#f8fafc); }
+.compare thead th, .compare thead td { position:sticky; top:0; z-index:3; background:var(--card,#f8fafc); @apply font-semibold; }
 .compare tbody th[scope='row'] { position:sticky; left:0; z-index:2; background:var(--card,#f8fafc); box-shadow: inset -8px 0 8px -8px rgba(0,0,0,.08); }
+
 .bool { @apply inline-flex items-center justify-center w-6 h-6 rounded border; border-color: var(--border, #e2e8f0); svg { display:block; } }
 .bool.yes { @apply bg-cyan-50 fill-cyan-600; border-color:#bae6fd; }
 .bool.no  { @apply bg-rose-50 fill-rose-600; border-color:#fecdd3; }
+
 .group-row th { background: var(--card,#f8fafc); }
 .group-toggle { @apply w-full flex items-center gap-2 p-2 text-left select-none; }
 .group-title { @apply font-semibold; }
 .chev { @apply transition-transform; }
 .group-toggle[aria-expanded="true"] .chev { transform: rotate(90deg); }
-.scores { @apply ml-auto flex gap-2 flex-wrap; }
-.score-chip { @apply text-xs px-2 py-1 rounded border; border-color: var(--border,#e2e8f0); background: var(--bg, #fff); }
+
+.score-cell { @apply text-center bg-white dark:bg-zinc-900; }
+.score-chip { @apply inline-block text-xs px-2 py-1 rounded border; border-color: var(--border,#e2e8f0); background: var(--bg, #fff); }
 </style>
