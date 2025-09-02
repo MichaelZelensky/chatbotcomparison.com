@@ -7,8 +7,9 @@ env:
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 20
     commands:
-      # - n 22.18.0
       - echo "Installing dependencies..."
       - npm ci
   build:
