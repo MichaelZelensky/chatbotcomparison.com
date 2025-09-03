@@ -1,15 +1,35 @@
 <template>
   <section>
     <h1 class="title">Chatbot Comparison</h1>
+
+    <!-- (Optional) Sort controls; default is already priceAsc+score tie-breaker -->
+    <div v-if="columns.length && groups.length" class="mb-3 flex items-center gap-3">
+      <label class="text-sm">Sort:</label>
+      <select v-model="sortMode" class="border rounded px-2 py-1 text-sm">
+        <option value="default">Price ↑ (default)</option>
+        <option value="priceAsc">Price ↑</option>
+        <option value="priceDesc">Price ↓</option>
+        <option value="scoreAsc">Score ↑</option>
+        <option value="scoreDesc">Score ↓</option>
+      </select>
+
+      <label class="text-sm">Score group:</label>
+      <select v-model="scoreGroupId" class="border rounded px-2 py-1 text-sm">
+        <option :value="null">All groups</option>
+        <option v-for="g in groups" :key="g.id" :value="g.id">{{ g.label }}</option>
+      </select>
+    </div>
+
     <div v-if="columns.length && groups.length" class="table-wrap">
       <table class="compare" aria-describedby="tableDescription">
         <caption id="tableDescription" class="sr-only">
           Feature comparison of chatbot providers and plans
         </caption>
+
         <thead>
           <tr>
             <th scope="column">Feature</th>
-            <th v-for="column in columns" :key="column.key" scope="column">
+            <th v-for="column in sortedColumns" :key="column.key" scope="column">
               <div class="column-heading">
                 <div class="text-xs opacity-70">{{ column.providerName }}</div>
                 <div>{{ column.planName }}</div>
@@ -17,13 +37,15 @@
             </th>
           </tr>
         </thead>
+
         <tbody v-for="featureGroup in groups" :key="featureGroup.id">
           <tr class="group-row">
             <th scope="rowgroup" class="group-heading">
               {{ featureGroup.label }}
             </th>
-            <td v-for="column in columns" :key="column.key + '-group'" class="group-cell"></td>
+            <td v-for="column in sortedColumns" :key="column.key + '-group'" class="group-cell"></td>
           </tr>
+
           <tr
             v-for="featureRow in featureGroup.rows"
             :key="featureGroup.id + '-' + featureRow.key"
@@ -38,8 +60,9 @@
                 >ⓘ</button>
               </div>
             </th>
+
             <td
-              v-for="column in columns"
+              v-for="column in sortedColumns"
               :key="column.key + '-' + featureRow.key"
             >
               <span
@@ -52,11 +75,14 @@
         </tbody>
       </table>
     </div>
+
     <p v-else class="small">No data to display.</p>
   </section>
 </template>
 
 <script setup lang="ts">
+import { ref, computed } from 'vue';
+
 type FeatureType = 'boolean' | 'text' | 'number';
 type FeatureRow = { key: string; label: string; type: FeatureType; description: string };
 type FeatureGroup = { id: string; label: string; rows: FeatureRow[] };
@@ -70,7 +96,14 @@ import planValues from '~/data/plan-values.json';
 const groups = groupsJson as FeatureGroup[];
 const providers = providersJson as Provider[];
 
-type Col = { key: string; providerSlug: string; planSlug: string; providerName: string; planName: string; };
+type Col = {
+  key: string;
+  providerSlug: string;
+  planSlug: string;
+  providerName: string;
+  planName: string;
+};
+
 const columns: Col[] = providers.flatMap(p =>
   p.plans.map(pl => ({
     key: `${p.slug}.${pl.slug}`,
@@ -85,26 +118,103 @@ const columns: Col[] = providers.flatMap(p =>
 const valueOf = (prov: string, plan: string, featureKey: string) =>
   (planValues as any)?.[prov]?.[plan]?.[featureKey] ?? null;
 
-// Safe locale detection for SSR + client
+// --- Sorting state ---
+// "default" means price ascending + score (all groups) tie-breaker (desc)
+const sortMode = ref<'default' | 'priceAsc' | 'priceDesc' | 'scoreAsc' | 'scoreDesc'>('default');
+// null = all groups; or specific group id to limit score calculation
+const scoreGroupId = ref<string | null>(null);
+
+// --- Helpers for price + score ---
+/**
+ * Extract a numeric price from strings like:
+ * "$0", "From $59", "From $2,999", "€199", "Custom"
+ * - Commas are removed before parse (2,999 -> 2999)
+ * - Non-numerics / "Custom" -> Infinity (sorted last for ascending)
+ */
+const parsePrice = (raw: unknown): number => {
+  if (raw == null) return Number.POSITIVE_INFINITY;
+  const s = String(raw).trim();
+  if (/^custom/i.test(s)) return Number.POSITIVE_INFINITY;
+
+  // Find first number token, allowing commas and decimals
+  const m = s.match(/(\d[\d,]*\.?\d*)/);
+  if (!m) return Number.POSITIVE_INFINITY;
+
+  const cleaned = m[1].replace(/,/g, ''); // "2,999" -> "2999"
+  const n = Number(cleaned);
+  return Number.isFinite(n) ? n : Number.POSITIVE_INFINITY;
+};
+
+const priceOf = (col: Col): number => {
+  const v = valueOf(col.providerSlug, col.planSlug, 'planPrice');
+  return parsePrice(v);
+};
+
+const booleanKeysForGroup = (groupId?: string | null): string[] => {
+  const targets = groupId ? groups.filter(g => g.id === groupId) : groups;
+  return targets.flatMap(g => g.rows.filter(r => r.type === 'boolean').map(r => r.key));
+};
+
+const scoreColumn = (col: Col, groupId?: string | null): number => {
+  const keys = booleanKeysForGroup(groupId ?? null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const pv = (planValues as any)?.[col.providerSlug]?.[col.planSlug] || {};
+  let s = 0;
+  for (const k of keys) {
+    if (pv[k] === true) s += 1;
+  }
+  return s;
+};
+
+const sortedColumns = computed<Col[]>(() => {
+  const arr = [...columns];
+
+  // Default = price ascending with score (all groups) as tie-breaker (desc)
+  if (sortMode.value === 'default') {
+    arr.sort((a, b) => {
+      const pa = priceOf(a);
+      const pb = priceOf(b);
+      if (pa !== pb) return pa - pb;
+      // tie-breaker: higher score first
+      return scoreColumn(b, null) - scoreColumn(a, null);
+    });
+    return arr;
+  }
+
+  if (sortMode.value === 'priceAsc') {
+    arr.sort((a, b) => priceOf(a) - priceOf(b));
+  } else if (sortMode.value === 'priceDesc') {
+    arr.sort((a, b) => priceOf(b) - priceOf(a));
+  } else if (sortMode.value === 'scoreAsc') {
+    arr.sort(
+      (a, b) => scoreColumn(a, scoreGroupId.value) - scoreColumn(b, scoreGroupId.value)
+    );
+  } else if (sortMode.value === 'scoreDesc') {
+    arr.sort(
+      (a, b) => scoreColumn(b, scoreGroupId.value) - scoreColumn(a, scoreGroupId.value)
+    );
+  }
+  return arr;
+});
+
+// --- Formatting & a11y ---
 const getUserLocale = (): string => {
   if (process.client && typeof navigator !== 'undefined' && navigator.language) {
     return navigator.language;
   }
-  // SSR: read Accept-Language header (Nuxt composable)
   const headers = useRequestHeaders(['accept-language']);
   const al = headers['accept-language'];
   if (al) {
     const first = al.split(',')[0]?.trim();
     if (first) return first;
   }
-  return 'en-US'; // fallback
+  return 'en-US';
 };
 
 const numberFormatter = new Intl.NumberFormat(getUserLocale(), {
-  maximumFractionDigits: 2,
+  maximumFractionDigits: 2
 });
 
-// Robust number coercion (handles numeric strings)
 const toNumber = (v: unknown): number | null => {
   if (typeof v === 'number' && Number.isFinite(v)) return v;
   if (typeof v === 'string') {
@@ -120,7 +230,7 @@ const formatValue = (val: unknown, type: FeatureType): string => {
   if (type === 'number') {
     const n = toNumber(val);
     return n === null ? '—' : numberFormatter.format(n);
-  }
+    }
   return String(val);
 };
 
@@ -133,7 +243,6 @@ const ariaLabel = (val: unknown, type: FeatureType): string => {
   }
   return String(val);
 };
-
 </script>
 
 <style scoped lang="scss">
