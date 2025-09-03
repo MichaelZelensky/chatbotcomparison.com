@@ -88,17 +88,22 @@ const columns: Col[] = providers.flatMap(p =>
 );
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const valueOf = (prov: string, plan: string, featureKey: string) => (planValues as any)?.[prov]?.[plan]?.[featureKey] ?? null;
+const valueOf = (prov: string, plan: string, featureKey: string) =>
+  (planValues as any)?.[prov]?.[plan]?.[featureKey] ?? null;
+
+const numberFormatter = new Intl.NumberFormat(navigator.language);
 
 const formatValue = (val: unknown, type: FeatureType): string => {
   if (val === null || val === undefined) return '—';
   if (type === 'boolean') return val ? '✓' : '—';
+  if (type === 'number' && typeof val === 'number') return numberFormatter.format(val);
   return String(val);
 };
 
 const ariaLabel = (val: unknown, type: FeatureType): string => {
   if (val === null || val === undefined) return 'Not available';
-  if (type === 'boolean') return (val ? 'Yes' : 'No');
+  if (type === 'boolean') return val ? 'Yes' : 'No';
+  if (type === 'number' && typeof val === 'number') return numberFormatter.format(val);
   return String(val);
 };
 </script>
