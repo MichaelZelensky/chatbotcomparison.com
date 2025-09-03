@@ -91,21 +91,55 @@ const columns: Col[] = providers.flatMap(p =>
 const valueOf = (prov: string, plan: string, featureKey: string) =>
   (planValues as any)?.[prov]?.[plan]?.[featureKey] ?? null;
 
-const numberFormatter = new Intl.NumberFormat(navigator.language);
+// Safe locale detection for SSR + client
+const getUserLocale = (): string => {
+  if (process.client && typeof navigator !== 'undefined' && navigator.language) {
+    return navigator.language;
+  }
+  // SSR: read Accept-Language header (Nuxt composable)
+  const headers = useRequestHeaders(['accept-language']);
+  const al = headers['accept-language'];
+  if (al) {
+    const first = al.split(',')[0]?.trim();
+    if (first) return first;
+  }
+  return 'en-US'; // fallback
+};
+
+const numberFormatter = new Intl.NumberFormat(getUserLocale(), {
+  maximumFractionDigits: 2,
+});
+
+// Robust number coercion (handles numeric strings)
+const toNumber = (v: unknown): number | null => {
+  if (typeof v === 'number' && Number.isFinite(v)) return v;
+  if (typeof v === 'string') {
+    const n = Number(v.replace(/\s/g, ''));
+    return Number.isFinite(n) ? n : null;
+  }
+  return null;
+};
 
 const formatValue = (val: unknown, type: FeatureType): string => {
   if (val === null || val === undefined) return '—';
   if (type === 'boolean') return val ? '✓' : '—';
-  if (type === 'number' && typeof val === 'number') return numberFormatter.format(val);
+  if (type === 'number') {
+    const n = toNumber(val);
+    return n === null ? '—' : numberFormatter.format(n);
+  }
   return String(val);
 };
 
 const ariaLabel = (val: unknown, type: FeatureType): string => {
   if (val === null || val === undefined) return 'Not available';
   if (type === 'boolean') return val ? 'Yes' : 'No';
-  if (type === 'number' && typeof val === 'number') return numberFormatter.format(val);
+  if (type === 'number') {
+    const n = toNumber(val);
+    return n === null ? 'Not available' : numberFormatter.format(n);
+  }
   return String(val);
 };
+
 </script>
 
 <style scoped lang="scss">
