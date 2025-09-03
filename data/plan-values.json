@@ -1167,5 +1167,67 @@
       "tls": true,
       "replication": true
     }
+  },
+  "chatbotcom": {
+    "starter": {
+      "planPrice": "$52",
+
+      "aiKnowledge": false,
+      "aiAnswers": false,
+      "crmSmartFilters": false,
+      "crmCustomAttrs": true,
+
+      "abTesting": false,
+      "advancedButtonActions": false,
+      "debugMode": false,
+      "interactionsPopularity": false,
+      "templatesLibrary": true
+    },
+
+    "team": {
+      "planPrice": "$174",
+
+      "aiKnowledge": true,
+      "aiAnswers": false,
+      "crmSmartFilters": true,
+      "crmCustomAttrs": true,
+
+      "abTesting": false,
+      "advancedButtonActions": true,
+      "debugMode": true,
+      "interactionsPopularity": true,
+      "templatesLibrary": true
+    },
+
+    "business": {
+      "planPrice": "$424",
+
+      "aiKnowledge": true,
+      "aiAnswers": true,
+      "crmSmartFilters": true,
+      "crmCustomAttrs": true,
+
+      "abTesting": true,
+      "advancedButtonActions": true,
+      "debugMode": true,
+      "interactionsPopularity": true,
+      "templatesLibrary": true
+    },
+
+    "enterprise": {
+      "planPrice": "Custom",
+
+      "aiKnowledge": true,
+      "aiAnswers": true,
+      "crmSmartFilters": true,
+      "crmCustomAttrs": true,
+
+      "abTesting": true,
+      "advancedButtonActions": true,
+      "debugMode": true,
+      "interactionsPopularity": true,
+      "templatesLibrary": true
+    }
   }
+
 }

@@ -21,5 +21,16 @@
       { "name": "Plus", "slug": "plus" },
       { "name": "Premium", "slug": "premium" }
     ]
+  },
+  {
+    "name": "ChatBot.com",
+    "slug": "chatbotcom",
+    "homepage": "https://www.chatbot.com/",
+    "plans": [
+      { "name": "Starter", "slug": "starter" },
+      { "name": "Team", "slug": "team" },
+      { "name": "Business", "slug": "business" },
+      { "name": "Enterprise", "slug": "enterprise" }
+    ]
   }
 ]

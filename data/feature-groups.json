@@ -140,7 +140,11 @@
       { "key": "unlimitedTemplates", "label": "Unlimited AI chatbot templates", "type": "boolean", "description": "Create as many chatbot templates as your workflows require." },
       { "key": "aiTriggers", "label": "AI-based triggers", "type": "boolean", "description": "Automatically detect user intent using AI." },
       { "key": "aiBlocks", "label": "AI-agent blocks", "type": "boolean", "description": "Use AI-powered building blocks to create smarter multi-channel flows." },
-      { "key": "automationQuota", "label": "Automation quota (visitors/month)", "type": "text", "description": "Monthly limit of unique visitors reached by automations/flows." }
+      { "key": "automationQuota", "label": "Automation quota (visitors/month)", "type": "text", "description": "Monthly limit of unique visitors reached by automations/flows." },
+      { "key": "abTesting", "label": "A/B testing", "type": "boolean", "description": "Distribute traffic between variants of chatbot flows to compare performance." },
+      { "key": "advancedButtonActions", "label": "Advanced button actions", "type": "boolean", "description": "Run actions (e.g., set attributes, add/remove segments) when users click buttons." },
+      { "key": "debugMode", "label": "Debug mode", "type": "boolean", "description": "Inspect and trace conversation flow execution (JSON view) for troubleshooting." },
+      { "key": "templatesLibrary", "label": "Templates library", "type": "boolean", "description": "Prebuilt templates for common use cases to jump-start new bots." }
     ]
   },
   {
@@ -154,7 +158,8 @@
       { "key": "hcSearch", "label": "Search", "type": "boolean", "description": "Search messages, articles, contacts, or plugins using advanced filters." },
       { "key": "hcFeedback", "label": "Article feedback", "type": "boolean", "description": "Let users rate and comment on help articles." },
       { "key": "hcDomain", "label": "Custom domain name", "type": "boolean", "description": "Use your own branded domain for the help center." },
-      { "key": "hcSeo", "label": "Sitemap & SEO meta data", "type": "boolean", "description": "Optimize the help center for search engines with sitemaps and metadata." }
+      { "key": "hcSeo", "label": "Sitemap & SEO meta data", "type": "boolean", "description": "Optimize the help center for search engines with sitemaps and metadata." },
+      { "key": "interactionsPopularity", "label": "Interactions popularity", "type": "boolean", "description": "See popularity metrics per interaction within a chatbot." }
     ]
   },
   {
