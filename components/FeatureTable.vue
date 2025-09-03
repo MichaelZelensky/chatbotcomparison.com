@@ -2,7 +2,7 @@
   <section>
     <h1 class="title">Chatbot Comparison</h1>
 
-    <!-- (Optional) Sort controls; default is already priceAsc+score tie-breaker -->
+    <!-- Sort controls (keep if useful; default already applied) -->
     <div v-if="columns.length && groups.length" class="mb-3 flex items-center gap-3">
       <label class="text-sm">Sort:</label>
       <select v-model="sortMode" class="border rounded px-2 py-1 text-sm">
@@ -33,6 +33,7 @@
               <div class="column-heading">
                 <div class="text-xs opacity-70">{{ column.providerName }}</div>
                 <div>{{ column.planName }}</div>
+                <div class="text-xs opacity-70">Total: {{ totalScore(column) }}</div>
               </div>
             </th>
           </tr>
@@ -43,7 +44,16 @@
             <th scope="rowgroup" class="group-heading">
               {{ featureGroup.label }}
             </th>
-            <td v-for="column in sortedColumns" :key="column.key + '-group'" class="group-cell"></td>
+            <!-- Group score per plan -->
+            <td
+              v-for="column in sortedColumns"
+              :key="column.key + '-group'"
+              class="group-cell"
+              :aria-label="`Score for ${featureGroup.label}: ${groupScore(column, featureGroup.id)}`"
+              :title="`Features available in ${featureGroup.label}`"
+            >
+              {{ groupScore(column, featureGroup.id) }}
+            </td>
           </tr>
 
           <tr
@@ -119,28 +129,19 @@ const valueOf = (prov: string, plan: string, featureKey: string) =>
   (planValues as any)?.[prov]?.[plan]?.[featureKey] ?? null;
 
 // --- Sorting state ---
-// "default" means price ascending + score (all groups) tie-breaker (desc)
+// "default" = price ascending, tie-breaker by total score (desc)
 const sortMode = ref<'default' | 'priceAsc' | 'priceDesc' | 'scoreAsc' | 'scoreDesc'>('default');
-// null = all groups; or specific group id to limit score calculation
+// Optional: limit score calculations to a chosen group from the dropdown
 const scoreGroupId = ref<string | null>(null);
 
-// --- Helpers for price + score ---
-/**
- * Extract a numeric price from strings like:
- * "$0", "From $59", "From $2,999", "€199", "Custom"
- * - Commas are removed before parse (2,999 -> 2999)
- * - Non-numerics / "Custom" -> Infinity (sorted last for ascending)
- */
+// --- Price parsing & helpers ---
 const parsePrice = (raw: unknown): number => {
   if (raw == null) return Number.POSITIVE_INFINITY;
   const s = String(raw).trim();
   if (/^custom/i.test(s)) return Number.POSITIVE_INFINITY;
-
-  // Find first number token, allowing commas and decimals
   const m = s.match(/(\d[\d,]*\.?\d*)/);
   if (!m) return Number.POSITIVE_INFINITY;
-
-  const cleaned = m[1].replace(/,/g, ''); // "2,999" -> "2999"
+  const cleaned = m[1].replace(/,/g, '');
   const n = Number(cleaned);
   return Number.isFinite(n) ? n : Number.POSITIVE_INFINITY;
 };
@@ -150,33 +151,42 @@ const priceOf = (col: Col): number => {
   return parsePrice(v);
 };
 
+// --- Score helpers ---
 const booleanKeysForGroup = (groupId?: string | null): string[] => {
   const targets = groupId ? groups.filter(g => g.id === groupId) : groups;
   return targets.flatMap(g => g.rows.filter(r => r.type === 'boolean').map(r => r.key));
 };
 
-const scoreColumn = (col: Col, groupId?: string | null): number => {
+// Lightweight caches (static data so OK)
+const scoreCache = new Map<string, number>(); // key: `${col.key}|${groupId ?? 'ALL'}`
+const computeScore = (col: Col, groupId?: string | null): number => {
+  const key = `${col.key}|${groupId ?? 'ALL'}`;
+  const cached = scoreCache.get(key);
+  if (cached != null) return cached;
+
   const keys = booleanKeysForGroup(groupId ?? null);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const pv = (planValues as any)?.[col.providerSlug]?.[col.planSlug] || {};
   let s = 0;
-  for (const k of keys) {
-    if (pv[k] === true) s += 1;
-  }
+  for (const k of keys) if (pv[k] === true) s += 1;
+  scoreCache.set(key, s);
   return s;
 };
 
+const groupScore = (col: Col, groupId: string): number => computeScore(col, groupId);
+const totalScore = (col: Col): number => computeScore(col, null);
+
+// --- Sorted columns ---
 const sortedColumns = computed<Col[]>(() => {
   const arr = [...columns];
 
-  // Default = price ascending with score (all groups) as tie-breaker (desc)
   if (sortMode.value === 'default') {
     arr.sort((a, b) => {
       const pa = priceOf(a);
       const pb = priceOf(b);
       if (pa !== pb) return pa - pb;
-      // tie-breaker: higher score first
-      return scoreColumn(b, null) - scoreColumn(a, null);
+      // tie-breaker: higher total score first
+      return totalScore(b) - totalScore(a);
     });
     return arr;
   }
@@ -187,11 +197,11 @@ const sortedColumns = computed<Col[]>(() => {
     arr.sort((a, b) => priceOf(b) - priceOf(a));
   } else if (sortMode.value === 'scoreAsc') {
     arr.sort(
-      (a, b) => scoreColumn(a, scoreGroupId.value) - scoreColumn(b, scoreGroupId.value)
+      (a, b) => computeScore(a, scoreGroupId.value) - computeScore(b, scoreGroupId.value)
     );
   } else if (sortMode.value === 'scoreDesc') {
     arr.sort(
-      (a, b) => scoreColumn(b, scoreGroupId.value) - scoreColumn(a, scoreGroupId.value)
+      (a, b) => computeScore(b, scoreGroupId.value) - computeScore(a, scoreGroupId.value)
     );
   }
   return arr;
@@ -230,7 +240,7 @@ const formatValue = (val: unknown, type: FeatureType): string => {
   if (type === 'number') {
     const n = toNumber(val);
     return n === null ? '—' : numberFormatter.format(n);
-    }
+  }
   return String(val);
 };
 
