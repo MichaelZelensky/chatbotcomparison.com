@@ -10,20 +10,19 @@
 
         <thead>
           <tr>
-            <th scope="col">Feature</th>
-            <th v-for="col in cols" :key="col.key" scope="col">
-              <div class="col-heading">
-                <div class="text-xs opacity-70">{{ col.providerName }}</div>
-                <div>{{ col.planName }}</div>
+            <th scope="column">Feature</th>
+            <th v-for="column in columns" :key="column.key" scope="column">
+              <div class="column-heading">
+                <div class="text-xs opacity-70">{{ column.providerName }}</div>
+                <div>{{ column.planName }}</div>
               </div>
             </th>
           </tr>
         </thead>
 
-        <!-- ✅ one tbody per featureGroup -->
         <tbody v-for="featureGroup in groups" :key="featureGroup.id">
           <tr class="group-row">
-            <th :colspan="cols.length + 1" scope="rowgroup">
+            <th :colspan="columns.length + 1" scope="rowgroup">
               {{ featureGroup.label }}
             </th>
           </tr>
@@ -44,13 +43,13 @@
             </th>
 
             <td
-              v-for="col in cols"
-              :key="col.key + '-' + featureRow.key"
+              v-for="column in columns"
+              :key="column.key + '-' + featureRow.key"
             >
               <span
-                :aria-label="ariaLabel(valueOf(col.providerSlug, col.planSlug, featureRow.key), featureRow.type)"
+                :aria-label="ariaLabel(valueOf(column.providerSlug, column.planSlug, featureRow.key), featureRow.type)"
               >
-                {{ formatValue(valueOf(col.providerSlug, col.planSlug, featureRow.key), featureRow.type) }}
+                {{ formatValue(valueOf(column.providerSlug, column.planSlug, featureRow.key), featureRow.type) }}
               </span>
             </td>
           </tr>
@@ -106,7 +105,7 @@ const ariaLabel = (val: unknown, type: FeatureType): string => {
 
 <style scoped lang="scss">
 .title { @apply text-lg font-bold mb-4; }
-.col-heading { @apply leading-tight; }
+.column-heading { @apply leading-tight; }
 
 .group-row > th {
   @apply bg-transparent text-sm uppercase tracking-wide text-[color:var(--muted)];
