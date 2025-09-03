@@ -292,7 +292,7 @@ const ariaLabel = (val: unknown, type: FeatureType): string => {
 .title { @apply text-lg font-bold mb-4; }
 .column-heading { @apply leading-tight; }
 .group-row > th {
-  @apply bg-transparent text-sm uppercase tracking-wide text-[color:var(--muted)];
+  @apply text-sm uppercase tracking-wide text-[color:var(--muted)];
   border-bottom: 1px solid var(--border);
 }
 .row-heading { @apply font-normal text-left; }
