@@ -163,6 +163,7 @@ const isPricingGroup = (groupId: string) => priceGroupIds.has(groupId);
 // --- Sorting state ---
 // Default = price ascending, tie-breaker by total score (desc)
 const sortMode = ref<'default' | 'priceAsc' | 'priceDesc' | 'scoreAsc' | 'scoreDesc'>('default');
+const scoreGroupId = ref<string | null>(null);
 
 // --- Price parsing & helpers ---
 const parsePrice = (raw: unknown): number => {
@@ -209,7 +210,6 @@ const groupScore = (col: Col, groupId: string): number =>
 const totalScore = (col: Col): number =>
   computeScore(col, null);
 
-// --- Sorted columns ---
 const sortedColumns = computed<Col[]>(() => {
   const arr = [...columns];
 
@@ -229,9 +229,13 @@ const sortedColumns = computed<Col[]>(() => {
   } else if (sortMode.value === 'priceDesc') {
     arr.sort((a, b) => priceOf(b) - priceOf(a));
   } else if (sortMode.value === 'scoreAsc') {
-    arr.sort((a, b) => totalScore(a) - totalScore(b));
+    arr.sort(
+      (a, b) => computeScore(a, scoreGroupId.value) - computeScore(b, scoreGroupId.value)
+    );
   } else if (sortMode.value === 'scoreDesc') {
-    arr.sort((a, b) => totalScore(b) - totalScore(a));
+    arr.sort(
+      (a, b) => computeScore(b, scoreGroupId.value) - computeScore(a, scoreGroupId.value)
+    );
   }
   return arr;
 });
