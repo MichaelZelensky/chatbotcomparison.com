@@ -33,29 +33,56 @@
               <div class="column-heading">
                 <div class="text-xs opacity-70">{{ column.providerName }}</div>
                 <div>{{ column.planName }}</div>
-                <div class="text-xs opacity-70">Total: {{ totalScore(column) }}</div>
               </div>
             </th>
           </tr>
         </thead>
 
-        <tbody v-for="featureGroup in groups" :key="featureGroup.id">
+        <!-- Total score row (on top) -->
+        <tbody>
+          <tr class="total-row">
+            <th scope="row" class="group-heading text-right">
+              Total score
+            </th>
+            <td
+              v-for="column in sortedColumns"
+              :key="column.key + '-total'"
+              class="group-cell text-right uppercase tracking-wide text-[color:var(--muted)] text-sm"
+              :aria-label="`Total score: ${totalScore(column)}`"
+              title="Sum of available boolean features across all groups"
+            >
+              {{ totalScore(column) }}
+            </td>
+          </tr>
+        </tbody>
+
+        <!-- Groups -->
+        <tbody v-for="(featureGroup, gIdx) in groups" :key="featureGroup.id">
           <tr class="group-row">
-            <th scope="rowgroup" class="group-heading">
+            <th
+              scope="rowgroup"
+              class="group-heading"
+              :class="{ 'pt-3': gIdx > 0 }"
+            >
               {{ featureGroup.label }}
             </th>
-            <!-- Group score per plan -->
+
+            <!-- Group score per plan (skip for Pricing group) -->
             <td
               v-for="column in sortedColumns"
               :key="column.key + '-group'"
-              class="group-cell"
-              :aria-label="`Score for ${featureGroup.label}: ${groupScore(column, featureGroup.id)}`"
-              :title="`Features available in ${featureGroup.label}`"
+              class="group-cell text-right uppercase tracking-wide text-[color:var(--muted)] text-sm"
+              :class="{ 'pt-3': gIdx > 0 }"
+              :aria-label="isPricingGroup(featureGroup.id) ? `Pricing group (no score)` : `Score for ${featureGroup.label}: ${groupScore(column, featureGroup.id)}`"
+              :title="isPricingGroup(featureGroup.id) ? 'Pricing group (score not shown)' : `Features available in ${featureGroup.label}`"
             >
-              {{ groupScore(column, featureGroup.id) }}
+              <template v-if="!isPricingGroup(featureGroup.id)">
+                {{ groupScore(column, featureGroup.id) }}
+              </template>
             </td>
           </tr>
 
+          <!-- Feature rows -->
           <tr
             v-for="featureRow in featureGroup.rows"
             :key="featureGroup.id + '-' + featureRow.key"
@@ -106,6 +133,9 @@ import planValues from '~/data/plan-values.json';
 const groups = groupsJson as FeatureGroup[];
 const providers = providersJson as Provider[];
 
+// If your "Pricing" group has another id, add it here.
+const priceGroupIds = new Set<string>(['pricing']);
+
 type Col = {
   key: string;
   providerSlug: string;
@@ -128,11 +158,11 @@ const columns: Col[] = providers.flatMap(p =>
 const valueOf = (prov: string, plan: string, featureKey: string) =>
   (planValues as any)?.[prov]?.[plan]?.[featureKey] ?? null;
 
+const isPricingGroup = (groupId: string) => priceGroupIds.has(groupId);
+
 // --- Sorting state ---
-// "default" = price ascending, tie-breaker by total score (desc)
+// Default = price ascending, tie-breaker by total score (desc)
 const sortMode = ref<'default' | 'priceAsc' | 'priceDesc' | 'scoreAsc' | 'scoreDesc'>('default');
-// Optional: limit score calculations to a chosen group from the dropdown
-const scoreGroupId = ref<string | null>(null);
 
 // --- Price parsing & helpers ---
 const parsePrice = (raw: unknown): number => {
@@ -157,7 +187,7 @@ const booleanKeysForGroup = (groupId?: string | null): string[] => {
   return targets.flatMap(g => g.rows.filter(r => r.type === 'boolean').map(r => r.key));
 };
 
-// Lightweight caches (static data so OK)
+// Cache scores (static data)
 const scoreCache = new Map<string, number>(); // key: `${col.key}|${groupId ?? 'ALL'}`
 const computeScore = (col: Col, groupId?: string | null): number => {
   const key = `${col.key}|${groupId ?? 'ALL'}`;
@@ -173,8 +203,11 @@ const computeScore = (col: Col, groupId?: string | null): number => {
   return s;
 };
 
-const groupScore = (col: Col, groupId: string): number => computeScore(col, groupId);
-const totalScore = (col: Col): number => computeScore(col, null);
+const groupScore = (col: Col, groupId: string): number =>
+  computeScore(col, groupId);
+
+const totalScore = (col: Col): number =>
+  computeScore(col, null);
 
 // --- Sorted columns ---
 const sortedColumns = computed<Col[]>(() => {
@@ -196,13 +229,9 @@ const sortedColumns = computed<Col[]>(() => {
   } else if (sortMode.value === 'priceDesc') {
     arr.sort((a, b) => priceOf(b) - priceOf(a));
   } else if (sortMode.value === 'scoreAsc') {
-    arr.sort(
-      (a, b) => computeScore(a, scoreGroupId.value) - computeScore(b, scoreGroupId.value)
-    );
+    arr.sort((a, b) => totalScore(a) - totalScore(b));
   } else if (sortMode.value === 'scoreDesc') {
-    arr.sort(
-      (a, b) => computeScore(b, scoreGroupId.value) - computeScore(a, scoreGroupId.value)
-    );
+    arr.sort((a, b) => totalScore(b) - totalScore(a));
   }
   return arr;
 });
