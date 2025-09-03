@@ -7,7 +7,8 @@
       { "key": "agentsIncluded", "label": "Agents included", "type": "number", "description": "Number of agent licenses included in your plan at no extra cost." },
       { "key": "additionalAgentPrice", "label": "Additional agents (per month)", "type": "text", "description": "Add more seats to your plan and scale your team as needed." },
       { "key": "customerProfiles", "label": "Customer Profiles", "type": "number", "description": "Maximum number of unique customer profiles you can manage in your workspace." },
-      { "key": "aiUsage", "label": "AI Usage", "type": "text", "description": "Number of AI-powered actions (like summaries or replies) available per day." }
+      { "key": "aiUsage", "label": "AI Usage", "type": "text", "description": "Number of AI-powered actions (like summaries or replies) available per day." },
+      { "key": "billableConversations", "label": "Billable conversations limit", "type": "text", "description": "Monthly limit for human-handled conversations (if applicable)." }
     ]
   },
   {
@@ -105,7 +106,8 @@
       { "key": "mcpServer", "label": "MCP Server (soon)", "type": "boolean", "description": "Dedicated AI infrastructure for high performance and privacy." },
       { "key": "autoTags", "label": "Auto-tagging of conversations", "type": "boolean", "description": "Automatically classify conversations using AI." },
       { "key": "summary", "label": "Conversation summary", "type": "boolean", "description": "Generate a concise summary of any conversation when needed." },
-      { "key": "aiAgent", "label": "AI Agent (soon)", "type": "boolean", "description": "Deploy an autonomous AI agent to handle customer conversations end to end." }
+      { "key": "aiAgent", "label": "AI Agent (soon)", "type": "boolean", "description": "Deploy an autonomous AI agent to handle customer conversations end to end." },
+      { "key": "aiConversationsQuota", "label": "AI conversations quota", "type": "text", "description": "Monthly AI bot conversations included (if applicable)." }
     ]
   },
   {
@@ -137,7 +139,8 @@
       { "key": "iframes", "label": "Iframes", "type": "boolean", "description": "Embed external content or tools directly within the chat." },
       { "key": "unlimitedTemplates", "label": "Unlimited AI chatbot templates", "type": "boolean", "description": "Create as many chatbot templates as your workflows require." },
       { "key": "aiTriggers", "label": "AI-based triggers", "type": "boolean", "description": "Automatically detect user intent using AI." },
-      { "key": "aiBlocks", "label": "AI-agent blocks", "type": "boolean", "description": "Use AI-powered building blocks to create smarter multi-channel flows." }
+      { "key": "aiBlocks", "label": "AI-agent blocks", "type": "boolean", "description": "Use AI-powered building blocks to create smarter multi-channel flows." },
+      { "key": "automationQuota", "label": "Automation quota (visitors/month)", "type": "text", "description": "Monthly limit of unique visitors reached by automations/flows." }
     ]
   },
   {

@@ -11,12 +11,15 @@
     ]
   },
   {
-    "name": "Intercom",
-    "slug": "intercom",
-    "homepage": "https://www.intercom.com/",
+    "name": "Tidio",
+    "slug": "tidio",
+    "homepage": "https://www.tidio.com/",
     "plans": [
+      { "name": "Free", "slug": "free" },
       { "name": "Starter", "slug": "starter" },
-      { "name": "Pro", "slug": "pro" }
+      { "name": "Growth", "slug": "growth" },
+      { "name": "Plus", "slug": "plus" },
+      { "name": "Premium", "slug": "premium" }
     ]
   }
 ]

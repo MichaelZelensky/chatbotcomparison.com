@@ -1,0 +1,2088 @@
+{
+  "props": {
+    "pageProps": {
+      "layout": {
+        "footer": {
+          "benefits": {
+            "benefits": [
+              {
+                "icon": {
+                  "src": "/images/footer/benefits/stars.svg",
+                  "alt": "Boosted with AI"
+                },
+                "text": "Boosted with AI"
+              },
+              {
+                "icon": {
+                  "src": "/images/footer/benefits/support.svg",
+                  "alt": "24h/5 support"
+                },
+                "text": "24h/5 support"
+              },
+              {
+                "icon": {
+                  "src": "/images/footer/benefits/smile.svg",
+                  "alt": "Easy to use"
+                },
+                "text": "Easy to use"
+              },
+              {
+                "icon": {
+                  "src": "/images/footer/benefits/lightning.svg",
+                  "alt": "Lightweight widget"
+                },
+                "text": "Lightweight widget"
+              }
+            ]
+          },
+          "platforms": {
+            "label": "Available on:",
+            "platformItems": [
+              {
+                "icon": {
+                  "src": "/images/footer/platforms/browser.svg",
+                  "alt": ""
+                },
+                "titleAttr": "Browser",
+                "isExternal": true,
+                "linkOptions": {
+                  "defaultHref": "/panel/settings/download-app"
+                },
+                "title": "Browser",
+                "analyticsLabel": "Browser"
+              },
+              {
+                "icon": {
+                  "src": "/images/footer/platforms/android.svg",
+                  "alt": ""
+                },
+                "titleAttr": "Android",
+                "isExternal": true,
+                "isNoFollow": true,
+                "linkOptions": {
+                  "defaultHref": "https://play.google.com/store/apps/details?id=com.tidiochat.app\u0026pli=1"
+                },
+                "title": "Android",
+                "analyticsLabel": "Android"
+              },
+              {
+                "icon": {
+                  "src": "/images/footer/platforms/mac.svg",
+                  "alt": ""
+                },
+                "titleAttr": "iOS",
+                "isExternal": true,
+                "isNoFollow": true,
+                "linkOptions": {
+                  "defaultHref": "https://itunes.apple.com/pl/app/tidio-chat/id916822567?mt=8"
+                },
+                "title": "iOS",
+                "analyticsLabel": "iOS"
+              },
+              {
+                "icon": {
+                  "src": "/images/footer/platforms/windows.svg",
+                  "alt": ""
+                },
+                "titleAttr": "Windows",
+                "isExternal": true,
+                "linkOptions": {
+                  "defaultHref": "/panel/settings/download-app"
+                },
+                "title": "Windows",
+                "analyticsLabel": "Windows"
+              },
+              {
+                "icon": {
+                  "src": "/images/footer/platforms/mac.svg",
+                  "alt": ""
+                },
+                "titleAttr": "Mac",
+                "isExternal": true,
+                "linkOptions": {
+                  "defaultHref": "/panel/settings/download-app"
+                },
+                "title": "Mac",
+                "analyticsLabel": "Mac"
+              }
+            ]
+          }
+        }
+      },
+      "addonsBox": {
+        "header": "Upgrade your plan with extra automation features",
+        "lyro": {
+          "type": "lyro",
+          "header": "Lyro AI Agent",
+          "description": "Reclaim up to 67% of your team's time. Automatically answer common questions and perform recurring tasks",
+          "features": [
+            {
+              "text": "Reduce repetitive questions from your team's workload",
+              "forPremiumPlusPlans": false
+            },
+            {
+              "text": "Assist multiple customers simultaneously",
+              "forPremiumPlusPlans": false
+            },
+            {
+              "text": "Answer inquiries across channels in multiple languages",
+              "forPremiumPlusPlans": false
+            },
+            { "text": "Multilanguage", "forPremiumPlusPlans": true },
+            { "text": "Lyro as managed service", "forPremiumPlusPlans": true },
+            { "text": "OpenAPI", "forPremiumPlusPlans": true }
+          ],
+          "optionsHeader": "Lyro AI conversations",
+          "optionsTippy": "A Lyro AI conversation is a customer interaction that has at least one reply from our Al support agent.",
+          "benefitTitle": "Annual savings",
+          "benefitDescription": "Estimated savings on support costs",
+          "benefitValueDescription": "Money saved",
+          "benefitTippy": "Annual savings assuming an average _CURRENCY_42k annual salary of a CS rep in US and Lyro AI's average response rate of 55%. The assumed cost of a human agent answering one conversation is _CURRENCY_6.73."
+        },
+        "flows": {
+          "type": "flows",
+          "header": "Flows",
+          "description": "Boost your lead gen and sales funnels with Flows - no-code conversion paths that trigger at crucial moments in the customer journey",
+          "features": [
+            { "text": "Automate conversation pathways" },
+            { "text": "Reduce your support volume" },
+            { "text": "Win your audience with relevant offers" }
+          ],
+          "optionsHeader": "Visitors reached with Flows",
+          "optionsTippy": "Visitors reached with Flows are unique users who received automated messages from Flows.",
+          "benefitTitle": "Higher CVR",
+          "benefitDescription": "Estimated value from Flows",
+          "benefitValueDescription": "Conversation uplift",
+          "benefitTippy": "Average uplift in conversion rates among all of our customers using Flows"
+        },
+        "selectLabels": {
+          "visitorsReachedPerMonth": "_NUMBER_ visitors reached / month",
+          "conversationsPerMonth": "_NUMBER_ conversations / month",
+          "conversationsOneTime": "_NUMBER_ conversations (one-time)",
+          "upToXLyroAiConversations": "Up to _NUMBER_ Lyro AI conversations",
+          "askSales": "Ask sales",
+          "custom": "Custom",
+          "includedInXPlan": "Included in _PLANNAME_ plan"
+        }
+      },
+      "automationsData": {
+        "lyro": {
+          "variants": [
+            {
+              "id": 1,
+              "value": 50,
+              "type": "one-time",
+              "price": 0,
+              "benefit": { "type": "price", "value": 14610 }
+            },
+            {
+              "id": 2,
+              "value": 50,
+              "type": "monthly",
+              "price": 3900,
+              "benefit": { "type": "price", "value": 175315 }
+            },
+            {
+              "id": 3,
+              "value": 100,
+              "type": "monthly",
+              "price": 7500,
+              "benefit": { "type": "price", "value": 354231 }
+            },
+            {
+              "id": 4,
+              "value": 150,
+              "type": "monthly",
+              "price": 11000,
+              "benefit": { "type": "price", "value": 534406 }
+            },
+            {
+              "id": 5,
+              "value": 200,
+              "type": "monthly",
+              "price": 14000,
+              "benefit": { "type": "price", "value": 720462 }
+            },
+            {
+              "id": 6,
+              "value": 300,
+              "type": "monthly",
+              "price": 21000,
+              "benefit": { "type": "price", "value": 1080692 }
+            },
+            {
+              "id": 9,
+              "value": 500,
+              "type": "monthly",
+              "price": 35000,
+              "benefit": { "type": "price", "value": 1801154 }
+            },
+            {
+              "id": 10,
+              "value": 750,
+              "type": "monthly",
+              "price": 52500,
+              "benefit": { "type": "price", "value": 2701731 }
+            },
+            {
+              "id": 11,
+              "value": 1000,
+              "type": "monthly",
+              "price": 70000,
+              "benefit": { "type": "price", "value": 3602308 }
+            },
+            {
+              "id": 7,
+              "value": 5000,
+              "type": "upto",
+              "price": 0,
+              "benefit": { "type": "askSales" },
+              "onlyForPlan": "plus"
+            },
+            {
+              "id": 8,
+              "value": 5000,
+              "type": "from",
+              "price": 0,
+              "benefit": { "type": "askSales" },
+              "onlyForPlan": "premium"
+            }
+          ]
+        },
+        "flows": {
+          "variants": [
+            {
+              "id": 1,
+              "value": 100,
+              "type": "monthly",
+              "price": 0,
+              "benefit": { "type": "percentage", "percent": 26 }
+            },
+            {
+              "id": 2,
+              "value": 2000,
+              "type": "monthly",
+              "price": 2900,
+              "benefit": { "type": "percentage", "percent": 26 }
+            },
+            {
+              "id": 3,
+              "value": 3000,
+              "type": "monthly",
+              "price": 3900,
+              "benefit": { "type": "percentage", "percent": 26 }
+            },
+            {
+              "id": 4,
+              "value": 5000,
+              "type": "monthly",
+              "price": 4900,
+              "benefit": { "type": "percentage", "percent": 26 }
+            },
+            {
+              "id": 5,
+              "value": 10000,
+              "type": "monthly",
+              "price": 6900,
+              "benefit": { "type": "percentage", "percent": 26 }
+            },
+            {
+              "id": 6,
+              "value": 15000,
+              "type": "monthly",
+              "price": 8500,
+              "benefit": { "type": "percentage", "percent": 26 }
+            },
+            {
+              "id": 7,
+              "value": 20000,
+              "type": "monthly",
+              "price": 9900,
+              "benefit": { "type": "percentage", "percent": 26 }
+            },
+            {
+              "id": 8,
+              "value": 30000,
+              "type": "monthly",
+              "price": 11900,
+              "benefit": { "type": "percentage", "percent": 26 }
+            },
+            {
+              "id": 9,
+              "value": 40000,
+              "type": "monthly",
+              "price": 13900,
+              "benefit": { "type": "percentage", "percent": 26 }
+            },
+            {
+              "id": 10,
+              "value": 50000,
+              "type": "monthly",
+              "price": 16900,
+              "benefit": { "type": "percentage", "percent": 26 }
+            },
+            {
+              "id": 11,
+              "value": 75000,
+              "type": "monthly",
+              "price": 23900,
+              "benefit": { "type": "percentage", "percent": 26 }
+            },
+            {
+              "id": 12,
+              "value": 100000,
+              "type": "monthly",
+              "price": 29900,
+              "benefit": { "type": "percentage", "percent": 26 }
+            },
+            {
+              "id": 13,
+              "value": null,
+              "type": "custom",
+              "price": 0,
+              "benefit": { "type": "percentage", "percent": 26 },
+              "onlyForPlan": "plus"
+            },
+            {
+              "id": 14,
+              "value": null,
+              "type": "custom",
+              "price": 0,
+              "benefit": { "type": "percentage", "percent": 26 },
+              "onlyForPlan": "premium"
+            }
+          ]
+        }
+      },
+      "plans": {
+        "free": {
+          "key": "free",
+          "name": "Free",
+          "description": {
+            "v5": "For solo entrepreneurs",
+            "v6": "For solo entrepreneurs"
+          },
+          "variants": [{ "variantId": 1, "value": 50, "price": 0 }],
+          "features": [
+            {
+              "key": "HandledConversations",
+              "featured": false,
+              "quotaVariant": { "type": "singleNumber", "value": 50 }
+            },
+            {
+              "key": "ActiveOperatorsLimitFeature",
+              "quotaVariant": { "type": "singleNumber", "value": 10 }
+            },
+            { "key": "CustomerServiceLivechat", "featured": true },
+            { "key": "CustomerServiceTicketingSystem", "featured": true },
+            { "key": "CustomerServiceEmailManagementSystemFeature" },
+            { "key": "CustomerServiceLiveVideoCalls" },
+            { "key": "SocialMediaIntegrations", "featured": true },
+            { "key": "LyroTasks" },
+            { "key": "LyroFAQUpload" },
+            { "key": "LyroFAQScraper" },
+            { "key": "LyroWebsiteScraper" },
+            { "key": "AutomationSalesChatbotsTemplates" },
+            { "key": "AutomationFAQChatbotsTemplates" },
+            { "key": "AutomationVisualChatbotBuilder" },
+            { "key": "CustomerServiceTidioAIReplyAssistant" },
+            { "key": "CustomerServiceAnalyticsBasic" },
+            { "key": "CustomerServiceMessengerIntegration" },
+            { "key": "CustomerServiceInstagramIntegration" },
+            { "key": "CustomerServiceWhatsappIntegration" },
+            { "key": "CustomerServiceEmailIntegration" },
+            { "key": "AppIntegrations" },
+            { "key": "CustomerServiceDesktopApp" },
+            { "key": "CustomerServiceMobileApp" },
+            { "key": "SupportOverEmail" },
+            { "key": "WidgetCustomization" },
+            { "key": "AICopilot" }
+          ]
+        },
+        "starter": {
+          "key": "starter",
+          "name": "Starter",
+          "description": {
+            "v5": "Ideal for small businesses focused on enhancing customer satisfaction via live chat support.",
+            "v6": "For solo entrepreneurs starting with live chat and basic automation"
+          },
+          "variants": [{ "variantId": 2, "value": 100, "price": 2900 }],
+          "features": [
+            {
+              "key": "HandledConversations",
+              "featured": false,
+              "quotaVariant": { "type": "singleNumber", "value": 100 }
+            },
+            { "key": "LyroQuotaOneTime", "featured": true },
+            {
+              "key": "AutomationQuota",
+              "featured": true,
+              "quotaVariant": { "type": "singleNumber", "value": 100 }
+            },
+            {
+              "key": "ActiveOperatorsLimitFeature",
+              "quotaVariant": { "type": "singleNumber", "value": 10 },
+              "featured": true
+            },
+            { "key": "LiveChatAndTicketing", "featured": true },
+            { "key": "CustomerServiceLivechat" },
+            { "key": "CustomerServiceTicketingSystem" },
+            { "key": "CustomerServiceEmailManagementSystemFeature" },
+            { "key": "CustomerServiceLiveVideoCalls" },
+            { "key": "CustomerServiceAnalyticsBasic", "featured": true },
+            { "key": "CustomerServiceLiveVisitorsList", "featured": false },
+            { "key": "CustomerServiceOperatingHours", "featured": false },
+            { "key": "LyroTasks" },
+            { "key": "LyroFAQUpload" },
+            { "key": "LyroFAQScraper" },
+            { "key": "LyroWebsiteScraper" },
+            { "key": "AutomationSalesChatbotsTemplates" },
+            { "key": "AutomationFAQChatbotsTemplates" },
+            { "key": "AutomationVisualChatbotBuilder" },
+            { "key": "CustomerServiceTidioAIReplyAssistant" },
+            { "key": "CustomerServiceChatOnSite" },
+            { "key": "CustomerServiceMessengerIntegration" },
+            { "key": "CustomerServiceInstagramIntegration" },
+            { "key": "CustomerServiceWhatsappIntegration" },
+            { "key": "CustomerServiceEmailIntegration" },
+            { "key": "AppIntegrations" },
+            { "key": "CustomerServiceDesktopApp" },
+            { "key": "CustomerServiceMobileApp" },
+            { "key": "SupportOverEmail" },
+            { "key": "WidgetCustomization" },
+            {
+              "key": "AICopilot",
+              "featured": true,
+              "hiddenInColumn": false,
+              "customOrder": 1
+            },
+            { "key": "SocialMediaIntegrations", "featured": true }
+          ]
+        },
+        "growth": {
+          "key": "growth",
+          "isPopular": true,
+          "name": "Growth",
+          "description": {
+            "v5": "Ideal for teams of all sizes prioritizing customer service as their competitive advantage.",
+            "v6": "Optimize support operations and drive customer satisfaction"
+          },
+          "variants": [
+            { "variantId": 3, "value": 250, "price": 5900 },
+            { "variantId": 4, "value": 400, "price": 8900 },
+            { "variantId": 5, "value": 600, "price": 12900 },
+            { "variantId": 6, "value": 800, "price": 15900 },
+            { "variantId": 7, "value": 1000, "price": 17900 },
+            { "variantId": 8, "value": 1500, "price": 24900 },
+            { "variantId": 9, "value": 2000, "price": 34900 }
+          ],
+          "features": [
+            {
+              "key": "HandledConversations",
+              "featured": false,
+              "quotaVariant": { "type": "upTo", "value": 2000 }
+            },
+            {
+              "key": "ActiveOperatorsLimitFeature",
+              "quotaVariant": { "type": "singleNumber", "value": 10 }
+            },
+            { "key": "CustomerServiceLivechat" },
+            { "key": "CustomerServiceTicketingSystem" },
+            { "key": "CustomerServiceEmailManagementSystemFeature" },
+            { "key": "CustomerServiceLiveVideoCalls" },
+            { "key": "CustomerServiceAnalyticsAdvanced", "featured": true },
+            { "key": "TidioPowerFeatures", "featured": false },
+            { "key": "NoTidioBrandingAddon", "featured": false },
+            { "key": "CustomerServicePermissions", "featured": true },
+            { "key": "LyroTasks" },
+            { "key": "LyroFAQUpload" },
+            { "key": "LyroFAQScraper" },
+            { "key": "LyroWebsiteScraper" },
+            { "key": "AutomationSalesChatbotsTemplates" },
+            { "key": "AutomationFAQChatbotsTemplates" },
+            { "key": "AutomationVisualChatbotBuilder" },
+            { "key": "CustomerServiceTidioAIReplyAssistant" },
+            { "key": "CustomerServiceAnalyticsBasic" },
+            { "key": "CustomerServiceLiveVisitorsList" },
+            { "key": "CustomerServiceOperatingHours" },
+            { "key": "CustomerServiceChatOnSite" },
+            { "key": "CustomerServiceAnalyticsAdvanced" },
+            { "key": "CustomerServiceLiveTyping", "featured": true },
+            { "key": "CustomerServiceViewedPagesHistory", "featured": true },
+            { "key": "CustomerServiceVisitorInfo" },
+            { "key": "CustomerServiceVisitorNotes" },
+            { "key": "CustomerServiceAutomaticResponse", "featured": true },
+            {
+              "key": "CustomerServiceAutomaticChatAssignment",
+              "featured": true
+            },
+            { "key": "CustomerServiceAutomatedSatisfactionSurvey" },
+            { "key": "CustomerServiceAutomatedConversationSolving" },
+            { "key": "CustomerServiceCannedResponses", "featured": true },
+            { "key": "CustomerServicePermissions" },
+            { "key": "CustomerServiceNativeShopifyActions" },
+            { "key": "CustomerServiceMessengerIntegration" },
+            { "key": "CustomerServiceInstagramIntegration" },
+            { "key": "CustomerServiceWhatsappIntegration" },
+            { "key": "CustomerServiceEmailIntegration" },
+            { "key": "AppIntegrations" },
+            { "key": "CustomerServiceDesktopApp" },
+            { "key": "CustomerServiceMobileApp" },
+            { "key": "SupportOverEmail" },
+            { "key": "WidgetCustomization" },
+            { "key": "NoTidioBranding" },
+            { "key": "AICopilot", "featured": true, "customOrder": 1 }
+          ]
+        },
+        "plus": {
+          "key": "plus",
+          "name": "Plus",
+          "description": {
+            "v5": "For businesses requiring better limits, additional integrations, advanced features, and premium support.",
+            "v6": "Better limits, additional integrations, advanced features, and premium support"
+          },
+          "variants": [
+            {
+              "variantId": 10,
+              "value": 5000,
+              "price": 74900,
+              "type": "askSales",
+              "href": "/contact-sales/?hs_track=pricing_plus"
+            }
+          ],
+          "features": [
+            {
+              "key": "HandledConversations",
+              "featured": false,
+              "quotaVariant": { "type": "custom" }
+            },
+            {
+              "key": "LyroQuota",
+              "quotaVariant": { "type": "from", "value": 300 },
+              "featured": true
+            },
+            {
+              "key": "AutomationQuota",
+              "featured": true,
+              "quotaVariant": { "type": "custom" }
+            },
+            {
+              "key": "ActiveOperatorsLimitFeature",
+              "quotaVariant": { "type": "custom" }
+            },
+            { "key": "CustomerServiceLivechat" },
+            { "key": "CustomerServiceTicketingSystem" },
+            { "key": "CustomerServiceEmailManagementSystemFeature" },
+            { "key": "CustomerServiceLiveVideoCalls" },
+            { "key": "DedicatedCustomerSuccessManager", "featured": true },
+            { "key": "CustomBranding", "featured": true },
+            { "key": "Multisite", "featured": true },
+            { "key": "CustomerServiceDepartments", "featured": true },
+            { "key": "Multilanguage", "featured": true },
+            { "key": "OpenAPI", "featured": false },
+            { "key": "LyroTasks" },
+            { "key": "LyroFAQUpload" },
+            { "key": "LyroFAQScraper" },
+            { "key": "LyroWebsiteScraper" },
+            { "key": "LyroConnect" },
+            { "key": "LyroCustomName" },
+            { "key": "AutomationSalesChatbotsTemplates" },
+            { "key": "AutomationFAQChatbotsTemplates" },
+            { "key": "AutomationVisualChatbotBuilder" },
+            { "key": "CustomerServiceTidioAIReplyAssistant" },
+            { "key": "CustomerServiceAnalyticsBasic" },
+            { "key": "CustomerServiceLiveVisitorsList" },
+            { "key": "CustomerServiceOperatingHours" },
+            { "key": "CustomerServiceChatOnSite" },
+            { "key": "CustomerServiceAnalyticsAdvanced" },
+            { "key": "CustomerServiceLiveTyping" },
+            { "key": "CustomerServiceViewedPagesHistory" },
+            { "key": "CustomerServiceVisitorInfo" },
+            { "key": "CustomerServiceVisitorNotes" },
+            { "key": "CustomerServiceAutomaticResponse" },
+            { "key": "CustomerServiceAutomaticChatAssignment" },
+            { "key": "CustomerServiceAutomatedSatisfactionSurvey" },
+            { "key": "CustomerServiceAutomatedConversationSolving" },
+            { "key": "CustomerServiceCannedResponses" },
+            { "key": "CustomerServicePermissions" },
+            { "key": "CustomerServiceNativeShopifyActions" },
+            { "key": "CustomerServiceMessengerIntegration" },
+            { "key": "CustomerServiceInstagramIntegration" },
+            { "key": "CustomerServiceWhatsappIntegration" },
+            { "key": "CustomerServiceEmailIntegration" },
+            { "key": "AppIntegrations" },
+            { "key": "CustomerServiceDesktopApp" },
+            { "key": "CustomerServiceMobileApp" },
+            { "key": "SupportOverEmail" },
+            { "key": "SupportOverLiveChat", "featured": false },
+            { "key": "ChatbotBuilding" },
+            { "key": "TrainingSessions" },
+            { "key": "AccountReviews" },
+            { "key": "WidgetCustomization" },
+            { "key": "NoTidioBranding" },
+            { "key": "AICopilot", "featured": true, "customOrder": 1 }
+          ]
+        },
+        "premium": {
+          "key": "premium",
+          "name": "Premium",
+          "description": {
+            "v5": "Automate 50% of your support volume guaranteed. Managed services, implementation, and continuous support of our AI Agent.",
+            "v6": "Automate 50% of your support volume guaranteed. Managed services, implementation, and continuous support of our AI Agent."
+          },
+          "variants": [
+            {
+              "variantId": 11,
+              "value": 10000,
+              "price": 299900,
+              "type": "askSales",
+              "href": "/contact-sales/?hs_track=pricing_premium"
+            }
+          ],
+          "features": [
+            {
+              "key": "HandledConversations",
+              "featured": false,
+              "quotaVariant": { "type": "custom" }
+            },
+            {
+              "key": "LyroQuota",
+              "quotaVariant": { "type": "from", "value": 5000 },
+              "featured": true
+            },
+            {
+              "key": "AutomationQuota",
+              "featured": true,
+              "quotaVariant": { "type": "custom" }
+            },
+            {
+              "key": "ActiveOperatorsLimitFeature",
+              "quotaVariant": { "type": "custom" }
+            },
+            { "key": "LyroAsManagedService", "featured": true },
+            {
+              "key": "ActiveOperatorsLimitFeature",
+              "quotaVariant": { "type": "unlimited" }
+            },
+            { "key": "CustomerServiceLivechat" },
+            { "key": "CustomerServiceTicketingSystem" },
+            { "key": "CustomerServiceEmailManagementSystemFeature" },
+            { "key": "CustomerServiceLiveVideoCalls" },
+            { "key": "DedicatedCustomerSuccessManager" },
+            {
+              "key": "GuaranteedResolution",
+              "featured": true,
+              "special": true
+            },
+            { "key": "PriorityService", "featured": true },
+            { "key": "SuperAdminRole", "featured": true },
+            { "key": "AnalysisAndMonitoring", "featured": true },
+            { "key": "LyroTasks" },
+            { "key": "LyroFAQUpload" },
+            { "key": "LyroFAQScraper" },
+            { "key": "LyroWebsiteScraper" },
+            { "key": "LyroConnect" },
+            { "key": "LyroCustomName" },
+            { "key": "AutomationSalesChatbotsTemplates" },
+            { "key": "AutomationFAQChatbotsTemplates" },
+            { "key": "AutomationVisualChatbotBuilder" },
+            { "key": "CustomerServiceTidioAIReplyAssistant" },
+            { "key": "CustomerServiceAnalyticsBasic" },
+            { "key": "CustomerServiceLiveVisitorsList" },
+            { "key": "CustomerServiceOperatingHours" },
+            { "key": "CustomerServiceChatOnSite" },
+            { "key": "CustomerServiceAnalyticsAdvanced" },
+            { "key": "CustomerServiceLiveTyping" },
+            { "key": "CustomerServiceViewedPagesHistory" },
+            { "key": "CustomerServiceVisitorInfo" },
+            { "key": "CustomerServiceVisitorNotes" },
+            { "key": "CustomerServiceAutomaticResponse" },
+            { "key": "CustomerServiceAutomaticChatAssignment" },
+            { "key": "CustomerServiceAutomatedSatisfactionSurvey" },
+            { "key": "CustomerServiceAutomatedConversationSolving" },
+            { "key": "CustomerServiceCannedResponses" },
+            { "key": "CustomerServicePermissions" },
+            { "key": "CustomerServiceNativeShopifyActions" },
+            { "key": "Multisite" },
+            { "key": "CustomerServiceDepartments" },
+            { "key": "Multilanguage" },
+            { "key": "OpenAPI" },
+            { "key": "CustomerServiceMessengerIntegration" },
+            { "key": "CustomerServiceInstagramIntegration" },
+            { "key": "CustomerServiceWhatsappIntegration" },
+            { "key": "CustomerServiceEmailIntegration" },
+            { "key": "AppIntegrations" },
+            { "key": "CustomerServiceDesktopApp" },
+            { "key": "CustomerServiceMobileApp" },
+            { "key": "SupportOverEmail" },
+            { "key": "SupportOverLiveChat" },
+            { "key": "ChatbotBuilding" },
+            { "key": "TrainingSessions" },
+            { "key": "AccountReviews" },
+            { "key": "WidgetCustomization" },
+            { "key": "CustomBranding" },
+            { "key": "NoTidioBranding" },
+            { "key": "AICopilot", "featured": true, "customOrder": 1 }
+          ]
+        }
+      },
+      "plansV5": {
+        "free": {
+          "key": "free",
+          "name": "Free",
+          "description": {
+            "v5": "For solo entrepreneurs",
+            "v6": "For solo entrepreneurs"
+          },
+          "variants": [{ "variantId": 1, "value": 50, "price": 0 }],
+          "features": [
+            {
+              "key": "HandledConversations",
+              "featured": true,
+              "quotaVariant": { "type": "singleNumber", "value": 50 }
+            },
+            {
+              "key": "ActiveOperatorsLimitFeature",
+              "quotaVariant": { "type": "singleNumber", "value": 10 }
+            },
+            { "key": "CustomerServiceLivechat", "featured": true },
+            { "key": "CustomerServiceTicketingSystem", "featured": true },
+            { "key": "CustomerServiceEmailManagementSystemFeature" },
+            { "key": "CustomerServiceLiveVideoCalls" },
+            { "key": "SocialMediaIntegrations", "featured": true },
+            { "key": "LyroTasks" },
+            { "key": "LyroFAQUpload" },
+            { "key": "LyroFAQScraper" },
+            { "key": "LyroWebsiteScraper" },
+            { "key": "AutomationSalesChatbotsTemplates" },
+            { "key": "AutomationFAQChatbotsTemplates" },
+            { "key": "AutomationVisualChatbotBuilder" },
+            { "key": "CustomerServiceTidioAIReplyAssistant" },
+            { "key": "CustomerServiceAnalyticsBasic" },
+            { "key": "CustomerServiceMessengerIntegration" },
+            { "key": "CustomerServiceInstagramIntegration" },
+            { "key": "CustomerServiceWhatsappIntegration" },
+            { "key": "CustomerServiceEmailIntegration" },
+            { "key": "AppIntegrations" },
+            { "key": "CustomerServiceDesktopApp" },
+            { "key": "CustomerServiceMobileApp" },
+            { "key": "SupportOverEmail" },
+            { "key": "WidgetCustomization" },
+            { "key": "AICopilot" }
+          ]
+        },
+        "starter": {
+          "key": "starter",
+          "name": "Starter",
+          "description": {
+            "v5": "Ideal for small businesses focused on enhancing customer satisfaction via live chat support.",
+            "v6": "For solo entrepreneurs starting with live chat and basic automation"
+          },
+          "variants": [{ "variantId": 2, "value": 100, "price": 2900 }],
+          "features": [
+            {
+              "key": "HandledConversations",
+              "featured": true,
+              "quotaVariant": { "type": "singleNumber", "value": 100 }
+            },
+            { "key": "LyroQuotaOneTime", "featured": false },
+            {
+              "key": "AutomationQuota",
+              "featured": false,
+              "quotaVariant": { "type": "singleNumber", "value": 100 }
+            },
+            {
+              "key": "ActiveOperatorsLimitFeature",
+              "quotaVariant": { "type": "singleNumber", "value": 10 },
+              "featured": false
+            },
+            { "key": "LiveChatAndTicketing", "featured": false },
+            { "key": "CustomerServiceLivechat" },
+            { "key": "CustomerServiceTicketingSystem" },
+            { "key": "CustomerServiceEmailManagementSystemFeature" },
+            { "key": "CustomerServiceLiveVideoCalls" },
+            { "key": "CustomerServiceAnalyticsBasic", "featured": true },
+            { "key": "CustomerServiceLiveVisitorsList", "featured": true },
+            { "key": "CustomerServiceOperatingHours", "featured": true },
+            { "key": "LyroTasks" },
+            { "key": "LyroFAQUpload" },
+            { "key": "LyroFAQScraper" },
+            { "key": "LyroWebsiteScraper" },
+            { "key": "AutomationSalesChatbotsTemplates" },
+            { "key": "AutomationFAQChatbotsTemplates" },
+            { "key": "AutomationVisualChatbotBuilder" },
+            { "key": "CustomerServiceTidioAIReplyAssistant" },
+            { "key": "CustomerServiceChatOnSite" },
+            { "key": "CustomerServiceMessengerIntegration" },
+            { "key": "CustomerServiceInstagramIntegration" },
+            { "key": "CustomerServiceWhatsappIntegration" },
+            { "key": "CustomerServiceEmailIntegration" },
+            { "key": "AppIntegrations" },
+            { "key": "CustomerServiceDesktopApp" },
+            { "key": "CustomerServiceMobileApp" },
+            { "key": "SupportOverEmail" },
+            { "key": "WidgetCustomization" },
+            {
+              "key": "AICopilot",
+              "featured": true,
+              "hiddenInColumn": true,
+              "customOrder": 1
+            },
+            { "key": "SocialMediaIntegrations", "featured": false }
+          ]
+        },
+        "growth": {
+          "key": "growth",
+          "isPopular": true,
+          "name": "Growth",
+          "description": {
+            "v5": "Ideal for teams of all sizes prioritizing customer service as their competitive advantage.",
+            "v6": "Optimize support operations and drive customer satisfaction"
+          },
+          "variants": [
+            { "variantId": 3, "value": 250, "price": 5900 },
+            { "variantId": 4, "value": 400, "price": 8900 },
+            { "variantId": 5, "value": 600, "price": 12900 },
+            { "variantId": 6, "value": 800, "price": 15900 },
+            { "variantId": 7, "value": 1000, "price": 17900 },
+            { "variantId": 8, "value": 1500, "price": 24900 },
+            { "variantId": 9, "value": 2000, "price": 34900 }
+          ],
+          "features": [
+            {
+              "key": "HandledConversations",
+              "featured": true,
+              "quotaVariant": { "type": "upTo", "value": 2000 }
+            },
+            {
+              "key": "ActiveOperatorsLimitFeature",
+              "quotaVariant": { "type": "singleNumber", "value": 10 }
+            },
+            { "key": "CustomerServiceLivechat" },
+            { "key": "CustomerServiceTicketingSystem" },
+            { "key": "CustomerServiceEmailManagementSystemFeature" },
+            { "key": "CustomerServiceLiveVideoCalls" },
+            { "key": "CustomerServiceAnalyticsAdvanced", "featured": true },
+            { "key": "TidioPowerFeatures", "featured": true },
+            { "key": "NoTidioBrandingAddon", "featured": true },
+            { "key": "CustomerServicePermissions", "featured": true },
+            { "key": "LyroTasks" },
+            { "key": "LyroFAQUpload" },
+            { "key": "LyroFAQScraper" },
+            { "key": "LyroWebsiteScraper" },
+            { "key": "AutomationSalesChatbotsTemplates" },
+            { "key": "AutomationFAQChatbotsTemplates" },
+            { "key": "AutomationVisualChatbotBuilder" },
+            { "key": "CustomerServiceTidioAIReplyAssistant" },
+            { "key": "CustomerServiceAnalyticsBasic" },
+            { "key": "CustomerServiceLiveVisitorsList" },
+            { "key": "CustomerServiceOperatingHours" },
+            { "key": "CustomerServiceChatOnSite" },
+            { "key": "CustomerServiceAnalyticsAdvanced" },
+            { "key": "CustomerServiceLiveTyping", "featured": false },
+            { "key": "CustomerServiceViewedPagesHistory", "featured": false },
+            { "key": "CustomerServiceVisitorInfo" },
+            { "key": "CustomerServiceVisitorNotes" },
+            { "key": "CustomerServiceAutomaticResponse", "featured": false },
+            {
+              "key": "CustomerServiceAutomaticChatAssignment",
+              "featured": false
+            },
+            { "key": "CustomerServiceAutomatedSatisfactionSurvey" },
+            { "key": "CustomerServiceAutomatedConversationSolving" },
+            { "key": "CustomerServiceCannedResponses", "featured": false },
+            { "key": "CustomerServicePermissions" },
+            { "key": "CustomerServiceNativeShopifyActions" },
+            { "key": "CustomerServiceMessengerIntegration" },
+            { "key": "CustomerServiceInstagramIntegration" },
+            { "key": "CustomerServiceWhatsappIntegration" },
+            { "key": "CustomerServiceEmailIntegration" },
+            { "key": "AppIntegrations" },
+            { "key": "CustomerServiceDesktopApp" },
+            { "key": "CustomerServiceMobileApp" },
+            { "key": "SupportOverEmail" },
+            { "key": "WidgetCustomization" },
+            { "key": "NoTidioBranding" },
+            { "key": "AICopilot", "featured": false, "customOrder": 1 }
+          ]
+        },
+        "plus": {
+          "key": "plus",
+          "name": "Plus",
+          "description": {
+            "v5": "For businesses requiring better limits, additional integrations, advanced features, and premium support.",
+            "v6": "Better limits, additional integrations, advanced features, and premium support"
+          },
+          "variants": [
+            {
+              "variantId": 10,
+              "value": 5000,
+              "price": 74900,
+              "type": "askSales",
+              "href": "/contact-sales/?hs_track=pricing_plus"
+            }
+          ],
+          "features": [
+            {
+              "key": "HandledConversations",
+              "featured": true,
+              "quotaVariant": { "type": "custom" }
+            },
+            {
+              "key": "LyroQuota",
+              "quotaVariant": { "type": "from", "value": 300 },
+              "featured": false
+            },
+            {
+              "key": "AutomationQuota",
+              "featured": false,
+              "quotaVariant": { "type": "custom" }
+            },
+            {
+              "key": "ActiveOperatorsLimitFeature",
+              "quotaVariant": { "type": "custom" }
+            },
+            { "key": "CustomerServiceLivechat" },
+            { "key": "CustomerServiceTicketingSystem" },
+            { "key": "CustomerServiceEmailManagementSystemFeature" },
+            { "key": "CustomerServiceLiveVideoCalls" },
+            { "key": "DedicatedCustomerSuccessManager", "featured": true },
+            { "key": "CustomBranding", "featured": true },
+            { "key": "Multisite", "featured": true },
+            { "key": "CustomerServiceDepartments", "featured": true },
+            { "key": "Multilanguage", "featured": true },
+            { "key": "OpenAPI", "featured": true },
+            { "key": "LyroTasks" },
+            { "key": "LyroFAQUpload" },
+            { "key": "LyroFAQScraper" },
+            { "key": "LyroWebsiteScraper" },
+            { "key": "LyroConnect" },
+            { "key": "LyroCustomName" },
+            { "key": "AutomationSalesChatbotsTemplates" },
+            { "key": "AutomationFAQChatbotsTemplates" },
+            { "key": "AutomationVisualChatbotBuilder" },
+            { "key": "CustomerServiceTidioAIReplyAssistant" },
+            { "key": "CustomerServiceAnalyticsBasic" },
+            { "key": "CustomerServiceLiveVisitorsList" },
+            { "key": "CustomerServiceOperatingHours" },
+            { "key": "CustomerServiceChatOnSite" },
+            { "key": "CustomerServiceAnalyticsAdvanced" },
+            { "key": "CustomerServiceLiveTyping" },
+            { "key": "CustomerServiceViewedPagesHistory" },
+            { "key": "CustomerServiceVisitorInfo" },
+            { "key": "CustomerServiceVisitorNotes" },
+            { "key": "CustomerServiceAutomaticResponse" },
+            { "key": "CustomerServiceAutomaticChatAssignment" },
+            { "key": "CustomerServiceAutomatedSatisfactionSurvey" },
+            { "key": "CustomerServiceAutomatedConversationSolving" },
+            { "key": "CustomerServiceCannedResponses" },
+            { "key": "CustomerServicePermissions" },
+            { "key": "CustomerServiceNativeShopifyActions" },
+            { "key": "CustomerServiceMessengerIntegration" },
+            { "key": "CustomerServiceInstagramIntegration" },
+            { "key": "CustomerServiceWhatsappIntegration" },
+            { "key": "CustomerServiceEmailIntegration" },
+            { "key": "AppIntegrations" },
+            { "key": "CustomerServiceDesktopApp" },
+            { "key": "CustomerServiceMobileApp" },
+            { "key": "SupportOverEmail" },
+            { "key": "SupportOverLiveChat", "featured": true },
+            { "key": "ChatbotBuilding" },
+            { "key": "TrainingSessions" },
+            { "key": "AccountReviews" },
+            { "key": "WidgetCustomization" },
+            { "key": "NoTidioBranding" },
+            { "key": "AICopilot", "featured": false, "customOrder": 1 }
+          ]
+        },
+        "premium": {
+          "key": "premium",
+          "name": "Premium",
+          "description": {
+            "v5": "Automate 50% of your support volume guaranteed. Managed services, implementation, and continuous support of our AI Agent.",
+            "v6": "Automate 50% of your support volume guaranteed. Managed services, implementation, and continuous support of our AI Agent."
+          },
+          "variants": [
+            {
+              "variantId": 11,
+              "value": 10000,
+              "price": 299900,
+              "type": "askSales",
+              "href": "/contact-sales/?hs_track=pricing_premium"
+            }
+          ],
+          "features": [
+            {
+              "key": "HandledConversations",
+              "featured": false,
+              "quotaVariant": { "type": "custom" }
+            },
+            {
+              "key": "LyroQuota",
+              "quotaVariant": { "type": "from", "value": 5000 },
+              "featured": false
+            },
+            {
+              "key": "AutomationQuota",
+              "featured": false,
+              "quotaVariant": { "type": "custom" }
+            },
+            {
+              "key": "ActiveOperatorsLimitFeature",
+              "quotaVariant": { "type": "custom" }
+            },
+            { "key": "LyroAsManagedService", "featured": true },
+            {
+              "key": "ActiveOperatorsLimitFeature",
+              "quotaVariant": { "type": "unlimited" }
+            },
+            { "key": "CustomerServiceLivechat" },
+            { "key": "CustomerServiceTicketingSystem" },
+            { "key": "CustomerServiceEmailManagementSystemFeature" },
+            { "key": "CustomerServiceLiveVideoCalls" },
+            { "key": "DedicatedCustomerSuccessManager" },
+            {
+              "key": "GuaranteedResolution",
+              "featured": true,
+              "special": true
+            },
+            { "key": "PriorityService", "featured": true },
+            { "key": "SuperAdminRole", "featured": true },
+            { "key": "AnalysisAndMonitoring", "featured": true },
+            { "key": "LyroTasks" },
+            { "key": "LyroFAQUpload" },
+            { "key": "LyroFAQScraper" },
+            { "key": "LyroWebsiteScraper" },
+            { "key": "LyroConnect" },
+            { "key": "LyroCustomName" },
+            { "key": "AutomationSalesChatbotsTemplates" },
+            { "key": "AutomationFAQChatbotsTemplates" },
+            { "key": "AutomationVisualChatbotBuilder" },
+            { "key": "CustomerServiceTidioAIReplyAssistant" },
+            { "key": "CustomerServiceAnalyticsBasic" },
+            { "key": "CustomerServiceLiveVisitorsList" },
+            { "key": "CustomerServiceOperatingHours" },
+            { "key": "CustomerServiceChatOnSite" },
+            { "key": "CustomerServiceAnalyticsAdvanced" },
+            { "key": "CustomerServiceLiveTyping" },
+            { "key": "CustomerServiceViewedPagesHistory" },
+            { "key": "CustomerServiceVisitorInfo" },
+            { "key": "CustomerServiceVisitorNotes" },
+            { "key": "CustomerServiceAutomaticResponse" },
+            { "key": "CustomerServiceAutomaticChatAssignment" },
+            { "key": "CustomerServiceAutomatedSatisfactionSurvey" },
+            { "key": "CustomerServiceAutomatedConversationSolving" },
+            { "key": "CustomerServiceCannedResponses" },
+            { "key": "CustomerServicePermissions" },
+            { "key": "CustomerServiceNativeShopifyActions" },
+            { "key": "Multisite" },
+            { "key": "CustomerServiceDepartments" },
+            { "key": "Multilanguage" },
+            { "key": "OpenAPI" },
+            { "key": "CustomerServiceMessengerIntegration" },
+            { "key": "CustomerServiceInstagramIntegration" },
+            { "key": "CustomerServiceWhatsappIntegration" },
+            { "key": "CustomerServiceEmailIntegration" },
+            { "key": "AppIntegrations" },
+            { "key": "CustomerServiceDesktopApp" },
+            { "key": "CustomerServiceMobileApp" },
+            { "key": "SupportOverEmail" },
+            { "key": "SupportOverLiveChat" },
+            { "key": "ChatbotBuilding" },
+            { "key": "TrainingSessions" },
+            { "key": "AccountReviews" },
+            { "key": "WidgetCustomization" },
+            { "key": "CustomBranding" },
+            { "key": "NoTidioBranding" },
+            { "key": "AICopilot", "featured": false, "customOrder": 1 }
+          ]
+        }
+      },
+      "translations": {
+        "headers": {
+          "header1": "Support more with less effort using stand-alone automation plans",
+          "header2": "Pair with Tidio customer service suite",
+          "header3a": "Need help deciding?",
+          "header3b": "Build your plan in seconds"
+        },
+        "periodSwitcher": {
+          "badgeText": "2 months free",
+          "labels": { "monthly": "Monthly", "annually": "Annually" }
+        },
+        "topBoxes": {
+          "lyroAiDescription": "Solve up to 67% of customer problems with Lyro - the AI agent. Automatically answer common questions and perform recurring tasks so your team can focus on growing your business.",
+          "flowsDescription": "Increase conversions by 26% with contextual Flows. Boost your lead gen and sales funnels with Flows - no-code conversion paths that trigger at crucial moments in the customer journey.",
+          "lyroFeaturedFeature1": "Human handoff",
+          "lyroFeaturedFeature2": "Customizable communication style",
+          "lyroFeaturedFeature3": "Knowledge-based responses",
+          "flowsFeaturedFeature1": "Collect data",
+          "flowsFeaturedFeature2": "Quote request",
+          "flowsFeaturedFeature3": "Handle missed conversations",
+          "genericFeaturedFeature": "Available as a stand-alone product",
+          "from": "From",
+          "numberVisitorsReached": "_NUMBER_ visitors reached",
+          "numberLyroAiConversations": "_NUMBER_ Lyro AI conversations",
+          "calculateSavings": "Calculate savings"
+        },
+        "common": {
+          "readMore": "Read more",
+          "startsAt": "Starts at",
+          "numberDaysFreeTrial": "7-day free trial",
+          "getStarted": "Get started",
+          "contactSales": "Contact sales"
+        },
+        "priceBox": { "monthlyShort": "mo.", "monthly": "month" },
+        "calculator": {
+          "customerSupport": "Customer support",
+          "customerSupportDescription": "__VARIABLE__ and __VARIABLE__ handled by your team make up your monthly billable conversations limit",
+          "liveConversations": "Live conversations",
+          "liveConversationsDescription": "A real-time chat between a visitor and your team, managed in the Inbox. Great for instant support and quick responses.",
+          "tickets": "tickets",
+          "ticketsDescription": "An asynchronous conversation created in your helpdesk. Any email sent to your connected inbox automatically becomes a ticket in Tidio. Tickets can also be created from the offline widget, by Lyro, or manually by your team.",
+          "iWantCustomerService": "I want _NUMBER_ billable conversations per month",
+          "iWantLyro": "I want _NUMBER_ Lyro AI conversations per month",
+          "iWantFlows": "I want to reach _NUMBER_ visitors per month",
+          "more": "More",
+          "lyroAIConversations": "Lyro AI conversations",
+          "lyroAIConversationsDescription": "Let __VARIABLE__ handle customer requests",
+          "lyroAiAgentDescription": "Conversational AI trained with your content. Lyro responds instantly to FAQs, completes tasks like order tracking or ticket creation, and can smoothly hand off to human agents when needed",
+          "visitorsReachedWithFlows": "Visitors reached with Flows",
+          "visitorsReachedWithFlowsDescription": "Achieve your goals faster with __VARIABLE__",
+          "salesFlows": "sales Flows",
+          "salesFlowsDescription": "Automated, no-code chat flows that engage visitors and answer common questions directly in the chat widget. Designed to boost conversions and save you time.",
+          "namePlan": "_PLANNAME_ Plan",
+          "xHandledConversations": "_NUMBER_ Billable conversations",
+          "xLyroAiConversations": "_NUMBER_ Lyro AI conversations",
+          "numberVisitorsReached": "_NUMBER_ visitors reached",
+          "costBreakdown": "Cost breakdown",
+          "totalPrice": "Total price",
+          "getStartedForFree": "Get started for free",
+          "customQuotaIsAvailableOn": "Custom quota is available on Plus and Premium plans. For more than __VARIABLE__ billable conversations, __VARIABLE__ Lyro AI conversations and __VARIABLE__ visitors reached with Flows, please contact us for a custom plan.",
+          "monthShort": "mo."
+        },
+        "pricingColumns": {
+          "custom": "Custom",
+          "startsAt": "Starts at",
+          "selectPlan": "Select plan",
+          "selected": "Selected",
+          "thisPlanIncludes": "This plan includes:",
+          "everythingInXPlus": "Everything in _PLANNAME_, plus:",
+          "everythingInXAnd": "Everything in _PLANNAME_, and:",
+          "aiAutomationLimits": "AI \u0026 automation limits",
+          "xLyroAiConversations": "_NUMBER_ Lyro AI conversations",
+          "xLyroAiConversationsOneTime": "_NUMBER_ Lyro AI conversations (one-time)",
+          "upToxLyroAiConversations": "Up to _NUMBER_ Lyro AI conversations",
+          "fromxLyroAiConversations": "From _NUMBER_ Lyro AI conversations",
+          "lyroCustomNumberOfConversations": "Custom number of Lyro AI conversations",
+          "flowsXVisitorsReached": "_NUMBER_ Flows visitors reached",
+          "flowsCustomerNumberOfVisitorsReached": "Custom number of Flows visitors reached",
+          "exploreAddons": "Explore add-ons",
+          "recommended": "Recommended",
+          "addonPrice": "Add-on (_PLANNAME_)",
+          "expand": "Expand",
+          "collapse": "Collapse",
+          "comparePlansAndFeatures": "Compare plans and features",
+          "seeAllFeatures": "See all features",
+          "planType": "Plan type",
+          "popular": "Popular",
+          "aiCopilotDescription": "Copilot works natively in Tidio, offering on-brand reply suggestions from past conversations. It's also available as a Chrome extension for use in other helpdesk tools.",
+          "new": "New",
+          "viewAllFeatures": "View all features",
+          "contactForPricing": "Contact for pricing"
+        }
+      },
+      "translationsV5": {
+        "main": {
+          "header": "Find the right plan for your business",
+          "subheader": "Choose a plan that fits your needs. Start with a 7-day trial to test all Tidio features for free.",
+          "step": "Step _NUMBER_",
+          "chooseTheNumberOfConversations": "Choose the number of conversations with a human agent",
+          "selectAutomations": "Select automations"
+        },
+        "priceBox": { "monthlyShort": "mo.", "monthly": "month" },
+        "bottomBar": {
+          "getStarted": "Get started",
+          "getStartedForFree": "Start for free",
+          "contactSales": "Contact sales",
+          "namePlan": "_PLANNAME_ plan",
+          "xAutomations": "_NUMBER_ automations",
+          "xAutomationsIncluded": "_NUMBER_ automations",
+          "billedAnnually": "Billed annually",
+          "billedMonthly": "Billed monthly"
+        },
+        "sliderData": {
+          "iNeedXConversations": "I need _NUMBER_ conversations per month",
+          "more": "More",
+          "xHandledConversations": "_NUMBER_ Billable conversations"
+        },
+        "periodSwitcher": {
+          "badgeText": "2 months free",
+          "badgeText1MonthFree": "1 month free",
+          "labels": { "monthly": "Monthly", "annually": "Annually" }
+        },
+        "pricingColumns": {
+          "custom": "Custom",
+          "startsAt": "Starts at",
+          "selectPlan": "Select plan",
+          "selected": "Selected",
+          "contactSales": "Contact sales",
+          "thisPlanIncludes": "This plan includes:",
+          "everythingInXPlus": "Everything in _PLANNAME_, plus:",
+          "everythingInXAnd": "Everything in _PLANNAME_, and:",
+          "aiAutomationLimits": "AI \u0026 automation limits",
+          "xLyroAiConversations": "_NUMBER_ Lyro AI conversations",
+          "xLyroAiConversationsOneTime": "_NUMBER_ Lyro AI conversations (one-time)",
+          "upToxLyroAiConversations": "Up to _NUMBER_ Lyro AI conversations",
+          "fromxLyroAiConversations": "From _NUMBER_ Lyro AI conversations",
+          "lyroCustomNumberOfConversations": "Custom number of Lyro AI conversations",
+          "flowsXVisitorsReached": "_NUMBER_ Flows visitors reached",
+          "flowsCustomerNumberOfVisitorsReached": "Custom number of Flows visitors reached",
+          "exploreAddons": "Explore add-ons",
+          "recommended": "Recommended",
+          "addonPrice": "Add-on (_PLANNAME_)",
+          "expand": "Expand",
+          "collapse": "Collapse",
+          "comparePlansAndFeatures": "Compare plans and features",
+          "seeAllFeatures": "See all features",
+          "planType": "Plan type",
+          "popular": "Popular",
+          "aiCopilotDescription": "Copilot works natively in Tidio, offering on-brand reply suggestions from past conversations. It's also available as a Chrome extension for use in other helpdesk tools.",
+          "new": "New",
+          "contactForPricing": "Contact for pricing"
+        }
+      },
+      "faq": {
+        "sectionHeader": { "header": "Frequently Asked Questions" },
+        "faq": [
+          {
+            "question": "What is a Conversation?",
+            "analyticsLabel": "What is a Conversation?",
+            "answer": "Conversation is any live chat, ticket, email or social media channel conversation. A visitor, operator or an automated flow may initiate a conversation.\n\u0026nbsp;\nRemember that not all conversations are counted as “Billable conversations”"
+          },
+          {
+            "question": "What is a “Billable conversation”?",
+            "analyticsLabel": "What is a “Billable conversation”?",
+            "answer": "\"Billable conversation\" refers to any live chat, ticket, email or social media channel conversation that includes a message from a human agent (you). Unanswered messages initiated by visitors/customers are not counted, ensuring you're billed only for relevant interactions.\n\u0026nbsp;\nResponses from Flows and Lyro AI Agent are not counted as ‘agent replies’."
+          },
+          {
+            "question": "Will I pay for unwanted conversations?",
+            "analyticsLabel": "Will I pay for unwanted conversations?",
+            "answer": "No. A conversation is only billed as a Billable conversation once you reply using Tidio or proactively initiate a conversation with your visitor. If you don’t respond to a customer conversation – if it’s spam or simply a message that doesn’t require a reply – the conversation won’t count toward your monthly limit."
+          },
+          {
+            "question": "Will I pay for multiple messages within one conversation?",
+            "analyticsLabel": "Will I pay for multiple messages within one conversation?",
+            "answer": "A conversation that receives a response by a human agent or is initiated by a human agent will only be counted as one Billable conversation regardless of how many messages are sent or received on the thread."
+          },
+          {
+            "question": "How does the free trial work?",
+            "analyticsLabel": "How does the free trial work?",
+            "answer": "During the free 7-day trial, you can test all Tidio features and plans and see how to improve customer service and accelerate sales. You don’t need to provide us with your credit card information to access the free trial.\n\u0026nbsp;\nAt the end of the trial, your account will automatically be downgraded to the Free plan unless you upgrade your subscription to a paid option.\n\u0026nbsp;\nIt means that you can use the full feature set of any Customer Service, Lyro AI Agent or Flows plan within your first 7 days with Tidio."
+          },
+          {
+            "question": "Can I change my subscription anytime I want?",
+            "analyticsLabel": "Can I change my subscription anytime I want?",
+            "answer": "Yes, you can. You can downgrade or upgrade your subscription at any time.\n\u0026nbsp;\nPlease note that any subscription changes will come into effect at the start of your next billing cycle meaning that you will keep your premium features until the end of the existing cycle."
+          },
+          {
+            "question": "Can I add Tidio live chat to more than one website/store?",
+            "analyticsLabel": "Can I add Tidio live chat to more than one website/store?",
+            "answer": "Yes, you can add Tidio to multiple sites and/or stores.\n\u0026nbsp;\nPlease note, however, that the live chat widget will share all the appearance and behavior settings across all your websites/stores. This means it will have the same color scheme, it will go online/offline according to the same DND hours, it will display the same offline messages, etc. If you want to have a different behavior for every website, talk to us."
+          },
+          {
+            "question": "Can I send live chat messages?",
+            "analyticsLabel": "Can I send live chat messages?",
+            "answer": "Yes. The Customer Service plans enable you to proactively engage your website visitors through the live chat widget."
+          },
+          {
+            "question": "What is Lyro AI Agent?",
+            "analyticsLabel": "What is Lyro AI Agent?",
+            "answer": "Lyro is an AI agent that solves up to 67% of customer questions automatically. It turns customer questions into conversations and delivers personalized replies like a human agent.\n\u0026nbsp;\nUnlike Flows which follow set rules and pathways to generate an answer, Lyro relies on machine learning to understand customer questions and draws information from your support content to create detailed responses."
+          },
+          {
+            "question": "What is a Lyro conversation?",
+            "analyticsLabel": "What is a Lyro conversation?",
+            "answer": "A Lyro conversation is a customer interaction initiated through any channel integrated with Tidio that has at least one reply from our AI Agent.\n\u0026nbsp;\nEven if Lyro replies a dozen times or more to solve the customer’s problem, or if the customer leaves the chat window and returns to it at a later time, that still counts as a single conversation."
+          },
+          {
+            "question": "Can I purchase Lyro AI Agent or Flows as a standalone product?",
+            "analyticsLabel": "Can I purchase Lyro AI Agent or Flows as a standalone product?",
+            "answer": "Yes, each of our three core products - Lyro AI Agent, Customer Service and Flows - can be purchased individually or as part of a bundled plan in any configuration. This means you can choose to buy only the Lyro AI product or Flows and still benefit from the free limit of human conversations included in all subscriptions."
+          },
+          {
+            "question": "How can I use Flows?",
+            "analyticsLabel": "How can I use Flows?",
+            "answer": "With any Customer Service plan, you can add Flows templates to your website or manually create as many automated workflows as you want with our drag-and-drop Flows builder.\n\u0026nbsp;\nAlthough your Flows can have an unlimited number of chats, the Free Customer Service plan limits them to interact with only 100 unique visitors per month. However, you can interact with up to 40k visitors per month by purchasing extra quota and a custom number of visitors with the Plus plan. "
+          },
+          {
+            "question": "What’s the difference between Flows and Lyro AI Agent?",
+            "analyticsLabel": "What’s the difference between Flows and Lyro AI Agent?",
+            "answer": "**Flows**\n\n* Can be used as a marketing automation tool that converts visitors into paying customers or boosts their order value\n* Perfect for answering simple, pre-defined questions.\n* Require manual configuration\n* Are triggered by specific actions and can proactively engage users\n* Follow user-defined rules and scripts to answer customer questions\n* Available only on Tidio\n\n\n**Lyro AI Agent**\n\n* AI-powered support chatbot that helps you solve up to 67% of customer problems\n* Perfect for answering complex customer questions and automating repetitive tasks\n* Learns from your support content and then uses artificial intelligence and natural language processing to understand questions and provide the appropriate answer.\n* Understands the intent behind customer questions and uses solely your support content to generate personalized responses.\n* Is not restricted to pre-defined questions. Lyro can answer complex questions in a human-like manner based on the information you feed it.\n* Available on Tidio. Can also be integrated with other customer service tools\n\n\n Flows rely on pre-designed conversational paths while Lyro AI Agent uses artificial intelligence and natural language processing to understand questions and have human-like conversations with customers. Lyro provides more details to make sure customers are satisfied with the information they receive. On the other hand, Flows can be designed to convert visitors into buyers.\n\u0026nbsp;\nKeep in mind that you don’t have to choose between Lyro AI Agent and Flows. You can use both solutions at the same time to provide exceptional service to your customers."
+          },
+          {
+            "question": "When will my Lyro conversation limit refresh?",
+            "analyticsLabel": "When will my Lyro conversation limit refresh?",
+            "answer": "Every Tidio account starts with 50 Lyro conversations, but you need to upgrade to the Lyro AI Agent plan to refresh it monthly.\n\u0026nbsp;\nYou can access higher Lyro conversation limits with the Lyro AI Agent and Plus plans. If you’re using the Lyro AI Agent or Plus plans, your limit refreshes 30 days from the moment you make the payment."
+          },
+          {
+            "question": "When will my Flows limit refresh?",
+            "analyticsLabel": "When will my Flows limit refresh?",
+            "answer": "The limit refreshes every 30 days. If you are on the paid plan, the limit will refresh after 30 days, starting from the moment you have made your payment.\n\u0026nbsp;\nIf you are on the Free plan, the limit will refresh after 30 days, starting from the moment you have created your account or from the moment when your last paid subscription has finished."
+          },
+          {
+            "question": "How does the ticketing system work?",
+            "analyticsLabel": "How does the ticketing system work?",
+            "answer": "Tidio’s AI-powered ticketing system enables you to transform incoming support emails, live chat conversations, and social media messages into tickets and assign them to available operators.\n\u0026nbsp;\nYou can monitor tickets and add notes or custom tags to follow up on conversations.\n\u0026nbsp;\nTidio automatically analyzes your conversations and organizes them based on customer intent so your support team can easily spot and prioritize important requests."
+          },
+          {
+            "question": "How many support agents can I add to my Tidio project?",
+            "analyticsLabel": "How many support agents can I add to my Tidio project?",
+            "answer": "You can add up to 10 agents on self-serve plans and custom numbers on the Plus package."
+          }
+        ]
+      },
+      "compareFeaturesData": {
+        "tableData": [
+          {
+            "name": "Customer support quota",
+            "description": "Choose the limits that fits your team and customer volume",
+            "features": ["HandledConversations", "ActiveOperatorsLimitFeature"]
+          },
+          {
+            "name": "Live chat \u0026 Ticketing",
+            "description": "Increase customer satisfaction with dedicated help desk tools",
+            "features": [
+              "CustomerServiceLivechat",
+              "CustomerServiceTicketingSystem",
+              "CustomerServiceEmailManagementSystemFeature",
+              "CustomerServiceLiveVideoCalls"
+            ]
+          },
+          {
+            "name": "Lyro AI Agent",
+            "description": "Solve up to 67% of customer problems with Lyro - the AI Agent",
+            "features": [
+              "LyroQuota",
+              "LyroTasks",
+              "LyroFAQUpload",
+              "LyroFAQScraper",
+              "LyroWebsiteScraper",
+              "LyroConnect",
+              "LyroCustomName",
+              "ProductRecommendation"
+            ]
+          },
+          {
+            "name": "AI Add-on",
+            "description": "Reduce your workload by 30% with a free AI add-on",
+            "features": ["AICopilot"],
+            "newBadge": true
+          },
+          {
+            "name": "Flows",
+            "description": "Achieve your goals faster with sales and customer service automation",
+            "features": [
+              "AutomationQuota",
+              "AutomationSalesChatbotsTemplates",
+              "AutomationFAQChatbotsTemplates",
+              "AutomationVisualChatbotBuilder"
+            ]
+          },
+          {
+            "name": "Features",
+            "description": "Optimize your workflow",
+            "features": [
+              "CustomerServiceTidioAIReplyAssistant",
+              "CustomerServiceAnalyticsBasic",
+              "CustomerServiceLiveVisitorsList",
+              "CustomerServiceOperatingHours",
+              "CustomerServiceChatOnSite",
+              "CustomerServiceAnalyticsAdvanced",
+              "CustomerServiceLiveTyping",
+              "CustomerServiceViewedPagesHistory",
+              "CustomerServiceVisitorInfo",
+              "CustomerServiceVisitorNotes",
+              "CustomerServiceAutomaticResponse",
+              "CustomerServiceAutomaticChatAssignment",
+              "CustomerServiceAutomatedSatisfactionSurvey",
+              "CustomerServiceAutomatedConversationSolving",
+              "CustomerServiceCannedResponses",
+              "CustomerServicePermissions",
+              "CustomerServiceNativeShopifyActions",
+              "Multisite",
+              "CustomerServiceDepartments",
+              "Multilanguage",
+              "OpenAPI"
+            ]
+          },
+          {
+            "name": "Integrations",
+            "description": "Connect Tidio with a tool of your choice",
+            "features": [
+              "CustomerServiceMessengerIntegration",
+              "CustomerServiceInstagramIntegration",
+              "CustomerServiceWhatsappIntegration",
+              "CustomerServiceEmailIntegration",
+              "AppIntegrations"
+            ]
+          },
+          {
+            "name": "Apps",
+            "description": "Connect with customers, no matter where you are",
+            "features": [
+              "CustomerServiceDesktopApp",
+              "CustomerServiceMobileApp"
+            ]
+          },
+          {
+            "name": "Services",
+            "description": "Achieve more with Tidio support",
+            "features": [
+              "SupportOverEmail",
+              "SupportOverLiveChat",
+              "ChatbotBuilding",
+              "DedicatedCustomerSuccessManager",
+              "TrainingSessions",
+              "AccountReviews"
+            ]
+          },
+          {
+            "name": "Customization",
+            "description": "Align Tidio with your brand",
+            "features": [
+              "WidgetCustomization",
+              "NoTidioBranding",
+              "CustomBranding"
+            ]
+          }
+        ]
+      },
+      "features": {
+        "data": {
+          "HandledConversations": {
+            "name": {
+              "singleNumber": "_NUMBER_ Billable conversations",
+              "upTo": "Up to _NUMBER_ Billable conversations",
+              "custom": "Custom Billable conversations",
+              "unlimited": "Unlimited Billable conversations",
+              "default": "Billable conversations",
+              "from": "From _NUMBER_ Billable conversations"
+            },
+            "description": "\"Billable conversation\" refers to any live chat, ticket, email or social media channel conversation that includes a message from a human agent (you)."
+          },
+          "ActiveOperatorsLimitFeature": {
+            "name": {
+              "singleNumber": "_NUMBER_ seats",
+              "upTo": "Up to _NUMBER_ seats",
+              "custom": "Custom number of seats",
+              "unlimited": "Unlimited seats",
+              "default": "Seats",
+              "from": "From _NUMBER_ seats"
+            },
+            "description": "The maximum number of support agents who can use Tidio at the same time."
+          },
+          "CustomerServiceLivechat": {
+            "name": "Live Chat",
+            "description": "Provide answers, offer discounts, or make personalized recommendations through the live chat widget."
+          },
+          "CustomerServiceTicketingSystem": {
+            "name": "Help Desk",
+            "description": "Improve your time to resolution and customer satisfaction with a smart ticketing system. Manage, assign, and reply to customers' requests in one place."
+          },
+          "CustomerServiceEmailManagementSystemFeature": {
+            "name": "Email management system",
+            "description": "Connect your email inbox to manage your emails in your Tidio dashboard."
+          },
+          "CustomerServiceLiveVideoCalls": {
+            "name": "Live video calls",
+            "description": "Engage your website visitors with video calls directly through the live chat widget."
+          },
+          "SocialMediaIntegrations": {
+            "name": "Social media integrations",
+            "description": "Manage your Instagram, WhatsApp, and Messenger DMs in a single dashboard."
+          },
+          "CustomerServiceAnalyticsBasic": {
+            "name": "Basic analytics",
+            "description": "See basic data about your conversations, such as the number of missed conversations, first response times, and conversation duration."
+          },
+          "CustomerServiceLiveVisitorsList": {
+            "name": "Live visitors list",
+            "description": "See all the visitors who are online on your website, along with the pages they're browsing so you can engage them through the chat widget."
+          },
+          "CustomerServiceOperatingHours": {
+            "name": "Operating hours",
+            "description": "Let customers know when you're online and collect their information when you're out of office."
+          },
+          "SupportOverLiveChat": {
+            "name": "Support over live chat",
+            "description": "Contact us through the live chat widget and we'll get back to you in minutes."
+          },
+          "CustomerServiceAnalyticsAdvanced": {
+            "name": "Advanced analytics",
+            "description": "Get detailed insights on the number of sales generated with Tidio, customer satisfaction, and individual operator performance, and more."
+          },
+          "TidioPowerFeatures": {
+            "name": "Tidio power features",
+            "description": "Access exclusive features, such as Live Typing, Automatic chat assignments, and more."
+          },
+          "NoTidioBrandingAddon": {
+            "name": "No Tidio branding (add-on)",
+            "description": "Remove the 'Powered by Tidio' logo from your chat widget."
+          },
+          "NoTidioBranding": {
+            "name": "No Tidio branding",
+            "description": "Remove the 'Powered by Tidio' logo from your chat widget."
+          },
+          "CustomerServicePermissions": {
+            "name": "Permissions",
+            "description": "Configure user permissions and allow users to access only specific features."
+          },
+          "DedicatedCustomerSuccessManager": {
+            "name": "Dedicated Success Manager",
+            "description": "Our dedicated customer success managers recommend support and lead generation chatbot scenarios, highlight optimization opportunities, and more. They help you make the most out of your Tidio subscription."
+          },
+          "CustomBranding": {
+            "name": "Custom branding",
+            "description": "Work with our team to customize the appearance of your chat widget with branded visuals, animations, and more."
+          },
+          "Multisite": {
+            "name": "Multisite",
+            "description": "Use the same widget on multiple websites so your support team can improve its efficiency."
+          },
+          "CustomerServiceDepartments": {
+            "name": "Departments",
+            "description": "Route every conversation to the right support agent so your team can solve more customer problems."
+          },
+          "Multilanguage": {
+            "name": "Multilanguage",
+            "description": "Add multiple languages to your widget so your website visitors can interact with the chat in their preferred language."
+          },
+          "OpenAPI": {
+            "name": "OpenAPI",
+            "description": "Integrate Tidio with your data through OpenAPI to streamline processes and improve efficiency."
+          },
+          "GuaranteedResolution": {
+            "name": "Guaranteed 50% Lyro AI resolution rate",
+            "description": "Achieve a guaranteed 50% resolution rate with Lyro AI for improved customer support efficiency. Resolution rate guarantee applies up to the fourth full calendar month after service commencement; available only to selected customers who qualify for Premium service; guarantee effective upon contract signature."
+          },
+          "PriorityService": {
+            "name": "Priority Service + Premium Support",
+            "description": "Let our Success Managers delight you with tailored service, immediate resolutions and enhanced assistance."
+          },
+          "SuperAdminRole": {
+            "name": "Super admin role",
+            "description": "Manage multiple websites or projects from one account"
+          },
+          "AnalysisAndMonitoring": {
+            "name": "Analysis \u0026 monitoring",
+            "description": "We deliver tailored reporting on ROI of your cooperation with Tidio. We also monitor crucial metrics for you ensuring constant and immediate optimization of your Tidio project."
+          },
+          "LyroAsManagedService": {
+            "name": "Lyro AI as a managed service",
+            "description": "Tidio takes responsibility for the success of your AI Customer Service from you. You pay a fixed subscription and we successively reduce your customer support costs."
+          },
+          "LyroTasks": {
+            "name": "Lyro AI Agent tasks",
+            "description": "Lyro AI Agent performs small automation tasks, such as creating tickets, checking order statuses, and more."
+          },
+          "LyroFAQUpload": {
+            "name": "FAQ upload",
+            "description": "Manually upload your support knowledge so Lyro AI Agent can use the data to answer your customers"
+          },
+          "LyroFAQScraper": {
+            "name": "FAQ scraper",
+            "description": "Have Lyro AI Agent scrape an existing FAQ section and use the information as its knowledge base"
+          },
+          "LyroWebsiteScraper": {
+            "name": "Website scraper",
+            "description": "Have Lyro AI Agent scrape your website data to create its knowledge base"
+          },
+          "LyroConnect": {
+            "name": "Lyro Connect",
+            "description": "Provide AI assistance without changing your support system. Add Lyro AI Agent to your existing helpdesk solution through Lyro Connect"
+          },
+          "LyroCustomName": {
+            "name": "Lyro custom name",
+            "description": "Set a unique name to your AI agent, which will be displayed to your visitors"
+          },
+          "ProductRecommendation": {
+            "name": "Lyro product recommendation",
+            "description": "Use Lyro AI Agent to recommend products to your customers based on their preferences. Note: This feature is currently available only for Shopify users.",
+            "merge": {
+              "text": "Available with the purchase of a paid Lyro AI Agent quota (50-1k conversations).",
+              "isCustomTidioPlusColumn": false
+            }
+          },
+          "AutomationSalesChatbotsTemplates": {
+            "name": "Sales Flows templates",
+            "description": "Sell more with Flows scenarios specifically designed to increase conversions"
+          },
+          "AutomationFAQChatbotsTemplates": {
+            "name": "FAQ Flows templates",
+            "description": "Be there for your customers 24/7. Answer common customer questions regarding order statuses, delivery times, return policies, and more"
+          },
+          "AutomationVisualChatbotBuilder": {
+            "name": "Visual Flows builder",
+            "description": "Create Flows scenarios from scratch or edit our templates without writing a single line of code"
+          },
+          "CustomerServiceTidioAIReplyAssistant": {
+            "name": "Tidio AI reply assistant",
+            "description": "AI Reply Assistant enhances your answers, allowing you to speed up your response times."
+          },
+          "CustomerServiceChatOnSite": {
+            "name": "Chat page",
+            "description": "Use Chat page as your landing page, add it to email signature or share on social media to connect with your customers."
+          },
+          "CustomerServiceLiveTyping": {
+            "name": "Live typing",
+            "description": "Speed up your response times. Preview what your visitors are typing in the chat widget before they hit the 'Send' button."
+          },
+          "CustomerServiceViewedPagesHistory": {
+            "name": "Viewed pages history",
+            "description": "See what pages of your website visitors checked out so you can engage them with tailored recommendations and offers."
+          },
+          "CustomerServiceVisitorInfo": {
+            "name": "Visitors info",
+            "description": "Learn more about your visitors. See their location and whether they're new or returning visitors so you can start meaningful conversations."
+          },
+          "CustomerServiceVisitorNotes": {
+            "name": "Visitor notes",
+            "description": "Add notes to visitor contacts so you and your team members can resume conversations with ease."
+          },
+          "CustomerServiceAutomaticResponse": {
+            "name": "Automatic response",
+            "description": "Answer new messages automatically when you cannot pick up the chats on time."
+          },
+          "CustomerServiceAutomaticChatAssignment": {
+            "name": "Automatic chat assignment",
+            "description": "Assign conversations automatically to your operators to speed up your response times."
+          },
+          "CustomerServiceAutomatedSatisfactionSurvey": {
+            "name": "Automated satisfaction survey",
+            "description": "Learn more about your customers' experiences to identify improvement opportunities."
+          },
+          "CustomerServiceAutomatedConversationSolving": {
+            "name": "Automated conversation solving",
+            "description": "Save time by automatically solving finished chat conversations."
+          },
+          "CustomerServiceCannedResponses": {
+            "name": "Canned responses",
+            "description": "Prepare a library of common answers so you can reply to FAQs in seconds."
+          },
+          "CustomerServiceNativeShopifyActions": {
+            "name": "Native Shopify actions",
+            "description": "Check the customer's order history, cancel orders, recommend products, and more - all without leaving the chat window."
+          },
+          "CustomerServiceMessengerIntegration": {
+            "name": "Messenger integration",
+            "description": "Native integration with Meta (formerly Facebook) Messenger."
+          },
+          "CustomerServiceInstagramIntegration": {
+            "name": "Instagram integration",
+            "description": "Native integration with Instagram."
+          },
+          "CustomerServiceWhatsappIntegration": {
+            "name": "WhatsApp integration",
+            "description": "Native integration with WhatsApp."
+          },
+          "CustomerServiceEmailIntegration": {
+            "name": "Email integration",
+            "description": "Connect with popular work email marketing tools (Klavyio, Mailchimp, Sendinblue, Mailer Lite, Active Campaign, etc)"
+          },
+          "AppIntegrations": {
+            "name": "App integrations",
+            "description": "Connect to your favorite work tools (Google Analytics, HubSpot, Salesforce, Pipedrive, etc.) with pre-built integrations"
+          },
+          "CustomerServiceDesktopApp": {
+            "name": "Desktop app",
+            "description": "Eliminate distractions. Use Tidio without opening a browser to streamline your work."
+          },
+          "CustomerServiceMobileApp": {
+            "name": "Mobile app",
+            "description": "Stay on top of your conversations when you're on the go with a dedicated mobile app."
+          },
+          "SupportOverEmail": {
+            "name": "Support over email",
+            "description": "Connect with our support team over email and get answers to all of your questions."
+          },
+          "ChatbotBuilding": {
+            "name": "Flows building and strategy assistance",
+            "description": "Consult with one of our specialists to create Flows scenarios that are tailored to your website"
+          },
+          "TrainingSessions": {
+            "name": "Training sessions",
+            "description": "Learn how to use Tidio directly from one of our specialists."
+          },
+          "AccountReviews": {
+            "name": "Account reviews",
+            "description": "Get reports on your account setup and uncover actionable insights that can help you improve your support and lead generation processes."
+          },
+          "WidgetCustomization": {
+            "name": "Widget customization",
+            "description": "Make basic adjustments to your widget's position, color, and behavior."
+          },
+          "LyroQuota": {
+            "name": {
+              "singleNumber": "_NUMBER_ Lyro AI conversations",
+              "upTo": "Up to _NUMBER_ Lyro AI conversations",
+              "custom": "Custom Lyro AI conversations",
+              "unlimited": "Unlimited Lyro AI conversations",
+              "default": "Lyro AI Agent conversations",
+              "from": "From _NUMBER_ Lyro AI conversations"
+            },
+            "description": "A Lyro AI Agent conversation is a customer interaction that has at least one reply from our AI support agent",
+            "merge": {
+              "text": "Your first 50 conversations are free (lifetime). You can upgrade your monthly limit to 50 - 1k.",
+              "isCustomTidioPlusColumn": true
+            }
+          },
+          "AutomationQuota": {
+            "name": {
+              "singleNumber": "_NUMBER_ Flows visitors reached",
+              "upTo": "Up to _NUMBER_ Flows visitors reached",
+              "custom": "Custom number of Flows visitors reached",
+              "unlimited": "Unlimited Flows visitors reached",
+              "default": "Visitors reached via Flows",
+              "from": "From _NUMBER_ Flows visitors reached"
+            },
+            "description": "The maximum number of unique website visitors you can engage through automation every month",
+            "merge": {
+              "text": "Your first 100 visitors reached via Flows are free. You can upgrade your monthly limit to 2k - 100k.",
+              "isCustomTidioPlusColumn": true
+            }
+          },
+          "AICopilot": {
+            "name": "Copilot",
+            "description": "Copilot works natively in Tidio, offering on-brand reply suggestions from past conversations. It's also available as a Chrome extension for use in other helpdesk tools.",
+            "newBadgeInCompareTable": true
+          },
+          "LiveChatAndTicketing": {
+            "name": "Live chat \u0026 Ticketing",
+            "description": "Support customers in real time and asynchronously with live chat, email, video calls, and a ticketing system that improves resolution time and customer satisfaction."
+          },
+          "LyroQuotaOneTime": {
+            "name": "50 Lyro AI Agent conversations (one-time)",
+            "description": "A Lyro AI Agent conversation is a customer interaction that has at least one reply from our AI support agent"
+          },
+          "PayPerLyroResolution": {
+            "name": "Pay-per-resolution billing",
+            "description": "You're billed only once a support conversation is fully resolved, maximizing ROI on your Premium plan."
+          }
+        }
+      },
+      "featuresV5": {
+        "data": {
+          "HandledConversations": {
+            "name": {
+              "singleNumber": "_NUMBER_ Billable conversations",
+              "upTo": "Up to _NUMBER_ Billable conversations",
+              "custom": "Custom quota of Billable conversations",
+              "unlimited": "Unlimited Billable conversations",
+              "default": "Billable conversations",
+              "from": "From _NUMBER_ Billable conversations"
+            },
+            "description": "\"Billable conversation\" refers to any live chat, ticket, email or social media channel conversation that includes a message from a human agent (you)."
+          },
+          "ActiveOperatorsLimitFeature": {
+            "name": {
+              "singleNumber": "_NUMBER_ seats",
+              "upTo": "Up to _NUMBER_ seats",
+              "custom": "Custom number of seats",
+              "unlimited": "Unlimited seats",
+              "default": "Seats",
+              "from": "From _NUMBER_ seats"
+            },
+            "description": "The maximum number of support agents who can use Tidio at the same time."
+          },
+          "CustomerServiceLivechat": {
+            "name": "Live Chat",
+            "description": "Provide answers, offer discounts, or make personalized recommendations through the live chat widget."
+          },
+          "CustomerServiceTicketingSystem": {
+            "name": "Help Desk",
+            "description": "Improve your time to resolution and customer satisfaction with a smart ticketing system. Manage, assign, and reply to customers' requests in one place."
+          },
+          "CustomerServiceEmailManagementSystemFeature": {
+            "name": "Email management system",
+            "description": "Connect your email inbox to manage your emails in your Tidio dashboard."
+          },
+          "CustomerServiceLiveVideoCalls": {
+            "name": "Live video calls",
+            "description": "Engage your website visitors with video calls directly through the live chat widget."
+          },
+          "SocialMediaIntegrations": {
+            "name": "Social media integrations",
+            "description": "Manage your Instagram, WhatsApp, and Messenger DMs in a single dashboard."
+          },
+          "CustomerServiceAnalyticsBasic": {
+            "name": "Basic analytics",
+            "description": "See basic data about your conversations, such as the number of missed conversations, first response times, and conversation duration."
+          },
+          "CustomerServiceLiveVisitorsList": {
+            "name": "Live visitors list",
+            "description": "See all the visitors who are online on your website, along with the pages they're browsing so you can engage them through the chat widget."
+          },
+          "CustomerServiceOperatingHours": {
+            "name": "Operating hours",
+            "description": "Let customers know when you're online and collect their information when you're out of office."
+          },
+          "SupportOverLiveChat": {
+            "name": "Support over live chat",
+            "description": "Contact us through the live chat widget and we'll get back to you in minutes."
+          },
+          "CustomerServiceAnalyticsAdvanced": {
+            "name": "Advanced analytics",
+            "description": "Get detailed insights on the number of sales generated with Tidio, customer satisfaction, and individual operator performance, and more."
+          },
+          "TidioPowerFeatures": {
+            "name": "Tidio power features",
+            "description": "Access exclusive features, such as Live Typing, Automatic chat assignments, and more."
+          },
+          "NoTidioBrandingAddon": {
+            "name": "No Tidio branding (add-on)",
+            "description": "Remove the 'Powered by Tidio' logo from your chat widget."
+          },
+          "NoTidioBranding": {
+            "name": "No Tidio branding",
+            "description": "Remove the 'Powered by Tidio' logo from your chat widget."
+          },
+          "CustomerServicePermissions": {
+            "name": "Permissions",
+            "description": "Configure user permissions and allow users to access only specific features."
+          },
+          "DedicatedCustomerSuccessManager": {
+            "name": "Dedicated Success Manager",
+            "description": "Our dedicated customer success managers recommend support and lead generation chatbot scenarios, highlight optimization opportunities, and more. They help you make the most out of your Tidio subscription."
+          },
+          "CustomBranding": {
+            "name": "Custom branding",
+            "description": "Work with our team to customize the appearance of your chat widget with branded visuals, animations, and more."
+          },
+          "Multisite": {
+            "name": "Multisite",
+            "description": "Use the same widget on multiple websites so your support team can improve its efficiency."
+          },
+          "CustomerServiceDepartments": {
+            "name": "Departments",
+            "description": "Route every conversation to the right support agent so your team can solve more customer problems."
+          },
+          "Multilanguage": {
+            "name": "Multilanguage",
+            "description": "Add multiple languages to your widget so your website visitors can interact with the chat in their preferred language."
+          },
+          "OpenAPI": {
+            "name": "OpenAPI",
+            "description": "Integrate Tidio with your data through OpenAPI to streamline processes and improve efficiency."
+          },
+          "GuaranteedResolution": {
+            "name": "Guaranteed 50% Lyro AI resolution rate",
+            "description": "Achieve a guaranteed 50% resolution rate with Lyro AI for improved customer support efficiency. Resolution rate guarantee applies up to the fourth full calendar month after service commencement; available only to selected customers who qualify for Premium service; guarantee effective upon contract signature."
+          },
+          "PriorityService": {
+            "name": "Priority Service + Premium Support",
+            "description": "Let our Success Managers delight you with tailored service, immediate resolutions and enhanced assistance."
+          },
+          "SuperAdminRole": {
+            "name": "Super admin role",
+            "description": "Manage multiple websites or projects from one account"
+          },
+          "AnalysisAndMonitoring": {
+            "name": "Analysis \u0026 monitoring",
+            "description": "We deliver tailored reporting on ROI of your cooperation with Tidio. We also monitor crucial metrics for you ensuring constant and immediate optimization of your Tidio project."
+          },
+          "LyroAsManagedService": {
+            "name": "Lyro AI as a managed service",
+            "description": "Tidio takes responsibility for the success of your AI Customer Service from you. You pay a fixed subscription and we successively reduce your customer support costs."
+          },
+          "LyroTasks": {
+            "name": "Lyro AI Agent tasks",
+            "description": "Lyro AI Agent performs small automation tasks, such as creating tickets, checking order statuses, and more."
+          },
+          "LyroFAQUpload": {
+            "name": "FAQ upload",
+            "description": "Manually upload your support knowledge so Lyro AI Agent can use the data to answer your customers"
+          },
+          "LyroFAQScraper": {
+            "name": "FAQ scraper",
+            "description": "Have Lyro AI Agent scrape an existing FAQ section and use the information as its knowledge base"
+          },
+          "LyroWebsiteScraper": {
+            "name": "Website scraper",
+            "description": "Have Lyro AI Agent scrape your website data to create its knowledge base"
+          },
+          "LyroConnect": {
+            "name": "Lyro Connect",
+            "description": "Provide AI assistance without changing your support system. Add Lyro AI Agent to your existing helpdesk solution through Lyro Connect"
+          },
+          "LyroCustomName": {
+            "name": "Lyro custom name",
+            "description": "Set a unique name to your AI agent, which will be displayed to your visitors"
+          },
+          "ProductRecommendation": {
+            "name": "Lyro product recommendation",
+            "description": "Use Lyro AI Agent to recommend products to your customers based on their preferences. Note: This feature is currently available only for Shopify users.",
+            "merge": {
+              "text": "Available with the purchase of a paid Lyro AI Agent quota (50-1k conversations).",
+              "isCustomTidioPlusColumn": false
+            }
+          },
+          "AutomationSalesChatbotsTemplates": {
+            "name": "Sales Flows templates",
+            "description": "Sell more with Flows scenarios specifically designed to increase conversions"
+          },
+          "AutomationFAQChatbotsTemplates": {
+            "name": "FAQ Flows templates",
+            "description": "Be there for your customers 24/7. Answer common customer questions regarding order statuses, delivery times, return policies, and more"
+          },
+          "AutomationVisualChatbotBuilder": {
+            "name": "Visual Flows builder",
+            "description": "Create Flows scenarios from scratch or edit our templates without writing a single line of code"
+          },
+          "CustomerServiceTidioAIReplyAssistant": {
+            "name": "Tidio AI reply assistant",
+            "description": "AI Reply Assistant enhances your answers, allowing you to speed up your response times."
+          },
+          "CustomerServiceChatOnSite": {
+            "name": "Chat page",
+            "description": "Use Chat page as your landing page, add it to email signature or share on social media to connect with your customers."
+          },
+          "CustomerServiceLiveTyping": {
+            "name": "Live typing",
+            "description": "Speed up your response times. Preview what your visitors are typing in the chat widget before they hit the 'Send' button."
+          },
+          "CustomerServiceViewedPagesHistory": {
+            "name": "Viewed pages history",
+            "description": "See what pages of your website visitors checked out so you can engage them with tailored recommendations and offers."
+          },
+          "CustomerServiceVisitorInfo": {
+            "name": "Visitors info",
+            "description": "Learn more about your visitors. See their location and whether they're new or returning visitors so you can start meaningful conversations."
+          },
+          "CustomerServiceVisitorNotes": {
+            "name": "Visitor notes",
+            "description": "Add notes to visitor contacts so you and your team members can resume conversations with ease."
+          },
+          "CustomerServiceAutomaticResponse": {
+            "name": "Automatic response",
+            "description": "Answer new messages automatically when you cannot pick up the chats on time."
+          },
+          "CustomerServiceAutomaticChatAssignment": {
+            "name": "Automatic chat assignment",
+            "description": "Assign conversations automatically to your operators to speed up your response times."
+          },
+          "CustomerServiceAutomatedSatisfactionSurvey": {
+            "name": "Automated satisfaction survey",
+            "description": "Learn more about your customers' experiences to identify improvement opportunities."
+          },
+          "CustomerServiceAutomatedConversationSolving": {
+            "name": "Automated conversation solving",
+            "description": "Save time by automatically solving finished chat conversations."
+          },
+          "CustomerServiceCannedResponses": {
+            "name": "Canned responses",
+            "description": "Prepare a library of common answers so you can reply to FAQs in seconds."
+          },
+          "CustomerServiceNativeShopifyActions": {
+            "name": "Native Shopify actions",
+            "description": "Check the customer's order history, cancel orders, recommend products, and more - all without leaving the chat window."
+          },
+          "CustomerServiceMessengerIntegration": {
+            "name": "Messenger integration",
+            "description": "Native integration with Meta (formerly Facebook) Messenger."
+          },
+          "CustomerServiceInstagramIntegration": {
+            "name": "Instagram integration",
+            "description": "Native integration with Instagram."
+          },
+          "CustomerServiceWhatsappIntegration": {
+            "name": "WhatsApp integration",
+            "description": "Native integration with WhatsApp."
+          },
+          "CustomerServiceEmailIntegration": {
+            "name": "Email integration",
+            "description": "Connect with popular work email marketing tools (Klavyio, Mailchimp, Sendinblue, Mailer Lite, Active Campaign, etc)"
+          },
+          "AppIntegrations": {
+            "name": "App integrations",
+            "description": "Connect to your favorite work tools (Google Analytics, HubSpot, Salesforce, Pipedrive, etc.) with pre-built integrations"
+          },
+          "CustomerServiceDesktopApp": {
+            "name": "Desktop app",
+            "description": "Eliminate distractions. Use Tidio without opening a browser to streamline your work."
+          },
+          "CustomerServiceMobileApp": {
+            "name": "Mobile app",
+            "description": "Stay on top of your conversations when you're on the go with a dedicated mobile app."
+          },
+          "SupportOverEmail": {
+            "name": "Support over email",
+            "description": "Connect with our support team over email and get answers to all of your questions."
+          },
+          "ChatbotBuilding": {
+            "name": "Flows building and strategy assistance",
+            "description": "Consult with one of our specialists to create Flows scenarios that are tailored to your website"
+          },
+          "TrainingSessions": {
+            "name": "Training sessions",
+            "description": "Learn how to use Tidio directly from one of our specialists."
+          },
+          "AccountReviews": {
+            "name": "Account reviews",
+            "description": "Get reports on your account setup and uncover actionable insights that can help you improve your support and lead generation processes."
+          },
+          "WidgetCustomization": {
+            "name": "Widget customization",
+            "description": "Make basic adjustments to your widget's position, color, and behavior."
+          },
+          "LyroQuota": {
+            "name": {
+              "singleNumber": "_NUMBER_ Lyro AI conversations",
+              "upTo": "Up to _NUMBER_ Lyro AI conversations",
+              "custom": "Custom Lyro AI conversations",
+              "unlimited": "Unlimited Lyro AI conversations",
+              "default": "Lyro AI Agent conversations",
+              "from": "From _NUMBER_ Lyro AI conversations"
+            },
+            "description": "A Lyro AI Agent conversation is a customer interaction that has at least one reply from our AI support agent",
+            "merge": {
+              "text": "Your first 50 conversations are free (lifetime). You can upgrade your monthly limit to 50 - 1k.",
+              "isCustomTidioPlusColumn": true
+            }
+          },
+          "AutomationQuota": {
+            "name": {
+              "singleNumber": "_NUMBER_ Flows visitors reached",
+              "upTo": "Up to _NUMBER_ Flows visitors reached",
+              "custom": "Custom number of Flows visitors reached",
+              "unlimited": "Unlimited Flows visitors reached",
+              "default": "Visitors reached via Flows",
+              "from": "From _NUMBER_ Flows visitors reached"
+            },
+            "description": "The maximum number of unique website visitors you can engage through automation every month",
+            "merge": {
+              "text": "Your first 100 visitors reached via Flows are free. You can upgrade your monthly limit to 2k - 100k.",
+              "isCustomTidioPlusColumn": true
+            }
+          },
+          "AICopilot": {
+            "name": "Copilot",
+            "description": "Copilot works natively in Tidio, offering on-brand reply suggestions from past conversations. It's also available as a Chrome extension for use in other helpdesk tools.",
+            "newBadgeInCompareTable": true
+          },
+          "LiveChatAndTicketing": {
+            "name": "Live chat \u0026 Ticketing",
+            "description": "Support customers in real time and asynchronously with live chat, email, video calls, and a ticketing system that improves resolution time and customer satisfaction."
+          },
+          "LyroQuotaOneTime": {
+            "name": "50 Lyro AI Agent conversations (one-time)",
+            "description": "A Lyro AI Agent conversation is a customer interaction that has at least one reply from our AI support agent"
+          },
+          "PayPerLyroResolution": {
+            "name": "Pay-per-resolution billing",
+            "description": "You're billed only once a support conversation is fully resolved, maximizing ROI on your Premium plan."
+          }
+        }
+      }
+    }
+  }
+}
