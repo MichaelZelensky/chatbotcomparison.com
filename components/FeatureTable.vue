@@ -111,7 +111,7 @@ const ariaLabel = (val: unknown, type: FeatureType): string => {
   @apply bg-transparent text-sm uppercase tracking-wide text-[color:var(--muted)];
   border-bottom: 1px solid var(--border);
 }
-
+.row-heading { @apply font-normal text-left; }
 .row-heading .feat { @apply flex items-center gap-2; }
 .tip {
   @apply inline-flex items-center justify-center text-xs rounded-full border;
