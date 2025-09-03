@@ -41,13 +41,13 @@
         <!-- Total score row (on top) -->
         <tbody>
           <tr class="total-row">
-            <th scope="row" class="group-heading text-right">
+            <th scope="row" class="group-heading">
               Total score
             </th>
             <td
               v-for="column in sortedColumns"
               :key="column.key + '-total'"
-              class="group-cell text-right uppercase tracking-wide text-[color:var(--muted)] text-sm"
+              class="group-cell text-center uppercase tracking-wide text-[color:var(--muted)] text-sm"
               :aria-label="`Total score: ${totalScore(column)}`"
               title="Sum of available boolean features across all groups"
             >
@@ -71,7 +71,7 @@
             <td
               v-for="column in sortedColumns"
               :key="column.key + '-group'"
-              class="group-cell text-right uppercase tracking-wide text-[color:var(--muted)] text-sm"
+              class="group-cell text-center uppercase tracking-wide text-[color:var(--muted)] text-sm"
               :class="{ 'pt-3': gIdx > 0 }"
               :aria-label="isPricingGroup(featureGroup.id) ? `Pricing group (no score)` : `Score for ${featureGroup.label}: ${groupScore(column, featureGroup.id)}`"
               :title="isPricingGroup(featureGroup.id) ? 'Pricing group (score not shown)' : `Features available in ${featureGroup.label}`"
@@ -99,6 +99,7 @@
             </th>
 
             <td
+              class="text-center text-sm"
               v-for="column in sortedColumns"
               :key="column.key + '-' + featureRow.key"
             >
