@@ -192,5 +192,15 @@
       { "key": "tls", "label": "TLS Encryption", "type": "boolean", "description": "All data is encrypted in transit using TLS." },
       { "key": "replication", "label": "Data replication", "type": "boolean", "description": "Data is backed up and replicated for increased reliability." }
     ]
+  },
+  {
+    "id": "enterprise",
+    "label": "Enterprise-only",
+    "rows": [
+      { "key": "sandbox", "label": "Sandbox environment", "type": "boolean", "description": "Test workflows and configurations in an isolated environment." },
+      { "key": "auditLogs", "label": "Audit logs", "type": "boolean", "description": "Track all changes and activities across the system." },
+      { "key": "businessRulesAnalysis", "label": "Business rules analysis", "type": "boolean", "description": "Analyze the impact of business rules and automations." }
+    ]
   }
+
 ]

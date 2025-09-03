@@ -1228,6 +1228,81 @@
       "interactionsPopularity": true,
       "templatesLibrary": true
     }
+  },
+  "zendesk": {
+    "suite-team": {
+      "planPrice": "$55",
+      "agentsIncluded": null,
+      "aiUsage": "Essential AI agents",
+      "hcArticles": true,
+      "hcSearch": true,
+      "chatWidget": true,
+      "messenger": true,
+      "instagram": true,
+      "whatsappBiz": true,
+      "slack": true,
+      "phone": true,
+      "email": true,
+      "customDash": false,
+      "dataExport": false
+    },
+    "suite-growth": {
+      "planPrice": "$89",
+      "agentsIncluded": null,
+      "aiUsage": "Essential AI agents",
+      "hcArticles": true,
+      "hcSearch": true,
+      "hcMultilingual": true,
+      "chatWidget": true,
+      "messenger": true,
+      "instagram": true,
+      "whatsappBiz": true,
+      "slack": true,
+      "phone": true,
+      "email": true,
+      "customDash": false,
+      "dataExport": false
+    },
+    "suite-professional": {
+      "planPrice": "$149",
+      "agentsIncluded": null,
+      "aiUsage": "Advanced AI + persona customization",
+      "hcArticles": true,
+      "hcSearch": true,
+      "hcMultilingual": true,
+      "chatWidget": true,
+      "messenger": true,
+      "instagram": true,
+      "whatsappBiz": true,
+      "slack": true,
+      "phone": true,
+      "email": true,
+      "customDash": true,
+      "dataExport": true,
+      "apiAnalytics": true
+    },
+    "suite-enterprise": {
+      "planPrice": "$219",
+      "agentsIncluded": null,
+      "aiUsage": "Advanced AI + enterprise tools",
+      "hcArticles": true,
+      "hcSearch": true,
+      "hcMultilingual": true,
+      "chatWidget": true,
+      "messenger": true,
+      "instagram": true,
+      "whatsappBiz": true,
+      "slack": true,
+      "phone": true,
+      "email": true,
+      "customDash": true,
+      "dataExport": true,
+      "apiAnalytics": true,
+      "crmCustomAttrs": true,
+      "crmProfile": true,
+      "crmSegmentation": true
+    }
   }
+
 
 }

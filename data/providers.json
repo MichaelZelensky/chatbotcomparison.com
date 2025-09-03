@@ -32,5 +32,16 @@
       { "name": "Business", "slug": "business" },
       { "name": "Enterprise", "slug": "enterprise" }
     ]
+  },
+  {
+    "name": "Zendesk",
+    "slug": "zendesk",
+    "homepage": "https://www.zendesk.com/",
+    "plans": [
+      { "name": "Suite Team", "slug": "suite-team" },
+      { "name": "Suite Growth", "slug": "suite-growth" },
+      { "name": "Suite Professional", "slug": "suite-professional" },
+      { "name": "Suite Enterprise", "slug": "suite-enterprise" }
+    ]
   }
 ]
