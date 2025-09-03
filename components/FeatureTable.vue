@@ -1,13 +1,11 @@
 <template>
   <section>
     <h1 class="title">Chatbot Comparison</h1>
-
     <div v-if="columns.length && groups.length" class="table-wrap">
       <table class="compare" aria-describedby="tableDescription">
         <caption id="tableDescription" class="sr-only">
           Feature comparison of chatbot providers and plans
         </caption>
-
         <thead>
           <tr>
             <th scope="column">Feature</th>
@@ -19,14 +17,13 @@
             </th>
           </tr>
         </thead>
-
         <tbody v-for="featureGroup in groups" :key="featureGroup.id">
           <tr class="group-row">
-            <th :colspan="columns.length + 1" scope="rowgroup">
+            <th scope="rowgroup" class="group-heading">
               {{ featureGroup.label }}
             </th>
+            <td v-for="column in columns" :key="column.key + '-group'" class="group-cell"></td>
           </tr>
-
           <tr
             v-for="featureRow in featureGroup.rows"
             :key="featureGroup.id + '-' + featureRow.key"
@@ -41,7 +38,6 @@
                 >ⓘ</button>
               </div>
             </th>
-
             <td
               v-for="column in columns"
               :key="column.key + '-' + featureRow.key"
@@ -55,9 +51,7 @@
           </tr>
         </tbody>
       </table>
-
     </div>
-
     <p v-else class="small">No data to display.</p>
   </section>
 </template>
@@ -145,13 +139,12 @@ const ariaLabel = (val: unknown, type: FeatureType): string => {
 <style scoped lang="scss">
 .title { @apply text-lg font-bold mb-4; }
 .column-heading { @apply leading-tight; }
-
 .group-row > th {
   @apply bg-transparent text-sm uppercase tracking-wide text-[color:var(--muted)];
   border-bottom: 1px solid var(--border);
 }
 .row-heading { @apply font-normal text-left; }
-.row-heading .feat { @apply flex items-center gap-2; }
+.row-heading .feat { @apply flex items-center justify-between; }
 .tip {
   @apply inline-flex items-center justify-center text-xs rounded-full border;
   width: 18px; height: 18px; line-height: 1;
@@ -161,5 +154,13 @@ const ariaLabel = (val: unknown, type: FeatureType): string => {
 .sr-only {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+.group-heading {
+  @apply font-semibold text-left text-sm uppercase tracking-wide text-[color:var(--muted)] bg-[color:var(--card)];
+  border-bottom: 1px solid var(--border);
+}
+.group-cell {
+  @apply bg-[color:var(--card)];
+  border-bottom: 1px solid var(--border);
 }
 </style>
