@@ -3,7 +3,7 @@
     "id": "pricing",
     "label": "Pricing",
     "rows": [
-      { "key": "planPrice", "label": "Plan Price (per month)", "type": "text", "description": "The monthly or yearly cost of your subscription plan." },
+      { "key": "planPrice", "label": "Plan Price (per month)", "type": "text", "description": "The monthly cost of your subscription plan." },
       { "key": "agentsIncluded", "label": "Agents included", "type": "number", "description": "Number of agent licenses included in your plan at no extra cost." },
       { "key": "additionalAgentPrice", "label": "Additional agents (per month)", "type": "text", "description": "Add more seats to your plan and scale your team as needed." },
       { "key": "customerProfiles", "label": "Customer Profiles", "type": "number", "description": "Maximum number of unique customer profiles you can manage in your workspace." },
@@ -187,10 +187,8 @@
     "label": "Data & Security",
     "rows": [
       { "key": "mfa", "label": "Double-Factor Authentication", "type": "boolean", "description": "Add an extra layer of security to account logins." },
-      { "key": "euHosted", "label": "EU-Hosted", "type": "boolean", "description": "Data is hosted on European servers for compliance and privacy." },
       { "key": "dpa", "label": "Data Processing Agreement", "type": "boolean", "description": "A legal agreement ensuring data is handled in line with regulations." },
-      { "key": "tls", "label": "TLS Encryption", "type": "boolean", "description": "All data is encrypted in transit using TLS." },
-      { "key": "replication", "label": "Data replication", "type": "boolean", "description": "Data is backed up and replicated for increased reliability." }
+      { "key": "tls", "label": "TLS Encryption", "type": "boolean", "description": "All data is encrypted in transit using TLS." }
     ]
   },
   {
