@@ -43,5 +43,13 @@
       { "name": "Suite Professional", "slug": "suite-professional" },
       { "name": "Suite Enterprise", "slug": "suite-enterprise" }
     ]
+  },
+  {
+    "name": "LiveAgent",
+    "slug": "liveagent",
+    "homepage": "https://www.liveagent.com/",
+    "plans": [
+      { "name": "Per Agent", "slug": "per-agent" }
+    ]
   }
 ]

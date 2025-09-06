@@ -34,7 +34,11 @@
       { "key": "ratings", "label": "Conversation ratings", "type": "boolean", "description": "Send automated surveys to measure customer satisfaction (CSAT)." },
       { "key": "followups", "label": "Follow-up reminders", "type": "boolean", "description": "Schedule predefined or custom reminders on each conversation with detailed notes." },
       { "key": "roundRobin", "label": "Round-robin routing", "type": "boolean", "description": "Assign conversations automatically to available agents in a fair, rotating manner." },
-      { "key": "customerPortal", "label": "Customer Portal", "type": "boolean", "description": "Offer a dedicated portal where customers can open new tickets or track existing ones." }
+      { "key": "customerPortal", "label": "Customer Portal", "type": "boolean", "description": "Offer a dedicated portal where customers can open new tickets or track existing ones." },
+      { "key": "internalChat", "label": "Internal agent chat", "type": "boolean", "description": "Agents can chat internally without leaving the dashboard." },
+      { "key": "universalInbox", "label": "Universal inbox", "type": "boolean", "description": "Centralized inbox to handle conversations from all channels." },
+      { "key": "hybridTicketStream", "label": "Hybrid ticket stream", "type": "boolean", "description": "Single thread follows a customer across channels." },
+      { "key": "tags", "label": "Tags", "type": "boolean", "description": "Tag conversations for search and reporting." }
     ]
   },
   {
@@ -89,7 +93,10 @@
       { "key": "liveTranslate", "label": "LiveTranslate", "type": "boolean", "description": "Translate messages instantly in 50+ languages." },
       { "key": "avChat", "label": "Video & Audio chat", "type": "boolean", "description": "Engage with leads or customers through live audio or video." },
       { "key": "helpWidget", "label": "Help widget", "type": "boolean", "description": "Add a self-service help widget to your site for instant answers." },
-      { "key": "whiteLabel", "label": "White label", "type": "boolean", "description": "Remove vendor branding from the widget." }
+      { "key": "whiteLabel", "label": "White label", "type": "boolean", "description": "Remove vendor branding from the widget." },
+      { "key": "chatWindowDocking", "label": "Chat window docking", "type": "boolean", "description": "Users can dock the chat window while browsing; notifications show on new messages." },
+      { "key": "maxQueueAutoHide", "label": "Max queue auto-hide/auto-offline", "type": "boolean", "description": "Hide or switch widget offline automatically when queue length exceeds a limit." },
+      { "key": "multilingualWidget", "label": "Multilingual chat widget", "type": "boolean", "description": "Offer the chat widget in 40+ languages; configure per-widget language options." }
     ]
   },
   {
@@ -144,7 +151,11 @@
       { "key": "abTesting", "label": "A/B testing", "type": "boolean", "description": "Distribute traffic between variants of chatbot flows to compare performance." },
       { "key": "advancedButtonActions", "label": "Advanced button actions", "type": "boolean", "description": "Run actions (e.g., set attributes, add/remove segments) when users click buttons." },
       { "key": "debugMode", "label": "Debug mode", "type": "boolean", "description": "Inspect and trace conversation flow execution (JSON view) for troubleshooting." },
-      { "key": "templatesLibrary", "label": "Templates library", "type": "boolean", "description": "Prebuilt templates for common use cases to jump-start new bots." }
+      { "key": "templatesLibrary", "label": "Templates library", "type": "boolean", "description": "Prebuilt templates for common use cases to jump-start new bots." },
+      { "key": "ringToAllRouting", "label": "Ring-to-all routing", "type": "boolean", "description": "Notify all agents until one accepts." },
+      { "key": "priorityRouting", "label": "Priority routing", "type": "boolean", "description": "Route by agent priority / time since last chat." },
+      { "key": "utilizationRouting", "label": "Utilization-based routing", "type": "boolean", "description": "Route to lowest/highest utilization to balance workload." },
+      { "key": "randomRouting", "label": "Random routing", "type": "boolean", "description": "Assign chats randomly among available agents." }
     ]
   },
   {
@@ -169,7 +180,10 @@
       { "key": "prebuiltAnalytics", "label": "Prebuilt analytics", "type": "boolean", "description": "Measure conversational activity, customer satisfaction, and agent productivity." },
       { "key": "dataExport", "label": "Data export", "type": "boolean", "description": "Export your data for reporting, analysis, or backup." },
       { "key": "customDash", "label": "Custom dashboards", "type": "boolean", "description": "Build custom dashboards and analytics to match your company’s metrics." },
-      { "key": "apiAnalytics", "label": "API Analytics", "type": "boolean", "description": "Access, export, and analyze data programmatically via API." }
+      { "key": "apiAnalytics", "label": "API Analytics", "type": "boolean", "description": "Access, export, and analyze data programmatically via API." },
+      { "key": "chatEventTracking", "label": "Chat events tracking (GA)", "type": "boolean", "description": "Send chat events (start/end/messages) to Google Analytics." },
+      { "key": "visitorCurrentUrl", "label": "Visitor current URL tracking", "type": "boolean", "description": "See which page the visitor is currently viewing." },
+      { "key": "websiteMonitoring", "label": "Website monitoring", "type": "boolean", "description": "Track all visitors, active agents, ongoing chats, and top pages to engage proactively." }
     ]
   },
   {
@@ -200,5 +214,4 @@
       { "key": "businessRulesAnalysis", "label": "Business rules analysis", "type": "boolean", "description": "Analyze the impact of business rules and automations." }
     ]
   }
-
 ]

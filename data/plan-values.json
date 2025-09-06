@@ -1302,7 +1302,37 @@
       "crmProfile": true,
       "crmSegmentation": true
     }
+  },
+  "liveagent": {
+    "per-agent": {
+      "planPrice": "$19/agent",
+      "agentsIncluded": 1,
+      "additionalAgentPrice": "$19",
+      "customerProfiles": null,
+      "aiUsage": null,
+      "chatWidget": true,
+      "fullHistory": true,
+      "transcript": true,
+      "proactive": true,
+      "websiteMonitoring": true,
+      "liveTyping": true,
+      "multilingualWidget": true,
+      "chatWindowDocking": true,
+      "maxQueueAutoHide": true,
+      "ringToAllRouting": true,
+      "priorityRouting": true,
+      "utilizationRouting": true,
+      "randomRouting": true,
+      "internalChat": true,
+      "universalInbox": true,
+      "hybridTicketStream": true,
+      "tags": true,
+      "visitorCurrentUrl": true,
+      "chatEventTracking": true,
+      "liveMap": true,
+      "crmProfile": true,
+      "shopify": true,
+      "pipedrive": true
+    }
   }
-
-
 }
