@@ -125,11 +125,13 @@
       "euHosted": true,
       "dpa": true,
       "tls": true,
-      "replication": true
+      "replication": true,
+      "straightStart": true
     },
 
     "mini": {
       "planPrice": "$45",
+      "freeTrial": "14 days",
       "agentsIncluded": 4,
       "additionalAgentPrice": null,
       "customerProfiles": 5000,
@@ -253,11 +255,13 @@
       "euHosted": true,
       "dpa": true,
       "tls": true,
-      "replication": true
+      "replication": true,
+      "straightStart": true
     },
 
     "essentials": {
       "planPrice": "$95",
+      "freeTrial": "14 days",
       "agentsIncluded": 10,
       "additionalAgentPrice": null,
       "customerProfiles": 50000,
@@ -381,11 +385,13 @@
       "euHosted": true,
       "dpa": true,
       "tls": true,
-      "replication": true
+      "replication": true,
+      "straightStart": true
     },
 
     "plus": {
       "planPrice": "$295",
+      "freeTrial": "14 days",
       "agentsIncluded": "20+",
       "additionalAgentPrice": "$10",
       "customerProfiles": 200000,
@@ -509,7 +515,8 @@
       "euHosted": true,
       "dpa": true,
       "tls": true,
-      "replication": true
+      "replication": true,
+      "straightStart": true
     }
   },
   "tidio": {
@@ -641,11 +648,13 @@
       "euHosted": null,
       "dpa": true,
       "tls": true,
-      "replication": true
+      "replication": true,
+      "straightStart": false
     },
 
     "starter": {
       "planPrice": "$29",
+      "freeTrial": "7 days",
       "agentsIncluded": 10,
       "additionalAgentPrice": null,
       "customerProfiles": null,
@@ -772,11 +781,13 @@
       "euHosted": null,
       "dpa": true,
       "tls": true,
-      "replication": true
+      "replication": true,
+      "straightStart": false
     },
 
     "growth": {
       "planPrice": "From $59",
+      "freeTrial": "7 days",
       "agentsIncluded": 10,
       "additionalAgentPrice": null,
       "customerProfiles": null,
@@ -903,11 +914,13 @@
       "euHosted": null,
       "dpa": true,
       "tls": true,
-      "replication": true
+      "replication": true,
+      "straightStart": false
     },
 
     "plus": {
       "planPrice": "From $749",
+      "freeTrial": "7 days",
       "agentsIncluded": null,
       "additionalAgentPrice": null,
       "customerProfiles": null,
@@ -1034,11 +1047,13 @@
       "euHosted": null,
       "dpa": true,
       "tls": true,
-      "replication": true
+      "replication": true,
+      "straightStart": false
     },
 
     "premium": {
       "planPrice": "From $2,999",
+      "freeTrial": "7 days",
       "agentsIncluded": null,
       "additionalAgentPrice": null,
       "customerProfiles": null,
@@ -1165,12 +1180,14 @@
       "euHosted": null,
       "dpa": true,
       "tls": true,
-      "replication": true
+      "replication": true,
+      "straightStart": false
     }
   },
   "chatbotcom": {
     "starter": {
       "planPrice": "$52",
+      "freeTrial": "14 days",
 
       "aiKnowledge": false,
       "aiAnswers": false,
@@ -1181,11 +1198,13 @@
       "advancedButtonActions": false,
       "debugMode": false,
       "interactionsPopularity": false,
-      "templatesLibrary": true
+      "templatesLibrary": true,
+      "straightStart": true
     },
 
     "team": {
       "planPrice": "$174",
+      "freeTrial": "14 days",
 
       "aiKnowledge": true,
       "aiAnswers": false,
@@ -1196,11 +1215,13 @@
       "advancedButtonActions": true,
       "debugMode": true,
       "interactionsPopularity": true,
-      "templatesLibrary": true
+      "templatesLibrary": true,
+      "straightStart": true
     },
 
     "business": {
       "planPrice": "$424",
+      "freeTrial": "14 days",
 
       "aiKnowledge": true,
       "aiAnswers": true,
@@ -1211,11 +1232,13 @@
       "advancedButtonActions": true,
       "debugMode": true,
       "interactionsPopularity": true,
-      "templatesLibrary": true
+      "templatesLibrary": true,
+      "straightStart": true
     },
 
     "enterprise": {
       "planPrice": "Custom",
+      "freeTrial": "14 days",
 
       "aiKnowledge": true,
       "aiAnswers": true,
@@ -1226,12 +1249,14 @@
       "advancedButtonActions": true,
       "debugMode": true,
       "interactionsPopularity": true,
-      "templatesLibrary": true
+      "templatesLibrary": true,
+      "straightStart": true
     }
   },
   "zendesk": {
     "suite-team": {
       "planPrice": "$55",
+      "freeTrial": "14 days",
       "agentsIncluded": null,
       "aiUsage": "Essential AI agents",
       "hcArticles": true,
@@ -1244,10 +1269,12 @@
       "phone": true,
       "email": true,
       "customDash": false,
-      "dataExport": false
+      "dataExport": false,
+      "straightStart": true
     },
     "suite-growth": {
       "planPrice": "$89",
+      "freeTrial": "14 days",
       "agentsIncluded": null,
       "aiUsage": "Essential AI agents",
       "hcArticles": true,
@@ -1261,10 +1288,12 @@
       "phone": true,
       "email": true,
       "customDash": false,
-      "dataExport": false
+      "dataExport": false,
+      "straightStart": true
     },
     "suite-professional": {
       "planPrice": "$149",
+      "freeTrial": "14 days",
       "agentsIncluded": null,
       "aiUsage": "Advanced AI + persona customization",
       "hcArticles": true,
@@ -1279,10 +1308,12 @@
       "email": true,
       "customDash": true,
       "dataExport": true,
-      "apiAnalytics": true
+      "apiAnalytics": true,
+      "straightStart": true
     },
     "suite-enterprise": {
       "planPrice": "$219",
+      "freeTrial": "14 days",
       "agentsIncluded": null,
       "aiUsage": "Advanced AI + enterprise tools",
       "hcArticles": true,
@@ -1300,12 +1331,14 @@
       "apiAnalytics": true,
       "crmCustomAttrs": true,
       "crmProfile": true,
-      "crmSegmentation": true
+      "crmSegmentation": true,
+      "straightStart": true
     }
   },
   "liveagent": {
     "per-agent": {
       "planPrice": "$19/agent",
+      "freeTrial": "30 days",
       "agentsIncluded": 1,
       "additionalAgentPrice": "$19",
       "customerProfiles": null,

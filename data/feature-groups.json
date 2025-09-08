@@ -8,7 +8,8 @@
       { "key": "additionalAgentPrice", "label": "Additional agents (per month)", "type": "text", "description": "Add more seats to your plan and scale your team as needed." },
       { "key": "customerProfiles", "label": "Customer Profiles", "type": "number", "description": "Maximum number of unique customer profiles you can manage in your workspace." },
       { "key": "aiUsage", "label": "AI Usage", "type": "text", "description": "Number of AI-powered actions (like summaries or replies) available per day." },
-      { "key": "billableConversations", "label": "Billable conversations limit", "type": "text", "description": "Monthly limit for human-handled conversations (if applicable)." }
+      { "key": "billableConversations", "label": "Billable conversations limit", "type": "text", "description": "Monthly limit for human-handled conversations (if applicable)." },
+      { "key": "freeTrial", "label": "Free trial", "type": "text", "description": "Length and conditions of the free trial (e.g., days, credit card required or not)." }
     ]
   },
   {
@@ -212,6 +213,18 @@
       { "key": "sandbox", "label": "Sandbox environment", "type": "boolean", "description": "Test workflows and configurations in an isolated environment." },
       { "key": "auditLogs", "label": "Audit logs", "type": "boolean", "description": "Track all changes and activities across the system." },
       { "key": "businessRulesAnalysis", "label": "Business rules analysis", "type": "boolean", "description": "Analyze the impact of business rules and automations." }
+    ]
+  },
+  {
+    "id": "uiux",
+    "label": "UI/UX",
+    "rows": [
+      {
+        "key": "straightStart",
+        "label": "Straight-forward start",
+        "type": "boolean",
+        "description": "Chat can start immediately without registration, explicit consent gates, or other blockers."
+      }
     ]
   }
 ]
