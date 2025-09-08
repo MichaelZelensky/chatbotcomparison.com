@@ -34,18 +34,18 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: 'en' },
-      title: 'Chatbot Comparison — Find the best AI chatbots',
+      title: 'Chatbot Comparison: Find the best AI chatbots',
       meta: [
         { name: 'robots', content: 'all' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
         { name: 'description', content: 'Independent feature comparison of popular AI chatbots. Quickly find the best chatbot for your use case.' },
-        { property: 'og:title', content: 'Chatbot Comparison — Find the best AI chatbots' },
+        { property: 'og:title', content: 'Chatbot Comparison: Find the best AI chatbots' },
         { property: 'og:description', content: 'Independent feature comparison of popular AI chatbots. Quickly find the best chatbot for your use case.' },
         { property: 'og:image', content: 'https://chatbotcomparison.com/og-default.png' },
         { property: 'og:url', content: 'https://chatbotcomparison.com' },
         { property: 'og:type', content: 'website' },
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'Chatbot Comparison — Find the best AI chatbots' },
+        { name: 'twitter:title', content: 'Chatbot Comparison: Find the best AI chatbots' },
         { name: 'twitter:description', content: 'Independent feature comparison of popular AI chatbots. Quickly find the best chatbot for your use case.' },
         { name: 'twitter:image', content: 'https://chatbotcomparison.com/og-default.png' }
       ],
