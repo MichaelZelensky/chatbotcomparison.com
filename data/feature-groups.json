@@ -111,10 +111,10 @@
       { "key": "aiWriting", "label": "AI Writing Assistant", "type": "boolean", "description": "Provide AI-powered writing tools for your teams." },
       { "key": "siteSearch", "label": "AI-powered site search", "type": "boolean", "description": "Help users find answers with AI-powered search before contacting support." },
       { "key": "aiSpam", "label": "AI Inbox Spam filter", "type": "boolean", "description": "Use an AI-powered spam filter that adapts to your settings." },
-      { "key": "mcpServer", "label": "MCP Server (soon)", "type": "boolean", "description": "Dedicated AI infrastructure for high performance and privacy." },
+      { "key": "mcpServer", "label": "MCP Server", "type": "boolean", "description": "Dedicated AI infrastructure for high performance and privacy." },
       { "key": "autoTags", "label": "Auto-tagging of conversations", "type": "boolean", "description": "Automatically classify conversations using AI." },
       { "key": "summary", "label": "Conversation summary", "type": "boolean", "description": "Generate a concise summary of any conversation when needed." },
-      { "key": "aiAgent", "label": "AI Agent (soon)", "type": "boolean", "description": "Deploy an autonomous AI agent to handle customer conversations end to end." },
+      { "key": "aiAgent", "label": "AI Agent", "type": "boolean", "description": "Deploy an autonomous AI agent to handle customer conversations end to end." },
       { "key": "aiConversationsQuota", "label": "AI conversations quota", "type": "text", "description": "Monthly AI bot conversations included (if applicable)." }
     ]
   },
