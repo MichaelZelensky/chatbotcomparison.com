@@ -3,7 +3,7 @@
     "id": "pricing",
     "label": "Pricing",
     "rows": [
-      { "key": "planPrice", "label": "Plan Price (per month)", "type": "text", "description": "The monthly cost of your subscription plan." },
+      { "key": "planPrice", "label": "Plan Price (per month or year)", "type": "text", "description": "The monthly cost of your subscription plan." },
       { "key": "agentsIncluded", "label": "Agents included", "type": "number", "description": "Number of agent licenses included in your plan at no extra cost." },
       { "key": "additionalAgentPrice", "label": "Additional agents (per month)", "type": "text", "description": "Add more seats to your plan and scale your team as needed." },
       { "key": "customerProfiles", "label": "Customer Profiles", "type": "number", "description": "Maximum number of unique customer profiles you can manage in your workspace." },
