@@ -1,9 +1,10 @@
 <template>
   <section>
-    <h1 class="title">Chatbot Comparison</h1>
+    <div class="flex items-center justify-between mb-2">
+      <h1 class="title">Chatbot Comparison</h1>
+    </div>
 
-    <!-- Sort controls (keep if useful; default already applied) -->
-    <div v-if="columns.length && groups.length" class="mb-3 flex items-center gap-3">
+    <div class="mb-3 flex items-center gap-3">
       <label class="text-sm">Sort:</label>
       <select v-model="sortMode" class="border rounded px-2 py-1 text-sm">
         <option value="default">Price ↑ (default)</option>
@@ -18,9 +19,16 @@
         <option :value="null">All groups</option>
         <option v-for="g in groups" :key="g.id" :value="g.id">{{ g.label }}</option>
       </select>
+
+      <ProviderFilterDropdown
+        v-if="providerOptions.length"
+        :options="providerOptions"
+        v-model="selectedProviderSlugs"
+        label="Filter providers"
+      />
     </div>
 
-    <div v-if="columns.length && groups.length" class="table-wrap">
+    <div v-if="visibleColumns.length && groups.length" class="table-wrap">
       <table class="compare" aria-describedby="tableDescription">
         <caption id="tableDescription" class="sr-only">
           Feature comparison of chatbot providers and plans
@@ -38,7 +46,6 @@
           </tr>
         </thead>
 
-        <!-- Total score row (on top) -->
         <tbody>
           <tr class="total-row">
             <th scope="row" class="group-heading">
@@ -56,7 +63,6 @@
           </tr>
         </tbody>
 
-        <!-- Groups -->
         <tbody v-for="(featureGroup, gIdx) in groups" :key="featureGroup.id">
           <tr class="group-row">
             <th
@@ -67,7 +73,6 @@
               {{ featureGroup.label }}
             </th>
 
-            <!-- Group score per plan (skip for Pricing group) -->
             <td
               v-for="column in sortedColumns"
               :key="column.key + '-group'"
@@ -82,7 +87,6 @@
             </td>
           </tr>
 
-          <!-- Feature rows -->
           <tr
             v-for="featureRow in featureGroup.rows"
             :key="featureGroup.id + '-' + featureRow.key"
@@ -134,7 +138,6 @@ import planValues from '~/data/plan-values.json';
 const groups = groupsJson as FeatureGroup[];
 const providers = providersJson as Provider[];
 
-// If your "Pricing" group has another id, add it here.
 const priceGroupIds = new Set<string>(['pricing']);
 
 type Col = {
@@ -145,7 +148,7 @@ type Col = {
   planName: string;
 };
 
-const columns: Col[] = providers.flatMap(p =>
+const allColumns: Col[] = providers.flatMap(p =>
   p.plans.map(pl => ({
     key: `${p.slug}.${pl.slug}`,
     providerSlug: p.slug,
@@ -155,18 +158,25 @@ const columns: Col[] = providers.flatMap(p =>
   }))
 );
 
+const providerOptions = computed(() =>
+  providers.map(p => ({ value: p.slug, label: p.name }))
+);
+
+const selectedProviderSlugs = ref<string[]>(providers.map(p => p.slug));
+
+const visibleColumns = computed<Col[]>(() =>
+  allColumns.filter(c => selectedProviderSlugs.value.includes(c.providerSlug))
+);
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const valueOf = (prov: string, plan: string, featureKey: string) =>
   (planValues as any)?.[prov]?.[plan]?.[featureKey] ?? null;
 
 const isPricingGroup = (groupId: string) => priceGroupIds.has(groupId);
 
-// --- Sorting state ---
-// Default = price ascending, tie-breaker by total score (desc)
 const sortMode = ref<'default' | 'priceAsc' | 'priceDesc' | 'scoreAsc' | 'scoreDesc'>('default');
 const scoreGroupId = ref<string | null>(null);
 
-// --- Price parsing & helpers ---
 const parsePrice = (raw: unknown): number => {
   if (raw == null) return Number.POSITIVE_INFINITY;
   const s = String(raw).trim();
@@ -183,22 +193,20 @@ const priceOf = (col: Col): number => {
   return parsePrice(v);
 };
 
-// --- Score helpers ---
 const booleanKeysForGroup = (groupId?: string | null): string[] => {
   const targets = groupId ? groups.filter(g => g.id === groupId) : groups;
   return targets.flatMap(g => g.rows.filter(r => r.type === 'boolean').map(r => r.key));
 };
 
-// Cache scores (static data)
-const scoreCache = new Map<string, number>(); // key: `${col.key}|${groupId ?? 'ALL'}`
+const scoreCache = new Map<string, number>();
 const computeScore = (col: Col, groupId?: string | null): number => {
   const key = `${col.key}|${groupId ?? 'ALL'}`;
   const cached = scoreCache.get(key);
   if (cached != null) return cached;
 
-  const keys = booleanKeysForGroup(groupId ?? null);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const pv = (planValues as any)?.[col.providerSlug]?.[col.planSlug] || {};
+  const keys = booleanKeysForGroup(groupId ?? null);
   let s = 0;
   for (const k of keys) if (pv[k] === true) s += 1;
   scoreCache.set(key, s);
@@ -212,14 +220,13 @@ const totalScore = (col: Col): number =>
   computeScore(col, null);
 
 const sortedColumns = computed<Col[]>(() => {
-  const arr = [...columns];
+  const arr = [...visibleColumns.value];
 
   if (sortMode.value === 'default') {
     arr.sort((a, b) => {
       const pa = priceOf(a);
       const pb = priceOf(b);
       if (pa !== pb) return pa - pb;
-      // tie-breaker: higher total score first
       return totalScore(b) - totalScore(a);
     });
     return arr;
@@ -241,7 +248,6 @@ const sortedColumns = computed<Col[]>(() => {
   return arr;
 });
 
-// --- Formatting & a11y ---
 const getUserLocale = (): string => {
   if (process.client && typeof navigator !== 'undefined' && navigator.language) {
     return navigator.language;
