@@ -5,20 +5,6 @@
     </div>
 
     <div class="mb-3 flex items-center gap-3">
-      <label class="text-sm">Sort:</label>
-      <select v-model="sortMode" class="border rounded px-2 py-1 text-sm">
-        <option value="default">Price ↑ (default)</option>
-        <option value="priceAsc">Price ↑</option>
-        <option value="priceDesc">Price ↓</option>
-        <option value="scoreAsc">Score ↑</option>
-        <option value="scoreDesc">Score ↓</option>
-      </select>
-
-      <label class="text-sm">Score group:</label>
-      <select v-model="scoreGroupId" class="border rounded px-2 py-1 text-sm">
-        <option :value="null">All groups</option>
-        <option v-for="g in groups" :key="g.id" :value="g.id">{{ g.label }}</option>
-      </select>
 
       <ProviderFilterDropdown
         v-if="providerOptions.length"
@@ -26,6 +12,22 @@
         v-model="selectedProviderSlugs"
         label="Filter providers"
       />
+      <label class="text-sm">Sort:</label>
+      <select v-model="sortMode" class="border rounded px-2 py-1 text-sm">
+        <option value="default">Price ↑ + Score (default)</option>
+        <option value="priceAsc">Price ↑</option>
+        <option value="priceDesc">Price ↓</option>
+        <option value="scoreAsc">Score ↑</option>
+        <option value="scoreDesc">Score ↓</option>
+      </select>
+
+      <template v-if="isScoreSort">
+        <label class="text-sm">Score group:</label>
+        <select v-model="scoreGroupId" class="border rounded px-2 py-1 text-sm">
+          <option :value="null">All groups</option>
+          <option v-for="g in groups" :key="g.id" :value="g.id">{{ g.label }}</option>
+        </select>
+      </template>
     </div>
 
     <div v-if="visibleColumns.length && groups.length" class="table-wrap">
@@ -175,6 +177,7 @@ const valueOf = (prov: string, plan: string, featureKey: string) =>
 const isPricingGroup = (groupId: string) => priceGroupIds.has(groupId);
 
 const sortMode = ref<'default' | 'priceAsc' | 'priceDesc' | 'scoreAsc' | 'scoreDesc'>('default');
+const isScoreSort = computed(() => sortMode.value === 'scoreAsc' || sortMode.value === 'scoreDesc');
 const scoreGroupId = ref<string | null>(null);
 
 const parsePrice = (raw: unknown): number => {

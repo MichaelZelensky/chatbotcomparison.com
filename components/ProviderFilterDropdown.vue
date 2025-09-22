@@ -13,7 +13,7 @@
 
     <div
       v-if="isOpen"
-      class="absolute right-0 mt-2 w-56 rounded-md border bg-[color:var(--card)] shadow-lg z-10"
+      class="absolute left-0 mt-2 w-56 rounded-md border bg-[color:var(--card)] shadow-lg z-10"
       role="menu"
       aria-orientation="vertical"
       tabindex="-1"
