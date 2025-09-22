@@ -1,14 +1,11 @@
 <template>
   <section class="flex flex-col gap-4">
     <FeatureTable />
-    <section class="grid md:grid-cols-2 gap-4">
-    </section>
-    <Disclaimer />
+    <Disclaimer class="mt-12"/>
   </section>
 </template>
 
 <script setup lang="ts">
-import Disclaimer from '~/components/Disclaimer.vue';
 
 const title = 'Chatbot Comparison: Feature table of popular AI chatbots';
 const description = 'Compare ChatGPT, Gemini, Claude, Perplexity and more. Quickly scan pricing, free tiers, web browsing, image understanding, API access, and other key features.';
