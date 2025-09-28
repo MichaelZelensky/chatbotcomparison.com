@@ -1188,7 +1188,8 @@
     "starter": {
       "planPrice": "$52",
       "freeTrial": "14 days",
-
+      "agentsIncluded": 1, 
+      
       "aiKnowledge": false,
       "aiAnswers": false,
       "crmSmartFilters": false,
