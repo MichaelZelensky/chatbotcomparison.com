@@ -97,7 +97,8 @@
       { "key": "whiteLabel", "label": "White label", "type": "boolean", "description": "Remove vendor branding from the widget." },
       { "key": "chatWindowDocking", "label": "Chat window docking", "type": "boolean", "description": "Users can dock the chat window while browsing; notifications show on new messages." },
       { "key": "maxQueueAutoHide", "label": "Max queue auto-hide/auto-offline", "type": "boolean", "description": "Hide or switch widget offline automatically when queue length exceeds a limit." },
-      { "key": "multilingualWidget", "label": "Multilingual chat widget", "type": "boolean", "description": "Offer the chat widget in 40+ languages; configure per-widget language options." }
+      { "key": "multilingualWidget", "label": "Multilingual chat widget", "type": "boolean", "description": "Offer the chat widget in 40+ languages; configure per-widget language options." },
+      { "key": "versionHistory", "label": "Version history", "type": "boolean", "description": "Access ten last versions of your chatbots and restore previous ones if needed." }
     ]
   },
   {
