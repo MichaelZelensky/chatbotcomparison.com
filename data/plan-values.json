@@ -1188,7 +1188,7 @@
     "starter": {
       "planPrice": "$52",
       "freeTrial": "14 days",
-      "agentsIncluded": 1, 
+      "agentsIncluded": 1,
       
       "aiKnowledge": false,
       "aiAnswers": false,
@@ -1200,8 +1200,9 @@
       "debugMode": false,
       "interactionsPopularity": false,
       "templatesLibrary": true,
-      "straightStart": true
-    },
+      "straightStart": true,
+       "chatWidget": true
+      },
 
     "team": {
       "planPrice": "$174",
@@ -1217,7 +1218,8 @@
       "debugMode": true,
       "interactionsPopularity": true,
       "templatesLibrary": true,
-      "straightStart": true
+      "straightStart": true,
+      "chatWidget": true
     },
 
     "business": {
@@ -1234,7 +1236,8 @@
       "debugMode": true,
       "interactionsPopularity": true,
       "templatesLibrary": true,
-      "straightStart": true
+      "straightStart": true,
+      "chatWidget": true
     },
 
     "enterprise": {
@@ -1251,7 +1254,8 @@
       "debugMode": true,
       "interactionsPopularity": true,
       "templatesLibrary": true,
-      "straightStart": true
+      "straightStart": true,
+      "chatWidget": true
     }
   },
   "zendesk": {
