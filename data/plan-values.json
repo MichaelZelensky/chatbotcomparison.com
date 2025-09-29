@@ -1237,7 +1237,8 @@
       "interactionsPopularity": true,
       "templatesLibrary": true,
       "straightStart": true,
-      "chatWidget": true
+      "chatWidget": true,
+      "whiteLabel": true
     },
 
     "enterprise": {
