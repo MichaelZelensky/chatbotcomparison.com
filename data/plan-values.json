@@ -1094,7 +1094,9 @@
       "templatesLibrary": true,
       "straightStart": true,
       "chatWidget": true,
-      "versionHistory": false
+      "versionHistory": false,
+      "activeChatbots": 1
+
     },
     "team": {
       "planPrice": "$174",
@@ -1110,7 +1112,9 @@
       "templatesLibrary": true,
       "straightStart": true,
       "chatWidget": true,
-      "versionHistory": true
+      "versionHistory": true,
+      "activeChatbots": 5
+
     },
     "business": {
       "planPrice": "$424",
@@ -1127,7 +1131,8 @@
       "straightStart": true,
       "chatWidget": true,
       "whiteLabel": true,
-      "versionHistory": true
+      "versionHistory": true,
+      "activeChatbots": "Unlimited"
     },
     "enterprise": {
       "planPrice": "Custom",

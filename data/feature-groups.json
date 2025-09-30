@@ -46,7 +46,7 @@
     "id": "channels",
     "label": "Channels",
     "rows": [
-      { "key": "chatWidget", "label": "Chat widget", "type": "boolean", "description": "Engage with people browsing your website and get closer to your customers." },
+      { "key": "chatWidget", "label": "Chat Widget", "type": "boolean", "description": "Engage with people browsing your website and get closer to your customers." },
       { "key": "contactForm", "label": "Contact Form", "type": "boolean", "description": "Centralize submissions from customizable contact forms within the shared inbox." },
       { "key": "email", "label": "Email", "type": "boolean", "description": "Receive and reply to team emails directly from the shared inbox." },
       { "key": "telegram", "label": "Telegram", "type": "boolean", "description": "Receive and reply to Telegram messages from the shared inbox." },
@@ -57,9 +57,10 @@
       { "key": "viber", "label": "Viber", "type": "boolean", "description": "Receive and reply to Viber messages in the shared inbox." },
       { "key": "phone", "label": "Phone", "type": "boolean", "description": "Answer phone calls and trigger outbound calls directly from the platform." },
       { "key": "line", "label": "Line", "type": "boolean", "description": "Receive and reply to Line messages in the shared inbox." },
-      { "key": "whatsappBiz", "label": "WhatsApp Business", "type": "boolean", "description": "Receive and reply to WhatsApp Business messages in the shared inbox." }
-    ]
-  },
+      { "key": "whatsappBiz", "label": "WhatsApp Business", "type": "boolean", "description": "Receive and reply to WhatsApp Business messages in the shared inbox." },
+      { "key": "activeChatbots", "label": "Active Chatbots", "type": "text", "description": "A legal agreement ensuring data is handled in line with regulations." }
+     ]
+  },  
   {
     "id": "integrations",
     "label": "Integrations & Apps",
