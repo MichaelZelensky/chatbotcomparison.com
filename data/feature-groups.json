@@ -8,7 +8,7 @@
       { "key": "additionalAgentPrice", "label": "Additional Agents (per month)", "type": "text", "description": "Add more seats to your plan and scale your team as needed." },
       { "key": "customerProfiles", "label": "Customer Profiles", "type": "number", "description": "Maximum number of unique customer profiles you can manage in your workspace." },
       { "key": "aiUsage", "label": "AI Usage", "type": "text", "description": "Number of AI-powered actions (like summaries or replies) available per day." },
-      { "key": "billableConversations", "label": "Billable Conversations limit", "type": "text", "description": "Monthly limit for human-handled conversations (if applicable)." },
+      { "key": "billableConversations", "label": "Billable Conversations Limit", "type": "text", "description": "Monthly limit for human-handled conversations (if applicable)." },
       { "key": "freeTrial", "label": "Free Trial", "type": "text", "description": "Length and conditions of the free trial (e.g., days, credit card required or not)." },
       { "key": "chatsPackage", "label": "Chats Package", "type": "text", "description": "Your plan includes a limited number of free chats. Each additional chat costs $0.03. Empty or unanswered chats don’t count — you won’t pay for them." }
 ]
@@ -90,18 +90,18 @@
     "rows": [
       { "key": "chatSDKs", "label": "Chat SDKs", "type": "boolean", "description": "Embed the chat widget and implement the behaviors you need to engage customers." },
       { "key": "liveTyping", "label": "Live Typing preview", "type": "boolean", "description": "See what users are typing before they hit send." },
-      { "key": "typingIndicator", "label": "Typing status indicator", "type": "boolean", "description": "See when a user or agent is typing in real time." },
-      { "key": "widgetCustomization", "label": "Widget customization", "type": "boolean", "description": "Customize colors, text, and position to match your brand." },
-      { "key": "proactive", "label": "Proactive chat messages", "type": "boolean", "description": "Trigger chat conversations automatically based on user behavior." },
+      { "key": "typingIndicator", "label": "Typing Status Indicator", "type": "boolean", "description": "See when a user or agent is typing in real time." },
+      { "key": "widgetCustomization", "label": "Widget Customization", "type": "boolean", "description": "Customize colors, text, and position to match your brand." },
+      { "key": "proactive", "label": "Proactive Chat Messages", "type": "boolean", "description": "Trigger chat conversations automatically based on user behavior." },
       { "key": "magicBrowse", "label": "MagicBrowse", "type": "boolean", "description": "Start a co-browsing session with website visitors and share your screen if needed." },
       { "key": "liveTranslate", "label": "LiveTranslate", "type": "boolean", "description": "Translate messages instantly in 50+ languages." },
       { "key": "avChat", "label": "Video & Audio chat", "type": "boolean", "description": "Engage with leads or customers through live audio or video." },
-      { "key": "helpWidget", "label": "Help widget", "type": "boolean", "description": "Add a self-service help widget to your site for instant answers." },
-      { "key": "whiteLabel", "label": "White label", "type": "boolean", "description": "Remove vendor branding from the widget." },
-      { "key": "chatWindowDocking", "label": "Chat window docking", "type": "boolean", "description": "Users can dock the chat window while browsing; notifications show on new messages." },
-      { "key": "maxQueueAutoHide", "label": "Max queue auto-hide/auto-offline", "type": "boolean", "description": "Hide or switch widget offline automatically when queue length exceeds a limit." },
-      { "key": "multilingualWidget", "label": "Multilingual chat widget", "type": "boolean", "description": "Offer the chat widget in 40+ languages; configure per-widget language options." },
-      { "key": "versionHistory", "label": "Version history", "type": "boolean", "description": "Access ten last versions of your chatbots and restore previous ones if needed." }
+      { "key": "helpWidget", "label": "Help Widget", "type": "boolean", "description": "Add a self-service help widget to your site for instant answers." },
+      { "key": "whiteLabel", "label": "White Label", "type": "boolean", "description": "Remove vendor branding from the widget." },
+      { "key": "chatWindowDocking", "label": "Chat Window Docking", "type": "boolean", "description": "Users can dock the chat window while browsing; notifications show on new messages." },
+      { "key": "maxQueueAutoHide", "label": "Max Queue Auto-hide/Auto-offline", "type": "boolean", "description": "Hide or switch widget offline automatically when queue length exceeds a limit." },
+      { "key": "multilingualWidget", "label": "Multilingual Chat Widget", "type": "boolean", "description": "Offer the chat widget in 40+ languages; configure per-widget language options." },
+      { "key": "versionHistory", "label": "Version History", "type": "boolean", "description": "Access ten last versions of your chatbots and restore previous ones if needed." }
     ]
   },
   {
@@ -120,48 +120,54 @@
       { "key": "summary", "label": "Conversation Summary", "type": "boolean", "description": "Generate a concise summary of any conversation when needed." },
       { "key": "aiAgent", "label": "AI Agent", "type": "boolean", "description": "Deploy an autonomous AI agent to handle customer conversations end to end." },
       { "key": "aiConversationsQuota", "label": "AI Conversations Quota", "type": "text", "description": "Monthly AI bot conversations included (if applicable)." },
-      { "key": "trainingHistory", "label": "Training History", "type": "text", "description": " Review & answer untrained questions to optimize your chatbot." }
+      { "key": "trainingHistory", "label": "Training History", "type": "text", "description": "Review & answer untrained questions to optimize your chatbot." },
+      { "key": "automaticBotBuilding", "label": "Automatic Bot Building", "type": "boolean", "description": "Get a fully functional chatbot based on your existing business data." },
+      { "key": "aiAssist", "label": "AI Assist", "type": "boolean", "description": "Use AI to instantly and accurately answer customer questions." },
+      { "key": "aiModelTraining", "label": "AI Model Training", "type": "boolean", "description": "Review and fine-tune answers generated by AI." },
+      { "key": "multilingualAIb", "label": "Multilingual AIb", "type": "boolean", "description": "Use AI to answer customer questions in any language." }
     ]
   },
   {
     "id": "crm",
     "label": "CRM",
     "rows": [
-      { "key": "crmCustomAttrs", "label": "Custom attributes", "type": "boolean", "description": "Add and manage custom attributes to enrich customer profiles." },
+      { "key": "crmCustomAttrs", "label": "Custom Attributes", "type": "boolean", "description": "Add and manage custom attributes to enrich customer profiles." },
       { "key": "crmProfile", "label": "Customer Profile", "type": "boolean", "description": "Store and manage detailed information about each customer." },
       { "key": "crmSegmentation", "label": "Customer Segmentation", "type": "boolean", "description": "Group users based on behavior, attributes, or custom tags." },
-      { "key": "crmSmartFilters", "label": "Smart filters", "type": "boolean", "description": "Search messages, articles, contacts, or plugins using advanced filters." },
-      { "key": "crmNotes", "label": "Customer-based notes", "type": "boolean", "description": "Leave internal notes on customer profiles for better collaboration." },
-      { "key": "crmLifecycle", "label": "Customer lifecycle tracking", "type": "boolean", "description": "Track and analyze the journey from lead to loyal customer." },
-      { "key": "crmTimeline", "label": "Customer timeline activity", "type": "boolean", "description": "View a chronological history of interactions and events per customer." }
+      { "key": "crmSmartFilters", "label": "Smart Filters", "type": "boolean", "description": "Search messages, articles, contacts, or plugins using advanced filters." },
+      { "key": "crmNotes", "label": "Customer-based Notes", "type": "boolean", "description": "Leave internal notes on customer profiles for better collaboration." },
+      { "key": "crmLifecycle", "label": "Customer Lifecycle Tracking", "type": "boolean", "description": "Track and analyze the journey from lead to loyal customer." },
+      { "key": "crmTimeline", "label": "Customer Timeline Activity", "type": "boolean", "description": "View a chronological history of interactions and events per customer." }
     ]
   },
   {
     "id": "workflow",
     "label": "Workflow",
     "rows": [
-      { "key": "noCodeBuilder", "label": "No-code AI chatbot builder", "type": "boolean", "description": "Build advanced automation flows across connected channels." },
-      { "key": "aiAnswers", "label": "AI-generated answers", "type": "boolean", "description": "Provide instant, AI-powered answers to common queries." },
-      { "key": "scenarioDrafts", "label": "Scenario drafts", "type": "boolean", "description": "Design and test chatbot scenarios before going live." },
-      { "key": "customInputs", "label": "Custom Input fields", "type": "boolean", "description": "Collect structured data from users directly in chat." },
-      { "key": "conditionalFlows", "label": "Conditional flows", "type": "boolean", "description": "Create workflows that adapt based on user responses or attributes." },
-      { "key": "keywordTriggers", "label": "Keyword-based triggers", "type": "boolean", "description": "Trigger automated actions when certain keywords are detected." },
-      { "key": "apiAutomation", "label": "Automation via APIs", "type": "boolean", "description": "Integrate external services and trigger workflows through APIs." },
-      { "key": "webhooks", "label": "Webhook actions", "type": "boolean", "description": "Push data to external systems in real time as events occur in the platform." },
-      { "key": "crmTriggers", "label": "CRM-based triggers", "type": "boolean", "description": "Automate actions based on CRM data or events." },
+      { "key": "noCodeBuilder", "label": "No-code AI Chatbot Builder", "type": "boolean", "description": "Build advanced automation flows across connected channels." },
+      { "key": "aiAnswers", "label": "AI-generated Answers", "type": "boolean", "description": "Provide instant, AI-powered answers to common queries." },
+      { "key": "scenarioDrafts", "label": "Scenario Drafts", "type": "boolean", "description": "Design and test chatbot scenarios before going live." },
+      { "key": "customInputs", "label": "Custom Input Fields", "type": "boolean", "description": "Collect structured data from users directly in chat." },
+      { "key": "conditionalFlows", "label": "Conditional Flows", "type": "boolean", "description": "Create workflows that adapt based on user responses or attributes." },
+      { "key": "keywordTriggers", "label": "Keyword-based Triggers", "type": "boolean", "description": "Trigger automated actions when certain keywords are detected." },
+      { "key": "apiAutomation", "label": "Automation Via APIs", "type": "boolean", "description": "Integrate external services and trigger workflows through APIs." },
+      { "key": "webhooks", "label": "Webhook Actions", "type": "boolean", "description": "Push data to external systems in real time as events occur in the platform." },
+      { "key": "crmTriggers", "label": "CRM-based Triggers", "type": "boolean", "description": "Automate actions based on CRM data or events." },
       { "key": "iframes", "label": "Iframes", "type": "boolean", "description": "Embed external content or tools directly within the chat." },
-      { "key": "unlimitedTemplates", "label": "Unlimited AI chatbot templates", "type": "boolean", "description": "Create as many chatbot templates as your workflows require." },
-      { "key": "aiTriggers", "label": "AI-based triggers", "type": "boolean", "description": "Automatically detect user intent using AI." },
-      { "key": "aiBlocks", "label": "AI-agent blocks", "type": "boolean", "description": "Use AI-powered building blocks to create smarter multi-channel flows." },
-      { "key": "automationQuota", "label": "Automation quota (visitors/month)", "type": "text", "description": "Monthly limit of unique visitors reached by automations/flows." },
-      { "key": "abTesting", "label": "A/B testing", "type": "boolean", "description": "Distribute traffic between variants of chatbot flows to compare performance." },
-      { "key": "advancedButtonActions", "label": "Advanced button actions", "type": "boolean", "description": "Run actions (e.g., set attributes, add/remove segments) when users click buttons." },
-      { "key": "debugMode", "label": "Debug mode", "type": "boolean", "description": "Inspect and trace conversation flow execution (JSON view) for troubleshooting." },
-      { "key": "templatesLibrary", "label": "Templates library", "type": "boolean", "description": "Prebuilt templates for common use cases to jump-start new bots." },
-      { "key": "ringToAllRouting", "label": "Ring-to-all routing", "type": "boolean", "description": "Notify all agents until one accepts." },
-      { "key": "priorityRouting", "label": "Priority routing", "type": "boolean", "description": "Route by agent priority / time since last chat." },
-      { "key": "utilizationRouting", "label": "Utilization-based routing", "type": "boolean", "description": "Route to lowest/highest utilization to balance workload." },
-      { "key": "randomRouting", "label": "Random routing", "type": "boolean", "description": "Assign chats randomly among available agents." }
+      { "key": "unlimitedTemplates", "label": "Unlimited AI Chatbot Templates", "type": "boolean", "description": "Create as many chatbot templates as your workflows require." },
+      { "key": "aiTriggers", "label": "AI-based Triggers", "type": "boolean", "description": "Automatically detect user intent using AI." },
+      { "key": "aiBlocks", "label": "AI-agent Blocks", "type": "boolean", "description": "Use AI-powered building blocks to create smarter multi-channel flows." },
+      { "key": "automationQuota", "label": "Automation Quota (visitors/month)", "type": "text", "description": "Monthly limit of unique visitors reached by automations/flows." },
+      { "key": "abTesting", "label": "A/B Testing", "type": "boolean", "description": "Distribute traffic between variants of chatbot flows to compare performance." },
+      { "key": "advancedButtonActions", "label": "Advanced Button Actions", "type": "boolean", "description": "Run actions (e.g., set attributes, add/remove segments) when users click buttons." },
+      { "key": "debugMode", "label": "Debug Mode", "type": "boolean", "description": "Inspect and trace conversation flow execution (JSON view) for troubleshooting." },
+      { "key": "templatesLibrary", "label": "Templates Library", "type": "boolean", "description": "Prebuilt templates for common use cases to jump-start new bots." },
+      { "key": "ringToAllRouting", "label": "Ring-to-all Routing", "type": "boolean", "description": "Notify all agents until one accepts." },
+      { "key": "priorityRouting", "label": "Priority Routing", "type": "boolean", "description": "Route by agent priority / time since last chat." },
+      { "key": "utilizationRouting", "label": "Utilization-based Routing", "type": "boolean", "description": "Route to lowest/highest utilization to balance workload." },
+      { "key": "randomRouting", "label": "Random Routing", "type": "boolean", "description": "Assign chats randomly among available agents." },
+      { "key": "visualBuilder", "label": "Visual Builder", "type": "boolean", "description": "Preview and modify your chatbot using a simple drag-and-drop builder." }
+
     ]
   },
   {
@@ -170,33 +176,33 @@
     "rows": [
       { "key": "hcArticles", "label": "Articles & Categories", "type": "boolean", "description": "Write, manage, and edit a dedicated help center that integrates with your support tools." },
       { "key": "hcCustomization", "label": "Customization", "type": "boolean", "description": "Adapt colors, text, and layout of your help center to fit your brand." },
-      { "key": "hcMultilingual", "label": "Multilingual help center", "type": "boolean", "description": "Offer your help center in multiple languages for a global audience." },
-      { "key": "hcSdk", "label": "Help center SDK", "type": "boolean", "description": "Integrate your help center anywhere using an SDK." },
+      { "key": "hcMultilingual", "label": "Multilingual Help Center", "type": "boolean", "description": "Offer your help center in multiple languages for a global audience." },
+      { "key": "hcSdk", "label": "Help Center SDK", "type": "boolean", "description": "Integrate your help center anywhere using an SDK." },
       { "key": "hcSearch", "label": "Search", "type": "boolean", "description": "Search messages, articles, contacts, or plugins using advanced filters." },
-      { "key": "hcFeedback", "label": "Article feedback", "type": "boolean", "description": "Let users rate and comment on help articles." },
-      { "key": "hcDomain", "label": "Custom domain name", "type": "boolean", "description": "Use your own branded domain for the help center." },
-      { "key": "hcSeo", "label": "Sitemap & SEO meta data", "type": "boolean", "description": "Optimize the help center for search engines with sitemaps and metadata." },
-      { "key": "interactionsPopularity", "label": "Interactions popularity", "type": "boolean", "description": "See popularity metrics per interaction within a chatbot." }
+      { "key": "hcFeedback", "label": "Article Feedback", "type": "boolean", "description": "Let users rate and comment on help articles." },
+      { "key": "hcDomain", "label": "Custom Domain Name", "type": "boolean", "description": "Use your own branded domain for the help center." },
+      { "key": "hcSeo", "label": "Sitemap & SEO Meta Data", "type": "boolean", "description": "Optimize the help center for search engines with sitemaps and metadata." },
+      { "key": "interactionsPopularity", "label": "Interactions Popularity", "type": "boolean", "description": "See popularity metrics per interaction within a chatbot." }
     ]
   },
   {
     "id": "analytics",
     "label": "Analytics",
     "rows": [
-      { "key": "prebuiltAnalytics", "label": "Prebuilt analytics", "type": "boolean", "description": "Measure conversational activity, customer satisfaction, and agent productivity." },
-      { "key": "dataExport", "label": "Data export", "type": "boolean", "description": "Export your data for reporting, analysis, or backup." },
-      { "key": "customDash", "label": "Custom dashboards", "type": "boolean", "description": "Build custom dashboards and analytics to match your company’s metrics." },
+      { "key": "prebuiltAnalytics", "label": "Prebuilt Analytics", "type": "boolean", "description": "Measure conversational activity, customer satisfaction, and agent productivity." },
+      { "key": "dataExport", "label": "Data Export", "type": "boolean", "description": "Export your data for reporting, analysis, or backup." },
+      { "key": "customDash", "label": "Custom Dashboards", "type": "boolean", "description": "Build custom dashboards and analytics to match your company’s metrics." },
       { "key": "apiAnalytics", "label": "API Analytics", "type": "boolean", "description": "Access, export, and analyze data programmatically via API." },
-      { "key": "chatEventTracking", "label": "Chat events tracking (GA)", "type": "boolean", "description": "Send chat events (start/end/messages) to Google Analytics." },
-      { "key": "visitorCurrentUrl", "label": "Visitor current URL tracking", "type": "boolean", "description": "See which page the visitor is currently viewing." },
-      { "key": "websiteMonitoring", "label": "Website monitoring", "type": "boolean", "description": "Track all visitors, active agents, ongoing chats, and top pages to engage proactively." }
+      { "key": "chatEventTracking", "label": "Chat Events Tracking (GA)", "type": "boolean", "description": "Send chat events (start/end/messages) to Google Analytics." },
+      { "key": "visitorCurrentUrl", "label": "Visitor Current URL Tracking", "type": "boolean", "description": "See which page the visitor is currently viewing." },
+      { "key": "websiteMonitoring", "label": "Website Monitoring", "type": "boolean", "description": "Track all visitors, active agents, ongoing chats, and top pages to engage proactively." }
     ]
   },
   {
     "id": "status",
     "label": "Status Page",
     "rows": [
-      { "key": "nodeMonitoring", "label": "Node monitoring", "type": "boolean", "description": "Monitor the health of your infrastructure and services in real time." },
+      { "key": "nodeMonitoring", "label": "Node Monitoring", "type": "boolean", "description": "Monitor the health of your infrastructure and services in real time." },
       { "key": "statusCustomization", "label": "Customization", "type": "boolean", "description": "Customize the status page to match your brand and communication style." },
       { "key": "statusNotif", "label": "Notifications", "type": "boolean", "description": "Send alerts and updates to users when incidents or changes occur." },
       { "key": "statusAnnouncement", "label": "Announcement", "type": "boolean", "description": "Publish important updates or news to users via the status page." }
@@ -215,9 +221,9 @@
     "id": "enterprise",
     "label": "Enterprise-only",
     "rows": [
-      { "key": "sandbox", "label": "Sandbox environment", "type": "boolean", "description": "Test workflows and configurations in an isolated environment." },
-      { "key": "auditLogs", "label": "Audit logs", "type": "boolean", "description": "Track all changes and activities across the system." },
-      { "key": "businessRulesAnalysis", "label": "Business rules analysis", "type": "boolean", "description": "Analyze the impact of business rules and automations." }
+      { "key": "sandbox", "label": "Sandbox Environment", "type": "boolean", "description": "Test workflows and configurations in an isolated environment." },
+      { "key": "auditLogs", "label": "Audit Logs", "type": "boolean", "description": "Track all changes and activities across the system." },
+      { "key": "businessRulesAnalysis", "label": "Business Rules Analysis", "type": "boolean", "description": "Analyze the impact of business rules and automations." }
     ]
   },
   {
@@ -226,7 +232,7 @@
     "rows": [
       {
         "key": "straightStart",
-        "label": "Straight-forward start",
+        "label": "Straight-forward Start",
         "type": "boolean",
         "description": "Chat can start immediately without registration, explicit consent gates, or other blockers."
       }

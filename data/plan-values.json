@@ -1098,7 +1098,12 @@
       "activeChatbots": 1,
       "chatsPackage": "12,000 chats/yr",
       "trainingHistory": "7 days",
-      "teamCollaboration": false
+      "teamCollaboration": false,
+      "automaticBotBuilding": true,
+      "visualBuilder": true,
+      "aiAssist": true,
+      "aiModelTraining": true,
+      "multilingualAIb": true 
     
 
 
@@ -1122,7 +1127,12 @@
       "activeChatbots": 5,
       "chatsPackage": "60,000 chats/yr",
       "trainingHistory": "Unlimited",
-      "teamCollaboration": true
+      "teamCollaboration": true,
+      "automaticBotBuilding": true,
+      "visualBuilder": true,
+      "aiAssist": true,
+      "aiModelTraining": true,
+      "multilingualAIb": true 
 
     },
     "business": {
@@ -1144,7 +1154,12 @@
       "activeChatbots": "Unlimited",
       "chatsPackage": "300,000 chats/yr",
       "trainingHistory": "Unlimited",
-      "teamCollaboration": true
+      "teamCollaboration": true,
+      "automaticBotBuilding": true,
+      "visualBuilder": true,
+      "aiAssist": true,
+      "aiModelTraining": true,
+      "multilingualAIb": true 
      
     },
     "enterprise": {
