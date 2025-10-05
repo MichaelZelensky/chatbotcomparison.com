@@ -1096,7 +1096,12 @@
       "chatWidget": true,
       "versionHistory": false,
       "activeChatbots": 1,
-      "chatsPackage": "12,000 chats/yr"
+      "chatsPackage": "12,000 chats/yr",
+      "trainingHistory": "7 days",
+      "teamCollaboration": false
+    
+
+
 
     },
     "team": {
@@ -1115,7 +1120,9 @@
       "chatWidget": true,
       "versionHistory": true,
       "activeChatbots": 5,
-      "chatsPackage": "60,000 chats/yr"
+      "chatsPackage": "60,000 chats/yr",
+      "trainingHistory": "Unlimited",
+      "teamCollaboration": true
 
     },
     "business": {
@@ -1135,7 +1142,9 @@
       "whiteLabel": true,
       "versionHistory": true,
       "activeChatbots": "Unlimited",
-      "chatsPackage": "300,000 chats/yr"
+      "chatsPackage": "300,000 chats/yr",
+      "trainingHistory": "Unlimited",
+      "teamCollaboration": true
      
     },
     "enterprise": {
