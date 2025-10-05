@@ -4,13 +4,14 @@
     "label": "Pricing",
     "rows": [
       { "key": "planPrice", "label": "Plan Price (per month)", "type": "text", "description": "The monthly cost of your subscription plan." },
-      { "key": "agentsIncluded", "label": "Agents included", "type": "number", "description": "Number of agent licenses included in your plan at no extra cost." },
-      { "key": "additionalAgentPrice", "label": "Additional agents (per month)", "type": "text", "description": "Add more seats to your plan and scale your team as needed." },
+      { "key": "agentsIncluded", "label": "Agents Included", "type": "number", "description": "Number of agent licenses included in your plan at no extra cost." },
+      { "key": "additionalAgentPrice", "label": "Additional Agents (per month)", "type": "text", "description": "Add more seats to your plan and scale your team as needed." },
       { "key": "customerProfiles", "label": "Customer Profiles", "type": "number", "description": "Maximum number of unique customer profiles you can manage in your workspace." },
       { "key": "aiUsage", "label": "AI Usage", "type": "text", "description": "Number of AI-powered actions (like summaries or replies) available per day." },
-      { "key": "billableConversations", "label": "Billable conversations limit", "type": "text", "description": "Monthly limit for human-handled conversations (if applicable)." },
-      { "key": "freeTrial", "label": "Free trial", "type": "text", "description": "Length and conditions of the free trial (e.g., days, credit card required or not)." }
-    ]
+      { "key": "billableConversations", "label": "Billable Conversations limit", "type": "text", "description": "Monthly limit for human-handled conversations (if applicable)." },
+      { "key": "freeTrial", "label": "Free Trial", "type": "text", "description": "Length and conditions of the free trial (e.g., days, credit card required or not)." },
+      { "key": "chatsPackage", "label": "Chats Package", "type": "text", "description": "Your plan includes a limited number of free chats. Each additional chat costs $0.03. Empty or unanswered chats don’t count — you won’t pay for them." }
+]
   },
   {
     "id": "teamInbox",
@@ -46,7 +47,7 @@
     "id": "channels",
     "label": "Channels",
     "rows": [
-      { "key": "chatWidget", "label": "Chat Widget", "type": "boolean", "description": "Engage with people browsing your website and get closer to your customers." },
+      { "key": "chatWidget", "label": "Chat widget", "type": "boolean", "description": "Engage with people browsing your website and get closer to your customers." },
       { "key": "contactForm", "label": "Contact Form", "type": "boolean", "description": "Centralize submissions from customizable contact forms within the shared inbox." },
       { "key": "email", "label": "Email", "type": "boolean", "description": "Receive and reply to team emails directly from the shared inbox." },
       { "key": "telegram", "label": "Telegram", "type": "boolean", "description": "Receive and reply to Telegram messages from the shared inbox." },
@@ -58,7 +59,7 @@
       { "key": "phone", "label": "Phone", "type": "boolean", "description": "Answer phone calls and trigger outbound calls directly from the platform." },
       { "key": "line", "label": "Line", "type": "boolean", "description": "Receive and reply to Line messages in the shared inbox." },
       { "key": "whatsappBiz", "label": "WhatsApp Business", "type": "boolean", "description": "Receive and reply to WhatsApp Business messages in the shared inbox." },
-      { "key": "activeChatbots", "label": "Active Chatbots", "type": "text", "description": "A legal agreement ensuring data is handled in line with regulations." }
+      { "key": "activeChatbots", "label": "Active chatbots", "type": "text", "description": "A legal agreement ensuring data is handled in line with regulations." }
      ]
   },  
   {

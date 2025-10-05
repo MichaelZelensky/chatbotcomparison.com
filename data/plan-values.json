@@ -1095,7 +1095,8 @@
       "straightStart": true,
       "chatWidget": true,
       "versionHistory": false,
-      "activeChatbots": 1
+      "activeChatbots": 1,
+      "chatsPackage": "12,000 chats/yr"
 
     },
     "team": {
@@ -1113,7 +1114,8 @@
       "straightStart": true,
       "chatWidget": true,
       "versionHistory": true,
-      "activeChatbots": 5
+      "activeChatbots": 5,
+      "chatsPackage": "60,000 chats/yr"
 
     },
     "business": {
@@ -1132,7 +1134,9 @@
       "chatWidget": true,
       "whiteLabel": true,
       "versionHistory": true,
-      "activeChatbots": "Unlimited"
+      "activeChatbots": "Unlimited",
+      "chatsPackage": "300,000 chats/yr"
+     
     },
     "enterprise": {
       "planPrice": "Custom",
