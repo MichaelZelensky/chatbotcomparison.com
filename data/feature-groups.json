@@ -77,7 +77,7 @@
       { "key": "pipedrive", "label": "Pipedrive", "type": "boolean", "description": "Synchronize with your Pipedrive account." },
       { "key": "zoho", "label": "Zoho CRM", "type": "boolean", "description": "Synchronize with your Zoho account." },
       { "key": "segment", "label": "Segment", "type": "boolean", "description": "Connect as a source and collect customer data from hundreds of platforms." },
-      { "key": "zapier", "label": "Zapier", "type": "boolean", "description": "Connect with 2,000+ apps without writing code." },
+      { "key": "zapier", "label": "Zapier", "type": "boolean", "description": "Connect with over 8,000 apps — no coding required." },
       { "key": "make", "label": "Make", "type": "boolean", "description": "Automate workflows by connecting to other apps with Make." },
       { "key": "n8n", "label": "n8n", "type": "boolean", "description": "Integrate with no-code/low-code automation workflows using n8n." },
       { "key": "stripe", "label": "Stripe", "type": "boolean", "description": "Sync revenue details from Stripe directly into your inbox or CRM." },
@@ -101,7 +101,9 @@
       { "key": "chatWindowDocking", "label": "Chat Window Docking", "type": "boolean", "description": "Users can dock the chat window while browsing; notifications show on new messages." },
       { "key": "maxQueueAutoHide", "label": "Max Queue Auto-hide/Auto-offline", "type": "boolean", "description": "Hide or switch widget offline automatically when queue length exceeds a limit." },
       { "key": "multilingualWidget", "label": "Multilingual Chat Widget", "type": "boolean", "description": "Offer the chat widget in 40+ languages; configure per-widget language options." },
-      { "key": "versionHistory", "label": "Version History", "type": "boolean", "description": "Access ten last versions of your chatbots and restore previous ones if needed." }
+      { "key": "versionHistory", "label": "Version History", "type": "boolean", "description": "Access ten last versions of your chatbots and restore previous ones if needed." },
+      { "key": "liveChat", "label": "LiveChat", "type": "boolean", "description": "Connect LiveChat to combine AI efficiency with human support." }
+
     ]
   },
   {

@@ -1110,7 +1110,13 @@
       "entities": true,
       "userExport": false,
       "segments": true,
-      "moments": true
+      "moments": true,
+      "liveChat": true,
+      "messenger": true,
+      "slack": true,
+      "wordpress": true,
+      "shopify": true,
+      "zapier": true
 
     },
     "team": {
@@ -1143,7 +1149,13 @@
       "entities": true,
       "userExport": true,
       "segments": true,
-      "moments": true
+      "moments": true,
+      "liveChat": true,
+      "messenger": true,
+      "slack": true,
+      "wordpress": true,
+      "shopify": true,
+      "zapier": true
 
     },
     "business": {
@@ -1177,7 +1189,14 @@
       "entities": true,
       "userExport": true,
       "segments": true,
-      "moments": true
+      "moments": true,
+      "liveChat": true,
+      "messenger": true,
+      "slack": true,
+      "wordpress": true,
+      "shopify": true,
+      "zapier": true
+      
      
     },
     "enterprise": {
@@ -1209,7 +1228,13 @@
       "entities": true,
       "userExport": true,
       "segments": true,
-      "moments": true
+      "moments": true,
+      "liveChat": true,
+      "messenger": true,
+      "slack": true,
+      "wordpress": true,
+      "shopify": true,
+      "zapier": true
 
     }
   },
