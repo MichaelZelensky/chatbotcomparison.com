@@ -1089,7 +1089,7 @@
       "crmCustomAttrs": true,
       "abTesting": false,
       "advancedButtonActions": false,
-      "debugMode": false,
+      "debugMode": true,
       "interactionsPopularity": false,
       "templatesLibrary": true,
       "straightStart": true,
