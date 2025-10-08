@@ -1087,7 +1087,7 @@
       "aiAnswers": false,
       "crmSmartFilters": false,
       "crmCustomAttrs": true,
-      "abTesting": false,
+      "abTesting": true,
       "advancedButtonActions": false,
       "debugMode": true,
       "interactionsPopularity": false,
@@ -1103,10 +1103,14 @@
       "visualBuilder": true,
       "aiAssist": true,
       "aiModelTraining": true,
-      "multilingualAI": true 
-    
-
-
+      "multilingualAI": true,
+      "templates": true,
+      "flows": true,
+      "filters": true,
+      "entities": true,
+      "userExport": false,
+      "segments": true,
+      "moments": true
 
     },
     "team": {
@@ -1116,7 +1120,7 @@
       "aiAnswers": false,
       "crmSmartFilters": true,
       "crmCustomAttrs": true,
-      "abTesting": false,
+      "abTesting": true,
       "advancedButtonActions": true,
       "debugMode": true,
       "interactionsPopularity": true,
@@ -1132,7 +1136,14 @@
       "visualBuilder": true,
       "aiAssist": true,
       "aiModelTraining": true,
-      "multilingualAI": true 
+      "multilingualAI": true,
+      "templates": true,
+      "flows": true,
+      "filters": true,
+      "entities": true,
+      "userExport": true,
+      "segments": true,
+      "moments": true
 
     },
     "business": {
@@ -1159,7 +1170,14 @@
       "visualBuilder": true,
       "aiAssist": true,
       "aiModelTraining": true,
-      "multilingualAI": true 
+      "multilingualAI": true,
+      "templates": true,
+      "flows": true,
+      "filters": true,
+      "entities": true,
+      "userExport": true,
+      "segments": true,
+      "moments": true
      
     },
     "enterprise": {
@@ -1184,7 +1202,14 @@
       "visualBuilder": true,
       "aiAssist": true,
       "aiModelTraining": true,
-      "multilingualAI": true 
+      "multilingualAI": true,
+      "templates": true,
+      "flows": true,
+      "filters": true,
+      "entities": true,
+      "userExport": true,
+      "segments": true,
+      "moments": true
 
     }
   },

@@ -137,7 +137,9 @@
       { "key": "crmSmartFilters", "label": "Smart Filters", "type": "boolean", "description": "Search messages, articles, contacts, or plugins using advanced filters." },
       { "key": "crmNotes", "label": "Customer-based Notes", "type": "boolean", "description": "Leave internal notes on customer profiles for better collaboration." },
       { "key": "crmLifecycle", "label": "Customer Lifecycle Tracking", "type": "boolean", "description": "Track and analyze the journey from lead to loyal customer." },
-      { "key": "crmTimeline", "label": "Customer Timeline Activity", "type": "boolean", "description": "View a chronological history of interactions and events per customer." }
+      { "key": "crmTimeline", "label": "Customer Timeline Activity", "type": "boolean", "description": "View a chronological history of interactions and events per customer." },
+      { "key": "entities", "label": "Entities", "type": "boolean", "description": "Validate user data to personalize chat flows." }
+
     ]
   },
   {
@@ -166,7 +168,10 @@
       { "key": "priorityRouting", "label": "Priority Routing", "type": "boolean", "description": "Route by agent priority / time since last chat." },
       { "key": "utilizationRouting", "label": "Utilization-based Routing", "type": "boolean", "description": "Route to lowest/highest utilization to balance workload." },
       { "key": "randomRouting", "label": "Random Routing", "type": "boolean", "description": "Assign chats randomly among available agents." },
-      { "key": "visualBuilder", "label": "Visual Builder", "type": "boolean", "description": "Preview and modify your chatbot using a simple drag-and-drop builder." }
+      { "key": "visualBuilder", "label": "Visual Builder", "type": "boolean", "description": "Preview and modify your chatbot using a simple drag-and-drop builder." },
+      { "key": "templates", "label": "Templates", "type": "boolean", "description": "Use chatbot templates designed for specific business cases." },
+      { "key": "flows", "label": "Flows", "type": "boolean", "description": "Organize your chatbot into subflows for a better editing experience." }
+
 
     ]
   },
@@ -195,7 +200,14 @@
       { "key": "apiAnalytics", "label": "API Analytics", "type": "boolean", "description": "Access, export, and analyze data programmatically via API." },
       { "key": "chatEventTracking", "label": "Chat Events Tracking (GA)", "type": "boolean", "description": "Send chat events (start/end/messages) to Google Analytics." },
       { "key": "visitorCurrentUrl", "label": "Visitor Current URL Tracking", "type": "boolean", "description": "See which page the visitor is currently viewing." },
-      { "key": "websiteMonitoring", "label": "Website Monitoring", "type": "boolean", "description": "Track all visitors, active agents, ongoing chats, and top pages to engage proactively." }
+      { "key": "websiteMonitoring", "label": "Website Monitoring", "type": "boolean", "description": "Track all visitors, active agents, ongoing chats, and top pages to engage proactively." },
+      { "key": "filters", "label": "Filters", "type": "boolean", "description": "Personalize chats with dynamic attributes and organize them into subflows." },
+      { "key": "segments", "label": "Segments", "type": "boolean", "description": "Segment users to personalize experiences or export contacts." },
+      { "key": "moments", "label": "Moments", "type": "boolean", "description": " Open any web application inside the ongoing chat." }
+
+
+
+    
     ]
   },
   {
@@ -214,7 +226,11 @@
     "rows": [
       { "key": "mfa", "label": "Double-Factor Authentication", "type": "boolean", "description": "Add an extra layer of security to account logins." },
       { "key": "dpa", "label": "Data Processing Agreement", "type": "boolean", "description": "A legal agreement ensuring data is handled in line with regulations." },
-      { "key": "tls", "label": "TLS Encryption", "type": "boolean", "description": "All data is encrypted in transit using TLS." }
+      { "key": "tls", "label": "TLS Encryption", "type": "boolean", "description": "All data is encrypted in transit using TLS." },
+      { "key": "userManagement", "label": "User management", "type": "boolean", "description": "Access and manage collected user data and chat history efficiently." },
+      { "key": "userExport", "label": "User export", "type": "boolean", "description": "Export user data for reporting and third-party integrations." }
+
+
     ]
   },
   {
