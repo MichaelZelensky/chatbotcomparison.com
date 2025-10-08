@@ -111,7 +111,7 @@
       { "key": "aiKnowledge", "label": "AI Knowledge Training", "type": "boolean", "description": "Ingest your internal data to train a custom AI knowledge base or model." },
       { "key": "internalCopilot", "label": "Internal AI Copilot", "type": "boolean", "description": "Let support agents ask questions to an internal AI chat trained on your data." },
       { "key": "voiceToText", "label": "Voice-to-text", "type": "boolean", "description": "Get immediate transcription for audio messages or recorded calls." },
-      { "key": "multilingualAI", "label": "Multilingual AI", "type": "boolean", "description": "Translate messages into 50+ languages across channels." },
+      { "key": "multilingualAI", "label": "Multilingual AI", "type": "boolean", "description": "Use AI to answer customer questions in multiple languages." },
       { "key": "aiWriting", "label": "AI Writing Assistant", "type": "boolean", "description": "Provide AI-powered writing tools for your teams." },
       { "key": "siteSearch", "label": "AI-Powered Site Search", "type": "boolean", "description": "Help users find answers with AI-powered search before contacting support." },
       { "key": "aiSpam", "label": "AI Inbox Spam Filter", "type": "boolean", "description": "Use an AI-powered spam filter that adapts to your settings." },

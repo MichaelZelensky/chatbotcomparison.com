@@ -1103,7 +1103,7 @@
       "visualBuilder": true,
       "aiAssist": true,
       "aiModelTraining": true,
-      "multilingualAIb": true 
+      "multilingualAI": true 
     
 
 
@@ -1132,7 +1132,7 @@
       "visualBuilder": true,
       "aiAssist": true,
       "aiModelTraining": true,
-      "multilingualAIb": true 
+      "multilingualAI": true 
 
     },
     "business": {
@@ -1159,7 +1159,7 @@
       "visualBuilder": true,
       "aiAssist": true,
       "aiModelTraining": true,
-      "multilingualAIb": true 
+      "multilingualAI": true 
      
     },
     "enterprise": {
@@ -1175,7 +1175,17 @@
       "interactionsPopularity": true,
       "templatesLibrary": true,
       "straightStart": true,
-      "chatWidget": true
+      "chatWidget": true,
+      "activeChatbots": "Unlimited",
+      "trainingHistory": "Unlimited",
+      "versionHistory": true,
+      "whiteLabel": true,
+      "automaticBotBuilding": true,
+      "visualBuilder": true,
+      "aiAssist": true,
+      "aiModelTraining": true,
+      "multilingualAI": true 
+
     }
   },
   "zendesk": {
