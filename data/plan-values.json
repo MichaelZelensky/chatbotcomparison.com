@@ -1116,7 +1116,16 @@
       "slack": true,
       "wordpress": true,
       "shopify": true,
-      "zapier": true
+      "zapier": true,
+      "helpDesk": true,
+      "freshdesk": true,
+      "zendesk": true,
+      "webflow": true,
+      "bigCommerce": true,
+      "wix": true,
+      "squarespac": true,
+      "custom": false
+
 
     },
     "team": {
@@ -1155,7 +1164,15 @@
       "slack": true,
       "wordpress": true,
       "shopify": true,
-      "zapier": true
+      "zapier": true,
+      "helpDesk": true,
+      "freshdesk": true,
+      "zendesk": true,
+      "webflow": true,
+      "bigCommerce": true,
+      "wix": true,
+      "squarespac": true,
+      "custom": false
 
     },
     "business": {
@@ -1195,7 +1212,15 @@
       "slack": true,
       "wordpress": true,
       "shopify": true,
-      "zapier": true
+      "zapier": true,
+      "helpDesk": true,
+      "freshdesk": true,
+      "zendesk": true,
+      "webflow": true,
+      "bigCommerce": true,
+      "wix": true,
+      "squarespac": true,
+      "custom": false
       
      
     },
@@ -1234,7 +1259,15 @@
       "slack": true,
       "wordpress": true,
       "shopify": true,
-      "zapier": true
+      "zapier": true,
+      "helpDesk": true,
+      "freshdesk": true,
+      "zendesk": true,
+      "webflow": true,
+      "bigCommerce": true,
+      "wix": true,
+      "squarespac": true,
+      "custom": true
 
     }
   },

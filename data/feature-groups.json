@@ -60,7 +60,10 @@
       { "key": "phone", "label": "Phone", "type": "boolean", "description": "Answer phone calls and trigger outbound calls directly from the platform." },
       { "key": "line", "label": "Line", "type": "boolean", "description": "Receive and reply to Line messages in the shared inbox." },
       { "key": "whatsappBiz", "label": "WhatsApp Business", "type": "boolean", "description": "Receive and reply to WhatsApp Business messages in the shared inbox." },
-      { "key": "activeChatbots", "label": "Active chatbots", "type": "text", "description": "A legal agreement ensuring data is handled in line with regulations." }
+      { "key": "activeChatbots", "label": "Active chatbots", "type": "text", "description": "A legal agreement ensuring data is handled in line with regulations." },
+      { "key": "webflow", "label": "Webflow", "type": "text", "description": "Add ChatBot to your Webflow site." },
+      { "key": "bigCommerce", "label": "BigCommerce", "type": "text", "description": "Connect your ChatBot to BigCommerce." }
+
      ]
   },  
   {
@@ -81,7 +84,14 @@
       { "key": "make", "label": "Make", "type": "boolean", "description": "Automate workflows by connecting to other apps with Make." },
       { "key": "n8n", "label": "n8n", "type": "boolean", "description": "Integrate with no-code/low-code automation workflows using n8n." },
       { "key": "stripe", "label": "Stripe", "type": "boolean", "description": "Sync revenue details from Stripe directly into your inbox or CRM." },
-      { "key": "salesforce", "label": "Salesforce", "type": "boolean", "description": "Synchronize with your Salesforce account." }
+      { "key": "salesforce", "label": "Salesforce", "type": "boolean", "description": "Synchronize with your Salesforce account." },
+      { "key": "helpDesk", "label": "HelpDesk", "type": "boolean", "description": "Create HelpDesk tickets directly from chats." },
+      { "key": "freshdesk", "label": "Freshdesk", "type": "boolean", "description": "Capture support tickets and customer info via chats." },
+      { "key": "zendesk", "label": "Zendesk", "type": "boolean", "description": "Automate tasks and create Zendesk tickets with a chatbot." },
+      { "key": "wix", "label": "Wix", "type": "boolean", "description": "Add ChatBot to your Wix website." },
+      { "key": "squarespac", "label": "Squarespac", "type": "boolean", "description": "Connect your ChatBot to Squarespace." },
+      { "key": "custom", "label": "Custom", "type": "boolean", "description": "Create custom integrations with your tools and services." }
+
     ]
   },
   {
