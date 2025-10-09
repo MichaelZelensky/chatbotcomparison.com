@@ -1124,7 +1124,11 @@
       "bigCommerce": true,
       "wix": true,
       "squarespac": true,
-      "custom": false
+      "custom": false,
+      "allChats": true,
+      "paidChats": true,
+      "busiestPeriod": false,
+      "allMessages": true
 
 
     },
@@ -1172,7 +1176,11 @@
       "bigCommerce": true,
       "wix": true,
       "squarespac": true,
-      "custom": false
+      "custom": false,
+      "allChats": true,
+      "paidChats": true,
+      "busiestPeriod": true,
+      "allMessages": true
 
     },
     "business": {
@@ -1220,7 +1228,11 @@
       "bigCommerce": true,
       "wix": true,
       "squarespac": true,
-      "custom": false
+      "custom": false,
+      "allChats": true,
+      "paidChats": true,
+      "busiestPeriod": true,
+      "allMessages": true
       
      
     },
@@ -1267,7 +1279,11 @@
       "bigCommerce": true,
       "wix": true,
       "squarespac": true,
-      "custom": true
+      "custom": true,
+      "allChats": true,
+      "paidChats": true,
+      "busiestPeriod": true,
+      "allMessages": true
 
     }
   },

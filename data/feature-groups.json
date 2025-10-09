@@ -10,7 +10,9 @@
       { "key": "aiUsage", "label": "AI Usage", "type": "text", "description": "Number of AI-powered actions (like summaries or replies) available per day." },
       { "key": "billableConversations", "label": "Billable Conversations Limit", "type": "text", "description": "Monthly limit for human-handled conversations (if applicable)." },
       { "key": "freeTrial", "label": "Free Trial", "type": "text", "description": "Length and conditions of the free trial (e.g., days, credit card required or not)." },
-      { "key": "chatsPackage", "label": "Chats Package", "type": "text", "description": "Your plan includes a limited number of free chats. Each additional chat costs $0.03. Empty or unanswered chats don’t count — you won’t pay for them." }
+      { "key": "chatsPackage", "label": "Chats Package", "type": "text", "description": "Your plan includes a limited number of free chats. Each additional chat costs $0.03. Empty or unanswered chats don’t count — you won’t pay for them." },
+      { "key": "paidChats", "label": "Paid chats", "type": "text", "description": "Chats beyond the free plan." }
+
 ]
   },
   {
@@ -41,7 +43,11 @@
       { "key": "universalInbox", "label": "Universal Inbox", "type": "boolean", "description": "Centralized inbox to handle conversations from all channels." },
       { "key": "hybridTicketStream", "label": "Hybrid Ticket Stream", "type": "boolean", "description": "Single thread follows a customer across channels." },
       { "key": "tags", "label": "Tags", "type": "boolean", "description": "Tag conversations for search and reporting." },
-      { "key": "teamcollaboration ", "label": "Team Collaboration ", "type": "boolean", "description": "Invite your teammates and build chatbots together." }
+      { "key": "teamcollaboration", "label": "Team Collaboration", "type": "boolean", "description": "Invite your teammates and build chatbots together." }, 
+      { "key": "allChats", "label": "All chats", "type": "boolean", "description": "Total chats in a period." },
+      { "key": "allMessages", "label": "All messages", "type": "boolean", "description": "Total messages received by your chatbot." }
+
+
     ]
   },
   {
@@ -215,11 +221,9 @@
       { "key": "websiteMonitoring", "label": "Website Monitoring", "type": "boolean", "description": "Track all visitors, active agents, ongoing chats, and top pages to engage proactively." },
       { "key": "filters", "label": "Filters", "type": "boolean", "description": "Personalize chats with dynamic attributes and organize them into subflows." },
       { "key": "segments", "label": "Segments", "type": "boolean", "description": "Segment users to personalize experiences or export contacts." },
-      { "key": "moments", "label": "Moments", "type": "boolean", "description": " Open any web application inside the ongoing chat." }
+      { "key": "moments", "label": "Moments", "type": "boolean", "description": " Open any web application inside the ongoing chat." },
+      { "key": "busiestPeriod", "label": "Busiest period", "type": "boolean", "description": "Heatmap showing your chatbot’s workload by time of day." }
 
-
-
-    
     ]
   },
   {
