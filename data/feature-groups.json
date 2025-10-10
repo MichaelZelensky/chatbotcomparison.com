@@ -269,5 +269,17 @@
         "description": "Chat can start immediately without registration, explicit consent gates, or other blockers."
       }
     ]
+  },
+  {
+    "id": "testing",
+    "label": "Testing",
+    "rows": [
+      {
+        "key": "testingTool",
+        "label": "Testing tool",
+        "type": "boolean",
+        "description": "Quickly test the entire chat experience and particular flows."
+      }
+    ]
   }
 ]

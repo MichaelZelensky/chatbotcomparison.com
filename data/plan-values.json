@@ -1128,7 +1128,8 @@
       "allChats": true,
       "paidChats": true,
       "busiestPeriod": false,
-      "allMessages": true
+      "allMessages": true,
+      "testing": true
 
 
     },
@@ -1180,7 +1181,8 @@
       "allChats": true,
       "paidChats": true,
       "busiestPeriod": true,
-      "allMessages": true
+      "allMessages": true,
+      "testing": true
 
     },
     "business": {
@@ -1232,7 +1234,8 @@
       "allChats": true,
       "paidChats": true,
       "busiestPeriod": true,
-      "allMessages": true
+      "allMessages": true,
+      "testing": true
       
      
     },
@@ -1283,7 +1286,8 @@
       "allChats": true,
       "paidChats": true,
       "busiestPeriod": true,
-      "allMessages": true
+      "allMessages": true,
+      "testing": true
 
     }
   },
