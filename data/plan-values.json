@@ -1129,7 +1129,7 @@
       "paidChats": true,
       "busiestPeriod": false,
       "allMessages": true,
-      "testing": true
+      "testingTool": true
 
 
     },
@@ -1182,7 +1182,7 @@
       "paidChats": true,
       "busiestPeriod": true,
       "allMessages": true,
-      "testing": true
+      "testingTool": true
 
     },
     "business": {
@@ -1235,7 +1235,7 @@
       "paidChats": true,
       "busiestPeriod": true,
       "allMessages": true,
-      "testing": true
+      "testingTool": true
       
      
     },
@@ -1287,7 +1287,8 @@
       "paidChats": true,
       "busiestPeriod": true,
       "allMessages": true,
-      "testing": true
+      "testingTool": true
+      
 
     }
   },
