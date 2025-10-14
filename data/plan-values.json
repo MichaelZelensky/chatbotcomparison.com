@@ -1129,7 +1129,15 @@
       "paidChats": true,
       "busiestPeriod": false,
       "allMessages": true,
-      "testingTool": true
+      "testingTool": true,
+      "averageMessages": true,
+      "allUsers": true,
+      "webhooks": true,
+      "javascriptAPI": true,
+      "rESTAPI": true,
+      "momentsSDK": true
+
+
 
 
     },
@@ -1182,7 +1190,13 @@
       "paidChats": true,
       "busiestPeriod": true,
       "allMessages": true,
-      "testingTool": true
+      "testingTool": true,
+      "averageMessages": true,
+      "allUsers": true,
+      "webhooks": true,
+      "javascriptAPI": true,
+      "rESTAPI": true,
+      "momentsSDK": true
 
     },
     "business": {
@@ -1235,7 +1249,13 @@
       "paidChats": true,
       "busiestPeriod": true,
       "allMessages": true,
-      "testingTool": true
+      "testingTool": true,
+      "averageMessages": true,
+      "allUsers": true,
+      "webhooks": true,
+      "javascriptAPI": true,
+      "rESTAPI": true,
+      "momentsSDK": true
       
      
     },
@@ -1287,7 +1307,13 @@
       "paidChats": true,
       "busiestPeriod": true,
       "allMessages": true,
-      "testingTool": true
+      "testingTool": true,
+      "averageMessages": true,
+      "allUsers": true,
+      "webhooks": true,
+      "javascriptAPI": true,
+      "rESTAPI": true,
+      "momentsSDK": true
       
 
     }

@@ -96,7 +96,10 @@
       { "key": "zendesk", "label": "Zendesk", "type": "boolean", "description": "Automate tasks and create Zendesk tickets with a chatbot." },
       { "key": "wix", "label": "Wix", "type": "boolean", "description": "Add ChatBot to your Wix website." },
       { "key": "squarespac", "label": "Squarespac", "type": "boolean", "description": "Connect your ChatBot to Squarespace." },
-      { "key": "custom", "label": "Custom", "type": "boolean", "description": "Create custom integrations with your tools and services." }
+      { "key": "custom", "label": "Custom", "type": "boolean", "description": "Create custom integrations with your tools and services." },
+      { "key": "webhooks", "label": "Webhooks", "type": "boolean", "description": "Exchange data between your backend and chatbot to customize flows." },
+      { "key": "javascriptAPI", "label": "Javascript API", "type": "boolean", "description": "Control Chat Widget behavior on your website with JavaScript." },
+      { "key": "rESTAPI", "label": "REST API", "type": "boolean", "description": "Manage chatbot data and actions through secure HTTP requests." }
 
     ]
   },
@@ -188,9 +191,9 @@
       { "key": "randomRouting", "label": "Random Routing", "type": "boolean", "description": "Assign chats randomly among available agents." },
       { "key": "visualBuilder", "label": "Visual Builder", "type": "boolean", "description": "Preview and modify your chatbot using a simple drag-and-drop builder." },
       { "key": "templates", "label": "Templates", "type": "boolean", "description": "Use chatbot templates designed for specific business cases." },
-      { "key": "flows", "label": "Flows", "type": "boolean", "description": "Organize your chatbot into subflows for a better editing experience." }
-
-
+      { "key": "flows", "label": "Flows", "type": "boolean", "description": "Organize your chatbot into subflows for a better editing experience." },
+      { "key": "momentsSDK", "label": "Moments SDK", "type": "boolean", "description": "Embed any website or web application in an iframe during the conversation." }
+      
     ]
   },
   {
@@ -222,7 +225,9 @@
       { "key": "filters", "label": "Filters", "type": "boolean", "description": "Personalize chats with dynamic attributes and organize them into subflows." },
       { "key": "segments", "label": "Segments", "type": "boolean", "description": "Segment users to personalize experiences or export contacts." },
       { "key": "moments", "label": "Moments", "type": "boolean", "description": " Open any web application inside the ongoing chat." },
-      { "key": "busiestPeriod", "label": "Busiest period", "type": "boolean", "description": "Heatmap showing your chatbot’s workload by time of day." }
+      { "key": "busiestPeriod", "label": "Busiest period", "type": "boolean", "description": "Heatmap showing your chatbot’s workload by time of day." },
+      { "key": "averageMessages", "label": "Average messages", "type": "boolean", "description": "Average messages per chatbot conversation." },
+      { "key": "allUsers", "label": "All users", "type": "boolean", "description": "Total users who interacted with your chatbot." }
 
     ]
   },
