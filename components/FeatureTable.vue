@@ -360,8 +360,8 @@ const ariaLabel = (val: unknown, type: FeatureType): string => {
     position: sticky;
     left: 0;
     /* Use background from row so hover color is consistent */
-    background: inherit;
-    z-index: 2;
+    background: var(--card);
+    z-index: 4;
     box-shadow: 1px 0 0 0 var(--border);
   }
 }
