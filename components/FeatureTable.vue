@@ -48,7 +48,7 @@
         </thead>
 
         <tbody>
-          <tr class="total-row">
+          <tr class="total-row row-hoverable">
             <th scope="row" class="group-heading">
               Total score
             </th>
@@ -65,7 +65,7 @@
         </tbody>
 
         <tbody v-for="(featureGroup, gIdx) in groups" :key="featureGroup.id">
-          <tr class="group-row">
+          <tr class="group-row row-hoverable">
             <th
               scope="rowgroup"
               class="group-heading"
@@ -91,7 +91,7 @@
           <tr
             v-for="featureRow in featureGroup.rows"
             :key="featureGroup.id + '-' + featureRow.key"
-            class="hoverable-row"
+            class="row-hoverable"
           >
             <th scope="row" class="row-heading">
               <div class="feat">
@@ -204,7 +204,6 @@ const computeScore = (col: Col, groupId?: string | null): number => {
   const key = `${col.key}|${groupId ?? 'ALL'}`;
   const cached = scoreCache.get(key);
   if (cached != null) return cached;
-
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const pv = (planValues as any)?.[col.providerSlug]?.[col.planSlug] || {};
   const keys = booleanKeysForGroup(groupId ?? null);
@@ -214,11 +213,8 @@ const computeScore = (col: Col, groupId?: string | null): number => {
   return s;
 };
 
-const groupScore = (col: Col, groupId: string): number =>
-  computeScore(col, groupId);
-
-const totalScore = (col: Col): number =>
-  computeScore(col, null);
+const groupScore = (col: Col, groupId: string): number => computeScore(col, groupId);
+const totalScore = (col: Col): number => computeScore(col, null);
 
 const sortedColumns = computed<Col[]>(() => {
   const arr = [...visibleColumns.value];
@@ -286,22 +282,27 @@ const ariaLabel = (val: unknown, type: FeatureType): string => {
 <style scoped lang="scss">
 .title { @apply text-lg font-bold mb-4; }
 .column-heading { @apply leading-tight; }
+
 .group-row > th {
   @apply text-sm uppercase tracking-wide text-[color:var(--muted)];
   border-bottom: 1px solid var(--border);
 }
+
 .row-heading { @apply font-normal text-left; }
 .row-heading .feat { @apply flex items-center justify-between; }
+
 .tip {
   @apply inline-flex items-center justify-center text-xs rounded-full border;
   width: 18px; height: 18px; line-height: 1;
   border-color: var(--border); color: var(--muted); background: transparent;
 }
 .tip:hover { color: var(--fg); }
+
 .sr-only {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
 }
+
 .group-heading {
   @apply font-semibold text-left text-sm uppercase tracking-wide text-[color:var(--muted)] bg-[color:var(--card)];
   border-bottom: 1px solid var(--border);
@@ -311,12 +312,17 @@ const ariaLabel = (val: unknown, type: FeatureType): string => {
   border-bottom: 1px solid var(--border);
 }
 
-/* highlight effect */
-.hoverable-row:hover {
-  background-color: color-mix(in srgb, var(--card) 80%, var(--link) 8%);
-  transition: background-color 0.2s ease;
+/* Row hover — applies to feature rows, group headers, and total row */
+.row-hoverable {
+  --row-hover: color-mix(in srgb, var(--card) 84%, var(--link) 8%);
+  transition: background-color .18s ease;
+}
+.row-hoverable:hover > th,
+.row-hoverable:hover > td {
+  background-color: var(--row-hover);
 }
 
+/* Table shell */
 .table-wrap {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -330,13 +336,12 @@ const ariaLabel = (val: unknown, type: FeatureType): string => {
   border-collapse: separate;
   border-spacing: 0;
 }
-
 .compare th, .compare td {
   padding: 12px 14px;
   border-bottom: 1px solid var(--border);
   vertical-align: top;
+  background: transparent;
 }
-
 .compare thead th {
   position: sticky;
   top: 0;
@@ -344,17 +349,18 @@ const ariaLabel = (val: unknown, type: FeatureType): string => {
   z-index: 1;
 }
 
+/* First column (sticky) */
 .compare th:first-child,
 .compare td:first-child {
   min-width: 220px;
 }
-
 @media (min-width: 768px) {
   .compare th:first-child,
   .compare td:first-child {
     position: sticky;
     left: 0;
-    background: var(--card);
+    /* Use background from row so hover color is consistent */
+    background: inherit;
     z-index: 2;
     box-shadow: 1px 0 0 0 var(--border);
   }
