@@ -91,6 +91,7 @@
           <tr
             v-for="featureRow in featureGroup.rows"
             :key="featureGroup.id + '-' + featureRow.key"
+            class="hoverable-row"
           >
             <th scope="row" class="row-heading">
               <div class="feat">
@@ -125,6 +126,9 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue';
+import groupsJson from '~/data/feature-groups.json';
+import providersJson from '~/data/providers.json';
+import planValues from '~/data/plan-values.json';
 
 type FeatureType = 'boolean' | 'text' | 'number';
 type FeatureRow = { key: string; label: string; type: FeatureType; description: string };
@@ -132,13 +136,8 @@ type FeatureGroup = { id: string; label: string; rows: FeatureRow[] };
 type Plan = { name: string; slug: string };
 type Provider = { name: string; slug: string; homepage: string; plans: Plan[] };
 
-import groupsJson from '~/data/feature-groups.json';
-import providersJson from '~/data/providers.json';
-import planValues from '~/data/plan-values.json';
-
 const groups = groupsJson as FeatureGroup[];
 const providers = providersJson as Provider[];
-
 const priceGroupIds = new Set<string>(['pricing']);
 
 type Col = {
@@ -223,7 +222,6 @@ const totalScore = (col: Col): number =>
 
 const sortedColumns = computed<Col[]>(() => {
   const arr = [...visibleColumns.value];
-
   if (sortMode.value === 'default') {
     arr.sort((a, b) => {
       const pa = priceOf(a);
@@ -233,27 +231,17 @@ const sortedColumns = computed<Col[]>(() => {
     });
     return arr;
   }
-
-  if (sortMode.value === 'priceAsc') {
-    arr.sort((a, b) => priceOf(a) - priceOf(b));
-  } else if (sortMode.value === 'priceDesc') {
-    arr.sort((a, b) => priceOf(b) - priceOf(a));
-  } else if (sortMode.value === 'scoreAsc') {
-    arr.sort(
-      (a, b) => computeScore(a, scoreGroupId.value) - computeScore(b, scoreGroupId.value)
-    );
-  } else if (sortMode.value === 'scoreDesc') {
-    arr.sort(
-      (a, b) => computeScore(b, scoreGroupId.value) - computeScore(a, scoreGroupId.value)
-    );
-  }
+  if (sortMode.value === 'priceAsc') arr.sort((a, b) => priceOf(a) - priceOf(b));
+  else if (sortMode.value === 'priceDesc') arr.sort((a, b) => priceOf(b) - priceOf(a));
+  else if (sortMode.value === 'scoreAsc')
+    arr.sort((a, b) => computeScore(a, scoreGroupId.value) - computeScore(b, scoreGroupId.value));
+  else if (sortMode.value === 'scoreDesc')
+    arr.sort((a, b) => computeScore(b, scoreGroupId.value) - computeScore(a, scoreGroupId.value));
   return arr;
 });
 
 const getUserLocale = (): string => {
-  if (process.client && typeof navigator !== 'undefined' && navigator.language) {
-    return navigator.language;
-  }
+  if (process.client && typeof navigator !== 'undefined' && navigator.language) return navigator.language;
   const headers = useRequestHeaders(['accept-language']);
   const al = headers['accept-language'];
   if (al) {
@@ -263,9 +251,7 @@ const getUserLocale = (): string => {
   return 'en-US';
 };
 
-const numberFormatter = new Intl.NumberFormat(getUserLocale(), {
-  maximumFractionDigits: 2
-});
+const numberFormatter = new Intl.NumberFormat(getUserLocale(), { maximumFractionDigits: 2 });
 
 const toNumber = (v: unknown): number | null => {
   if (typeof v === 'number' && Number.isFinite(v)) return v;
@@ -324,6 +310,13 @@ const ariaLabel = (val: unknown, type: FeatureType): string => {
   @apply bg-[color:var(--card)];
   border-bottom: 1px solid var(--border);
 }
+
+/* highlight effect */
+.hoverable-row:hover {
+  background-color: color-mix(in srgb, var(--card) 80%, var(--link) 8%);
+  transition: background-color 0.2s ease;
+}
+
 .table-wrap {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -331,26 +324,31 @@ const ariaLabel = (val: unknown, type: FeatureType): string => {
   border-radius: 12px;
   background: var(--card);
 }
+
 .compare {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
 }
+
 .compare th, .compare td {
   padding: 12px 14px;
   border-bottom: 1px solid var(--border);
   vertical-align: top;
 }
+
 .compare thead th {
   position: sticky;
   top: 0;
   background: var(--card);
   z-index: 1;
 }
+
 .compare th:first-child,
 .compare td:first-child {
   min-width: 220px;
 }
+
 @media (min-width: 768px) {
   .compare th:first-child,
   .compare td:first-child {
@@ -361,5 +359,6 @@ const ariaLabel = (val: unknown, type: FeatureType): string => {
     box-shadow: 1px 0 0 0 var(--border);
   }
 }
+
 .small { color: var(--muted); font-size: 0.925rem; }
 </style>
