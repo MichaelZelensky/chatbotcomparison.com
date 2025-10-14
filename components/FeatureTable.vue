@@ -5,7 +5,6 @@
     </div>
 
     <div class="mb-3 flex items-center gap-3">
-
       <ProviderFilterDropdown
         v-if="providerOptions.length"
         :options="providerOptions"
@@ -325,4 +324,42 @@ const ariaLabel = (val: unknown, type: FeatureType): string => {
   @apply bg-[color:var(--card)];
   border-bottom: 1px solid var(--border);
 }
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+}
+.compare {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.compare th, .compare td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.compare thead th {
+  position: sticky;
+  top: 0;
+  background: var(--card);
+  z-index: 1;
+}
+.compare th:first-child,
+.compare td:first-child {
+  min-width: 220px;
+}
+@media (min-width: 768px) {
+  .compare th:first-child,
+  .compare td:first-child {
+    position: sticky;
+    left: 0;
+    background: var(--card);
+    z-index: 2;
+    box-shadow: 1px 0 0 0 var(--border);
+  }
+}
+.small { color: var(--muted); font-size: 0.925rem; }
 </style>
