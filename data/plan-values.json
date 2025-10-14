@@ -1,6 +1,7 @@
 {
   "crisp": {
     "free": {
+      "freeTrial": "Free",
       "planPrice": "$0",
       "agentsIncluded": 2,
       "additionalAgentPrice": null,
@@ -474,6 +475,7 @@
   },
   "tidio": {
     "free": {
+      "freeTrial": "Free",
       "planPrice": "$0",
       "agentsIncluded": 10,
       "additionalAgentPrice": null,
@@ -1130,8 +1132,6 @@
       "busiestPeriod": false,
       "allMessages": true,
       "testing": true
-
-
     },
     "team": {
       "planPrice": "$174",
@@ -1183,7 +1183,6 @@
       "busiestPeriod": true,
       "allMessages": true,
       "testing": true
-
     },
     "business": {
       "planPrice": "$424",
@@ -1236,8 +1235,6 @@
       "busiestPeriod": true,
       "allMessages": true,
       "testing": true
-      
-     
     },
     "enterprise": {
       "planPrice": "Custom",
@@ -1288,7 +1285,6 @@
       "busiestPeriod": true,
       "allMessages": true,
       "testing": true
-
     }
   },
   "zendesk": {
@@ -1404,6 +1400,38 @@
       "crmProfile": true,
       "shopify": true,
       "pipedrive": true
+    }
+  },
+  "liteed": {
+    "free-beta": {
+      "freeTrial": "Free",
+      "planPrice": "$0",
+      "chatsPackage": "Unlimited",
+      "chatWidget": true,
+      "developerApis": true,
+      "fileSharing": true,
+      "transcript": true,
+      "fullHistory": true,
+      "widgetCustomization": true,
+      "multilingualWidget": true,
+      "versionHistory": true,
+      "aiKnowledge": true,
+      "aiAnswers": true,
+      "multilingualAI": true,
+      "straightStart": true,
+      "testingTool": true,
+      "unlimitedConvos": true,
+      "liveTranslate": true,
+      "aiAgent": true,
+      "aiConversationsQuota": "Unlimited",
+      "hcArticles": true,
+      "mfa": true,
+      "tls": true,
+      "userManagement": true,
+      "sandbox": true,
+      "cloudBased": true,
+      "mobileApps": true,
+      "desktopApps": true
     }
   }
 }
