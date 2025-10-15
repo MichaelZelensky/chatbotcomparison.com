@@ -906,6 +906,7 @@
       "planPrice": "$0",
       "chatsPackage": "Unlimited",
       "chatWidget": true,
+      "aiUsage": "Unlimited",
       "developerApis": true,
       "fileSharing": true,
       "transcript": true,
