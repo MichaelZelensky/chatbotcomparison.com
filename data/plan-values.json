@@ -1137,7 +1137,12 @@
       "rESTAPI": true,
       "momentsSDK": true,
       "gDPRCompliance": true,
-      "256-bitSLLEncryption": true 
+      "256-bitSLLEncryption": true,
+      "sSO(Google,Microsoft,Apple)": true,
+      "dataRemoval": true,
+      "automaticDataRemoval": false,
+      "customSSO": false 
+  
 
 
 
@@ -1199,7 +1204,11 @@
       "rESTAPI": true,
       "momentsSDK": true,
       "gDPRCompliance": true,
-      "256-bitSLLEncryption": true
+      "256-bitSLLEncryption": true,
+      "sSO(Google,Microsoft,Apple)": true,
+      "dataRemoval": true,
+      "automaticDataRemoval": false,
+      "customSSO": false
 
     },
     "business": {
@@ -1260,7 +1269,11 @@
       "rESTAPI": true,
       "momentsSDK": true,
       "gDPRCompliance": true,
-      "256-bitSLLEncryption": true
+      "256-bitSLLEncryption": true,
+      "sSO(Google,Microsoft,Apple)": true,
+      "dataRemoval": true,
+      "automaticDataRemoval": true,
+      "customSSO": false
       
      
     },
@@ -1320,7 +1333,11 @@
       "rESTAPI": true,
       "momentsSDK": true,
       "gDPRCompliance": true,
-      "256-bitSLLEncryption": true
+      "256-bitSLLEncryption": true,
+      "sSO(Google,Microsoft,Apple)": true,
+      "dataRemoval": true,
+      "automaticDataRemoval": true,
+      "customSSO": true
       
 
     }
