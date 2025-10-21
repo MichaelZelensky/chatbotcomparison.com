@@ -26,14 +26,8 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-html, body, #__nuxt {
-  height: 100%;
-}
+html, body { margin: 0; padding: 0; }
+html, body, #__nuxt { height: 100%; }
 
 body {
   background: var(--bg);
@@ -43,94 +37,28 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3, h4 {
-  @apply font-bold;
-}
+h1, h2, h3, h4 { @apply font-bold; }
+h1 { @apply mb-4 text-lg; }
 
-h1 {
-  @apply mb-4;
-  @apply text-lg;
-}
-
-/* Container */
-.container {
-  @apply max-w-6xl mx-auto px-4;
-}
-
-/* Table (scroll on small screens, sticky first column on md+) */
-.table-wrap {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: var(--card);
-}
-
-table.compare {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-}
-
-.compare th, .compare td {
-  padding: 12px 14px;
-  border-bottom: 1px solid var(--border);
-  vertical-align: top;
-}
-
-.compare thead th {
-  position: sticky;
-  top: 0;
-  background: var(--card);
-  z-index: 1;
-}
-
-.compare th:first-child,
-.compare td:first-child {
-  min-width: 220px;
-}
-
-@media (min-width: 768px) {
-  .compare th:first-child,
-  .compare td:first-child {
-    position: sticky;
-    left: 0;
-    background: var(--card);
-    z-index: 2;
-    box-shadow: 1px 0 0 0 var(--border);
-  }
-}
-
-a {
-  color: var(--link);
-  text-decoration: none;
-}
+/* Links */
+a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-.small {
-  color: var(--muted);
-  font-size: 0.925rem;
-}
+/* Utility text */
+.small { color: var(--muted); font-size: 0.925rem; }
 
-/* Simple card */
+/* Card */
 @layer components {
   .card {
-    /* structure + default padding if you want */
     border: 1px solid var(--border);
     background: var(--card);
     border-radius: 12px;
-    /* optional defaults that utilities can override */
-    padding: .75rem 1rem; /* can keep or remove; utilities still win */
+    padding: .75rem 1rem;
   }
 }
 
-
 /* Prevent flex children from forcing horizontal overflow */
-main, .container, .content, .page-root, .flex, .flex > * {
-  min-width: 0;
-}
+main, .content, .page-root, .flex, .flex > * { min-width: 0; }
 
-/* If you want a belt-and-suspenders guard: */
-html, body {
-  overflow-x: hidden; /* optional; use if any third-party UI leaks width */
-}
+/* Guard against accidental global overflow */
+html, body { overflow-x: hidden; }

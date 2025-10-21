@@ -193,7 +193,11 @@
       { "key": "templates", "label": "Templates", "type": "boolean", "description": "Use chatbot templates designed for specific business cases." },
       { "key": "flows", "label": "Flows", "type": "boolean", "description": "Organize your chatbot into subflows for a better editing experience." },
       { "key": "momentsSDK", "label": "Moments SDK", "type": "boolean", "description": "Embed any website or web application in an iframe during the conversation." }
+<<<<<<< HEAD
       
+=======
+
+>>>>>>> main
     ]
   },
   {
@@ -249,8 +253,13 @@
       { "key": "dpa", "label": "Data Processing Agreement", "type": "boolean", "description": "A legal agreement ensuring data is handled in line with regulations." },
       { "key": "tls", "label": "TLS Encryption", "type": "boolean", "description": "All data is encrypted in transit using TLS." },
       { "key": "userManagement", "label": "User management", "type": "boolean", "description": "Access and manage collected user data and chat history efficiently." },
-      { "key": "userExport", "label": "User export", "type": "boolean", "description": "Export user data for reporting and third-party integrations." }
-
+      { "key": "userExport", "label": "User export", "type": "boolean", "description": "Export user data for reporting and third-party integrations." },
+      { "key": "gDPRCompliance", "label": "GDPR Compliance", "type": "boolean", "description": "Ensure chatbot compliance with GDPR regulations. Data & Security." },
+      { "key": "256-bitSLLEncryption", "label": "256-bit SLL encryption", "type": "boolean", "description": "Protect data with 256-bit SSL encryption." },
+      { "key": "sSO(Google,Microsoft,Apple)", "label": "SSO (Google, Microsoft, Apple)", "type": "boolean", "description": "Sign in using your Google, Microsoft, Apple, or Text account." },
+      { "key": "dataRemoval", "label": "Data removal", "type": "boolean", "description": "Remove user and chat data." },
+      { "key": "automaticDataRemoval", "label": "Automatic data removal", "type": "boolean", "description": "Automatically delete user and chat data after a set period." },
+      { "key": "customSSO", "label": "Custom SSO", "type": "boolean", "description": "Seamlessly authenticate across your enterprise apps with ChatBot single sign-on support." }
 
     ]
   },

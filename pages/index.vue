@@ -6,7 +6,6 @@
 </template>
 
 <script setup lang="ts">
-
 const title = 'Chatbot Comparison: Feature table of popular AI chatbots';
 const description = 'Compare ChatGPT, Gemini, Claude, Perplexity and more. Quickly scan pricing, free tiers, web browsing, image understanding, API access, and other key features.';
 
@@ -19,7 +18,6 @@ useSeoMeta({
   twitterCard: 'summary_large_image'
 });
 
-// JSON-LD via useHead
 useHead({
   script: [
     {
