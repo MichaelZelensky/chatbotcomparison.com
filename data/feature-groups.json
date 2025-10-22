@@ -193,11 +193,7 @@
       { "key": "templates", "label": "Templates", "type": "boolean", "description": "Use chatbot templates designed for specific business cases." },
       { "key": "flows", "label": "Flows", "type": "boolean", "description": "Organize your chatbot into subflows for a better editing experience." },
       { "key": "momentsSDK", "label": "Moments SDK", "type": "boolean", "description": "Embed any website or web application in an iframe during the conversation." }
-<<<<<<< HEAD
-      
-=======
 
->>>>>>> main
     ]
   },
   {
@@ -212,7 +208,12 @@
       { "key": "hcFeedback", "label": "Article Feedback", "type": "boolean", "description": "Let users rate and comment on help articles." },
       { "key": "hcDomain", "label": "Custom Domain Name", "type": "boolean", "description": "Use your own branded domain for the help center." },
       { "key": "hcSeo", "label": "Sitemap & SEO Meta Data", "type": "boolean", "description": "Optimize the help center for search engines with sitemaps and metadata." },
-      { "key": "interactionsPopularity", "label": "Interactions Popularity", "type": "boolean", "description": "See popularity metrics per interaction within a chatbot." }
+      { "key": "interactionsPopularity", "label": "Interactions Popularity", "type": "boolean", "description": "See popularity metrics per interaction within a chatbot." },
+      { "key": "helpCenter", "label": "Help center", "type": "boolean", "description": "Chatbot install, use & customize—all in one place." },
+      { "key": "emailSupport", "label": "Email support", "type": "boolean", "description": "Briefly contact the support team via email." },
+      { "key": "chatSupport", "label": "Chat support", "type": "boolean", "description": "Connect with our support via live chat." }
+
+      
     ]
   },
   {

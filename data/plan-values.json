@@ -1141,7 +1141,10 @@
       "sSO(Google,Microsoft,Apple)": true,
       "dataRemoval": true,
       "automaticDataRemoval": false,
-      "customSSO": false 
+      "customSSO": false,
+      "helpCenter": true,
+      "emailSupport": true,
+      "chatSupport": true
   
 
 
@@ -1203,18 +1206,16 @@
       "javascriptAPI": true,
       "rESTAPI": true,
       "momentsSDKTool": true,
-      "averageMessages": true,
-      "allUsers": true,
-      "webhooks": true,
-      "javascriptAPI": true,
-      "rESTAPI": true,
       "momentsSDK": true,
       "gDPRCompliance": true,
       "256-bitSLLEncryption": true,
       "sSO(Google,Microsoft,Apple)": true,
       "dataRemoval": true,
       "automaticDataRemoval": false,
-      "customSSO": false
+      "customSSO": false,
+      "helpCenter": true,
+      "emailSupport": true,
+      "chatSupport": true
 
     },
     "business": {
@@ -1279,13 +1280,10 @@
       "sSO(Google,Microsoft,Apple)": true,
       "dataRemoval": true,
       "automaticDataRemovalTool": true,
-      "averageMessages": true,
-      "allUsers": true,
-      "webhooks": true,
-      "javascriptAPI": true,
-      "rESTAPI": true,
-      "momentsSDK": true,
-      "customSSO": false
+      "customSSO": false,
+      "helpCenter": true,
+      "emailSupport": true,
+      "chatSupport": true
       
      
     },
@@ -1350,12 +1348,9 @@
       "dataRemoval": true,
       "automaticDataRemoval": true,
       "customSSOTool": true,
-      "averageMessages": true,
-      "allUsers": true,
-      "webhooks": true,
-      "javascriptAPI": true,
-      "rESTAPI": true,
-      "momentsSDK": true
+      "helpCenter": true,
+      "emailSupport": true,
+      "chatSupport": true
       
       
 
