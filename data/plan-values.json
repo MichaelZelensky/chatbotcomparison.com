@@ -1144,9 +1144,10 @@
       "customSSO": false,
       "helpCenter": true,
       "emailSupport": true,
-      "chatSupport": true
+      "chatSupport": true,
+      "serviceLevelAgreements(SLAs)": false,
+      "personalOnboarding": false
   
-
 
 
     },
@@ -1215,7 +1216,9 @@
       "customSSO": false,
       "helpCenter": true,
       "emailSupport": true,
-      "chatSupport": true
+      "chatSupport": true,
+      "serviceLevelAgreements(SLAs)": false,
+      "personalOnboarding": false
 
     },
     "business": {
@@ -1283,7 +1286,9 @@
       "customSSO": false,
       "helpCenter": true,
       "emailSupport": true,
-      "chatSupport": true
+      "chatSupport": true,
+      "serviceLevelAgreements(SLAs)": false,
+      "personalOnboarding": false
       
      
     },
@@ -1350,7 +1355,9 @@
       "customSSOTool": true,
       "helpCenter": true,
       "emailSupport": true,
-      "chatSupport": true
+      "chatSupport": true,
+      "serviceLevelAgreements(SLAs)": true,
+      "personalOnboarding": true
       
       
 
