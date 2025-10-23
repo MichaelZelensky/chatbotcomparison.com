@@ -1146,8 +1146,15 @@
       "emailSupport": true,
       "chatSupport": true,
       "serviceLevelAgreements(SLAs)": false,
-      "personalOnboarding": false
-  
+      "personalOnboarding": false,
+      "prioritySupport": false,
+      "legalAssistance": false,
+      "securityAssistance": false,
+      "alternativePaymentMethods": false,
+      "payWithCrypto": false,
+      "botBuildingService": false,
+      "botMaintenance": false,
+      "dedicatedAccountManager": false
 
 
     },
@@ -1218,7 +1225,15 @@
       "emailSupport": true,
       "chatSupport": true,
       "serviceLevelAgreements(SLAs)": false,
-      "personalOnboarding": false
+      "personalOnboarding": false,
+      "prioritySupport": false,
+      "legalAssistance": false,
+      "securityAssistance": false,
+      "alternativePaymentMethods": false,
+      "payWithCrypto": false,
+      "botBuildingService": false,
+      "botMaintenance": false,
+      "dedicatedAccountManager": false
 
     },
     "business": {
@@ -1288,8 +1303,15 @@
       "emailSupport": true,
       "chatSupport": true,
       "serviceLevelAgreements(SLAs)": false,
-      "personalOnboarding": false
-      
+      "personalOnboarding": false,
+      "prioritySupport": false,
+      "legalAssistance": false,
+      "securityAssistance": false,
+      "alternativePaymentMethods": false,
+      "payWithCrypto": false,
+      "botBuildingService": false,
+      "botMaintenance": false,
+      "dedicatedAccountManager": false
      
     },
     "enterprise": {
@@ -1357,9 +1379,15 @@
       "emailSupport": true,
       "chatSupport": true,
       "serviceLevelAgreements(SLAs)": true,
-      "personalOnboarding": true
-      
-      
+      "personalOnboarding": true,
+      "prioritySupport": true,
+      "legalAssistance": true,
+      "securityAssistance": true,
+      "alternativePaymentMethods": true,
+      "payWithCrypto": true,
+      "botBuildingService": true,
+      "botMaintenance": true,
+      "dedicatedAccountManager": true
 
     }
   },

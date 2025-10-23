@@ -11,7 +11,10 @@
       { "key": "billableConversations", "label": "Billable Conversations Limit", "type": "text", "description": "Monthly limit for human-handled conversations (if applicable)." },
       { "key": "freeTrial", "label": "Free Trial", "type": "text", "description": "Length and conditions of the free trial (e.g., days, credit card required or not)." },
       { "key": "chatsPackage", "label": "Chats Package", "type": "text", "description": "Your plan includes a limited number of free chats. Each additional chat costs $0.03. Empty or unanswered chats don’t count — you won’t pay for them." },
-      { "key": "paidChats", "label": "Paid chats", "type": "text", "description": "Chats beyond the free plan." }
+      { "key": "paidChats", "label": "Paid chats", "type": "text", "description": "Chats beyond the free plan." },
+      { "key": "alternativePaymentMethods", "label": "Alternative payment methods", "type": "boolean", "description": "Pay via purchase orders or annual invoices instead of a company card." },
+      { "key": "payWithCrypto", "label": "Pay with crypto", "type": "boolean", "description": "Pay with crypto like USDC on Ethereum, Solana, or Polygon." }
+
 
 ]
   },
@@ -213,7 +216,12 @@
       { "key": "emailSupport", "label": "Email support", "type": "boolean", "description": "Briefly contact the support team via email." },
       { "key": "chatSupport", "label": "Chat support", "type": "boolean", "description": "Connect with our support via live chat." },
       { "key": "serviceLevelAgreements(SLAs)", "label": "Service level agreements (SLAs)", "type": "boolean", "description": "Ensures reliable uptime and fast support for business continuity." },
-      { "key": "personalOnboarding", "label": "Personal onboarding", "type": "boolean", "description": "Get a guided ChatBot tour from our expert." }
+      { "key": "personalOnboarding", "label": "Personal onboarding", "type": "boolean", "description": "Get a guided ChatBot tour from our expert." },
+      { "key": "prioritySupport", "label": "Priority support", "type": "boolean", "description": "Support inquiries handled with top priority." },
+      { "key": "legalAssistance", "label": "Legal assistance", "type": "boolean", "description": "We’ll prepare and review the legal documents you need to start." },
+      { "key": "botBuildingService", "label": "Bot building service", "type": "boolean", "description": "Custom chatbots created to fit your business needs." },
+      { "key": "botMaintenance", "label": "Bot maintenance", "type": "boolean", "description": "Our experts monitor and optimize your chatbots over time." },
+      { "key": "dedicatedAccountManager", "label": "Dedicated account manager", "type": "boolean", "description": "A dedicated manager assists with your ChatBot license and setup." }
       
     ]
   },
@@ -261,7 +269,9 @@
       { "key": "sSO(Google,Microsoft,Apple)", "label": "SSO (Google, Microsoft, Apple)", "type": "boolean", "description": "Sign in using your Google, Microsoft, Apple, or Text account." },
       { "key": "dataRemoval", "label": "Data removal", "type": "boolean", "description": "Remove user and chat data." },
       { "key": "automaticDataRemoval", "label": "Automatic data removal", "type": "boolean", "description": "Automatically delete user and chat data after a set period." },
-      { "key": "customSSO", "label": "Custom SSO", "type": "boolean", "description": "Seamlessly authenticate across your enterprise apps with ChatBot single sign-on support." }
+      { "key": "customSSO", "label": "Custom SSO", "type": "boolean", "description": "Seamlessly authenticate across your enterprise apps with ChatBot single sign-on support." },
+      { "key": "securityAssistance", "label": "Security assistance", "type": "boolean", "description": "Get expert advice on securing ChatBot in your company." }
+
 
     ]
   },
