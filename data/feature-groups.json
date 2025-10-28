@@ -10,10 +10,9 @@
       { "key": "aiUsage", "label": "AI Usage", "type": "text", "description": "Number of AI-powered actions (like summaries or replies) available per day." },
       { "key": "billableConversations", "label": "Billable Conversations Limit", "type": "text", "description": "Monthly limit for human-handled conversations (if applicable)." },
       { "key": "freeTrial", "label": "Free Trial", "type": "text", "description": "Length and conditions of the free trial (e.g., days, credit card required or not)." },
-      { "key": "chatsPackage", "label": "Chats Package", "type": "text", "description": "Your plan includes a limited number of free chats. Each additional chat costs $0.03. Empty or unanswered chats don’t count — you won’t pay for them." },
+      { "key": "chatsPackage", "label": "Chats Package", "type": "text", "description": "Number of chats included into the plan." },
       { "key": "paidChats", "label": "Paid chats", "type": "text", "description": "Chats beyond the free plan." }
-
-]
+    ]
   },
   {
     "id": "teamInbox",
@@ -46,8 +45,6 @@
       { "key": "teamcollaboration", "label": "Team Collaboration", "type": "boolean", "description": "Invite your teammates and build chatbots together." }, 
       { "key": "allChats", "label": "All chats", "type": "boolean", "description": "Total chats in a period." },
       { "key": "allMessages", "label": "All messages", "type": "boolean", "description": "Total messages received by your chatbot." }
-
-
     ]
   },
   {
@@ -69,8 +66,7 @@
       { "key": "activeChatbots", "label": "Active chatbots", "type": "text", "description": "A legal agreement ensuring data is handled in line with regulations." },
       { "key": "webflow", "label": "Webflow", "type": "text", "description": "Add ChatBot to your Webflow site." },
       { "key": "bigCommerce", "label": "BigCommerce", "type": "text", "description": "Connect your ChatBot to BigCommerce." }
-
-     ]
+    ]
   },  
   {
     "id": "integrations",
@@ -95,11 +91,11 @@
       { "key": "freshdesk", "label": "Freshdesk", "type": "boolean", "description": "Capture support tickets and customer info via chats." },
       { "key": "zendesk", "label": "Zendesk", "type": "boolean", "description": "Automate tasks and create Zendesk tickets with a chatbot." },
       { "key": "wix", "label": "Wix", "type": "boolean", "description": "Add ChatBot to your Wix website." },
-      { "key": "squarespac", "label": "Squarespac", "type": "boolean", "description": "Connect your ChatBot to Squarespace." },
+      { "key": "squarespace", "label": "Squarespace", "type": "boolean", "description": "Connect your ChatBot to Squarespace." },
       { "key": "custom", "label": "Custom", "type": "boolean", "description": "Create custom integrations with your tools and services." },
       { "key": "webhooks", "label": "Webhooks", "type": "boolean", "description": "Exchange data between your backend and chatbot to customize flows." },
       { "key": "javascriptAPI", "label": "Javascript API", "type": "boolean", "description": "Control Chat Widget behavior on your website with JavaScript." },
-      { "key": "rESTAPI", "label": "REST API", "type": "boolean", "description": "Manage chatbot data and actions through secure HTTP requests." }
+      { "key": "restapi", "label": "REST API", "type": "boolean", "description": "Manage chatbot data and actions through secure HTTP requests." }
 
     ]
   },
@@ -112,8 +108,8 @@
       { "key": "typingIndicator", "label": "Typing Status Indicator", "type": "boolean", "description": "See when a user or agent is typing in real time." },
       { "key": "widgetCustomization", "label": "Widget Customization", "type": "boolean", "description": "Customize colors, text, and position to match your brand." },
       { "key": "proactive", "label": "Proactive Chat Messages", "type": "boolean", "description": "Trigger chat conversations automatically based on user behavior." },
-      { "key": "magicBrowse", "label": "MagicBrowse", "type": "boolean", "description": "Start a co-browsing session with website visitors and share your screen if needed." },
-      { "key": "liveTranslate", "label": "LiveTranslate", "type": "boolean", "description": "Translate messages instantly in 50+ languages." },
+      { "key": "magicBrowse", "label": "Magic Browse", "type": "boolean", "description": "Start a co-browsing session with website visitors and share your screen if needed." },
+      { "key": "liveTranslate", "label": "Live Translate", "type": "boolean", "description": "Translate messages instantly in multiple languages." },
       { "key": "avChat", "label": "Video & Audio chat", "type": "boolean", "description": "Engage with leads or customers through live audio or video." },
       { "key": "helpWidget", "label": "Help Widget", "type": "boolean", "description": "Add a self-service help widget to your site for instant answers." },
       { "key": "whiteLabel", "label": "White Label", "type": "boolean", "description": "Remove vendor branding from the widget." },
@@ -193,7 +189,6 @@
       { "key": "templates", "label": "Templates", "type": "boolean", "description": "Use chatbot templates designed for specific business cases." },
       { "key": "flows", "label": "Flows", "type": "boolean", "description": "Organize your chatbot into subflows for a better editing experience." },
       { "key": "momentsSDK", "label": "Moments SDK", "type": "boolean", "description": "Embed any website or web application in an iframe during the conversation." }
-
     ]
   },
   {
@@ -228,7 +223,6 @@
       { "key": "busiestPeriod", "label": "Busiest period", "type": "boolean", "description": "Heatmap showing your chatbot’s workload by time of day." },
       { "key": "averageMessages", "label": "Average messages", "type": "boolean", "description": "Average messages per chatbot conversation." },
       { "key": "allUsers", "label": "All users", "type": "boolean", "description": "Total users who interacted with your chatbot." }
-
     ]
   },
   {
@@ -256,7 +250,6 @@
       { "key": "dataRemoval", "label": "Data removal", "type": "boolean", "description": "Remove user and chat data." },
       { "key": "automaticDataRemoval", "label": "Automatic data removal", "type": "boolean", "description": "Automatically delete user and chat data after a set period." },
       { "key": "customSSO", "label": "Custom SSO", "type": "boolean", "description": "Seamlessly authenticate across your enterprise apps with ChatBot single sign-on support." }
-
     ]
   },
   {
