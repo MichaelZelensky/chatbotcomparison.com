@@ -944,7 +944,27 @@
       "javascriptAPI": true,
       "restapi": true,
       "siteSearch": true,
-      "apiAutomation": true
+      "apiAutomation": true,
+      "wordpress": true,
+      "shopify": true,
+      "woocommerce": true,
+      "adobeCommerce": true,
+      "prestashop": true,
+      "slack": true,
+      "hubspot": true,
+      "pipedrive": true,
+      "zoho": true,
+      "segment": true,
+      "zapier": true,
+      "make": true,
+      "n8n": true,
+      "stripe": true,
+      "salesforce": true,
+      "helpDesk": true,
+      "freshdesk": true,
+      "zendesk": true,
+      "wix": true,
+      "squarespace": true
     }
   }
 }
