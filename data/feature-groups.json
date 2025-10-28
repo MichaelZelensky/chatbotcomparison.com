@@ -64,8 +64,8 @@
       { "key": "line", "label": "Line", "type": "boolean", "description": "Receive and reply to Line messages in the shared inbox." },
       { "key": "whatsappBiz", "label": "WhatsApp Business", "type": "boolean", "description": "Receive and reply to WhatsApp Business messages in the shared inbox." },
       { "key": "activeChatbots", "label": "Active chatbots", "type": "text", "description": "A legal agreement ensuring data is handled in line with regulations." },
-      { "key": "webflow", "label": "Webflow", "type": "text", "description": "Add ChatBot to your Webflow site." },
-      { "key": "bigCommerce", "label": "BigCommerce", "type": "text", "description": "Connect your ChatBot to BigCommerce." }
+      { "key": "webflow", "label": "Webflow", "type": "text", "description": "Add chatbot to your Webflow site." },
+      { "key": "bigCommerce", "label": "BigCommerce", "type": "text", "description": "Connect your chatbot to BigCommerce." }
     ]
   },  
   {
@@ -90,8 +90,8 @@
       { "key": "helpDesk", "label": "HelpDesk", "type": "boolean", "description": "Create HelpDesk tickets directly from chats." },
       { "key": "freshdesk", "label": "Freshdesk", "type": "boolean", "description": "Capture support tickets and customer info via chats." },
       { "key": "zendesk", "label": "Zendesk", "type": "boolean", "description": "Automate tasks and create Zendesk tickets with a chatbot." },
-      { "key": "wix", "label": "Wix", "type": "boolean", "description": "Add ChatBot to your Wix website." },
-      { "key": "squarespace", "label": "Squarespace", "type": "boolean", "description": "Connect your ChatBot to Squarespace." },
+      { "key": "wix", "label": "Wix", "type": "boolean", "description": "Add chatbot to your Wix website." },
+      { "key": "squarespace", "label": "Squarespace", "type": "boolean", "description": "Connect your chatbot to Squarespace." },
       { "key": "custom", "label": "Custom", "type": "boolean", "description": "Create custom integrations with your tools and services." },
       { "key": "webhooks", "label": "Webhooks", "type": "boolean", "description": "Exchange data between your backend and chatbot to customize flows." },
       { "key": "javascriptAPI", "label": "Javascript API", "type": "boolean", "description": "Control Chat Widget behavior on your website with JavaScript." },
@@ -169,7 +169,7 @@
       { "key": "customInputs", "label": "Custom Input Fields", "type": "boolean", "description": "Collect structured data from users directly in chat." },
       { "key": "conditionalFlows", "label": "Conditional Flows", "type": "boolean", "description": "Create workflows that adapt based on user responses or attributes." },
       { "key": "keywordTriggers", "label": "Keyword-based Triggers", "type": "boolean", "description": "Trigger automated actions when certain keywords are detected." },
-      { "key": "apiAutomation", "label": "Automation Via APIs", "type": "boolean", "description": "Integrate external services and trigger workflows through APIs." },
+      { "key": "apiAutomation", "label": "Automation via APIs", "type": "boolean", "description": "Integrate external services and trigger workflows through APIs." },
       { "key": "webhooks", "label": "Webhook Actions", "type": "boolean", "description": "Push data to external systems in real time as events occur in the platform." },
       { "key": "crmTriggers", "label": "CRM-based Triggers", "type": "boolean", "description": "Automate actions based on CRM data or events." },
       { "key": "iframes", "label": "Iframes", "type": "boolean", "description": "Embed external content or tools directly within the chat." },
@@ -188,7 +188,7 @@
       { "key": "visualBuilder", "label": "Visual Builder", "type": "boolean", "description": "Preview and modify your chatbot using a simple drag-and-drop builder." },
       { "key": "templates", "label": "Templates", "type": "boolean", "description": "Use chatbot templates designed for specific business cases." },
       { "key": "flows", "label": "Flows", "type": "boolean", "description": "Organize your chatbot into subflows for a better editing experience." },
-      { "key": "momentsSDK", "label": "Moments SDK", "type": "boolean", "description": "Embed any website or web application in an iframe during the conversation." }
+      { "key": "embeddedApps", "label": "Embedded Apps", "type": "boolean", "description": "Embed apps in the chat window." }
     ]
   },
   {
@@ -219,7 +219,7 @@
       { "key": "websiteMonitoring", "label": "Website Monitoring", "type": "boolean", "description": "Track all visitors, active agents, ongoing chats, and top pages to engage proactively." },
       { "key": "filters", "label": "Filters", "type": "boolean", "description": "Personalize chats with dynamic attributes and organize them into subflows." },
       { "key": "segments", "label": "Segments", "type": "boolean", "description": "Segment users to personalize experiences or export contacts." },
-      { "key": "moments", "label": "Moments", "type": "boolean", "description": " Open any web application inside the ongoing chat." },
+      { "key": "embedApps", "label": "Embed Apps", "type": "boolean", "description": " Open any web application inside the ongoing chat." },
       { "key": "busiestPeriod", "label": "Busiest period", "type": "boolean", "description": "Heatmap showing your chatbot’s workload by time of day." },
       { "key": "averageMessages", "label": "Average messages", "type": "boolean", "description": "Average messages per chatbot conversation." },
       { "key": "allUsers", "label": "All users", "type": "boolean", "description": "Total users who interacted with your chatbot." }
@@ -245,11 +245,10 @@
       { "key": "userManagement", "label": "User management", "type": "boolean", "description": "Access and manage collected user data and chat history efficiently." },
       { "key": "userExport", "label": "User export", "type": "boolean", "description": "Export user data for reporting and third-party integrations." },
       { "key": "gDPRCompliance", "label": "GDPR Compliance", "type": "boolean", "description": "Ensure chatbot compliance with GDPR regulations. Data & Security." },
-      { "key": "256-bitSLLEncryption", "label": "256-bit SLL encryption", "type": "boolean", "description": "Protect data with 256-bit SSL encryption." },
       { "key": "sSO(Google,Microsoft,Apple)", "label": "SSO (Google, Microsoft, Apple)", "type": "boolean", "description": "Sign in using your Google, Microsoft, Apple, or Text account." },
       { "key": "dataRemoval", "label": "Data removal", "type": "boolean", "description": "Remove user and chat data." },
       { "key": "automaticDataRemoval", "label": "Automatic data removal", "type": "boolean", "description": "Automatically delete user and chat data after a set period." },
-      { "key": "customSSO", "label": "Custom SSO", "type": "boolean", "description": "Seamlessly authenticate across your enterprise apps with ChatBot single sign-on support." }
+      { "key": "customSSO", "label": "Custom SSO", "type": "boolean", "description": "Seamlessly authenticate across your enterprise apps with single sign-on support." }
     ]
   },
   {

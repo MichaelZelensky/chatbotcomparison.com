@@ -624,7 +624,7 @@
       "filters": true,
       "entities": true,
       "segments": true,
-      "moments": true,
+      "embedApps": true,
       "liveChat": true,
       "messenger": true,
       "slack": true,
@@ -647,9 +647,8 @@
       "webhooks": true,
       "javascriptAPI": true,
       "restapi": true,
-      "momentsSDK": true,
+      "embeddedApps": true,
       "gDPRCompliance": true,
-      "256-bitSLLEncryption": true,
       "sSO(Google,Microsoft,Apple)": true,
       "dataRemoval": true
     },
@@ -682,7 +681,7 @@
       "entities": true,
       "userExport": true,
       "segments": true,
-      "moments": true,
+      "embedApps": true,
       "liveChat": true,
       "messenger": true,
       "slack": true,
@@ -733,7 +732,7 @@
       "entities": true,
       "userExport": true,
       "segments": true,
-      "moments": true,
+      "embedApps": true,
       "liveChat": true,
       "messenger": true,
       "slack": true,
@@ -782,7 +781,7 @@
       "entities": true,
       "userExport": true,
       "segments": true,
-      "moments": true,
+      "embedApps": true,
       "liveChat": true,
       "messenger": true,
       "slack": true,
@@ -939,7 +938,13 @@
       "sandbox": true,
       "cloudBased": true,
       "mobileApps": true,
-      "desktopApps": true
+      "desktopApps": true,
+      "custom": true,
+      "webhooks": true,
+      "javascriptAPI": true,
+      "restapi": true,
+      "siteSearch": true,
+      "apiAutomation": true
     }
   }
 }
