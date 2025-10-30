@@ -592,7 +592,8 @@
       "tls": true,
       "replication": true,
       "straightStart": false,
-      "liveChat": true
+      "liveChat": true,
+      "seats": 10
     },
     "starter": {
       "planPrice": "$29",
@@ -714,7 +715,8 @@
       "tls": true,
       "replication": true,
       "straightStart": false,
-      "liveChat": true
+      "liveChat": true,
+      "seats": 10
     },
     "growth": {
       "planPrice": "From $59",
@@ -836,7 +838,8 @@
       "tls": true,
       "replication": true,
       "straightStart": false,
-      "liveChat": true
+      "liveChat": true,
+      "seats": 10
     },
     "plus": {
       "planPrice": "From $749",
@@ -958,7 +961,8 @@
       "tls": true,
       "replication": true,
       "straightStart": false,
-      "liveChat": true
+      "liveChat": true,
+      "seats": "Custom"
     },
     "premium": {
       "planPrice": "From $2,999",

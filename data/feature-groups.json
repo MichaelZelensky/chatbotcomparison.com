@@ -15,8 +15,8 @@
       { "key": "alternativePaymentMethods", "label": "Alternative Payment Methods", "type": "boolean", "description": "Pay via purchase orders or annual invoices instead of a company card." },
       { "key": "payWithCrypto", "label": "Pay With Crypto", "type": "boolean", "description": "Pay with crypto like USDC on Ethereum, Solana, or Polygon." },
       { "key": "monthlySubscription","label": "Monthly Subscription (per agent/month)","type": "text","description": "The monthly cost charged for each agent seat on the selected plan."},
-      { "key": "annualSubscription","label": "Annual Subscription (per agent/month)","type": "text","description": "The equivalent monthly cost per agent when billed annually, usually offered at a discounted rate."}
-
+      { "key": "annualSubscription","label": "Annual Subscription (per agent/month)","type": "text","description": "The equivalent monthly cost per agent when billed annually, usually offered at a discounted rate."},
+      { "key": "seats","label": "Seats","type": "text","description": "Number of agent seats included in the plan by default. May be 'Custom' for flexible or negotiated plans."}
 
 ]
   },
