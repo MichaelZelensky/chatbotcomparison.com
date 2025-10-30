@@ -591,7 +591,8 @@
       "dpa": true,
       "tls": true,
       "replication": true,
-      "straightStart": false
+      "straightStart": false,
+      "liveChat": true
     },
     "starter": {
       "planPrice": "$29",
@@ -712,7 +713,8 @@
       "dpa": true,
       "tls": true,
       "replication": true,
-      "straightStart": false
+      "straightStart": false,
+      "liveChat": true
     },
     "growth": {
       "planPrice": "From $59",
@@ -833,7 +835,8 @@
       "dpa": true,
       "tls": true,
       "replication": true,
-      "straightStart": false
+      "straightStart": false,
+      "liveChat": true
     },
     "plus": {
       "planPrice": "From $749",
@@ -954,7 +957,8 @@
       "dpa": true,
       "tls": true,
       "replication": true,
-      "straightStart": false
+      "straightStart": false,
+      "liveChat": true
     },
     "premium": {
       "planPrice": "From $2,999",
@@ -1075,7 +1079,8 @@
       "dpa": true,
       "tls": true,
       "replication": true,
-      "straightStart": false
+      "straightStart": false,
+      "liveChat": true
     }
   },
   "chatbotcom": {
