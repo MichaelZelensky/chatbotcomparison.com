@@ -593,7 +593,10 @@
       "replication": true,
       "straightStart": false,
       "liveChat": true,
-      "seats": 10
+      "seats": 10,
+      "helpDesk": true,
+      "emailManagement": true,
+      "liveVideoCalls": true
     },
     "starter": {
       "planPrice": "$29",
@@ -716,7 +719,10 @@
       "replication": true,
       "straightStart": false,
       "liveChat": true,
-      "seats": 10
+      "seats": 10,
+      "helpDesk": true,
+      "emailManagement": true,
+      "liveVideoCalls": true
     },
     "growth": {
       "planPrice": "From $59",
@@ -839,7 +845,10 @@
       "replication": true,
       "straightStart": false,
       "liveChat": true,
-      "seats": 10
+      "seats": 10,
+      "helpDesk": true,
+      "emailManagement": true,
+      "liveVideoCalls": true
     },
     "plus": {
       "planPrice": "From $749",
@@ -962,7 +971,10 @@
       "replication": true,
       "straightStart": false,
       "liveChat": true,
-      "seats": "Custom"
+      "seats": "Custom",
+      "helpDesk": true,
+      "emailManagement": true,
+      "liveVideoCalls": true
     },
     "premium": {
       "planPrice": "From $2,999",
@@ -1084,7 +1096,10 @@
       "tls": true,
       "replication": true,
       "straightStart": false,
-      "liveChat": true
+      "liveChat": true,
+      "helpDesk": true,
+      "emailManagement": true,
+      "liveVideoCalls": true
     }
   },
   "chatbotcom": {

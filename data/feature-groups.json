@@ -50,8 +50,8 @@
       { "key": "tags", "label": "Tags", "type": "boolean", "description": "Tag conversations for search and reporting." },
       { "key": "teamcollaboration", "label": "Team Collaboration", "type": "boolean", "description": "Invite your teammates and build chatbots together." }, 
       { "key": "allChats", "label": "All chats", "type": "boolean", "description": "Total chats in a period." },
-      { "key": "allMessages", "label": "All messages", "type": "boolean", "description": "Total messages received by your chatbot." }
-
+      { "key": "allMessages", "label": "All messages", "type": "boolean", "description": "Total messages received by your chatbot." },
+      { "key": "emailManagement", "label": "Email Management System", "type": "boolean", "description": "Handles incoming customer emails within a unified inbox, allowing teams to manage and reply without leaving the platform."}
 
     ]
   },
@@ -74,7 +74,8 @@
       { "key": "activeChatbots", "label": "Active chatbots", "type": "number", "description": "Maximum number of chatbots you can have active at the same time under this plan." },
       { "key": "webflow", "label": "Webflow", "type": "boolean", "description": "Add ChatBot to your Webflow site." },
       { "key": "bigCommerce", "label": "BigCommerce", "type": "boolean", "description": "Connect your ChatBot to BigCommerce." },
-      { "key": "liveChat", "label": "Live Chat", "type": "boolean", "description": "Indicates whether real-time live chat with customers is supported in this plan." }
+      { "key": "liveChat", "label": "Live Chat", "type": "boolean", "description": "Enables real-time text conversations between website visitors and support agents through an embedded chat window." },
+      { "key": "liveVideoCalls", "label": "Live Video Calls", "type": "boolean", "description": "Supports direct video communication between agents and customers for instant, face-to-face interaction."}
 
      ]
   },  
@@ -224,7 +225,8 @@
       { "key": "legalAssistance", "label": "Legal assistance", "type": "boolean", "description": "We’ll prepare and review the legal documents you need to start." },
       { "key": "botBuildingService", "label": "Bot building service", "type": "boolean", "description": "Custom chatbots created to fit your business needs." },
       { "key": "botMaintenance", "label": "Bot maintenance", "type": "boolean", "description": "Our experts monitor and optimize your chatbots over time." },
-      { "key": "dedicatedAccountManager", "label": "Dedicated account manager", "type": "boolean", "description": "A dedicated manager assists with your ChatBot license and setup." }
+      { "key": "dedicatedAccountManager", "label": "Dedicated account manager", "type": "boolean", "description": "A dedicated manager assists with your ChatBot license and setup." },
+      { "key": "helpDesk", "label": "Help Desk", "type": "boolean", "description": "Provides a centralized system for tracking, prioritizing, and resolving customer support tickets."}
       
     ]
   },
