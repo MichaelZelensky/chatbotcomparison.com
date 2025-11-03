@@ -595,8 +595,16 @@
       "liveChat": true,
       "seats": 10,
       "helpDesk": true,
-      "emailManagement": true,
-      "liveVideoCalls": true
+      "liveVideoCalls": true,
+      "aiAgentConversations": "Your first 50 conversations are free (lifetime). You can upgrade your monthly limit to 50 - 1k.",
+      "lyroTasks": "true",
+      "faqUpload": true, 
+      "faqScraper": true, 
+      "websiteScraper": true,
+      "importZendeskArticles" : true,  
+      "lyroConnect": false, 
+      "lyroCustomName": false,
+      "lyroProductRecommendation": "Available with the purchase of a paid Lyro AI Agent quota (50-1k conversations)."
     },
     "starter": {
       "planPrice": "$29",
@@ -721,8 +729,18 @@
       "liveChat": true,
       "seats": 10,
       "helpDesk": true,
-      "emailManagement": true,
-      "liveVideoCalls": true
+      "liveVideoCalls": true,
+      "aiAgentConversations": "Your first 50 conversations are free (lifetime). You can upgrade your monthly limit to 50 - 1k.",
+      "lyroTasks": "true",
+      "faqUpload": true, 
+      "faqScraper": true, 
+      "websiteScraper": true,
+      "importZendeskArticles" : true,  
+      "lyroConnect": false, 
+      "lyroCustomName": false,
+      "lyroProductRecommendation": "Available with the purchase of a paid Lyro AI Agent quota (50-1k conversations)."
+
+      
     },
     "growth": {
       "planPrice": "From $59",
@@ -847,8 +865,17 @@
       "liveChat": true,
       "seats": 10,
       "helpDesk": true,
-      "emailManagement": true,
-      "liveVideoCalls": true
+      "liveVideoCalls": true,
+      "aiAgentConversations": "Your first 50 conversations are free (lifetime). You can upgrade your monthly limit to 50 - 1k.",
+      "lyroTasks": "true",
+      "faqUpload": true, 
+      "faqScraper": true, 
+      "websiteScraper": true,
+      "importZendeskArticles" : true,  
+      "lyroConnect": false, 
+      "lyroCustomName": false,
+      "lyroProductRecommendation": "Available with the purchase of a paid Lyro AI Agent quota (50-1k conversations)."
+      
     },
     "plus": {
       "planPrice": "From $749",
@@ -973,8 +1000,17 @@
       "liveChat": true,
       "seats": "Custom",
       "helpDesk": true,
-      "emailManagement": true,
-      "liveVideoCalls": true
+      "liveVideoCalls": true,
+      "aiAgentConversations": "Custom",
+      "lyroTasks": "true",
+      "faqUpload": true, 
+      "faqScraper": true, 
+      "websiteScraper": true,
+      "importZendeskArticles" : true,  
+      "lyroConnect": false, 
+      "lyroCustomName": false,
+      "lyroProductRecommendation": true 
+
     },
     "premium": {
       "planPrice": "From $2,999",
@@ -1098,8 +1134,16 @@
       "straightStart": false,
       "liveChat": true,
       "helpDesk": true,
-      "emailManagement": true,
-      "liveVideoCalls": true
+      "liveVideoCalls": true,
+      "aiAgentConversations": "Custom / unlimited",
+      "lyroTasks": "true",
+      "faqUpload": true, 
+      "faqScraper": true, 
+      "websiteScraper": true,
+      "importZendeskArticles" : true,  
+      "lyroConnect": false, 
+      "lyroCustomName": false,
+      "lyroProductRecommendation": true
     }
   },
   "chatbotcom": {
