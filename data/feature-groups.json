@@ -204,8 +204,10 @@
       { "key": "templates", "label": "Templates", "type": "boolean", "description": "Use chatbot templates designed for specific business cases." },
       { "key": "flows", "label": "Flows", "type": "boolean", "description": "Organize your chatbot into subflows for a better editing experience." },
       { "key": "momentsSDK", "label": "Moments SDK", "type": "boolean", "description": "Embed any website or web application in an iframe during the conversation." },
-      { "key": "visitorsReachedViaFlows", "label": "Visitors Reached via Flows", "type": "text", "description": "Defines how many unique visitors can be automatically engaged or messaged through chatbot Flows each month." }
-
+      { "key": "visitorsReachedViaFlows", "label": "Visitors Reached via Flows", "type": "text", "description": "Defines how many unique visitors can be automatically engaged or messaged through chatbot Flows each month." },
+      { "key": "salesFlowsTemplates", "label": "Sales Flows Templates", "type": "boolean", "description": "Offers ready-to-use chatbot flow templates focused on driving sales and improving conversion rates." },
+      { "key": "faqFlowsTemplates", "label": "FAQ Flows Templates", "type": "boolean", "description": "Provides predefined chatbot flow templates for automatically answering common customer questions." },
+      { "key": "visualFlowsBuilder", "label": "Visual Flows Builder", "type": "boolean", "description": "Lets users design chatbot automation flows through an intuitive visual drag-and-drop interface." }
     ]
   },
   {

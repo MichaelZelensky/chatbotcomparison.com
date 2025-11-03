@@ -606,7 +606,10 @@
       "lyroCustomName": false,
       "lyroProductRecommendation": "Available with the purchase of a paid Lyro AI Agent quota (50-1k conversations).",
       "copilot": true,
-      "visitorsReachedViaFlows": "Your first 100 visitors reached via Flows are free. You can upgrade your monthly limit to 2k - 100k."
+      "visitorsReachedViaFlows": "Your first 100 visitors reached via Flows are free. You can upgrade your monthly limit to 2k - 100k.",
+      "salesFlowsTemplates": true, 
+      "faqFlowsTemplates": true, 
+      "visualFlowsBuilder": true 
     },
     "starter": {
       "planPrice": "$29",
@@ -742,7 +745,10 @@
       "lyroCustomName": false,
       "lyroProductRecommendation": "Available with the purchase of a paid Lyro AI Agent quota (50-1k conversations).",
       "copilot": true,
-      "visitorsReachedViaFlows": "Your first 100 visitors reached via Flows are free. You can upgrade your monthly limit to 2k - 100k."
+      "visitorsReachedViaFlows": "Your first 100 visitors reached via Flows are free. You can upgrade your monthly limit to 2k - 100k.",
+      "salesFlowsTemplates": true, 
+      "faqFlowsTemplates": true, 
+      "visualFlowsBuilder": true 
 
       
     },
@@ -880,7 +886,10 @@
       "lyroCustomName": false,
       "lyroProductRecommendation": "Available with the purchase of a paid Lyro AI Agent quota (50-1k conversations).",
       "copilot": true,
-      "visitorsReachedViaFlows": "Your first 100 visitors reached via Flows are free. You can upgrade your monthly limit to 2k - 100k."
+      "visitorsReachedViaFlows": "Your first 100 visitors reached via Flows are free. You can upgrade your monthly limit to 2k - 100k.",
+      "salesFlowsTemplates": true, 
+      "faqFlowsTemplates": true, 
+      "visualFlowsBuilder": true 
       
     },
     "plus": {
@@ -1017,7 +1026,10 @@
       "lyroCustomName": false,
       "lyroProductRecommendation": true,
       "copilot": true,
-      "visitorsReachedViaFlows": "Custom"
+      "visitorsReachedViaFlows": "Custom",
+      "salesFlowsTemplates": true, 
+      "faqFlowsTemplates": true, 
+      "visualFlowsBuilder": true 
 
     },
     "premium": {
@@ -1153,8 +1165,11 @@
       "lyroCustomName": false,
       "lyroProductRecommendation": true,
       "copilot": true,
-      "visitorsReachedViaFlows": "Custom / unlimited"
-      
+      "visitorsReachedViaFlows": "Custom / unlimited",
+      "salesFlowsTemplates": true, 
+      "faqFlowsTemplates": true, 
+      "visualFlowsBuilder": true 
+
     }
   },
   "chatbotcom": {
