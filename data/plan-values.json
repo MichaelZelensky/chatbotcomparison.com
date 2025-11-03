@@ -604,7 +604,8 @@
       "importZendeskArticles" : true,  
       "lyroConnect": false, 
       "lyroCustomName": false,
-      "lyroProductRecommendation": "Available with the purchase of a paid Lyro AI Agent quota (50-1k conversations)."
+      "lyroProductRecommendation": "Available with the purchase of a paid Lyro AI Agent quota (50-1k conversations).",
+      "copilot": true
     },
     "starter": {
       "planPrice": "$29",
@@ -738,7 +739,8 @@
       "importZendeskArticles" : true,  
       "lyroConnect": false, 
       "lyroCustomName": false,
-      "lyroProductRecommendation": "Available with the purchase of a paid Lyro AI Agent quota (50-1k conversations)."
+      "lyroProductRecommendation": "Available with the purchase of a paid Lyro AI Agent quota (50-1k conversations).",
+      "copilot": true
 
       
     },
@@ -874,7 +876,8 @@
       "importZendeskArticles" : true,  
       "lyroConnect": false, 
       "lyroCustomName": false,
-      "lyroProductRecommendation": "Available with the purchase of a paid Lyro AI Agent quota (50-1k conversations)."
+      "lyroProductRecommendation": "Available with the purchase of a paid Lyro AI Agent quota (50-1k conversations).",
+      "copilot": true
       
     },
     "plus": {
@@ -1009,7 +1012,8 @@
       "importZendeskArticles" : true,  
       "lyroConnect": false, 
       "lyroCustomName": false,
-      "lyroProductRecommendation": true 
+      "lyroProductRecommendation": true,
+      "copilot": true
 
     },
     "premium": {
@@ -1143,7 +1147,8 @@
       "importZendeskArticles" : true,  
       "lyroConnect": false, 
       "lyroCustomName": false,
-      "lyroProductRecommendation": true
+      "lyroProductRecommendation": true,
+      "copilot": true
     }
   },
   "chatbotcom": {

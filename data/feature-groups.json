@@ -155,7 +155,8 @@
       { "key": "lyroTasks", "label": "Lyro tasks", "type": "boolean", "description": "AI agent task automation feature that allows Lyro to handle customer requests or actions automatically within the plan." },
       { "key": "lyroConnect", "label": "Lyro Connect", "type": "boolean", "description": "Enables connecting the AI agent (Lyro) with external tools or communication channels." },
       { "key": "lyroCustomName", "label": "Lyro custom name", "type": "boolean", "description": "Allows assigning a custom name to the AI agent (Lyro)." },
-      { "key": "lyroProductRecommendation", "label": "Lyro product recommendation", "type": "boolean", "description": "Provides AI-based product recommendations available with a paid AI agent quota or on higher-tier plans." }
+      { "key": "lyroProductRecommendation", "label": "Lyro product recommendation", "type": "boolean", "description": "Provides AI-based product recommendations available with a paid AI agent quota or on higher-tier plans." },
+      { "key": "copilot", "label": "Copilot", "type": "boolean", "description": "Helps support agents during customer chats by suggesting AI-generated replies, summaries, and context insights in real time." }
     ]
   },
   {
