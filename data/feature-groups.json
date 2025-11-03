@@ -203,7 +203,8 @@
       { "key": "visualBuilder", "label": "Visual Builder", "type": "boolean", "description": "Preview and modify your chatbot using a simple drag-and-drop builder." },
       { "key": "templates", "label": "Templates", "type": "boolean", "description": "Use chatbot templates designed for specific business cases." },
       { "key": "flows", "label": "Flows", "type": "boolean", "description": "Organize your chatbot into subflows for a better editing experience." },
-      { "key": "momentsSDK", "label": "Moments SDK", "type": "boolean", "description": "Embed any website or web application in an iframe during the conversation." }
+      { "key": "momentsSDK", "label": "Moments SDK", "type": "boolean", "description": "Embed any website or web application in an iframe during the conversation." },
+      { "key": "visitorsReachedViaFlows", "label": "Visitors Reached via Flows", "type": "text", "description": "Defines how many unique visitors can be automatically engaged or messaged through chatbot Flows each month." }
 
     ]
   },

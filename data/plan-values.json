@@ -605,7 +605,8 @@
       "lyroConnect": false, 
       "lyroCustomName": false,
       "lyroProductRecommendation": "Available with the purchase of a paid Lyro AI Agent quota (50-1k conversations).",
-      "copilot": true
+      "copilot": true,
+      "visitorsReachedViaFlows": "Your first 100 visitors reached via Flows are free. You can upgrade your monthly limit to 2k - 100k."
     },
     "starter": {
       "planPrice": "$29",
@@ -740,7 +741,8 @@
       "lyroConnect": false, 
       "lyroCustomName": false,
       "lyroProductRecommendation": "Available with the purchase of a paid Lyro AI Agent quota (50-1k conversations).",
-      "copilot": true
+      "copilot": true,
+      "visitorsReachedViaFlows": "Your first 100 visitors reached via Flows are free. You can upgrade your monthly limit to 2k - 100k."
 
       
     },
@@ -877,7 +879,8 @@
       "lyroConnect": false, 
       "lyroCustomName": false,
       "lyroProductRecommendation": "Available with the purchase of a paid Lyro AI Agent quota (50-1k conversations).",
-      "copilot": true
+      "copilot": true,
+      "visitorsReachedViaFlows": "Your first 100 visitors reached via Flows are free. You can upgrade your monthly limit to 2k - 100k."
       
     },
     "plus": {
@@ -1013,7 +1016,8 @@
       "lyroConnect": false, 
       "lyroCustomName": false,
       "lyroProductRecommendation": true,
-      "copilot": true
+      "copilot": true,
+      "visitorsReachedViaFlows": "Custom"
 
     },
     "premium": {
@@ -1148,7 +1152,9 @@
       "lyroConnect": false, 
       "lyroCustomName": false,
       "lyroProductRecommendation": true,
-      "copilot": true
+      "copilot": true,
+      "visitorsReachedViaFlows": "Custom / unlimited"
+      
     }
   },
   "chatbotcom": {
