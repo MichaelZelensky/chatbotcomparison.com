@@ -611,7 +611,12 @@
       "faqFlowsTemplates": true, 
       "visualFlowsBuilder": true,
       "aiReplyAssistant": true, 
-      "basicAnalytics": true  
+      "basicAnalytics": true,
+      "liveVisitorsList": false,  
+      "operatingHours": false, 
+      "chatPage": false,
+      "advancedAnalytics": false,  
+      "viewedPagesHistory": false
     },
     "starter": {
       "planPrice": "$29",
@@ -752,7 +757,12 @@
       "faqFlowsTemplates": true, 
       "visualFlowsBuilder": true,
       "aiReplyAssistant": true, 
-      "basicAnalytics": true 
+      "basicAnalytics": true,
+      "liveVisitorsList": true,  
+      "operatingHours": true, 
+      "chatPage": true,
+      "advancedAnalytics": false,  
+      "viewedPagesHistory": false
 
       
     },
@@ -895,7 +905,12 @@
       "faqFlowsTemplates": true, 
       "visualFlowsBuilder": true,
       "aiReplyAssistant": true, 
-      "basicAnalytics": true 
+      "basicAnalytics": true,
+      "liveVisitorsList": true,  
+      "operatingHours": true, 
+      "chatPage": true,
+      "advancedAnalytics": true,  
+      "viewedPagesHistory": true
       
     },
     "plus": {
@@ -1037,7 +1052,12 @@
       "faqFlowsTemplates": true, 
       "visualFlowsBuilder": true,
       "aiReplyAssistant": true, 
-      "basicAnalytics": true 
+      "basicAnalytics": true,
+      "liveVisitorsList": true,  
+      "operatingHours": true, 
+      "chatPage": true,
+      "advancedAnalytics": true,  
+      "viewedPagesHistory": true
 
     },
     "premium": {
@@ -1178,7 +1198,12 @@
       "faqFlowsTemplates": true, 
       "visualFlowsBuilder": true,
       "aiReplyAssistant": true, 
-      "basicAnalytics": true  
+      "basicAnalytics": true,
+      "liveVisitorsList": true,  
+      "operatingHours": true, 
+      "chatPage": true,
+      "advancedAnalytics": true,  
+      "viewedPagesHistory": true 
 
     }
   },
