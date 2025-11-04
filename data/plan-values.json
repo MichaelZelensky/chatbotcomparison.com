@@ -629,7 +629,8 @@
       "multiproject": false, 
       "departments": false, 
       "multilanguage": false, 
-      "openAPI": false 
+      "openAPI": false,
+      "appIntegrations": true
     },
     "starter": {
       "planPrice": "$29",
@@ -788,7 +789,8 @@
       "multiproject": false, 
       "departments": false, 
       "multilanguage": false, 
-      "openAPI": false
+      "openAPI": false,
+      "appIntegrations": true
 
       
     },
@@ -949,7 +951,8 @@
       "multiproject": false, 
       "departments": false, 
       "multilanguage": false, 
-      "openAPI": false
+      "openAPI": false,
+      "appIntegrations": true
       
     },
     "plus": {
@@ -1109,7 +1112,8 @@
       "multiproject": true, 
       "departments": true, 
       "multilanguage": true, 
-      "openAPI": true
+      "openAPI": true,
+      "appIntegrations": true
 
     },
     "premium": {
@@ -1268,7 +1272,8 @@
       "multiproject": true, 
       "departments": true, 
       "multilanguage": true, 
-      "openAPI": true
+      "openAPI": true,
+      "appIntegrations": true
 
     }
   },
