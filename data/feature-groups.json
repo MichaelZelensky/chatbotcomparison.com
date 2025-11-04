@@ -49,7 +49,8 @@
       { "key": "tags", "label": "Tags", "type": "boolean", "description": "Tag conversations for search and reporting." },
       { "key": "teamcollaboration", "label": "Team Collaboration", "type": "boolean", "description": "Invite your teammates and build chatbots together." }, 
       { "key": "allChats", "label": "All chats", "type": "boolean", "description": "Total chats in a period." },
-      { "key": "allMessages", "label": "All messages", "type": "boolean", "description": "Total messages received by your chatbot." }
+      { "key": "allMessages", "label": "All messages", "type": "boolean", "description": "Total messages received by your chatbot." },
+      { "key": "visitorNotes", "label": "Visitor notes", "type": "boolean", "description": "Allows agents to add internal notes about a visitor or conversation for future reference." }
 
     ]
   },
@@ -104,8 +105,9 @@
       { "key": "custom", "label": "Custom", "type": "boolean", "description": "Create custom integrations with your tools and services." },
       { "key": "webhooks", "label": "Webhooks", "type": "boolean", "description": "Exchange data between your backend and chatbot to customize flows." },
       { "key": "javascriptAPI", "label": "Javascript API", "type": "boolean", "description": "Control Chat Widget behavior on your website with JavaScript." },
-      { "key": "rESTAPI", "label": "REST API", "type": "boolean", "description": "Manage chatbot data and actions through secure HTTP requests." }
-
+      { "key": "rESTAPI", "label": "REST API", "type": "boolean", "description": "Manage chatbot data and actions through secure HTTP requests." },
+      { "key": "nativeShopifyActions", "label": "Native Shopify actions", "type": "boolean", "description": "Enables direct Shopify actions such as order lookups or refunds from within the chat interface." },
+      { "key": "openAPI", "label": "OpenAPI", "type": "boolean", "description": "Provides an open API for developers to integrate, extend, or automate system functionality." }
     ]
   },
   {
@@ -209,7 +211,13 @@
       { "key": "salesFlowsTemplates", "label": "Sales Flows Templates", "type": "boolean", "description": "Offers ready-to-use chatbot flow templates focused on driving sales and improving conversion rates." },
       { "key": "faqFlowsTemplates", "label": "FAQ Flows Templates", "type": "boolean", "description": "Provides predefined chatbot flow templates for automatically answering common customer questions." },
       { "key": "visualFlowsBuilder", "label": "Visual Flows Builder", "type": "boolean", "description": "Lets users design chatbot automation flows through an intuitive visual drag-and-drop interface." },
-      { "key": "operatingHours", "label": "Operating hours", "type": "boolean", "description": "Allows setting business hours to control agent or chatbot availability." }
+      { "key": "operatingHours", "label": "Operating hours", "type": "boolean", "description": "Allows setting business hours to control agent or chatbot availability." },
+      { "key": "automaticResponse", "label": "Automatic response", "type": "boolean", "description": "Sends predefined or AI-generated replies automatically based on visitor messages or conditions." },
+      { "key": "automaticChatAssignment", "label": "Automatic chat assignment", "type": "boolean", "description": "Automatically assigns new chats to available agents based on defined rules or workload." },
+      { "key": "automatedSatisfactionSurvey", "label": "Automated satisfaction survey", "type": "boolean", "description": "Automatically sends post-chat surveys to collect customer satisfaction feedback." },
+      { "key": "automatedConversationSolving", "label": "Automated conversation solving", "type": "boolean", "description": "Automatically marks or resolves conversations when certain criteria are met, such as inactivity or completed responses." },
+      { "key": "macros", "label": "Macros", "type": "boolean", "description": "Lets agents create reusable message or action shortcuts to automate repetitive tasks." },
+      { "key": "departments", "label": "Departments", "type": "boolean", "description": "Enables organizing agents into departments or teams for structured chat routing and management." }
     ]
   },
   {
@@ -263,7 +271,8 @@
       { "key": "basicAnalytics", "label": "Basic analytics", "type": "boolean", "description": "Provides essential performance metrics such as chat volume, response time, and agent activity." },
       { "key": "liveVisitorsList", "label": "Live visitors list", "type": "boolean", "description": "Shows a real-time list of visitors currently browsing the website." },
       { "key": "advancedAnalytics", "label": "Advanced analytics", "type": "boolean", "description": "Provides detailed insights into chat performance, user behavior, and agent efficiency with advanced reporting tools." },
-      { "key": "viewedPagesHistory", "label": "Viewed pages history", "type": "boolean", "description": "Displays the list of pages a visitor has viewed before starting or during a chat session." }
+      { "key": "viewedPagesHistory", "label": "Viewed pages history", "type": "boolean", "description": "Displays the list of pages a visitor has viewed before starting or during a chat session." },
+      { "key": "visitorsInfo", "label": "Visitors info", "type": "boolean", "description": "Displays key visitor details such as location, device, and browsing history during chats." }
     ]
   },
   {
@@ -291,7 +300,8 @@
       { "key": "dataRemoval", "label": "Data removal", "type": "boolean", "description": "Remove user and chat data." },
       { "key": "automaticDataRemoval", "label": "Automatic data removal", "type": "boolean", "description": "Automatically delete user and chat data after a set period." },
       { "key": "customSSO", "label": "Custom SSO", "type": "boolean", "description": "Seamlessly authenticate across your enterprise apps with ChatBot single sign-on support." },
-      { "key": "securityAssistance", "label": "Security assistance", "type": "boolean", "description": "Get expert advice on securing ChatBot in your company." }
+      { "key": "securityAssistance", "label": "Security assistance", "type": "boolean", "description": "Get expert advice on securing ChatBot in your company." },
+      { "key": "permissions", "label": "Permissions", "type": "boolean", "description": "Allows defining user roles and access levels to control permissions within the workspace." }
 
 
     ]
@@ -302,19 +312,17 @@
     "rows": [
       { "key": "sandbox", "label": "Sandbox Environment", "type": "boolean", "description": "Test workflows and configurations in an isolated environment." },
       { "key": "auditLogs", "label": "Audit Logs", "type": "boolean", "description": "Track all changes and activities across the system." },
-      { "key": "businessRulesAnalysis", "label": "Business Rules Analysis", "type": "boolean", "description": "Analyze the impact of business rules and automations." }
+      { "key": "businessRulesAnalysis", "label": "Business Rules Analysis", "type": "boolean", "description": "Analyze the impact of business rules and automations." },
+      { "key": "multiproject", "label": "Multiproject", "type": "boolean", "description": "Allows managing multiple projects or workspaces under a single account." }
     ]
   },
   {
     "id": "uiux",
     "label": "UI/UX",
     "rows": [
-      {
-        "key": "straightStart",
-        "label": "Straight-forward Start",
-        "type": "boolean",
-        "description": "Chat can start immediately without registration, explicit consent gates, or other blockers."
-      }
+      { "key": "straightStart", "label": "Straight-forward Start", "type": "boolean", "description": "Chat can start immediately without registration, explicit consent gates, or other blockers." } ,
+      { "key": "multilanguage", "label": "Multilanguage", "type": "boolean", "description": "Supports multiple interface or chat languages to serve users in different locales." }
+
     ]
   },
   {

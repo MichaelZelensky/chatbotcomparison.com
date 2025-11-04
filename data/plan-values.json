@@ -616,7 +616,20 @@
       "operatingHours": false, 
       "chatPage": false,
       "advancedAnalytics": false,  
-      "viewedPagesHistory": false
+      "viewedPagesHistory": false,
+      "visitorsInfo": false, 
+      "visitorNotes": false, 
+      "automaticResponse": false,  
+      "automaticChatAssignment": false, 
+      "automatedSatisfactionSurvey": false, 
+      "automatedConversationSolving": false,
+      "macros": false, 
+      "permissions": false, 
+      "nativeShopifyActions": false,
+      "multiproject": false, 
+      "departments": false, 
+      "multilanguage": false, 
+      "openAPI": false 
     },
     "starter": {
       "planPrice": "$29",
@@ -762,7 +775,20 @@
       "operatingHours": true, 
       "chatPage": true,
       "advancedAnalytics": false,  
-      "viewedPagesHistory": false
+      "viewedPagesHistory": false,
+      "visitorsInfo": false, 
+      "visitorNotes": false, 
+      "automaticResponse": false,  
+      "automaticChatAssignment": false, 
+      "automatedSatisfactionSurvey": false, 
+      "automatedConversationSolving": false,
+      "macros": false, 
+      "permissions": false, 
+      "nativeShopifyActions": false,
+      "multiproject": false, 
+      "departments": false, 
+      "multilanguage": false, 
+      "openAPI": false
 
       
     },
@@ -910,7 +936,20 @@
       "operatingHours": true, 
       "chatPage": true,
       "advancedAnalytics": true,  
-      "viewedPagesHistory": true
+      "viewedPagesHistory": true,
+      "visitorsInfo": true, 
+      "visitorNotes": true, 
+      "automaticResponse": true,  
+      "automaticChatAssignment": true, 
+      "automatedSatisfactionSurvey": true, 
+      "automatedConversationSolving": true,
+      "macros": true, 
+      "permissions": true, 
+      "nativeShopifyActions": true,
+      "multiproject": false, 
+      "departments": false, 
+      "multilanguage": false, 
+      "openAPI": false
       
     },
     "plus": {
@@ -1057,7 +1096,20 @@
       "operatingHours": true, 
       "chatPage": true,
       "advancedAnalytics": true,  
-      "viewedPagesHistory": true
+      "viewedPagesHistory": true,
+      "visitorsInfo": true, 
+      "visitorNotes": true, 
+      "automaticResponse": true,  
+      "automaticChatAssignment": true, 
+      "automatedSatisfactionSurvey": true, 
+      "automatedConversationSolving": true,
+      "macros": true, 
+      "permissions": true, 
+      "nativeShopifyActions": true,
+      "multiproject": true, 
+      "departments": true, 
+      "multilanguage": true, 
+      "openAPI": true
 
     },
     "premium": {
@@ -1203,7 +1255,20 @@
       "operatingHours": true, 
       "chatPage": true,
       "advancedAnalytics": true,  
-      "viewedPagesHistory": true 
+      "viewedPagesHistory": true,
+      "visitorsInfo": true, 
+      "visitorNotes": true, 
+      "automaticResponse": true,  
+      "automaticChatAssignment": true, 
+      "automatedSatisfactionSurvey": true, 
+      "automatedConversationSolving": true,
+      "macros": true, 
+      "permissions": true, 
+      "nativeShopifyActions": true,
+      "multiproject": true, 
+      "departments": true, 
+      "multilanguage": true, 
+      "openAPI": true
 
     }
   },
