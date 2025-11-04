@@ -156,7 +156,8 @@
       { "key": "lyroConnect", "label": "Lyro Connect", "type": "boolean", "description": "Enables connecting the AI agent (Lyro) with external tools or communication channels." },
       { "key": "lyroCustomName", "label": "Lyro custom name", "type": "boolean", "description": "Allows assigning a custom name to the AI agent (Lyro)." },
       { "key": "lyroProductRecommendation", "label": "Lyro product recommendation", "type": "boolean", "description": "Provides AI-based product recommendations available with a paid AI agent quota or on higher-tier plans." },
-      { "key": "copilot", "label": "Copilot", "type": "boolean", "description": "Helps support agents during customer chats by suggesting AI-generated replies, summaries, and context insights in real time." }
+      { "key": "copilot", "label": "Copilot", "type": "boolean", "description": "Helps support agents during customer chats by suggesting AI-generated replies, summaries, and context insights in real time." },
+      { "key": "aiReplyAssistant", "label": "AI reply assistant", "type": "boolean", "description": "Automatically drafts or suggests message replies using AI." }
     ]
   },
   {
@@ -257,7 +258,8 @@
       { "key": "allUsers", "label": "All users", "type": "boolean", "description": "Total users who interacted with your chatbot." },
       { "key": "faqUpload", "label": "FAQ upload", "type": "boolean", "description": "Allows uploading FAQ files to populate the knowledge base." },
       { "key": "faqScraper", "label": "FAQ scraper", "type": "boolean", "description": "Extracts Q&A from an existing FAQ page." },
-      { "key": "websiteScraper", "label": "Website scraper", "type": "boolean", "description": "Scans website content to build the knowledge base." }
+      { "key": "websiteScraper", "label": "Website scraper", "type": "boolean", "description": "Scans website content to build the knowledge base." },
+      { "key": "basicAnalytics", "label": "Basic analytics", "type": "boolean", "description": "Provides essential performance metrics such as chat volume, response time, and agent activity." }
     ]
   },
   {

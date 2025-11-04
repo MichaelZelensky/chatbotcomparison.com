@@ -609,7 +609,9 @@
       "visitorsReachedViaFlows": "Your first 100 visitors reached via Flows are free. You can upgrade your monthly limit to 2k - 100k.",
       "salesFlowsTemplates": true, 
       "faqFlowsTemplates": true, 
-      "visualFlowsBuilder": true 
+      "visualFlowsBuilder": true,
+      "aiReplyAssistant": true, 
+      "basicAnalytics": true  
     },
     "starter": {
       "planPrice": "$29",
@@ -748,7 +750,9 @@
       "visitorsReachedViaFlows": "Your first 100 visitors reached via Flows are free. You can upgrade your monthly limit to 2k - 100k.",
       "salesFlowsTemplates": true, 
       "faqFlowsTemplates": true, 
-      "visualFlowsBuilder": true 
+      "visualFlowsBuilder": true,
+      "aiReplyAssistant": true, 
+      "basicAnalytics": true 
 
       
     },
@@ -889,7 +893,9 @@
       "visitorsReachedViaFlows": "Your first 100 visitors reached via Flows are free. You can upgrade your monthly limit to 2k - 100k.",
       "salesFlowsTemplates": true, 
       "faqFlowsTemplates": true, 
-      "visualFlowsBuilder": true 
+      "visualFlowsBuilder": true,
+      "aiReplyAssistant": true, 
+      "basicAnalytics": true 
       
     },
     "plus": {
@@ -1029,7 +1035,9 @@
       "visitorsReachedViaFlows": "Custom",
       "salesFlowsTemplates": true, 
       "faqFlowsTemplates": true, 
-      "visualFlowsBuilder": true 
+      "visualFlowsBuilder": true,
+      "aiReplyAssistant": true, 
+      "basicAnalytics": true 
 
     },
     "premium": {
@@ -1168,7 +1176,9 @@
       "visitorsReachedViaFlows": "Custom / unlimited",
       "salesFlowsTemplates": true, 
       "faqFlowsTemplates": true, 
-      "visualFlowsBuilder": true 
+      "visualFlowsBuilder": true,
+      "aiReplyAssistant": true, 
+      "basicAnalytics": true  
 
     }
   },
