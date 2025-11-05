@@ -530,7 +530,7 @@
       "chatSDKs": true,
       "liveTyping": false,
       "typingIndicator": true,
-      "widgetCustomization": false,
+      "widgetCustomization": true,
       "proactive": false,
       "magicBrowse": false,
       "liveTranslate": false,
@@ -631,7 +631,14 @@
       "multilanguage": false, 
       "openAPI": false,
       "appIntegrations": true,
-      "supportOverEmail": true
+      "supportOverEmail": true,
+      "supportOverLiveChat": false, 
+      "flowsBuildingAndStrategyAssistance": false, 
+      "dedicatedSuccessManager": false,
+      "trainingSessions": false, 
+      "accountReviews": false,
+      "noPlatformBranding": false, 
+      "customBranding": false
     },
     "starter": {
       "planPrice": "$29",
@@ -792,7 +799,14 @@
       "multilanguage": false, 
       "openAPI": false,
       "appIntegrations": true,
-      "supportOverEmail": true
+      "supportOverEmail": true,
+      "supportOverLiveChat": false, 
+      "flowsBuildingAndStrategyAssistance": false, 
+      "dedicatedSuccessManager": false,
+      "trainingSessions": false, 
+      "accountReviews": false,
+      "noPlatformBranding": false, 
+      "customBranding": false
       
     },
     "growth": {
@@ -954,7 +968,14 @@
       "multilanguage": false, 
       "openAPI": false,
       "appIntegrations": true,
-      "supportOverEmail": true
+      "supportOverEmail": true,
+      "supportOverLiveChat": false, 
+      "flowsBuildingAndStrategyAssistance": false, 
+      "dedicatedSuccessManager": false,
+      "trainingSessions": false, 
+      "accountReviews": false,
+      "noPlatformBranding": "Add-on (16.67 EUR/mo.)", 
+      "customBranding": false
       
     },
     "plus": {
@@ -1116,7 +1137,14 @@
       "multilanguage": true, 
       "openAPI": true,
       "appIntegrations": true,
-      "supportOverEmail": true
+      "supportOverEmail": true,
+      "supportOverLiveChat": true, 
+      "flowsBuildingAndStrategyAssistance": true, 
+      "dedicatedSuccessManager": true,
+      "trainingSessions": true, 
+      "accountReviews": true,
+      "noPlatformBranding": true, 
+      "customBranding": true
     },
     "premium": {
       "planPrice": "From $2,999",
@@ -1276,7 +1304,14 @@
       "multilanguage": true, 
       "openAPI": true,
       "appIntegrations": true,
-      "supportOverEmail": true
+      "supportOverEmail": true,
+      "supportOverLiveChat": true, 
+      "flowsBuildingAndStrategyAssistance": true, 
+      "dedicatedSuccessManager": true,
+      "trainingSessions": true, 
+      "accountReviews": true,
+      "noPlatformBranding": true, 
+      "customBranding": true
 
     }
   },

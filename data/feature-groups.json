@@ -76,7 +76,8 @@
       { "key": "liveChat", "label": "Live Chat", "type": "boolean", "description": "Enables real-time text conversations between website visitors and support agents through an embedded chat window." },
       { "key": "liveVideoCalls", "label": "Live Video Calls", "type": "boolean", "description": "Supports direct video communication between agents and customers for instant, face-to-face interaction."},
       { "key": "appIntegrations", "label": "App integrations", "type": "boolean", "description": "Supports integration with third-party apps to extend platform functionality and workflows." },
-      { "key": "supportOverEmail", "label": "Support over email", "type": "boolean", "description": "Provides customer support via email communication." }
+      { "key": "supportOverEmail", "label": "Support over email", "type": "boolean", "description": "Provides customer support via email communication." },
+      { "key": "supportOverLiveChat", "label": "Support over live chat", "type": "boolean", "description": "Provides customer support through real-time live chat assistance." }
 
      ]
   },  
@@ -131,7 +132,9 @@
       { "key": "multilingualWidget", "label": "Multilingual Chat Widget", "type": "boolean", "description": "Offer the chat widget in 40+ languages; configure per-widget language options." },
       { "key": "versionHistory", "label": "Version History", "type": "boolean", "description": "Access ten last versions of your chatbots and restore previous ones if needed." },
       { "key": "liveChat", "label": "LiveChat", "type": "boolean", "description": "Connect LiveChat to combine AI efficiency with human support." },
-      { "key": "chatPage", "label": "Chat page", "type": "boolean", "description": "Provides a dedicated webpage where customers can start a chat outside the main site widget." }
+      { "key": "chatPage", "label": "Chat page", "type": "boolean", "description": "Provides a dedicated webpage where customers can start a chat outside the main site widget." },
+      { "key": "noPlatformBranding", "label": "No platform branding", "type": "text", "description": "Removes default platform branding from the chat widget. May require an add-on or higher-tier plan." },
+      { "key": "customBranding", "label": "Custom branding", "type": "boolean", "description": "Allows applying custom brand elements such as logo, colors, and visual identity across the chat experience." }
     ]
   },
   {
@@ -219,7 +222,8 @@
       { "key": "automatedSatisfactionSurvey", "label": "Automated satisfaction survey", "type": "boolean", "description": "Automatically sends post-chat surveys to collect customer satisfaction feedback." },
       { "key": "automatedConversationSolving", "label": "Automated conversation solving", "type": "boolean", "description": "Automatically marks or resolves conversations when certain criteria are met, such as inactivity or completed responses." },
       { "key": "macros", "label": "Macros", "type": "boolean", "description": "Lets agents create reusable message or action shortcuts to automate repetitive tasks." },
-      { "key": "departments", "label": "Departments", "type": "boolean", "description": "Enables organizing agents into departments or teams for structured chat routing and management." }
+      { "key": "departments", "label": "Departments", "type": "boolean", "description": "Enables organizing agents into departments or teams for structured chat routing and management." },
+      { "key": "flowsBuildingAndStrategyAssistance", "label": "Flows building and strategy assistance", "type": "boolean", "description": "Provides guidance and support in designing conversation flows and overall chatbot strategy." }
     ]
   },
   {
@@ -315,7 +319,10 @@
       { "key": "sandbox", "label": "Sandbox Environment", "type": "boolean", "description": "Test workflows and configurations in an isolated environment." },
       { "key": "auditLogs", "label": "Audit Logs", "type": "boolean", "description": "Track all changes and activities across the system." },
       { "key": "businessRulesAnalysis", "label": "Business Rules Analysis", "type": "boolean", "description": "Analyze the impact of business rules and automations." },
-      { "key": "multiproject", "label": "Multiproject", "type": "boolean", "description": "Allows managing multiple projects or workspaces under a single account." }
+      { "key": "multiproject", "label": "Multiproject", "type": "boolean", "description": "Allows managing multiple projects or workspaces under a single account." },
+      { "key": "dedicatedSuccessManager", "label": "Dedicated Success Manager", "type": "boolean", "description": "Assigns a dedicated customer success manager for ongoing support and optimization." },
+      { "key": "trainingSessions", "label": "Training sessions", "type": "boolean", "description": "Includes scheduled training sessions to help your team use the platform effectively." },
+      { "key": "accountReviews", "label": "Account reviews", "type": "boolean", "description": "Provides periodic reviews of account setup and performance to optimize results." }
     ]
   },
   {
