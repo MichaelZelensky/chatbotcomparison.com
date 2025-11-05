@@ -630,7 +630,8 @@
       "departments": false, 
       "multilanguage": false, 
       "openAPI": false,
-      "appIntegrations": true
+      "appIntegrations": true,
+      "supportOverEmail": true
     },
     "starter": {
       "planPrice": "$29",
@@ -790,8 +791,8 @@
       "departments": false, 
       "multilanguage": false, 
       "openAPI": false,
-      "appIntegrations": true
-
+      "appIntegrations": true,
+      "supportOverEmail": true
       
     },
     "growth": {
@@ -952,7 +953,8 @@
       "departments": false, 
       "multilanguage": false, 
       "openAPI": false,
-      "appIntegrations": true
+      "appIntegrations": true,
+      "supportOverEmail": true
       
     },
     "plus": {
@@ -1113,8 +1115,8 @@
       "departments": true, 
       "multilanguage": true, 
       "openAPI": true,
-      "appIntegrations": true
-
+      "appIntegrations": true,
+      "supportOverEmail": true
     },
     "premium": {
       "planPrice": "From $2,999",
@@ -1273,7 +1275,8 @@
       "departments": true, 
       "multilanguage": true, 
       "openAPI": true,
-      "appIntegrations": true
+      "appIntegrations": true,
+      "supportOverEmail": true
 
     }
   },

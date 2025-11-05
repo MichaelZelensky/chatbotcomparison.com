@@ -75,7 +75,8 @@
       { "key": "bigCommerce", "label": "BigCommerce", "type": "boolean", "description": "Connect your ChatBot to BigCommerce." },
       { "key": "liveChat", "label": "Live Chat", "type": "boolean", "description": "Enables real-time text conversations between website visitors and support agents through an embedded chat window." },
       { "key": "liveVideoCalls", "label": "Live Video Calls", "type": "boolean", "description": "Supports direct video communication between agents and customers for instant, face-to-face interaction."},
-      { "key": "appIntegrations", "label": "App integrations", "type": "boolean", "description": "Supports integration with third-party apps to extend platform functionality and workflows." }
+      { "key": "appIntegrations", "label": "App integrations", "type": "boolean", "description": "Supports integration with third-party apps to extend platform functionality and workflows." },
+      { "key": "supportOverEmail", "label": "Support over email", "type": "boolean", "description": "Provides customer support via email communication." }
 
      ]
   },  
