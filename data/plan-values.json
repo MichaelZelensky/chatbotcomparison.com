@@ -1711,36 +1711,57 @@
     }
   },
   "liveagent": {
-    "per-agent": {
-      "planPrice": "$19/agent",
-      "freeTrial": "30 days",
-      "agentsIncluded": 1,
-      "additionalAgentPrice": "$19",
-      "customerProfiles": null,
-      "aiUsage": null,
-      "chatWidget": true,
-      "fullHistory": true,
-      "transcript": true,
-      "proactive": true,
-      "websiteMonitoring": true,
-      "liveTyping": true,
-      "multilingualWidget": true,
-      "chatWindowDocking": true,
-      "maxQueueAutoHide": true,
-      "ringToAllRouting": true,
-      "priorityRouting": true,
-      "utilizationRouting": true,
-      "randomRouting": true,
-      "internalChat": true,
-      "universalInbox": true,
-      "hybridTicketStream": true,
-      "tags": true,
-      "visitorCurrentUrl": true,
-      "chatEventTracking": true,
-      "liveMap": true,
-      "crmProfile": true,
-      "shopify": true,
-      "pipedrive": true
+    "free": {
+      "perAgentAnnual":  "$15",
+      "perAgentMonthly": "$19",
+      "customerPortal": true,
+      "contactFormsButtons": "3",
+      "contactFormsInPage": "3",
+      "slackNotifications": "true",
+      "customerForum": "true",
+      "emailTicketingIncomingAccounts": "3",
+      "emailTicketingOutgoingAccounts": "3",
+      "liveChatButtons": "2"
+    },
+    
+    "mini": {
+     "perAgentAnnual": "$29",
+     "perAgentMonthly": "$35",
+     "customerPortal": true,
+     "contactFormsButtons": "10",
+      "contactFormsInPage": "10",
+       "slackNotifications": "true",
+      "customerForum": "true",
+      "emailTicketingIncomingAccounts": "10",
+      "emailTicketingOutgoingAccounts": "10",
+      "liveChatButtons": "5"
+
+    },
+    "essentials": {
+      "perAgentAnnual":"$49",
+      "perAgentMonthly": "$59",
+      "customerPortal": true,
+      "contactFormsButtons": "50",
+      "contactFormsInPage": "50",
+       "slackNotifications": "true",
+      "customerForum": "true",
+      "emailTicketingIncomingAccounts": "150",
+      "emailTicketingOutgoingAccounts": "150",
+      "liveChatButtons": "50"
+     
+      
+    },
+    "plus": {
+      "perAgentAnnual":"$69",
+      "perAgentMonthly": "$85",
+      "customerPortal": true,
+      "contactFormsButtons": "200",
+      "contactFormsInPage": "200",
+       "slackNotifications": "true",
+      "customerForum": "true",
+      "emailTicketingIncomingAccounts": "500",
+      "emailTicketingOutgoingAccounts": "500",
+      "liveChatButtons": "100"
     }
   }
 }

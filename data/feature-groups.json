@@ -4,19 +4,21 @@
     "label": "Pricing",
     "rows": [
       { "key": "planPrice", "label": "Plan Price (per month)", "type": "text", "description": "The monthly cost of your subscription plan." },
-      { "key": "agentsIncluded", "label": "Agents Included", "type": "number", "description": "Number of agent licenses included in your plan at no extra cost." },
+      { "key": "agentsIncluded", "label": "Agents Included", "type": "string", "description": "Number of agent licenses included in your plan at no extra cost." },
       { "key": "additionalAgentPrice", "label": "Additional Agents (per month)", "type": "text", "description": "Add more seats to your plan and scale your team as needed." },
       { "key": "customerProfiles", "label": "Customer Profiles", "type": "number", "description": "Maximum number of unique customer profiles you can manage in your workspace." },
       { "key": "aiUsage", "label": "AI Usage", "type": "text", "description": "Number of AI-powered actions (like summaries or replies) available per day." },
       { "key": "billableConversations", "label": "Billable Conversations Limit", "type": "text", "description": "Monthly limit for human-handled conversations (if applicable)." },
       { "key": "freeTrial", "label": "Free Trial", "type": "text", "description": "Length and conditions of the free trial (e.g., days, credit card required or not)." },
       { "key": "chatsPackage", "label": "Chats Package", "type": "text", "description": "Your plan includes a limited number of free chats. Each additional chat costs $0.03. Empty or unanswered chats don’t count — you won’t pay for them." },
-      { "key": "paidChats", "label": "Paid Chats", "type": "text", "description": "Chats beyond the free plan." },
+      { "key": "paidChats", "label": "Paid Chats", "type": "boolean", "description": "Chats beyond the free plan." },
       { "key": "alternativePaymentMethods", "label": "Alternative Payment Methods", "type": "boolean", "description": "Pay via purchase orders or annual invoices instead of a company card." },
       { "key": "payWithCrypto", "label": "Pay With Crypto", "type": "boolean", "description": "Pay with crypto like USDC on Ethereum, Solana, or Polygon." },
       { "key": "monthlySubscription","label": "Monthly Subscription (per agent/month)","type": "text","description": "The monthly cost charged for each agent seat on the selected plan."},
       { "key": "annualSubscription","label": "Annual Subscription (per agent/month)","type": "text","description": "The equivalent monthly cost per agent when billed annually, usually offered at a discounted rate."},
-      { "key": "seats","label": "Seats","type": "text","description": "Number of agent seats included in the plan by default. May be 'Custom' for flexible or negotiated plans."}
+      { "key": "seats","label": "Seats","type": "text","description": "Number of agent seats included in the plan by default. May be 'Custom' for flexible or negotiated plans."},
+      { "key": "perAgentAnnual", "label": "Per agent/month billed annually", "type": "text", "description": "Price per agent when billed annually." },
+      { "key": "perAgentMonthly", "label": "Per agent/month billed monthly", "type": "text", "description": "Price per agent when billed monthly." }
 ]
   },
   {
@@ -77,7 +79,9 @@
       { "key": "liveVideoCalls", "label": "Live Video Calls", "type": "boolean", "description": "Supports direct video communication between agents and customers for instant, face-to-face interaction."},
       { "key": "appIntegrations", "label": "App integrations", "type": "boolean", "description": "Supports integration with third-party apps to extend platform functionality and workflows." },
       { "key": "supportOverEmail", "label": "Support over email", "type": "boolean", "description": "Provides customer support via email communication." },
-      { "key": "supportOverLiveChat", "label": "Support over live chat", "type": "boolean", "description": "Provides customer support through real-time live chat assistance." }
+      { "key": "supportOverLiveChat", "label": "Support over live chat", "type": "boolean", "description": "Provides customer support through real-time live chat assistance." },
+      { "key": "emailTicketingIncomingAccounts", "label": "Email ticketing – Incoming email accounts", "type": "text",  "description": "Number of incoming email addresses that can be connected for ticket creation." },
+      { "key": "emailTicketingOutgoingAccounts", "label": "Email ticketing – Outgoing email accounts", "type": "text", "description": "Number of outgoing email accounts that can be used to send replies from the system." }
 
      ]
   },  
@@ -110,7 +114,8 @@
       { "key": "javascriptAPI", "label": "Javascript API", "type": "boolean", "description": "Control Chat Widget behavior on your website with JavaScript." },
       { "key": "rESTAPI", "label": "REST API", "type": "boolean", "description": "Manage chatbot data and actions through secure HTTP requests." },
       { "key": "nativeShopifyActions", "label": "Native Shopify actions", "type": "boolean", "description": "Enables direct Shopify actions such as order lookups or refunds from within the chat interface." },
-      { "key": "openAPI", "label": "OpenAPI", "type": "boolean", "description": "Provides an open API for developers to integrate, extend, or automate system functionality." }
+      { "key": "openAPI", "label": "OpenAPI", "type": "boolean", "description": "Provides an open API for developers to integrate, extend, or automate system functionality." },
+      { "key": "slackNotifications", "label": "Slack notifications", "type": "boolean", "description": "Sends notifications to Slack based on new conversations or updates." }
     ]
   },
   {
@@ -133,8 +138,11 @@
       { "key": "versionHistory", "label": "Version History", "type": "boolean", "description": "Access ten last versions of your chatbots and restore previous ones if needed." },
       { "key": "liveChat", "label": "LiveChat", "type": "boolean", "description": "Connect LiveChat to combine AI efficiency with human support." },
       { "key": "chatPage", "label": "Chat page", "type": "boolean", "description": "Provides a dedicated webpage where customers can start a chat outside the main site widget." },
-      { "key": "noPlatformBranding", "label": "No platform branding", "type": "text", "description": "Removes default platform branding from the chat widget. May require an add-on or higher-tier plan." },
-      { "key": "customBranding", "label": "Custom branding", "type": "boolean", "description": "Allows applying custom brand elements such as logo, colors, and visual identity across the chat experience." }
+      { "key": "noPlatformBranding", "label": "No platform branding", "type": "boolean", "description": "Removes default platform branding from the chat widget. May require an add-on or higher-tier plan." },
+      { "key": "customBranding", "label": "Custom branding", "type": "boolean", "description": "Allows applying custom brand elements such as logo, colors, and visual identity across the chat experience." },
+      { "key": "contactFormsButtons", "label": "Contact forms – Contact us buttons", "type": "text", "description": "Number of 'Contact us' buttons or contact form entry points that can be added." },
+      { "key": "contactFormsInPage", "label": "Contact forms – In page", "type": "text", "description": "Number of embedded in-page contact forms supported under this plan." },
+      { "key": "liveChatButtons", "label": "Live chat button", "type": "text", "description": "Number of live chat button placements supported under this plan." }
     ]
   },
   {
@@ -249,8 +257,9 @@
       { "key": "botBuildingService", "label": "Bot building service", "type": "boolean", "description": "Custom chatbots created to fit your business needs." },
       { "key": "botMaintenance", "label": "Bot maintenance", "type": "boolean", "description": "Our experts monitor and optimize your chatbots over time." },
       { "key": "dedicatedAccountManager", "label": "Dedicated account manager", "type": "boolean", "description": "A dedicated manager assists with your ChatBot license and setup." },
-      { "key": "helpDesk", "label": "Help Desk", "type": "boolean", "description": "Provides a centralized system for tracking, prioritizing, and resolving customer support tickets." },
-      { "key": "importZendeskArticles", "label": "Import Zendesk articles", "type": "boolean", "description": "Imports existing help center articles from external platforms into the knowledge base." }
+      { "key": "importZendeskArticles", "label": "Import Zendesk articles", "type": "boolean", "description": "Imports existing help center articles from external platforms into the knowledge base." },
+      { "key": "customerPortal", "label": "Customer Portal", "type": "boolean", "description": "Provides customers with a portal to view and manage their support requests." },
+      { "key": "customerForum", "label": "Customer forum", "type": "boolean", "description": "Provides a community forum where customers can ask questions and share feedback." }
       
     ]
   },
