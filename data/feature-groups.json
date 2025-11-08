@@ -88,7 +88,9 @@
       { "key": "callQueueing", "label": "Call Queueing", "type": "boolean", "description": "Places callers in a waiting queue when all agents are busy." },
       { "key": "ivr", "label": "IVR", "type": "boolean", "description": "Interactive voice response menu for routing callers through predefined options." },
       { "key": "inCallRecordings", "label": "In call recordings", "type": "boolean", "description": "Allows recording phone calls for review or quality assurance." },
-      { "key": "callRoutingAndTransfers", "label": "Call routing & transfers", "type": "boolean",  "description": "Allows redirecting and transferring calls between agents or departments." }
+      { "key": "callRoutingAndTransfers", "label": "Call routing & transfers", "type": "boolean",  "description": "Allows redirecting and transferring calls between agents or departments." },
+      { "key": "hardwareIpPhone", "label": "Hardware IP phone", "type": "boolean", "description": "Allows using physical IP phones integrated with the call center system." }
+
      ]
   },  
   {
@@ -122,7 +124,9 @@
       { "key": "nativeShopifyActions", "label": "Native Shopify actions", "type": "boolean", "description": "Enables direct Shopify actions such as order lookups or refunds from within the chat interface." },
       { "key": "openAPI", "label": "OpenAPI", "type": "boolean", "description": "Provides an open API for developers to integrate, extend, or automate system functionality." },
       { "key": "slackNotifications", "label": "Slack notifications", "type": "boolean", "description": "Sends notifications to Slack based on new conversations or updates." },
-      { "key": "apiKeys", "label": "API keys", "type": "boolean", "description": "Allows generating API keys for connecting external systems or automations." }
+      { "key": "apiKeys", "label": "API keys", "type": "boolean", "description": "Allows generating API keys for connecting external systems or automations." },
+      { "key": "integrations", "label": "Integrations", "type": "boolean", "description": "Supports connecting external systems and services directly with the platform." }
+
 
     ]
   },
@@ -163,7 +167,10 @@
       { "key": "soundConfiguration", "label": "Sound configuration", "type": "boolean", "description": "Allows configuring notification and chat sound settings." },
       { "key": "callWidgetsCustomization", "label": "Call widgets customization", "type": "boolean", "description": "Allows customizing the appearance and layout of call widgets." },
       { "key": "videoCallWidgetsCustomization", "label": "Video call widgets customization", "type": "boolean", "description": "Allows customizing the appearance and layout of video call widgets." },
-      { "key": "brandingFree", "label": "Branding free", "type": "text", "description": "Removes default platform branding from chat widgets. May require a paid add-on depending on the plan." }
+      { "key": "brandingFree", "label": "Branding free", "type": "text", "description": "Removes default platform branding from chat widgets. May require a paid add-on depending on the plan." },
+      { "key": "multipleLanguageSupport", "label": "Multiple language support", "type": "boolean", "description": "Allows using the platform interface and communication tools in multiple languages." },
+      { "key": "multipleWebsiteSupport", "label": "Multiple website support", "type": "boolean", "description": "Allows using the chat or help center across multiple websites or domains." },
+      { "key": "multibrandSupport", "label": "Multibrand support", "type": "boolean", "description": "Supports managing multiple brands with separate configurations or appearance settings." }
 
 
 
@@ -271,7 +278,13 @@
       { "key": "timeTracking", "label": "Time Tracking", "type": "text", "description": "Tracks time spent on tickets or conversations. May require an add-on depending on the plan." },
       { "key": "rulesAndTimeRules", "label": "Rules & Time rules", "type": "boolean", "description": "Enables automation rules triggered by conditions or time-based actions." },
       { "key": "gamification", "label": "Gamification", "type": "boolean", "description": "Adds gamification elements such as badges or performance points for agents." },
-      { "key": "searchAndReplace", "label": "Search & replace", "type": "boolean", "description": "Allows searching and replacing text across tickets or conversations." }
+      { "key": "searchAndReplace", "label": "Search & replace", "type": "boolean", "description": "Allows searching and replacing text across tickets or conversations." },
+      { "key": "eventRules", "label": "Event Rules", "type": "text", "description": "Number of automation rules that can be triggered by specific events." },
+      { "key": "timeRules", "label": "Time Rules", "type": "text", "description": "Number of time-based automation rules available under this plan." },
+      { "key": "slaRules", "label": "SLA rules", "type": "text", "description": "Availability and number of SLA-based workflow rules supported in the plan." },
+      { "key": "slaLevels", "label": "SLA levels", "type": "text", "description": "Number of SLA priority levels that can be configured." }
+
+
     ]
   },
   {
@@ -312,7 +325,15 @@
       { "key": "knowledgeBase", "label": "Knowledge base", "type": "text", "description": "Provides a searchable knowledge base for customers to find self-help articles." },
       { "key": "additionalKnowledgeBase", "label": "Additional knowledge base", "type": "text",  "description": "Allows adding extra knowledge base instances. May require a paid add-on per additional KB." },
       { "key": "customDomainParking", "label": "Custom domain parking", "type": "boolean","description": "Allows hosting the customer portal or knowledge base under a custom domain." },
-      { "key": "assistedDomainParking", "label": "Assisted domain parking", "type": "boolean", "description": "Provides assistance with setting up a custom domain for the help center or knowledge base." }
+      { "key": "assistedDomainParking", "label": "Assisted domain parking", "type": "boolean", "description": "Provides assistance with setting up a custom domain for the help center or knowledge base." },
+      { "key": "customSystemEmailTemplates", "label": "Customisation of system email templates", "type": "boolean", "description": "Allows editing and customizing the default system email templates sent to users or customers." }
+
+
+
+
+
+
+
 
 
     ]
@@ -387,7 +408,18 @@
       { "key": "securityAssistance", "label": "Security assistance", "type": "boolean", "description": "Get expert advice on securing ChatBot in your company." },
       { "key": "permissions", "label": "Permissions", "type": "boolean", "description": "Allows defining user roles and access levels to control permissions within the workspace." },
       { "key": "customRoles", "label": "Custom roles", "type": "text", "description": "Allows creating custom permission roles for agents. Limits may vary by plan." },
-      { "key": "customerSupportService", "label": "Customer support service", "type": "text", "description": "Level of customer support provided, such as best effort or 24/7 availability." }
+      { "key": "customerSupportService", "label": "Customer support service", "type": "text", "description": "Level of customer support provided, such as best effort or 24/7 availability." },
+      { "key": "regionalDataCenters", "label": "EU/US/UK/SG Data Center", "type": "boolean", "description": "Allows selecting or hosting data in specific regional data centers." },
+      { "key": "spamAssassinIntegration", "label": "SpamAssassin Integration", "type": "boolean", "description": "Integrates spam filtering to reduce unwanted messages and emails." },
+      { "key": "accessRestrictionToAgentPanel", "label": "Access restriction to agent panel", "type": "boolean", "description": "Restricts access to the agent interface based on defined rules or networks." },
+      { "key": "passwordPolicyManagement", "label": "Password Policy Management", "type": "boolean", "description": "Allows configuring password strength requirements and expiration rules." },
+      { "key": "twoStepVerification", "label": "2-step verification", "type": "boolean", "description": "Adds two-factor authentication for agent logins." },
+      { "key": "httpsEncryption", "label": "HTTPS encryption", "type": "boolean", "description": "Ensures all data is transmitted securely using HTTPS encryption." },
+      { "key": "bannedVisitorsList", "label": "Banned visitors list", "type": "boolean", "description": "Allows blocking or restricting specific visitors from accessing chat services." },
+      { "key": "auditLog", "label": "Audit Log", "type": "boolean", "description": "Provides a log of system actions and changes for security and compliance review." },
+      { "key": "sso", "label": "SSO", "type": "boolean", "description": "Allows users to sign in using Single Sign-On authentication." }
+
+  
 
     ]
   },
@@ -423,7 +455,9 @@
       { "key": "multilanguage", "label": "Multilanguage", "type": "boolean", "description": "Supports multiple interface or chat languages to serve users in different locales." },
       { "key":"wysiwygEditor","label":"WYSIWYG editor","type":"boolean","description":"Provides a visual rich-text editor for composing ticket replies."},
       { "key":"multipleTicketTabs","label":"Multiple ticket tabs","type":"boolean","description":"Allows working with multiple open tickets at the same time in separate tabs."},
-      { "key": "designCustomizationAssistance", "label": "Design customization assistance", "type": "boolean", "description": "Provides support or guidance in customizing the visual design of widgets or interface components." }
+      { "key": "designCustomizationAssistance", "label": "Design customization assistance", "type": "boolean", "description": "Provides support or guidance in customizing the visual design of widgets or interface components." },
+      { "key": "iphoneAndroidApps", "label": "iPhone/Android apps", "type": "boolean", "description": "Provides native mobile applications for iOS and Android devices." }
+
 
     ]
   },

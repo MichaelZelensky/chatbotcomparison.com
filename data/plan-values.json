@@ -1805,7 +1805,28 @@
       "dedicatedAccountManager": false, 
       "scheduledReleaseManagement": false, 
       "serviceReviewCallAndReports": false, 
-      "customBillingSetup": false
+      "customBillingSetup": false,
+      "multipleLanguageSupport": true, 
+      "multipleWebsiteSupport": true, 
+      "multibrandSupport": true, 
+      "hardwareIpPhone": true , 
+      "iphoneAndroidApps": true, 
+      "integrations": true,
+      "regionalDataCenters": true,
+      "spamAssassinIntegration": true, 
+      "accessRestrictionToAgentPanel": true, 
+      "passwordPolicyManagement": true, 
+      "twoStepVerification": true, 
+      "httpsEncryption": true, 
+      "bannedVisitorsList": true,
+      "auditLog": false, 
+      "sso": false,
+      "customSystemEmailTemplates": true,
+      "eventRules": "50",
+      "timeRules": false,  
+      "slaRules": false, 
+      "slaLevels": false 
+      
 
 
 
@@ -1905,7 +1926,27 @@
       "dedicatedAccountManager": false, 
       "scheduledReleaseManagement": false, 
       "serviceReviewCallAndReports": false, 
-      "customBillingSetup": false
+      "customBillingSetup": false,
+      "multipleLanguageSupport": true, 
+      "multipleWebsiteSupport": true, 
+      "multibrandSupport": true, 
+      "hardwareIpPhone": true , 
+      "iphoneAndroidApps": true, 
+      "integrations": true,
+      "regionalDataCenters": true,
+      "spamAssassinIntegration": true, 
+      "accessRestrictionToAgentPanel": true, 
+      "passwordPolicyManagement": true, 
+      "twoStepVerification": true, 
+      "httpsEncryption": true, 
+      "bannedVisitorsList": true,
+      "auditLog": false, 
+      "sso": false,
+      "customSystemEmailTemplates": true,
+      "eventRules": "150",
+      "timeRules": "30",  
+      "slaRules": "5", 
+      "slaLevels": "5"
 
 
     },
@@ -2003,7 +2044,28 @@
       "dedicatedAccountManager": false, 
       "scheduledReleaseManagement": false, 
       "serviceReviewCallAndReports": false, 
-      "customBillingSetup": false
+      "customBillingSetup": false,
+      "multipleLanguageSupport": true, 
+      "multipleWebsiteSupport": true, 
+      "multibrandSupport": true, 
+      "hardwareIpPhone": true , 
+      "iphoneAndroidApps": true, 
+      "integrations": true,
+      "regionalDataCenters": true,
+      "spamAssassinIntegration": true, 
+      "accessRestrictionToAgentPanel": true, 
+      "passwordPolicyManagement": true, 
+      "twoStepVerification": true, 
+      "httpsEncryption": true, 
+      "bannedVisitorsList": true,
+      "auditLog": true, 
+      "sso": true,
+      "customSystemEmailTemplates": true,
+      "eventRules": "500",
+      "timeRules": "100",  
+      "slaRules": "50", 
+      "slaLevels": "20"
+      
       
       
      
@@ -2103,7 +2165,27 @@
       "dedicatedAccountManager": true, 
       "scheduledReleaseManagement": true, 
       "serviceReviewCallAndReports": true, 
-      "customBillingSetup": true
+      "customBillingSetup": true,
+      "multipleLanguageSupport": true, 
+      "multipleWebsiteSupport": true, 
+      "multibrandSupport": true, 
+      "hardwareIpPhone": true , 
+      "iphoneAndroidApps": true, 
+      "integrations": true,
+      "regionalDataCenters": true,
+      "spamAssassinIntegration": true, 
+      "accessRestrictionToAgentPanel": true, 
+      "passwordPolicyManagement": true, 
+      "twoStepVerification": true, 
+      "httpsEncryption": true, 
+      "bannedVisitorsList": true,
+      "auditLog": true, 
+      "sso": true,
+      "customSystemEmailTemplates": true,
+      "eventRules": "1000",
+       "timeRules": "200",  
+      "slaRules": "100", 
+      "slaLevels": "100"
     
 
     }
