@@ -49,7 +49,11 @@
     "slug": "liveagent",
     "homepage": "https://www.liveagent.com/",
     "plans": [
-      { "name": "Per Agent", "slug": "per-agent" }
+      { "name": "Small business", "slug": "small" },
+      { "name": "Medium business", "slug": "medium" },
+      { "name": "Large business", "slug": "large" },
+      { "name": "Enterprise", "slug": "enterprise" }
+
     ]
   }
 ]
