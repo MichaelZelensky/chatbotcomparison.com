@@ -964,7 +964,8 @@
       "freshdesk": true,
       "zendesk": true,
       "wix": true,
-      "squarespace": true
+      "squarespace": true,
+      "agentsIncluded": 1
     }
   }
 }
