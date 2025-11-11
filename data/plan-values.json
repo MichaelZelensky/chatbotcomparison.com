@@ -1710,7 +1710,7 @@
   },
   "liveagent": {
     "small": {
-      "perAgentAnnual":  "$15",
+      "planPrice":  "$15",
       "agentsIncluded": 1,
       "perAgentMonthly": "$19",
       "customerPortal": true,
@@ -1832,7 +1832,7 @@
     },
     
     "medium": {
-     "perAgentAnnual": "$29",
+     "planPrice": "$29",
      "agentsIncluded": 1,
      "perAgentMonthly": "$35",
      "customerPortal": true,
@@ -1951,7 +1951,7 @@
 
     },
     "large": {
-      "perAgentAnnual":"$49",
+      "planPrice":"$49",
       "agentsIncluded": 1,
       "perAgentMonthly": "$59",
       "customerPortal": true,
@@ -2073,7 +2073,7 @@
       
     },
     "enterprise": {
-      "perAgentAnnual":"$69",
+      "planPrice":"$69",
       "agentsIncluded": 1,
       "perAgentMonthly": "$85",
       "customerPortal": true,
