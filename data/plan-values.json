@@ -1629,7 +1629,7 @@
     }
   },
   "zendesk": {
-    "suite-team": {
+    "supportTeam": {
       "planPrice": "$55",
       "freeTrial": "14 days",
       "agentsIncluded": null,
@@ -1647,7 +1647,7 @@
       "dataExport": false,
       "straightStart": true
     },
-    "suite-growth": {
+    "suiteTeam": {
       "planPrice": "$89",
       "freeTrial": "14 days",
       "agentsIncluded": null,
@@ -1666,7 +1666,7 @@
       "dataExport": false,
       "straightStart": true
     },
-    "suite-professional": {
+    "suiteProfessional": {
       "planPrice": "$149",
       "freeTrial": "14 days",
       "agentsIncluded": null,
@@ -1686,7 +1686,7 @@
       "apiAnalytics": true,
       "straightStart": true
     },
-    "suite-enterprise": {
+    "suiteEnterprise": {
       "planPrice": "$219",
       "freeTrial": "14 days",
       "agentsIncluded": null,

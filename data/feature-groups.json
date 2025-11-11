@@ -67,7 +67,7 @@
       { "key": "xTwitter", "label": "X (Twitter)", "type": "boolean", "description": "Receive and reply to Twitter/X DMs from the shared inbox." },
       { "key": "instagram", "label": "Instagram", "type": "boolean", "description": "Reply to Instagram Direct Messages and story replies from the dashboard." },
       { "key": "sms", "label": "SMS", "type": "boolean", "description": "Receive and reply to SMS messages in the shared inbox." },
-      { "key": "viber", "label": "Viber", "type": "text", "description": "Receive and reply to Viber messages in the shared inbox." },
+      { "key": "viber", "label": "Viber", "type": "boolean", "description": "Receive and reply to Viber messages in the shared inbox." },
       { "key": "phone", "label": "Phone", "type": "boolean", "description": "Answer phone calls and trigger outbound calls directly from the platform." },
       { "key": "line", "label": "Line", "type": "boolean", "description": "Receive and reply to Line messages in the shared inbox." },
       { "key": "whatsappBiz", "label": "WhatsApp Business", "type": "boolean", "description": "Receive and reply to WhatsApp Business messages in the shared inbox." },
@@ -82,7 +82,7 @@
       { "key": "emailTicketingIncomingAccounts", "label": "Email ticketing – Incoming email accounts", "type": "text",  "description": "Number of incoming email addresses that can be connected for ticket creation." },
       { "key": "emailTicketingOutgoingAccounts", "label": "Email ticketing – Outgoing email accounts", "type": "text", "description": "Number of outgoing email accounts that can be used to send replies from the system." },
       { "key": "callCenter", "label": "Call center", "type": "boolean", "description": "Includes built-in call center functionality for handling voice calls." },
-      { "key": "messengerInstagram","label":"Messenger + Instagram","type":"text","description": "Supports Instagram messaging when the Messenger channel is connected."},
+      { "key": "messengerInstagram","label":"Messenger + Instagram","type":"string","description": "Supports Instagram messaging when the Messenger channel is connected."},
       { "key": "whatsapp","label":"WhatsApp","type":"text","description": "Supports WhatsApp as a communication channel."},
       { "key": "videoCall","label":"Video call functionality","type":"boolean","description": "Allows conducting real-time video calls with customers."},
       { "key": "callQueueing", "label": "Call Queueing", "type": "boolean", "description": "Places callers in a waiting queue when all agents are busy." },
@@ -90,7 +90,6 @@
       { "key": "inCallRecordings", "label": "In call recordings", "type": "boolean", "description": "Allows recording phone calls for review or quality assurance." },
       { "key": "callRoutingAndTransfers", "label": "Call routing & transfers", "type": "boolean",  "description": "Allows redirecting and transferring calls between agents or departments." },
       { "key": "hardwareIpPhone", "label": "Hardware IP phone", "type": "boolean", "description": "Allows using physical IP phones integrated with the call center system." }
-
      ]
   },  
   {
@@ -126,8 +125,6 @@
       { "key": "slackNotifications", "label": "Slack notifications", "type": "boolean", "description": "Sends notifications to Slack based on new conversations or updates." },
       { "key": "apiKeys", "label": "API keys", "type": "boolean", "description": "Allows generating API keys for connecting external systems or automations." },
       { "key": "integrations", "label": "Integrations", "type": "boolean", "description": "Supports connecting external systems and services directly with the platform." }
-
-
     ]
   },
   {
@@ -171,9 +168,6 @@
       { "key": "multipleLanguageSupport", "label": "Multiple language support", "type": "boolean", "description": "Allows using the platform interface and communication tools in multiple languages." },
       { "key": "multipleWebsiteSupport", "label": "Multiple website support", "type": "boolean", "description": "Allows using the chat or help center across multiple websites or domains." },
       { "key": "multibrandSupport", "label": "Multibrand support", "type": "boolean", "description": "Supports managing multiple brands with separate configurations or appearance settings." }
-
-
-
     ]
   },
   {
@@ -267,11 +261,11 @@
       { "key": "flowsBuildingAndStrategyAssistance", "label": "Flows building and strategy assistance", "type": "boolean", "description": "Provides guidance and support in designing conversation flows and overall chatbot strategy." },
       { "key": "ticketMassActions", "label":"Ticket mass actions", "type":"boolean", "description":"Performs bulk updates or changes across multiple tickets at once."},
       { "key": "toSolveAlgorithm", "label":"To Solve Algorithm", "type":"boolean", "description":"Automatically prioritizes or routes tickets to speed up resolution."},
-      { "key":"customTags","label":"Custom tags","type":"boolean","description":"Enables adding custom tags to categorize and organize tickets."},
-      { "key":"customTicketFilters","label":"Custom ticket filters","type":"text","description":"Allows creating custom ticket filters. Limits vary by plan (e.g., filters per agent)."},
-      { "key":"ticketTransfers","label":"Ticket transfers","type":"boolean","description":"Allows transferring tickets between agents or departments."},
-      { "key":"businessHours","label":"Business hours","type":"boolean","description":"Allows setting working hours to control agent and automation availability."},
-      { "key":"departments","label":"Departments","type":"text","description":"Number of departments or teams that can be created for organizing agents and routing tickets."},
+      { "key": "customTags","label":"Custom tags","type":"boolean","description":"Enables adding custom tags to categorize and organize tickets."},
+      { "key": "customTicketFilters","label":"Custom ticket filters","type":"text","description":"Allows creating custom ticket filters. Limits vary by plan (e.g., filters per agent)."},
+      { "key": "ticketTransfers","label":"Ticket transfers","type":"boolean","description":"Allows transferring tickets between agents or departments."},
+      { "key": "businessHours","label":"Business hours","type":"boolean","description":"Allows setting working hours to control agent and automation availability."},
+      { "key": "departments","label":"Departments","type":"text","description":"Number of departments or teams that can be created for organizing agents and routing tickets."},
       { "key": "rolesInDepartments","label":"Roles in departments","type":"boolean","description":"Allows assigning different roles or permissions within individual departments."},
       { "key": "cannedMessages","label":"Canned messages","type":"text","description":"Number of saved predefined reply messages available to agents."},
       { "key": "predefinedAnswers","label":"Predefined answers","type":"text", "description":"Number of predefined answer templates available to agents."},
@@ -283,7 +277,6 @@
       { "key": "timeRules", "label": "Time Rules", "type": "text", "description": "Number of time-based automation rules available under this plan." },
       { "key": "slaRules", "label": "SLA rules", "type": "text", "description": "Availability and number of SLA-based workflow rules supported in the plan." },
       { "key": "slaLevels", "label": "SLA levels", "type": "text", "description": "Number of SLA priority levels that can be configured." }
-
 
     ]
   },
@@ -316,25 +309,17 @@
       { "key": "ticketHistory","label": "Ticket history", "type": "text", "description": "Allows viewing past support tickets and their conversation history."},
       { "key": "mergeTickets","label": "Merge tickets","type": "boolean", "description": "Allows combining duplicate or related tickets into a single thread."},
       { "key": "customTicketFields","label":"Custom ticket fields","type":"boolean","description": "Lets you define custom fields to collect additional ticket information."},
-      {"key":"splitTickets","label":"Split tickets","type":"boolean","description":"Allows splitting one conversation into multiple tickets."},
-      {"key":"internalTickets","label":"Internal tickets","type":"boolean","description":"Supports creating tickets for internal-only use without customer visibility."},
-      {"key":"attachments","label":"Attachments","type":"boolean","description":"Allows sending and receiving files within tickets and conversations."},
-      {"key":"ticketSatisfactionSurvey","label":"Ticket satisfaction survey","type":"boolean","description":"Allows sending satisfaction surveys after ticket resolution."},
-      {"key":"agentNotesToTickets","label":"Agent notes to tickets","type":"boolean","description":"Allows agents to add internal notes to tickets for internal collaboration."},
+      { "key": "splitTickets","label":"Split tickets","type":"boolean","description":"Allows splitting one conversation into multiple tickets."},
+      { "key": "internalTickets","label":"Internal tickets","type":"boolean","description":"Supports creating tickets for internal-only use without customer visibility."},
+      { "key": "attachments","label":"Attachments","type":"boolean","description":"Allows sending and receiving files within tickets and conversations."},
+      { "key": "ticketSatisfactionSurvey","label":"Ticket satisfaction survey","type":"boolean","description":"Allows sending satisfaction surveys after ticket resolution."},
+      { "key": "agentNotesToTickets","label":"Agent notes to tickets","type":"boolean","description":"Allows agents to add internal notes to tickets for internal collaboration."},
       { "key": "customerMailTemplates", "label": "Customer mail templates", "type": "boolean", "description": "Provides customizable email templates for replying to customers." },
       { "key": "knowledgeBase", "label": "Knowledge base", "type": "text", "description": "Provides a searchable knowledge base for customers to find self-help articles." },
       { "key": "additionalKnowledgeBase", "label": "Additional knowledge base", "type": "text",  "description": "Allows adding extra knowledge base instances. May require a paid add-on per additional KB." },
       { "key": "customDomainParking", "label": "Custom domain parking", "type": "boolean","description": "Allows hosting the customer portal or knowledge base under a custom domain." },
       { "key": "assistedDomainParking", "label": "Assisted domain parking", "type": "boolean", "description": "Provides assistance with setting up a custom domain for the help center or knowledge base." },
       { "key": "customSystemEmailTemplates", "label": "Customisation of system email templates", "type": "boolean", "description": "Allows editing and customizing the default system email templates sent to users or customers." }
-
-
-
-
-
-
-
-
 
     ]
   },
@@ -419,8 +404,6 @@
       { "key": "auditLog", "label": "Audit Log", "type": "boolean", "description": "Provides a log of system actions and changes for security and compliance review." },
       { "key": "sso", "label": "SSO", "type": "boolean", "description": "Allows users to sign in using Single Sign-On authentication." }
 
-  
-
     ]
   },
   {
@@ -457,7 +440,6 @@
       { "key":"multipleTicketTabs","label":"Multiple ticket tabs","type":"boolean","description":"Allows working with multiple open tickets at the same time in separate tabs."},
       { "key": "designCustomizationAssistance", "label": "Design customization assistance", "type": "boolean", "description": "Provides support or guidance in customizing the visual design of widgets or interface components." },
       { "key": "iphoneAndroidApps", "label": "iPhone/Android apps", "type": "boolean", "description": "Provides native mobile applications for iOS and Android devices." }
-
 
     ]
   },
