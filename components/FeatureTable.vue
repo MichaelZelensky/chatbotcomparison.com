@@ -110,7 +110,7 @@
               :key="column.key + '-' + featureRow.key"
             >
               <span
-                :aria-label="ariaLabel(valueOf(column.providerSlug, column.planSlug, featureRow.key), featureRow.type)"
+                :aria-label="getAriaLabel(valueOf(column.providerSlug, column.planSlug, featureRow.key), featureRow.type)"
               >
                 {{ formatValue(valueOf(column.providerSlug, column.planSlug, featureRow.key), featureRow.type) }}
               </span>
@@ -128,7 +128,7 @@
 import { ref, computed } from 'vue';
 import groupsJson from '~/data/feature-groups.json';
 import providersJson from '~/data/providers.json';
-import planValues from '~/data/plan-values.json';
+import planValuesJson from '~/data/plan-values.json';
 
 type FeatureType = 'boolean' | 'text' | 'number';
 type FeatureRow = { key: string; label: string; type: FeatureType; description: string };
@@ -136,8 +136,12 @@ type FeatureGroup = { id: string; label: string; rows: FeatureRow[] };
 type Plan = { name: string; slug: string };
 type Provider = { name: string; slug: string; homepage: string; plans: Plan[] };
 
+type PlanValues = Record<string, Record<string, Record<string, unknown>>>;
+
 const groups = groupsJson as FeatureGroup[];
 const providers = providersJson as Provider[];
+const rawPlanValues = planValuesJson as unknown as PlanValues;
+
 const priceGroupIds = new Set<string>(['pricing']);
 
 type Col = {
@@ -168,9 +172,8 @@ const visibleColumns = computed<Col[]>(() =>
   allColumns.filter(c => selectedProviderSlugs.value.includes(c.providerSlug))
 );
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const valueOf = (prov: string, plan: string, featureKey: string) =>
-  (planValues as any)?.[prov]?.[plan]?.[featureKey] ?? null;
+const valueOf = (providerSlug: string, planSlug: string, featureKey: string): unknown =>
+  rawPlanValues?.[providerSlug]?.[planSlug]?.[featureKey] ?? null;
 
 const isPricingGroup = (groupId: string) => priceGroupIds.has(groupId);
 
@@ -199,18 +202,11 @@ const booleanKeysForGroup = (groupId?: string | null): string[] => {
   return targets.flatMap(g => g.rows.filter(r => r.type === 'boolean').map(r => r.key));
 };
 
-const scoreCache = new Map<string, number>();
 const computeScore = (col: Col, groupId?: string | null): number => {
-  const key = `${col.key}|${groupId ?? 'ALL'}`;
-  const cached = scoreCache.get(key);
-  if (cached != null) return cached;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const pv = (planValues as any)?.[col.providerSlug]?.[col.planSlug] || {};
   const keys = booleanKeysForGroup(groupId ?? null);
-  let s = 0;
-  for (const k of keys) if (pv[k] === true) s += 1;
-  scoreCache.set(key, s);
-  return s;
+  const values = keys.map(x => valueOf(col.providerSlug, col.planSlug, x));
+  const score = values.reduce<number>((acc, x) => acc + (getIsAvailableForBoolean(x) ? 1 : 0), 0);
+  return score;
 };
 
 const groupScore = (col: Col, groupId: string): number => computeScore(col, groupId);
@@ -237,13 +233,7 @@ const sortedColumns = computed<Col[]>(() => {
 });
 
 const getUserLocale = (): string => {
-  if (process.client && typeof navigator !== 'undefined' && navigator.language) return navigator.language;
-  const headers = useRequestHeaders(['accept-language']);
-  const al = headers['accept-language'];
-  if (al) {
-    const first = al.split(',')[0]?.trim();
-    if (first) return first;
-  }
+  if (typeof navigator !== 'undefined' && navigator.language) return navigator.language;
   return 'en-US';
 };
 
@@ -252,28 +242,64 @@ const numberFormatter = new Intl.NumberFormat(getUserLocale(), { maximumFraction
 const toNumber = (v: unknown): number | null => {
   if (typeof v === 'number' && Number.isFinite(v)) return v;
   if (typeof v === 'string') {
-    const n = Number(v.replace(/\s/g, ''));
+    const n = Number(v.replace(/\s/g, '').replace(/,/g, ''));
     return Number.isFinite(n) ? n : null;
   }
   return null;
 };
 
+const tickSymbol = '✓';
+const dashSymbol = '—';
+
+const isNegativeString = (s: string): boolean => {
+  const t = s.trim().toLowerCase();
+  return t === '' || t === 'no' || t === 'false' || t === 'n/a' || t === 'na' || t === 'none' || t === '0' || t === 'not available' || t === 'off';
+};
+
+const getIsAvailableForBoolean = (raw: unknown): boolean => {
+  if (raw === true) return true;
+  if (raw === false) return false;
+  if (typeof raw === 'number') return Number.isFinite(raw) && raw > 0;
+  if (typeof raw === 'string') return !isNegativeString(raw);
+  return false;
+};
+
 const formatValue = (val: unknown, type: FeatureType): string => {
-  if (val === null || val === undefined) return '—';
-  if (type === 'boolean') return val ? '✓' : '—';
+  if (val === null || val === undefined) return dashSymbol;
+  if (type === 'boolean') {
+    if (typeof val === 'boolean') return val ? tickSymbol : dashSymbol;
+    if (typeof val === 'number') {
+      const n = toNumber(val);
+      return n === null ? dashSymbol : numberFormatter.format(n);
+    }
+    if (typeof val === 'string') return val.trim() === '' ? dashSymbol : val;
+    return dashSymbol;
+  }
   if (type === 'number') {
     const n = toNumber(val);
-    return n === null ? '—' : numberFormatter.format(n);
+    if (n !== null) return numberFormatter.format(n);
+    if (typeof val === 'string' && val.trim() !== '') return val;
+    return dashSymbol;
   }
   return String(val);
 };
 
-const ariaLabel = (val: unknown, type: FeatureType): string => {
+const getAriaLabel = (val: unknown, type: FeatureType): string => {
   if (val === null || val === undefined) return 'Not available';
-  if (type === 'boolean') return val ? 'Yes' : 'No';
+  if (type === 'boolean') {
+    if (typeof val === 'boolean') return val ? 'Yes' : 'No';
+    if (typeof val === 'number') {
+      const n = toNumber(val);
+      return n === null ? 'Not available' : numberFormatter.format(n);
+    }
+    if (typeof val === 'string') return val.trim() === '' ? 'Not available' : val;
+    return 'Not available';
+  }
   if (type === 'number') {
     const n = toNumber(val);
-    return n === null ? 'Not available' : numberFormatter.format(n);
+    if (n !== null) return numberFormatter.format(n);
+    if (typeof val === 'string' && val.trim() !== '') return val;
+    return 'Not available';
   }
   return String(val);
 };
