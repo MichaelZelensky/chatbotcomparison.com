@@ -593,7 +593,6 @@
       "replication": true,
       "straightStart": false,
       "liveChat": true,
-      "seats": 10,
       "helpDesk": true,
       "liveVideoCalls": true,
       "aiAgentConversations": "Your first 50 conversations are free (lifetime). You can upgrade your monthly limit to 50 - 1k.",
@@ -761,7 +760,6 @@
       "replication": true,
       "straightStart": false,
       "liveChat": true,
-      "seats": 10,
       "helpDesk": true,
       "liveVideoCalls": true,
       "aiAgentConversations": "Your first 50 conversations are free (lifetime). You can upgrade your monthly limit to 50 - 1k.",
@@ -930,7 +928,6 @@
       "replication": true,
       "straightStart": false,
       "liveChat": true,
-      "seats": 10,
       "helpDesk": true,
       "liveVideoCalls": true,
       "aiAgentConversations": "Your first 50 conversations are free (lifetime). You can upgrade your monthly limit to 50 - 1k.",
@@ -981,7 +978,7 @@
     "plus": {
       "planPrice": "From $749",
       "freeTrial": "7 days",
-      "agentsIncluded": null,
+      "agentsIncluded": "Custom",
       "additionalAgentPrice": null,
       "customerProfiles": null,
       "aiUsage": "Copilot + advanced",
@@ -1099,7 +1096,6 @@
       "replication": true,
       "straightStart": false,
       "liveChat": true,
-      "seats": "Custom",
       "helpDesk": true,
       "liveVideoCalls": true,
       "aiAgentConversations": "Custom",
@@ -1149,7 +1145,7 @@
     "premium": {
       "planPrice": "From $2,999",
       "freeTrial": "7 days",
-      "agentsIncluded": null,
+      "agentsIncluded": "Custom",
       "additionalAgentPrice": null,
       "customerProfiles": null,
       "aiUsage": "Managed AI + premium support",
@@ -1397,6 +1393,7 @@
     },
     "team": {
       "planPrice": "$174",
+      "agentsIncluded": 1,
       "freeTrial": "14 days",
       "aiKnowledge": true,
       "aiAnswers": false,
@@ -1475,6 +1472,7 @@
     },
     "business": {
       "planPrice": "$424",
+      "agentsIncluded": 1,
       "freeTrial": "14 days",
       "aiKnowledge": true,
       "aiAnswers": true,
@@ -1632,7 +1630,7 @@
     "supportTeam": {
       "planPrice": "$55",
       "freeTrial": "14 days",
-      "agentsIncluded": null,
+      "agentsIncluded": 1,
       "aiUsage": "Essential AI agents",
       "hcArticles": true,
       "hcSearch": true,
@@ -1650,7 +1648,7 @@
     "suiteTeam": {
       "planPrice": "$89",
       "freeTrial": "14 days",
-      "agentsIncluded": null,
+      "agentsIncluded": 1,
       "aiUsage": "Essential AI agents",
       "hcArticles": true,
       "hcSearch": true,
@@ -1669,7 +1667,7 @@
     "suiteProfessional": {
       "planPrice": "$149",
       "freeTrial": "14 days",
-      "agentsIncluded": null,
+      "agentsIncluded": 1,
       "aiUsage": "Advanced AI + persona customization",
       "hcArticles": true,
       "hcSearch": true,
@@ -1689,7 +1687,7 @@
     "suiteEnterprise": {
       "planPrice": "$219",
       "freeTrial": "14 days",
-      "agentsIncluded": null,
+      "agentsIncluded": 1,
       "aiUsage": "Advanced AI + enterprise tools",
       "hcArticles": true,
       "hcSearch": true,
@@ -1713,6 +1711,7 @@
   "liveagent": {
     "small": {
       "perAgentAnnual":  "$15",
+      "agentsIncluded": 1,
       "perAgentMonthly": "$19",
       "customerPortal": true,
       "contactFormsButtons": "3",
@@ -1834,6 +1833,7 @@
     
     "medium": {
      "perAgentAnnual": "$29",
+     "agentsIncluded": 1,
      "perAgentMonthly": "$35",
      "customerPortal": true,
      "contactFormsButtons": "10",
@@ -1952,6 +1952,7 @@
     },
     "large": {
       "perAgentAnnual":"$49",
+      "agentsIncluded": 1,
       "perAgentMonthly": "$59",
       "customerPortal": true,
       "contactFormsButtons": "50",
@@ -2073,6 +2074,7 @@
     },
     "enterprise": {
       "perAgentAnnual":"$69",
+      "agentsIncluded": 1,
       "perAgentMonthly": "$85",
       "customerPortal": true,
       "contactFormsButtons": "200",
