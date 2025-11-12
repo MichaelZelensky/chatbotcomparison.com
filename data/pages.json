@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "defaultModel": "gpt-4o-mini",
+  "defaultPromptSet": "v1",
+  "pages": [
+    {
+      "type": "compare",
+      "slug": "/compare/crisp-vs-tidio",
+      "title": "Crisp vs Tidio",
+      "dataRefs": { "providers": ["crisp", "tidio"], "features": [] },
+      "version": 1,
+      "generate": false,
+      "dataHash": "",
+      "contentHash": "",
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/compare/crisp-vs-tidio.vue"
+    }
+  ]
+}
