@@ -2,11 +2,23 @@
 import { writeFileSync } from 'node:fs';
 import { detectPages } from './detect.ts';
 import { readJson, PagesFile } from './types.ts';
-import { getExistingFileHash, writeTextFile, getHashOfString, ensureDir } from './fs-helpers.ts';
+import {
+  getExistingFileHash,
+  writeTextFile,
+  getHashOfString,
+  ensureDir
+} from './fs-helpers.ts';
 import { getAiText } from './openai.ts';
-import { getComparePrompt, getFeaturePrompt, getCompareScaffold, getFeatureScaffold, getIndexListScaffold } from './templates.ts';
+import {
+  getComparePrompt,
+  getFeaturePrompt,
+  getCompareScaffold,
+  getFeatureScaffold,
+  getIndexListScaffold
+} from './templates.ts';
 
 const root = process.cwd();
+const dryRun = process.env.DRY_RUN === '1';
 
 const paths = {
   featureGroups: `${root}/data/feature-groups.json`,
@@ -19,23 +31,48 @@ const paths = {
 
 const loadPagesFile = (): PagesFile => readJson<PagesFile>(paths.pages);
 
-const savePagesFile = (pagesFile: PagesFile) =>
-  writeFileSync(paths.pages, JSON.stringify(pagesFile, null, 2) + '\n', 'utf8');
-
-const generateContentForPage = async (page: PagesFile['pages'][number], context: ReturnType<typeof detectPages>) => {
-  if (page.generate === false) return '';
-  if (page.type === 'compare') {
-    const { system, user } = getComparePrompt(page, context.providers, context.planValues);
-    const raw = await getAiText({ model: page.model, system, user });
-    const sfc = getCompareScaffold(page.title, raw);
-    return sfc;
+const savePagesFile = (pagesFile: PagesFile) => {
+  if (dryRun) {
+    console.log('[dry-run] pages.json would be updated');
+    return;
   }
+  writeFileSync(
+    paths.pages,
+    JSON.stringify(pagesFile, null, 2) + '\n',
+    'utf8'
+  );
+};
+
+const generateContentForPage = async (
+  page: PagesFile['pages'][number],
+  context: ReturnType<typeof detectPages>
+) => {
+  if (page.generate === false) {
+    console.log(`[skip] generate:false → ${page.slug}`);
+    return '';
+  }
+
+  if (dryRun) {
+    console.log(`[dry-run] would request AI for ${page.slug}`);
+    return '[dry-run] AI output';
+  }
+
+  if (page.type === 'compare') {
+    const { system, user } = getComparePrompt(
+      page,
+      context.providers,
+      context.planValues
+    );
+    const raw = await getAiText({ model: page.model, system, user });
+    return getCompareScaffold(page.title, raw);
+  }
+
   if (page.type === 'feature') {
     const { system, user } = getFeaturePrompt(page, context.planValues);
     const raw = await getAiText({ model: page.model, system, user });
-    const sfc = getFeatureScaffold(page.title, raw);
-    return sfc;
+    return getFeatureScaffold(page.title, raw);
   }
+
   return '';
 };
 
@@ -52,13 +89,23 @@ const buildIndexes = (pages: PagesFile['pages']) => {
     .sort((a, b) => a.slug.localeCompare(b.slug))
     .map(x => ({ href: x.slug, label: x.title }));
 
-  const compareIndex = getIndexListScaffold('All comparisons', compareItems);
-  const featuresIndex = getIndexListScaffold('All features', featuresItems);
-  return { compareIndex, featuresIndex };
+  return {
+    compareIndex: getIndexListScaffold('All comparisons', compareItems),
+    featuresIndex: getIndexListScaffold('All features', featuresItems)
+  };
+};
+
+const writeFileMaybe = (path: string, content: string) => {
+  if (dryRun) {
+    console.log(`[dry-run] would write: ${path}`);
+    return;
+  }
+  writeTextFile(path, content);
 };
 
 const main = async () => {
   const pagesFile = loadPagesFile();
+
   const context = detectPages({
     featureGroupsPath: paths.featureGroups,
     providersPath: paths.providers,
@@ -68,22 +115,45 @@ const main = async () => {
     defaultPromptSet: pagesFile.defaultPromptSet
   });
 
-  const updatedPages = await Promise.all(context.pages.map(async page => {
-    const isBlocked = page.generate === false;
-    const shouldGenerate = !isBlocked && page.status !== 'fresh';
-    if (!shouldGenerate) return page;
+  console.log(
+    `Detected ${context.pages.length} pages (dry-run=${dryRun ? 'yes' : 'no'})`
+  );
 
-    const sfc = await generateContentForPage(page, context);
-    const newContentHash = getHashOfString(sfc);
-    const existingHash = getExistingFileHash(`${root}/${page.contentPath}`);
-    if (existingHash === newContentHash) {
-      const stable = { ...page, contentHash: newContentHash, status: 'fresh' as const };
-      return stable;
-    }
-    writeTextFile(`${root}/${page.contentPath}`, sfc);
-    const next = { ...page, contentHash: newContentHash, status: 'fresh' as const, lastGenAt: new Date().toISOString() };
-    return next;
-  }));
+  const updatedPages = await Promise.all(
+    context.pages.map(async page => {
+      const isBlocked = page.generate === false;
+      const shouldGenerate = !isBlocked && page.status !== 'fresh';
+
+      if (!shouldGenerate) {
+        console.log(`[ok] fresh → ${page.slug}`);
+        return page;
+      }
+
+      console.log(`[update] outdated → ${page.slug}`);
+
+      const sfc = await generateContentForPage(page, context);
+
+      const newHash = getHashOfString(sfc);
+      const existingHash = getExistingFileHash(`${root}/${page.contentPath}`);
+
+      if (!dryRun && existingHash === newHash) {
+        console.log(`[skip] identical content → ${page.slug}`);
+        const stable = { ...page, contentHash: newHash, status: 'fresh' as const };
+        return stable;
+      }
+
+      writeFileMaybe(`${root}/${page.contentPath}`, sfc);
+
+      const next = {
+        ...page,
+        contentHash: newHash,
+        status: 'fresh' as const,
+        lastGenAt: new Date().toISOString()
+      };
+
+      return next;
+    })
+  );
 
   const nextPagesFile: PagesFile = {
     schemaVersion: context.pagesFileMeta.schemaVersion,
@@ -92,16 +162,22 @@ const main = async () => {
     pages: updatedPages
   };
 
-  const { compareIndex, featuresIndex } = buildIndexes(nextPagesFile.pages);
+  const { compareIndex, featuresIndex } = buildIndexes(
+    nextPagesFile.pages
+  );
+
   ensureDir(`${root}/pages/compare`);
   ensureDir(`${root}/pages/features`);
-  writeTextFile(paths.compareIndex, compareIndex);
-  writeTextFile(paths.featuresIndex, featuresIndex);
+
+  writeFileMaybe(paths.compareIndex, compareIndex);
+  writeFileMaybe(paths.featuresIndex, featuresIndex);
 
   savePagesFile(nextPagesFile);
+
+  console.log('Done.');
 };
 
-main().catch(x => {
-  console.error(x);
+main().catch(err => {
+  console.error(err);
   process.exit(1);
 });

@@ -1,6 +1,6 @@
-import { readJson, FeatureGroup, Provider, PlanValues, PagesFile, PageRecord } from './types.ts';
-import { getCompareSlug, getFeatureSlug } from './slug.ts';
-import { getHashOfString } from './fs-helpers.ts';
+import { readJson, type FeatureGroup, type Provider, type PlanValues, type PagesFile, type PageRecord } from './types';
+import { getCompareSlug, getFeatureSlug } from './slug';
+import { getHashOfString } from './fs-helpers';
 
 type DetectInputs = {
   featureGroupsPath: string;

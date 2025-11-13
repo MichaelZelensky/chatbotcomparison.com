@@ -1,4 +1,4 @@
-import { PageRecord, Provider, PlanValues } from './types.ts';
+import type { PageRecord, Provider, PlanValues } from './types.ts';
 
 export const getComparePrompt = (page: PageRecord, providers: Provider[], planValues: PlanValues): { system: string; user: string } => {
   const refs = page.dataRefs as { providers: [string, string] };
