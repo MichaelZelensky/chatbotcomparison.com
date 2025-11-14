@@ -19,7 +19,9 @@
       { "key": "seats","label": "Seats","type": "text","description": "Number of agent seats included in the plan by default. May be 'Custom' for flexible or negotiated plans."},
       { "key": "perAgentAnnual", "label": "Per agent/month billed annually", "type": "text", "description": "Price per agent when billed annually." },
       { "key": "perAgentMonthly", "label": "Per agent/month billed monthly", "type": "text", "description": "Price per agent when billed monthly." },
-      { "key": "essentialPlan", "label": "Essential plan", "type": "text", "description": "Represents the core subscription tier offering essential features for standard use." }
+      { "key": "essentialPlan", "label": "Essential plan", "type": "text", "description": "Represents the core subscription tier offering essential features for standard use." },
+      { "key": "advancedPlan", "label": "Advanced plan", "type": "text", "description": "Indicates availability of the advanced subscription tier or add-on option." }
+
 
     ]
   },
@@ -201,7 +203,27 @@
       { "key": "copilot", "label": "Copilot", "type": "boolean", "description": "Helps support agents during customer chats by suggesting AI-generated replies, summaries, and context insights in real time." },
       { "key": "aiReplyAssistant", "label": "AI reply assistant", "type": "boolean", "description": "Automatically drafts or suggests message replies using AI." },
       { "key": "aiAnswerAssistant", "label": "AI Answer Assistant", "type": "boolean", "description": "Suggests or generates reply messages using AI to assist agents." },
-      { "key": "aiChatbot", "label": "AI Chatbot", "type": "boolean", "description": "Enables automated chat conversations handled by AI without agent involvement." }
+      { "key": "aiChatbot", "label": "AI Chatbot", "type": "boolean", "description": "Enables automated chat conversations handled by AI without agent involvement." },
+      { "key": "aiAgentsForEmail", "label": "AI agents for email", "type": "boolean", "description": "Enables AI-powered agents to handle or assist with email conversations." },
+      { "key": "generativeReplies", "label": "Generative replies", "type": "boolean", "description": "Enables AI-generated reply suggestions for faster agent responses." },
+      { "key": "aiAgentPersona", "label": "AI agent persona", "type": "boolean", "description": "Allows defining a personalized AI agent behavior style or persona." },
+      { "key": "instructions", "label": "Instructions", "type": "boolean", "description": "Supports adding custom instructions to guide AI agent behavior." },
+      { "key": "escalationsAndDataCapture", "label": "Escalations and data capture", "type": "boolean", "description": "Enables AI-driven escalation flows and automatic data collection during conversations." },
+      { "key": "aiAgentBuilder", "label": "AI agent builder", "type": "boolean", "description": "Provides tools to create, configure, and manage AI agents." },
+      { "key": "integrationsAndActions", "label": "Integrations & actions", "type": "boolean", "description": "Allows AI agents to trigger integrations or actions in connected systems." },
+      { "key": "reasoningControls", "label": "Reasoning controls", "type": "text", "description": "Settings that control how the AI reasons and responds; may require an Advanced AI Agents add-on." },
+      { "key": "essentialLanguageSupport", "label": "Essential language support", "type": "boolean", "description": "Provides access to the basic set of supported languages." },
+      { "key": "advancedLanguageSupport", "label": "Advanced language support", "type": "text", "description": "Provides access to the extended set of supported languages; requires the Advanced AI Agents add-on." },
+      { "key": "includedAutomatedResolutions", "label": "Included automated resolutions", "type": "text", "description": "Number of automated resolutions included in the plan, such as 5 ARs per agent per month." },
+      { "key": "committedAutomatedResolutions", "label": "Committed automated resolutions (volume discounts available)", "type": "text", "description": "Pre-purchased automated resolutions billed at a fixed rate; volume discounts may apply." },
+      { "key": "payAsYouGoAutomatedResolutions", "label": "Pay-as-you-go automated resolutions", "type": "text", "description": "Automated resolutions billed on a usage basis without commitment." }
+
+
+
+
+
+
+
     ]
   },
   {
@@ -363,8 +385,12 @@
       { "key": "myWorkReport", "label": "My work report", "type": "boolean", "description": "Displays a personal workload and activity summary for each agent." },
       { "key": "agentAvailability", "label": "Agent availability for calls, chats, tickets", "type": "boolean", "description": "Shows real-time agent availability across all communication types." },
       { "key": "callChatAvailability", "label": "Call & chat availability", "type": "boolean", "description": "Shows which agents are available to handle calls or chats." },
-      { "key": "callChatTicketLoad", "label": "Call, chat, ticket load", "type": "boolean", "description": "Displays current workload across calls, chats, and tickets." }
+      { "key": "callChatTicketLoad", "label": "Call, chat, ticket load", "type": "boolean", "description": "Displays current workload across calls, chats, and tickets." },
+      { "key": "automatedResolutionsReporting", "label": "Automated resolutions reporting", "type": "boolean", "description": "Provides reporting on cases resolved automatically by AI or automation tools." },
+      { "key": "essentialAiAgentReporting", "label": "Essential AI agent reporting", "type": "boolean", "description": "Includes basic reporting and insights on AI agent performance." },
+      { "key": "advancedAiAgentReporting", "label": "Advanced AI agent reporting", "type": "text", "description": "Provides advanced reporting features for AI agents; requires the Advanced AI Agents add-on." }
 
+      
     ]
   },
   {
