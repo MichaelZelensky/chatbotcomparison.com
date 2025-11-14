@@ -18,7 +18,9 @@
       { "key": "annualSubscription","label": "Annual Subscription (per agent/month)","type": "text","description": "The equivalent monthly cost per agent when billed annually, usually offered at a discounted rate."},
       { "key": "seats","label": "Seats","type": "text","description": "Number of agent seats included in the plan by default. May be 'Custom' for flexible or negotiated plans."},
       { "key": "perAgentAnnual", "label": "Per agent/month billed annually", "type": "text", "description": "Price per agent when billed annually." },
-      { "key": "perAgentMonthly", "label": "Per agent/month billed monthly", "type": "text", "description": "Price per agent when billed monthly." }
+      { "key": "perAgentMonthly", "label": "Per agent/month billed monthly", "type": "text", "description": "Price per agent when billed monthly." },
+      { "key": "essentialPlan", "label": "Essential plan", "type": "text", "description": "Represents the core subscription tier offering essential features for standard use." }
+
     ]
   },
   {

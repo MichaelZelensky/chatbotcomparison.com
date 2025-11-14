@@ -321,46 +321,30 @@
       "cloudBased": true,
       "mobileApps": true,
       "desktopApps": true,
-      "realtimeNotif": true,
-    
+      "realtimeNotif": true,    
       "transcript": true,
-      "triage": true,
-   
-      "fileSharing": true,
-   
+      "triage": true,   
+      "fileSharing": true, 
       "chatWidget": true,
       "contactForm": true,
-      "email": true,
-  
-      "messenger": true,
-   
-      "instagram": true,
-  
+      "email": true, 
+      "messenger": true,  
+      "instagram": true, 
       "whatsappBiz": true,
       "wordpress": true,
       "shopify": true,
-      "woocommerce": true,
-      
+      "woocommerce": true,     
       "zapier": true,
-      "make": true,
-    
+      "make": true, 
       "chatSDKs": true,
- 
       "typingIndicator": true,
-      "widgetCustomization": true,
-    
-      "avChat": true,
-   
-      "internalCopilot": true,
-   
-      "aiConversationsQuota": "Lyro: 50 (one-time)",
-   
-      "noCodeBuilder": true,
-      
-      "automationQuota": "Flows: 100 visitors/mo",
-     
-      "prebuiltAnalytics": true,
-  
+      "widgetCustomization": true,   
+      "avChat": true,  
+      "internalCopilot": true,  
+      "aiConversationsQuota": "Lyro: 50 (one-time)",  
+      "noCodeBuilder": true,      
+      "automationQuota": "Flows: 100 visitors/mo",     
+      "prebuiltAnalytics": true,  
       "mfa": true,
       "euHosted": null,
       "dpa": true,
@@ -382,9 +366,7 @@
       "faqFlowsTemplates": true, 
       "visualFlowsBuilder": true,
       "aiReplyAssistant": true, 
-      "basicAnalytics": true,
-      
-      
+      "basicAnalytics": true,    
       "appIntegrations": true,
       "supportOverEmail": true
     },
@@ -872,7 +854,7 @@
     },
     "team": {
       "planPrice": "$174",
-      "agentsIncluded": 1,
+      "agentsIncluded": 5,
       "freeTrial": "14 days",
       "aiKnowledge": true,
       "crmSmartFilters": true,
@@ -938,7 +920,7 @@
     },
     "business": {
       "planPrice": "$424",
-      "agentsIncluded": 1,
+      "agentsIncluded": "Unlimited",
       "freeTrial": "14 days",
       "aiKnowledge": true,
       "aiAnswers": true,
@@ -1006,6 +988,7 @@
     "enterprise": {
       "planPrice": "Custom",
       "freeTrial": "14 days",
+      "agentsIncluded": "Unlimited",
       "aiKnowledge": true,
       "aiAnswers": true,
       "crmSmartFilters": true,
@@ -1082,7 +1065,7 @@
   },
   "zendesk": {
     "supportTeam": {
-      "planPrice": "$55",
+      "planPrice": "€19",
       "freeTrial": "14 days",
       "agentsIncluded": 1,
       "aiUsage": "Essential AI agents",
@@ -1098,10 +1081,11 @@
       "straightStart": true
     },
     "suiteTeam": {
-      "planPrice": "$89",
+      "planPrice": "€55",
       "freeTrial": "14 days",
       "agentsIncluded": 1,
       "aiUsage": "Essential AI agents",
+      "essentialPlan": true,
       "hcArticles": true,
       "hcSearch": true,
       "hcMultilingual": true,
@@ -1115,10 +1099,11 @@
       "straightStart": true
     },
     "suiteProfessional": {
-      "planPrice": "$149",
+      "planPrice": "€115",
       "freeTrial": "14 days",
       "agentsIncluded": 1,
       "aiUsage": "Advanced AI + persona customization",
+      "essentialPlan": true,
       "hcArticles": true,
       "hcSearch": true,
       "hcMultilingual": true,
@@ -1135,10 +1120,11 @@
       "straightStart": true
     },
     "suiteEnterprise": {
-      "planPrice": "$219",
+      "planPrice": "€169",
       "freeTrial": "14 days",
       "agentsIncluded": 1,
       "aiUsage": "Advanced AI + enterprise tools",
+      "essentialPlan": true,
       "hcArticles": true,
       "hcSearch": true,
       "hcMultilingual": true,
