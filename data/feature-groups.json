@@ -93,7 +93,10 @@
       { "key": "ivr", "label": "IVR", "type": "boolean", "description": "Interactive voice response menu for routing callers through predefined options." },
       { "key": "inCallRecordings", "label": "In call recordings", "type": "boolean", "description": "Allows recording phone calls for review or quality assurance." },
       { "key": "callRoutingAndTransfers", "label": "Call routing & transfers", "type": "boolean",  "description": "Allows redirecting and transferring calls between agents or departments." },
-      { "key": "hardwareIpPhone", "label": "Hardware IP phone", "type": "boolean", "description": "Allows using physical IP phones integrated with the call center system." }
+      { "key": "hardwareIpPhone", "label": "Hardware IP phone", "type": "boolean", "description": "Allows using physical IP phones integrated with the call center system." },
+      { "key": "emailWithUnlimitedAddresses", "label": "Email with unlimited addresses", "type": "boolean", "description": "Provides unlimited email addresses for handling incoming and outgoing messages." },
+      { "key": "contactForm", "label": "Contact form", "type": "boolean", "description": "Enables a built-in contact form for collecting customer inquiries." }
+
      ]
   },  
   {
@@ -343,7 +346,9 @@
       { "key": "additionalKnowledgeBase", "label": "Additional knowledge base", "type": "text",  "description": "Allows adding extra knowledge base instances. May require a paid add-on per additional KB." },
       { "key": "customDomainParking", "label": "Custom domain parking", "type": "boolean","description": "Allows hosting the customer portal or knowledge base under a custom domain." },
       { "key": "assistedDomainParking", "label": "Assisted domain parking", "type": "boolean", "description": "Provides assistance with setting up a custom domain for the help center or knowledge base." },
-      { "key": "customSystemEmailTemplates", "label": "Customisation of system email templates", "type": "boolean", "description": "Allows editing and customizing the default system email templates sent to users or customers." }
+      { "key": "customSystemEmailTemplates", "label": "Customisation of system email templates", "type": "boolean", "description": "Allows editing and customizing the default system email templates sent to users or customers." },
+      { "key": "ticketFileAttachmentSize", "label": "Ticket file attachment size", "type": "text", "description": "Maximum allowed size for file attachments in tickets, such as 50MB." }
+
 
     ]
   },
@@ -430,7 +435,10 @@
       { "key": "httpsEncryption", "label": "HTTPS encryption", "type": "boolean", "description": "Ensures all data is transmitted securely using HTTPS encryption." },
       { "key": "bannedVisitorsList", "label": "Banned visitors list", "type": "boolean", "description": "Allows blocking or restricting specific visitors from accessing chat services." },
       { "key": "auditLog", "label": "Audit Log", "type": "boolean", "description": "Provides a log of system actions and changes for security and compliance review." },
-      { "key": "sso", "label": "SSO", "type": "boolean", "description": "Allows users to sign in using Single Sign-On authentication." }
+      { "key": "sso", "label": "SSO", "type": "boolean", "description": "Allows users to sign in using Single Sign-On authentication." },
+      { "key": "incomingEmailAuthentication", "label": "Incoming email authentication: SPF, DKIM, DMARC", "type": "boolean", "description": "Supports email authentication standards such as SPF, DKIM, and DMARC for secure message verification." },
+      { "key": "automaticEmailArchiving", "label": "Automatic email archiving", "type": "boolean", "description": "Automatically stores and archives email messages for future reference." }
+
 
     ]
   },

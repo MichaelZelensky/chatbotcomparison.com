@@ -1095,7 +1095,12 @@
       "advancedLanguageSupport": "Requires Advanced AI Agents add-on",
       "includedAutomatedResolutions": "5 ARs per agent/month",
       "committedAutomatedResolutions": "$1.50", 
-      "payAsYouGoAutomatedResolutions": "$2"
+      "payAsYouGoAutomatedResolutions": "$2",
+      "emailWithUnlimitedAddresses": true,
+      "ticketFileAttachmentSize": "50MB",
+      "incomingEmailAuthentication": true
+      
+
     },
     "suiteTeam": {
       "planPrice": "€55",
@@ -1130,7 +1135,11 @@
       "advancedLanguageSupport": "Requires Advanced AI Agents add-on",
       "includedAutomatedResolutions": "5 ARs per agent/month",
       "committedAutomatedResolutions": "$1.50", 
-      "payAsYouGoAutomatedResolutions": "$2"
+      "payAsYouGoAutomatedResolutions": "$2",
+      "emailWithUnlimitedAddresses": true, 
+      "contactForm": true,
+      "ticketFileAttachmentSize": "50MB",
+      "incomingEmailAuthentication": true
     },
     "suiteProfessional": {
       "planPrice": "€115",
@@ -1168,7 +1177,11 @@
       "advancedLanguageSupport": "Requires Advanced AI Agents add-on",
       "includedAutomatedResolutions": "10 ARs per agent/month",
       "committedAutomatedResolutions": "$1.50", 
-      "payAsYouGoAutomatedResolutions": "$2"
+      "payAsYouGoAutomatedResolutions": "$2",
+      "emailWithUnlimitedAddresses": true, 
+      "contactForm": true,
+      "ticketFileAttachmentSize": "50MB",
+      "incomingEmailAuthentication": true
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1209,7 +1222,12 @@
       "advancedLanguageSupport": "Requires Advanced AI Agents add-on",
       "includedAutomatedResolutions": "15 ARs per agent/month",
       "committedAutomatedResolutions": "$1.50", 
-      "payAsYouGoAutomatedResolutions": "$2"
+      "payAsYouGoAutomatedResolutions": "$2",
+      "emailWithUnlimitedAddresses": true, 
+      "contactForm": true,
+      "ticketFileAttachmentSize": "50MB",
+      "incomingEmailAuthentication": true, 
+      "automaticEmailArchiving": true 
     }
   },
   "liveagent": {
