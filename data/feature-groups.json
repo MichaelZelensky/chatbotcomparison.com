@@ -174,7 +174,27 @@
       { "key": "brandingFree", "label": "Branding free", "type": "text", "description": "Removes default platform branding from chat widgets. May require a paid add-on depending on the plan." },
       { "key": "multipleLanguageSupport", "label": "Multiple language support", "type": "boolean", "description": "Allows using the platform interface and communication tools in multiple languages." },
       { "key": "multipleWebsiteSupport", "label": "Multiple website support", "type": "boolean", "description": "Allows using the chat or help center across multiple websites or domains." },
-      { "key": "multibrandSupport", "label": "Multibrand support", "type": "boolean", "description": "Supports managing multiple brands with separate configurations or appearance settings." }
+      { "key": "multibrandSupport", "label": "Multibrand support", "type": "boolean", "description": "Supports managing multiple brands with separate configurations or appearance settings." },
+      { "key": "webWidget", "label": "Web widget", "type": "boolean", "description": "Provides a web-based widget that can be embedded on websites for customer interactions." },
+      { "key": "mobileSdks", "label": "Mobile SDKs: iOS SDK, Android SDK, and Unity SDK", "type": "boolean", "description": "Offers mobile software development kits for iOS, Android, and Unity applications." },
+      { "key": "widgetCustomization", "label": "Widget customization", "type": "boolean", "description": "Allows adjusting the appearance and behavior of the chat widget." },
+      { "key": "preChatForm", "label": "Pre-chat form", "type": "boolean", "description": "Shows a form to collect user information before starting a chat." },
+      { "key": "unlimitedConcurrentChats", "label": "Unlimited concurrent chats", "type": "boolean", "description": "Allows agents to handle an unlimited number of chats at the same time." },
+      { "key": "shortcuts", "label": "Shortcuts", "type": "boolean", "description": "Provides quick reply shortcuts for frequently used responses." },
+      { "key": "automaticTranslation", "label": "Automatic translation", "type": "boolean", "description": "Automatically translates messages between agents and customers during conversations." },
+      { "key": "sendAndReceiveFiles", "label": "Send and receive files", "type": "boolean", "description": "Enables file sharing within the chat interface." },
+      { "key": "conversationRating", "label": "Conversation rating", "type": "boolean", "description": "Allows customers to rate their chat experience after a conversation." },
+      { "key": "transfersBetweenAgentsAndDepartments", "label": "Transfers between agents & departments", "type": "boolean", "description": "Allows transferring chats between agents or departments." },
+      { "key": "richMessageTypes", "label": "Rich message types", "type": "boolean", "description": "Supports interactive or enhanced message formats such as cards, buttons, or structured replies." },
+      { "key": "conversationHistory", "label": "Conversation history", "type": "boolean", "description": "Allows viewing past conversations with the customer within the chat interface." },
+      { "key": "reEngagement", "label": "Re-engagement", "type": "boolean", "description": "Enables sending follow-up messages to re-engage customers after a conversation." },
+      { "key": "whisperMode", "label": "Whisper mode", "type": "boolean", "description": "Allows agents or supervisors to leave internal notes visible only to team members during a live chat." },
+      { "key": "warmTransfer", "label": "Warm transfer", "type": "boolean", "description": "Enables transferring a conversation with context so the next agent sees the full background." },
+      { "key": "sendProactiveMessages", "label": "Send proactive messages", "type": "boolean", "description": "Allows sending messages to customers proactively, before they initiate contact." },
+      { "key": "widgetUnbranding", "label": "Widget unbranding", "type": "boolean", "description": "Removes platform branding from the chat widget." }
+
+
+
     ]
   },
   {
@@ -223,10 +243,6 @@
 
 
 
-
-
-
-
     ]
   },
   {
@@ -241,7 +257,9 @@
       { "key": "crmLifecycle", "label": "Customer Lifecycle Tracking", "type": "boolean", "description": "Track and analyze the journey from lead to loyal customer." },
       { "key": "crmTimeline", "label": "Customer Timeline Activity", "type": "boolean", "description": "View a chronological history of interactions and events per customer." },
       { "key": "entities", "label": "Entities", "type": "boolean", "description": "Validate user data to personalize chat flows." },
-      { "key": "contactsAndGroups","label":"Contacts & Groups","type":"boolean","description":"Allows storing contacts and organizing them into groups for easier management and segmentation."}
+      { "key": "contactsAndGroups","label":"Contacts & Groups","type":"boolean","description":"Allows storing contacts and organizing them into groups for easier management and segmentation."},
+      { "key": "departments", "label": "Departments", "type": "text", "description": "Number of departments supported within the workspace, such as 2 or Unlimited." }
+
     ]
   },
   {
@@ -303,7 +321,8 @@
       { "key": "eventRules", "label": "Event Rules", "type": "text", "description": "Number of automation rules that can be triggered by specific events." },
       { "key": "timeRules", "label": "Time Rules", "type": "text", "description": "Number of time-based automation rules available under this plan." },
       { "key": "slaRules", "label": "SLA rules", "type": "text", "description": "Availability and number of SLA-based workflow rules supported in the plan." },
-      { "key": "slaLevels", "label": "SLA levels", "type": "text", "description": "Number of SLA priority levels that can be configured." }
+      { "key": "slaLevels", "label": "SLA levels", "type": "text", "description": "Number of SLA priority levels that can be configured." },
+      { "key": "skillsBasedRouting", "label": "Skills-based routing", "type": "boolean", "description": "Routes conversations to agents based on their skills or expertise." }
 
     ]
   },

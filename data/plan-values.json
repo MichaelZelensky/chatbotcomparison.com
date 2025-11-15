@@ -1098,7 +1098,9 @@
       "payAsYouGoAutomatedResolutions": "$2",
       "emailWithUnlimitedAddresses": true,
       "ticketFileAttachmentSize": "50MB",
-      "incomingEmailAuthentication": true
+      "incomingEmailAuthentication": true,
+      "webWidget": true, 
+      "mobileSdks": true
       
 
     },
@@ -1139,7 +1141,23 @@
       "emailWithUnlimitedAddresses": true, 
       "contactForm": true,
       "ticketFileAttachmentSize": "50MB",
-      "incomingEmailAuthentication": true
+      "incomingEmailAuthentication": true,
+      "webWidget": true, 
+      "mobileSdks": true,
+      "widgetCustomization": true, 
+      "preChatForm": true, 
+      "unlimitedConcurrentChats": true, 
+      "shortcuts": true, 
+      "automaticTranslation": true, 
+      "sendAndReceiveFiles": true, 
+      "conversationRating": true, 
+      "transfersBetweenAgentsAndDepartments": true,
+      "richMessageTypes": true, 
+      "conversationHistory": true, 
+      "reEngagement": true, 
+      "whisperMode": true, 
+      "warmTransfer": true, 
+      "sendProactiveMessages": true
     },
     "suiteProfessional": {
       "planPrice": "€115",
@@ -1181,7 +1199,24 @@
       "emailWithUnlimitedAddresses": true, 
       "contactForm": true,
       "ticketFileAttachmentSize": "50MB",
-      "incomingEmailAuthentication": true
+      "incomingEmailAuthentication": true,
+      "webWidget": true, 
+      "mobileSdks": true,
+      "widgetCustomization": true, 
+      "preChatForm": true, 
+      "unlimitedConcurrentChats": true, 
+      "shortcuts": true, 
+      "automaticTranslation": true, 
+      "sendAndReceiveFiles": true, 
+      "conversationRating": true, 
+      "transfersBetweenAgentsAndDepartments": true,
+      "richMessageTypes": true, 
+      "conversationHistory": true, 
+      "reEngagement": true, 
+      "whisperMode": true, 
+      "warmTransfer": true, 
+      "sendProactiveMessages": true,
+      "skillsBasedRouting": true 
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1227,7 +1262,25 @@
       "contactForm": true,
       "ticketFileAttachmentSize": "50MB",
       "incomingEmailAuthentication": true, 
-      "automaticEmailArchiving": true 
+      "automaticEmailArchiving": true,
+      "webWidget": true, 
+      "mobileSdks": true,
+      "widgetCustomization": true, 
+      "preChatForm": true, 
+      "unlimitedConcurrentChats": true, 
+      "shortcuts": true, 
+      "automaticTranslation": true, 
+      "sendAndReceiveFiles": true, 
+      "conversationRating": true, 
+      "transfersBetweenAgentsAndDepartments": true,
+      "richMessageTypes": true, 
+      "conversationHistory": true, 
+      "reEngagement": true, 
+      "whisperMode": true, 
+      "warmTransfer": true, 
+      "sendProactiveMessages": true,
+      "skillsBasedRouting": true, 
+      "widgetUnbranding": true
     }
   },
   "liveagent": {
