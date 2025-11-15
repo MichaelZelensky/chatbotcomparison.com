@@ -1157,7 +1157,8 @@
       "reEngagement": true, 
       "whisperMode": true, 
       "warmTransfer": true, 
-      "sendProactiveMessages": true
+      "sendProactiveMessages": true,
+      "socialAndBusinessChannels": true
     },
     "suiteProfessional": {
       "planPrice": "€115",
@@ -1216,7 +1217,8 @@
       "whisperMode": true, 
       "warmTransfer": true, 
       "sendProactiveMessages": true,
-      "skillsBasedRouting": true 
+      "skillsBasedRouting": true,
+      "socialAndBusinessChannels": true
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1280,7 +1282,8 @@
       "warmTransfer": true, 
       "sendProactiveMessages": true,
       "skillsBasedRouting": true, 
-      "widgetUnbranding": true
+      "widgetUnbranding": true,
+      "socialAndBusinessChannels": true
     }
   },
   "liveagent": {

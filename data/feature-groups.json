@@ -95,7 +95,9 @@
       { "key": "callRoutingAndTransfers", "label": "Call routing & transfers", "type": "boolean",  "description": "Allows redirecting and transferring calls between agents or departments." },
       { "key": "hardwareIpPhone", "label": "Hardware IP phone", "type": "boolean", "description": "Allows using physical IP phones integrated with the call center system." },
       { "key": "emailWithUnlimitedAddresses", "label": "Email with unlimited addresses", "type": "boolean", "description": "Provides unlimited email addresses for handling incoming and outgoing messages." },
-      { "key": "contactForm", "label": "Contact form", "type": "boolean", "description": "Enables a built-in contact form for collecting customer inquiries." }
+      { "key": "contactForm", "label": "Contact form", "type": "boolean", "description": "Enables a built-in contact form for collecting customer inquiries." },
+      { "key": "socialAndBusinessChannels", "label": "Social and business channels", "type": "boolean", "description": "Provides support for connecting social media and business communication channels." }
+
 
      ]
   },  
