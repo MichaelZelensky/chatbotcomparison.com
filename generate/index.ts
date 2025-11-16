@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { writeFileSync } from 'node:fs';
 import { detectPages } from './detect.ts';
-import { readJson, PagesFile } from './types.ts';
+import { readJson, type PagesFile } from './types.ts';
 import {
   getExistingFileHash,
   writeTextFile,
