@@ -102,7 +102,12 @@
       { "key": "embeddedVoice", "label": "Embedded voice", "type": "boolean", "description": "Allows voice calling directly through the embedded voice channel." },
       { "key": "displayNumberInWebWidget", "label": "Display a number using web widget", "type": "boolean", "description": "Displays a phone number inside the web widget for quick access." },
       { "key": "partnerEditionCti", "label": "Partner Edition (Computer Telephony Integration)", "type": "boolean", "description": "Enables CTI features for integrating phone systems with the platform." },
-      { "key": "answerInBrowserAndForwardToPhone", "label": "Answer in browser & forward to phone", "type": "boolean", "description": "Allows answering calls directly in the browser and forwarding them to a phone." }
+      { "key": "answerInBrowserAndForwardToPhone", "label": "Answer in browser & forward to phone", "type": "boolean", "description": "Allows answering calls directly in the browser and forwarding them to a phone." },
+      { "key": "outboundCallerId", "label": "Outbound Caller ID", "type": "text", "description": "Allows setting a caller ID for outbound calls, including using an external number when available." },
+      { "key": "callRouting", "label": "Call routing", "type": "text", "description": "Supports advanced routing options such as group routing, overflow routing, and after-hours routing." }
+
+
+      
 
 
 

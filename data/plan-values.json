@@ -1164,7 +1164,9 @@
       "embeddedVoice": true, 
       "displayNumberInWebWidget": true, 
       "partnerEditionCti": true, 
-      "answerInBrowserAndForwardToPhone": true
+      "answerInBrowserAndForwardToPhone": true,
+      "outboundCallerId": true, 
+      "callRouting": "Group routing"
     },
     "suiteProfessional": {
       "planPrice": "€115",
@@ -1230,7 +1232,9 @@
       "embeddedVoice": true, 
       "displayNumberInWebWidget": true, 
       "partnerEditionCti": true, 
-      "answerInBrowserAndForwardToPhone": true
+      "answerInBrowserAndForwardToPhone": true,
+      "outboundCallerId": "External number for outbound caller ID", 
+      "callRouting": "Group, overflow, and after-hours routing"
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1301,7 +1305,10 @@
       "embeddedVoice": true, 
       "displayNumberInWebWidget": true, 
       "partnerEditionCti": true, 
-      "answerInBrowserAndForwardToPhone": true
+      "answerInBrowserAndForwardToPhone": true,
+      "outboundCallerId": "External number for outbound caller ID", 
+      "callRouting": "Group, overflow, and after-hours routing"
+
     }
   },
   "liveagent": {
