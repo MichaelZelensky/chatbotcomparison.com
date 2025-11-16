@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+import 'dotenv/config';
 import { writeFileSync } from 'node:fs';
 import { detectPages } from './detect.ts';
 import { readJson, type PagesFile } from './types.ts';
@@ -17,8 +17,14 @@ import {
   getIndexListScaffold
 } from './templates.ts';
 
+console.log('limit:', process.env.REQUEST_LIMIT);
+
 const root = process.cwd();
 const dryRun = process.env.DRY_RUN === '1';
+
+const rawLimit = process.env.REQUEST_LIMIT || '1';
+const parsedLimit = Number.parseInt(rawLimit, 10);
+const requestLimit = Number.isFinite(parsedLimit) && parsedLimit > 0 ? parsedLimit : 1;
 
 const paths = {
   featureGroups: `${root}/data/feature-groups.json`,
@@ -116,44 +122,56 @@ const main = async () => {
   });
 
   console.log(
-    `Detected ${context.pages.length} pages (dry-run=${dryRun ? 'yes' : 'no'})`
+    `Detected ${context.pages.length} pages (dry-run=${dryRun ? 'yes' : 'no'}; requestLimit=${requestLimit})`
   );
 
-  const updatedPages = await Promise.all(
-    context.pages.map(async page => {
-      const isBlocked = page.generate === false;
-      const shouldGenerate = !isBlocked && page.status !== 'fresh';
+  const updatedPages: PagesFile['pages'] = [];
+  let usedRequests = 0;
 
-      if (!shouldGenerate) {
-        console.log(`[ok] fresh → ${page.slug}`);
-        return page;
-      }
+  for (const page of context.pages) {
+    const isBlocked = page.generate === false;
+    const shouldGenerate = !isBlocked && page.status !== 'fresh';
 
-      console.log(`[update] outdated → ${page.slug}`);
+    if (!shouldGenerate) {
+      console.log(`[ok] fresh → ${page.slug}`);
+      updatedPages.push(page);
+      continue;
+    }
 
-      const sfc = await generateContentForPage(page, context);
+    if (usedRequests >= requestLimit) {
+      console.log(`[limit] request limit reached, skipping → ${page.slug}`);
+      updatedPages.push(page);
+      continue;
+    }
 
-      const newHash = getHashOfString(sfc);
-      const existingHash = getExistingFileHash(`${root}/${page.contentPath}`);
+    console.log(`[update] outdated → ${page.slug}`);
 
-      if (!dryRun && existingHash === newHash) {
-        console.log(`[skip] identical content → ${page.slug}`);
-        const stable = { ...page, contentHash: newHash, status: 'fresh' as const };
-        return stable;
-      }
+    const sfc = await generateContentForPage(page, context);
 
-      writeFileMaybe(`${root}/${page.contentPath}`, sfc);
+    // Count logical "requests" even in dry-run, to mirror real behaviour
+    usedRequests += 1;
 
-      const next = {
-        ...page,
-        contentHash: newHash,
-        status: 'fresh' as const,
-        lastGenAt: new Date().toISOString()
-      };
+    const newHash = getHashOfString(sfc);
+    const existingHash = getExistingFileHash(`${root}/${page.contentPath}`);
 
-      return next;
-    })
-  );
+    if (!dryRun && existingHash === newHash) {
+      console.log(`[skip] identical content → ${page.slug}`);
+      const stable = { ...page, contentHash: newHash, status: 'fresh' as const };
+      updatedPages.push(stable);
+      continue;
+    }
+
+    writeFileMaybe(`${root}/${page.contentPath}`, sfc);
+
+    const next = {
+      ...page,
+      contentHash: newHash,
+      status: 'fresh' as const,
+      lastGenAt: new Date().toISOString()
+    };
+
+    updatedPages.push(next);
+  }
 
   const nextPagesFile: PagesFile = {
     schemaVersion: context.pagesFileMeta.schemaVersion,
