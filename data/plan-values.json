@@ -1158,7 +1158,13 @@
       "whisperMode": true, 
       "warmTransfer": true, 
       "sendProactiveMessages": true,
-      "socialAndBusinessChannels": true
+      "socialAndBusinessChannels": true,
+      "voicemail": true,
+      "textMessages": true,
+      "embeddedVoice": true, 
+      "displayNumberInWebWidget": true, 
+      "partnerEditionCti": true, 
+      "answerInBrowserAndForwardToPhone": true
     },
     "suiteProfessional": {
       "planPrice": "€115",
@@ -1218,7 +1224,13 @@
       "warmTransfer": true, 
       "sendProactiveMessages": true,
       "skillsBasedRouting": true,
-      "socialAndBusinessChannels": true
+      "socialAndBusinessChannels": true,
+      "voicemail": true,
+      "textMessages": true,
+      "embeddedVoice": true, 
+      "displayNumberInWebWidget": true, 
+      "partnerEditionCti": true, 
+      "answerInBrowserAndForwardToPhone": true
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1283,7 +1295,13 @@
       "sendProactiveMessages": true,
       "skillsBasedRouting": true, 
       "widgetUnbranding": true,
-      "socialAndBusinessChannels": true
+      "socialAndBusinessChannels": true,
+      "voicemail": true,
+      "textMessages": true,
+      "embeddedVoice": true, 
+      "displayNumberInWebWidget": true, 
+      "partnerEditionCti": true, 
+      "answerInBrowserAndForwardToPhone": true
     }
   },
   "liveagent": {

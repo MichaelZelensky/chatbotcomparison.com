@@ -96,7 +96,16 @@
       { "key": "hardwareIpPhone", "label": "Hardware IP phone", "type": "boolean", "description": "Allows using physical IP phones integrated with the call center system." },
       { "key": "emailWithUnlimitedAddresses", "label": "Email with unlimited addresses", "type": "boolean", "description": "Provides unlimited email addresses for handling incoming and outgoing messages." },
       { "key": "contactForm", "label": "Contact form", "type": "boolean", "description": "Enables a built-in contact form for collecting customer inquiries." },
-      { "key": "socialAndBusinessChannels", "label": "Social and business channels", "type": "boolean", "description": "Provides support for connecting social media and business communication channels." }
+      { "key": "socialAndBusinessChannels", "label": "Social and business channels", "type": "boolean", "description": "Provides support for connecting social media and business communication channels." },
+      { "key": "voicemail", "label": "Voicemail", "type": "boolean", "description": "Allows callers to leave voice messages when agents are unavailable." },
+      { "key": "textMessages", "label": "Text messages", "type": "text", "description": "Provides SMS messaging capabilities; available as an add-on." },
+      { "key": "embeddedVoice", "label": "Embedded voice", "type": "boolean", "description": "Allows voice calling directly through the embedded voice channel." },
+      { "key": "displayNumberInWebWidget", "label": "Display a number using web widget", "type": "boolean", "description": "Displays a phone number inside the web widget for quick access." },
+      { "key": "partnerEditionCti", "label": "Partner Edition (Computer Telephony Integration)", "type": "boolean", "description": "Enables CTI features for integrating phone systems with the platform." },
+      { "key": "answerInBrowserAndForwardToPhone", "label": "Answer in browser & forward to phone", "type": "boolean", "description": "Allows answering calls directly in the browser and forwarding them to a phone." }
+
+
+
 
 
      ]
