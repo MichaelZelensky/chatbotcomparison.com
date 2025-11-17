@@ -7,17 +7,3411 @@
       "type": "compare",
       "slug": "/compare/crisp-vs-tidio",
       "title": "Crisp vs Tidio",
-      "dataRefs": { "providers": ["crisp", "tidio"], "features": [] },
+      "dataRefs": {
+        "providers": [
+          "crisp",
+          "tidio"
+        ],
+        "features": []
+      },
       "version": 1,
-      "generate": false,
-      "dataHash": "",
+      "dataHash": "8b81f0a1bd059efac81bad47e923d55831f2d3f1c221e416fd142ee22ccc8778",
       "contentHash": "",
       "lastGenAt": null,
       "lastGenCommit": null,
       "promptSet": "v1",
       "model": "gpt-4o-mini",
       "status": "missing",
-      "contentPath": "pages/compare/crisp-vs-tidio.vue"
+      "contentPath": "pages/compare/crisp-vs-tidio.vue",
+      "generate": false
+    },
+    {
+      "type": "compare",
+      "slug": "/compare/chatbotcom-vs-crisp",
+      "title": "Crisp Vs Chatbotcom",
+      "dataRefs": {
+        "providers": [
+          "crisp",
+          "chatbotcom"
+        ],
+        "features": []
+      },
+      "version": 1,
+      "dataHash": "274b7da8b43be33890f42466b2ac46a4014ffbaea7c308c871719afec2be0362",
+      "contentHash": "c77c8790577915b2837e07f7b760b3282daf28b2a6a8ba081fb855a07213442f",
+      "lastGenAt": "2025-11-17T11:18:34.992Z",
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "fresh",
+      "contentPath": "pages/compare/chatbotcom-vs-crisp.vue"
+    },
+    {
+      "type": "compare",
+      "slug": "/compare/crisp-vs-zendesk",
+      "title": "Crisp Vs Zendesk",
+      "dataRefs": {
+        "providers": [
+          "crisp",
+          "zendesk"
+        ],
+        "features": []
+      },
+      "version": 1,
+      "dataHash": "e73b1e6b177b53cffe0a63cff6e89eef6073d109d2908a1ac645f9008560be52",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/compare/crisp-vs-zendesk.vue"
+    },
+    {
+      "type": "compare",
+      "slug": "/compare/crisp-vs-liveagent",
+      "title": "Crisp Vs Liveagent",
+      "dataRefs": {
+        "providers": [
+          "crisp",
+          "liveagent"
+        ],
+        "features": []
+      },
+      "version": 1,
+      "dataHash": "999574eff593b0e6d5dd0aac3d551278dc0dab9f1de23b4d3a4094cdf071a2d6",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/compare/crisp-vs-liveagent.vue"
+    },
+    {
+      "type": "compare",
+      "slug": "/compare/crisp-vs-liteed",
+      "title": "Crisp Vs Liteed",
+      "dataRefs": {
+        "providers": [
+          "crisp",
+          "liteed"
+        ],
+        "features": []
+      },
+      "version": 1,
+      "dataHash": "9f98d6a8f58a114189eb957ef01f495798c3e047a3623e084f1d10382e688e73",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/compare/crisp-vs-liteed.vue"
+    },
+    {
+      "type": "compare",
+      "slug": "/compare/chatbotcom-vs-tidio",
+      "title": "Tidio Vs Chatbotcom",
+      "dataRefs": {
+        "providers": [
+          "tidio",
+          "chatbotcom"
+        ],
+        "features": []
+      },
+      "version": 1,
+      "dataHash": "1693bba470face789ebbcfc477037c38296e16e47ce3f25982b259293b3b8c61",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/compare/chatbotcom-vs-tidio.vue"
+    },
+    {
+      "type": "compare",
+      "slug": "/compare/tidio-vs-zendesk",
+      "title": "Tidio Vs Zendesk",
+      "dataRefs": {
+        "providers": [
+          "tidio",
+          "zendesk"
+        ],
+        "features": []
+      },
+      "version": 1,
+      "dataHash": "52c81f783f045cc82e3ac4a7df6dd22caae793ec420cd2389d937205f9100aed",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/compare/tidio-vs-zendesk.vue"
+    },
+    {
+      "type": "compare",
+      "slug": "/compare/liveagent-vs-tidio",
+      "title": "Tidio Vs Liveagent",
+      "dataRefs": {
+        "providers": [
+          "tidio",
+          "liveagent"
+        ],
+        "features": []
+      },
+      "version": 1,
+      "dataHash": "3360707c96064862cdb0062f8b0c212c81f222b8dda09a54cf48634bd6d4a2c2",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/compare/liveagent-vs-tidio.vue"
+    },
+    {
+      "type": "compare",
+      "slug": "/compare/liteed-vs-tidio",
+      "title": "Tidio Vs Liteed",
+      "dataRefs": {
+        "providers": [
+          "tidio",
+          "liteed"
+        ],
+        "features": []
+      },
+      "version": 1,
+      "dataHash": "8ddea77098bcb31bfb95056a475d64737b9bfe12d31765e93a6ee2efbe77d8fc",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/compare/liteed-vs-tidio.vue"
+    },
+    {
+      "type": "compare",
+      "slug": "/compare/chatbotcom-vs-zendesk",
+      "title": "Chatbotcom Vs Zendesk",
+      "dataRefs": {
+        "providers": [
+          "chatbotcom",
+          "zendesk"
+        ],
+        "features": []
+      },
+      "version": 1,
+      "dataHash": "6eabe26b0cd16e2bb2428f2e8c0f4f2a189580da13db97352079c95a386133b7",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/compare/chatbotcom-vs-zendesk.vue"
+    },
+    {
+      "type": "compare",
+      "slug": "/compare/chatbotcom-vs-liveagent",
+      "title": "Chatbotcom Vs Liveagent",
+      "dataRefs": {
+        "providers": [
+          "chatbotcom",
+          "liveagent"
+        ],
+        "features": []
+      },
+      "version": 1,
+      "dataHash": "ede9ee8ddb09bc0dab2d2158afb04687a7808d7173f8ee72a7605d76e7e5385f",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/compare/chatbotcom-vs-liveagent.vue"
+    },
+    {
+      "type": "compare",
+      "slug": "/compare/chatbotcom-vs-liteed",
+      "title": "Chatbotcom Vs Liteed",
+      "dataRefs": {
+        "providers": [
+          "chatbotcom",
+          "liteed"
+        ],
+        "features": []
+      },
+      "version": 1,
+      "dataHash": "c76a5b048b7506f70ea13b680b5ecdc0e1cac28e62c1467f6c1dd2b7a2e8d860",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/compare/chatbotcom-vs-liteed.vue"
+    },
+    {
+      "type": "compare",
+      "slug": "/compare/liveagent-vs-zendesk",
+      "title": "Zendesk Vs Liveagent",
+      "dataRefs": {
+        "providers": [
+          "zendesk",
+          "liveagent"
+        ],
+        "features": []
+      },
+      "version": 1,
+      "dataHash": "3eaec57041d683c4f56c4900c1e673fe140dc48303616e251f9fc902ce95a1f3",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/compare/liveagent-vs-zendesk.vue"
+    },
+    {
+      "type": "compare",
+      "slug": "/compare/liteed-vs-zendesk",
+      "title": "Zendesk Vs Liteed",
+      "dataRefs": {
+        "providers": [
+          "zendesk",
+          "liteed"
+        ],
+        "features": []
+      },
+      "version": 1,
+      "dataHash": "63b55f028e22bcd1bcb3be169fd8f7fe194bad085b1a142973dbc329c921cd2f",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/compare/liteed-vs-zendesk.vue"
+    },
+    {
+      "type": "compare",
+      "slug": "/compare/liteed-vs-liveagent",
+      "title": "Liveagent Vs Liteed",
+      "dataRefs": {
+        "providers": [
+          "liveagent",
+          "liteed"
+        ],
+        "features": []
+      },
+      "version": 1,
+      "dataHash": "db90f9040ee3cd6886d0f0527a95c9a01420d9821d84600b0b34dc2f91c724ae",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/compare/liteed-vs-liveagent.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/planPrice",
+      "title": "Plan Price (per month)",
+      "dataRefs": {
+        "featureKey": "planPrice"
+      },
+      "version": 1,
+      "dataHash": "e0e17896a2d821e4e7cdc4cba14e1fec355c6bcb091d1f1726574d3919da44f7",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/planPrice.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/agentsIncluded",
+      "title": "Agents Included",
+      "dataRefs": {
+        "featureKey": "agentsIncluded"
+      },
+      "version": 1,
+      "dataHash": "01a55486a5ce2663bdd8e29000f2857a433e74e4be3b1a5972dce808756e5f8b",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/agentsIncluded.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/additionalAgentPrice",
+      "title": "Additional Agents (per month)",
+      "dataRefs": {
+        "featureKey": "additionalAgentPrice"
+      },
+      "version": 1,
+      "dataHash": "4a21598651321e5c3bf263c288c69edee5862eb01b1e3d73f533c4a0891a9f17",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/additionalAgentPrice.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/customerProfiles",
+      "title": "Customer Profiles",
+      "dataRefs": {
+        "featureKey": "customerProfiles"
+      },
+      "version": 1,
+      "dataHash": "d6c939e631eb1aaaf8a5b16fe93a7231a3c1d5b82b3f5b55aa3f35a5f5f0aae8",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/customerProfiles.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/aiUsage",
+      "title": "AI Usage",
+      "dataRefs": {
+        "featureKey": "aiUsage"
+      },
+      "version": 1,
+      "dataHash": "d6ac706f2825071815ec31ac8c626cd23028c434f8831cf818c173f786bfb9f1",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/aiUsage.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/billableConversations",
+      "title": "Billable Conversations Limit",
+      "dataRefs": {
+        "featureKey": "billableConversations"
+      },
+      "version": 1,
+      "dataHash": "7eac027562f0a898e2c3f8aa9b33e26a567bf3c7ad6730c46426e424bae13e9a",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/billableConversations.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/freeTrial",
+      "title": "Free Trial",
+      "dataRefs": {
+        "featureKey": "freeTrial"
+      },
+      "version": 1,
+      "dataHash": "b6485198a790cc0bed0b9b0586a8708e3406a3ba09d6c5c7c7449d71495e5038",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/freeTrial.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/chatsPackage",
+      "title": "Chats Package",
+      "dataRefs": {
+        "featureKey": "chatsPackage"
+      },
+      "version": 1,
+      "dataHash": "0d2fdc9844ec5c2e6bfcc0c49118ff523e98e94d5862b71d0b33bb8e0c06ddd8",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/chatsPackage.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/paidChats",
+      "title": "Paid chats",
+      "dataRefs": {
+        "featureKey": "paidChats"
+      },
+      "version": 1,
+      "dataHash": "69deba61263ef728ebd9aab273bc5619191ff431486b154a9460b28533ddd9d9",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/paidChats.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/cloudBased",
+      "title": "Cloud-based",
+      "dataRefs": {
+        "featureKey": "cloudBased"
+      },
+      "version": 1,
+      "dataHash": "35fbcd3c80167af2f3d05ea88b8f48cfa5b5d928805df37e7d0b5b2385b9ab62",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/cloudBased.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/mobileApps",
+      "title": "Mobile Apps",
+      "dataRefs": {
+        "featureKey": "mobileApps"
+      },
+      "version": 1,
+      "dataHash": "0263b020ac89084012bc1e8f45e6b9f43cada48c6fa0c33ed61dd162f3c37567",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/mobileApps.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/desktopApps",
+      "title": "Desktop Apps",
+      "dataRefs": {
+        "featureKey": "desktopApps"
+      },
+      "version": 1,
+      "dataHash": "ad83997e5157bf6541bde8e33cfa0413ed1b393ef18baea39a2cb7de8d02f6b3",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/desktopApps.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/realtimeNotif",
+      "title": "Real-time Notifications",
+      "dataRefs": {
+        "featureKey": "realtimeNotif"
+      },
+      "version": 1,
+      "dataHash": "09bf48825d3dd909e5994271d1f332e6a51f6a1b34604239fccca524706c0670",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/realtimeNotif.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/developerApis",
+      "title": "Developer APIs",
+      "dataRefs": {
+        "featureKey": "developerApis"
+      },
+      "version": 1,
+      "dataHash": "7bc25bb67ccb145540db4529903b9baf9846144b37998201730067adfe5c989e",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/developerApis.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/liveMap",
+      "title": "Live Geolocation Map",
+      "dataRefs": {
+        "featureKey": "liveMap"
+      },
+      "version": 1,
+      "dataHash": "97dabb84aa5b2a685ed1380b3bf2445e4cba29122401479acf36b22a09737375",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/liveMap.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/transcript",
+      "title": "Conversation Transcript",
+      "dataRefs": {
+        "featureKey": "transcript"
+      },
+      "version": 1,
+      "dataHash": "3b19598127c4436b29fb89f3d0ede91914facacf77a878cd7156e0fe61f6d95b",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/transcript.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/triage",
+      "title": "Conversation Triage",
+      "dataRefs": {
+        "featureKey": "triage"
+      },
+      "version": 1,
+      "dataHash": "b7cbd08bd3a70c165ab959faff60532e6bbdc0f3964023361f6ff4d62a690440",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/triage.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/workingHours",
+      "title": "Working Hours Settings",
+      "dataRefs": {
+        "featureKey": "workingHours"
+      },
+      "version": 1,
+      "dataHash": "a2924bf76f73c18443fb74fd444552ac31f7861fb8ed222d89f5e08e843819fd",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/workingHours.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/unlimitedConvos",
+      "title": "Unlimited Conversations",
+      "dataRefs": {
+        "featureKey": "unlimitedConvos"
+      },
+      "version": 1,
+      "dataHash": "2542a644413a27dae085886ee5cd081d325dada45f774d234472c4a2996b5f3e",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/unlimitedConvos.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/customEmailDomain",
+      "title": "Custom Email Domain",
+      "dataRefs": {
+        "featureKey": "customEmailDomain"
+      },
+      "version": 1,
+      "dataHash": "d27ed6657eaa1867fe25c56bfe14f268bda0a91e1da5a42e90b14d2fcfefd182",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/customEmailDomain.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/fullHistory",
+      "title": "Full Conversations' history",
+      "dataRefs": {
+        "featureKey": "fullHistory"
+      },
+      "version": 1,
+      "dataHash": "33aa2385d65e55e062a1038aeef9fe9c0bc1f2ef4ffaee6ef3c7dac2e32406c9",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/fullHistory.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/internalNotes",
+      "title": "Internal Notes",
+      "dataRefs": {
+        "featureKey": "internalNotes"
+      },
+      "version": 1,
+      "dataHash": "28a5f49eff8acb487058a91376a2a369090b95478f5664cb7499524caee58d8b",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/internalNotes.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/banning",
+      "title": "Visitor Banning",
+      "dataRefs": {
+        "featureKey": "banning"
+      },
+      "version": 1,
+      "dataHash": "3d73cb1abfcde935a63df07c21311f13e558f5b691e2cbc3f253ddee69b6cabc",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/banning.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/fileSharing",
+      "title": "File Sharing",
+      "dataRefs": {
+        "featureKey": "fileSharing"
+      },
+      "version": 1,
+      "dataHash": "b540e226021cc309286f2a515e4aacbd2e4466cf447f20fe3932b97f8da2995a",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/fileSharing.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/cannedResponses",
+      "title": "Canned Responses",
+      "dataRefs": {
+        "featureKey": "cannedResponses"
+      },
+      "version": 1,
+      "dataHash": "44ebd0be763a73f6f675584eb6eb1b9c69168f7d4248264ae8d8aca43cd2fa38",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/cannedResponses.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/ratings",
+      "title": "Conversation Ratings",
+      "dataRefs": {
+        "featureKey": "ratings"
+      },
+      "version": 1,
+      "dataHash": "f78f4d703ec6c4c2195a1a397f71cec0430d53402ca677aa858b6fae7c71fefc",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/ratings.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/followups",
+      "title": "Follow-up Reminders",
+      "dataRefs": {
+        "featureKey": "followups"
+      },
+      "version": 1,
+      "dataHash": "c9bddaa0e2752391e661e499539604f798a13d8e610643a3b6b25928c6fd8e18",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/followups.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/roundRobin",
+      "title": "Round-robin Routing",
+      "dataRefs": {
+        "featureKey": "roundRobin"
+      },
+      "version": 1,
+      "dataHash": "dd614d501e5d360fdcd7e62c1f0a3e7d43f2f249f02036e9fcd36b565063fc97",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/roundRobin.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/customerPortal",
+      "title": "Customer Portal",
+      "dataRefs": {
+        "featureKey": "customerPortal"
+      },
+      "version": 1,
+      "dataHash": "7529d85386c94cada158153344bc0de6fc53454d343ad24503f3987f385fa9e0",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/customerPortal.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/internalChat",
+      "title": "Internal Agent Chat",
+      "dataRefs": {
+        "featureKey": "internalChat"
+      },
+      "version": 1,
+      "dataHash": "6c714643acab55dc361168598d437bb32857f7607dbfd01415c5468641b1b681",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/internalChat.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/universalInbox",
+      "title": "Universal Inbox",
+      "dataRefs": {
+        "featureKey": "universalInbox"
+      },
+      "version": 1,
+      "dataHash": "388dc6a7be3b8d9d94b540ec1f1b4888f58464c413cca8d67bafa840d8f33052",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/universalInbox.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/hybridTicketStream",
+      "title": "Hybrid Ticket Stream",
+      "dataRefs": {
+        "featureKey": "hybridTicketStream"
+      },
+      "version": 1,
+      "dataHash": "4438d6554c81eaf0f465e05a46b6f2907064b1defdef45e2434d651a40be5364",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/hybridTicketStream.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/tags",
+      "title": "Tags",
+      "dataRefs": {
+        "featureKey": "tags"
+      },
+      "version": 1,
+      "dataHash": "0892ca2f4172e63065ba950403844aa08fd70655595b5b9c8e309063b3651f8f",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/tags.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/teamcollaboration",
+      "title": "Team Collaboration",
+      "dataRefs": {
+        "featureKey": "teamcollaboration"
+      },
+      "version": 1,
+      "dataHash": "8441daae68a7493d9e5d019bd50fa7801d120b6bd0e370e7b983336a992dc6ea",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/teamcollaboration.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/allChats",
+      "title": "All chats",
+      "dataRefs": {
+        "featureKey": "allChats"
+      },
+      "version": 1,
+      "dataHash": "eb4b6a6d713a91ce7202e09eb4b5c2a7b20c4539fc8f5354a3a1a5537421906f",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/allChats.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/allMessages",
+      "title": "All messages",
+      "dataRefs": {
+        "featureKey": "allMessages"
+      },
+      "version": 1,
+      "dataHash": "6ab3a8cfea0562a06e92071278462c781ef9fe1e931e2f8629023dd907410369",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/allMessages.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/chatWidget",
+      "title": "Chat widget",
+      "dataRefs": {
+        "featureKey": "chatWidget"
+      },
+      "version": 1,
+      "dataHash": "873d8d067eb452af5bc1d093fa29f9d55902d55b7775274fb3fb6e1622b5188c",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/chatWidget.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/contactForm",
+      "title": "Contact Form",
+      "dataRefs": {
+        "featureKey": "contactForm"
+      },
+      "version": 1,
+      "dataHash": "d9e9c521176843d5dcc542fb667e7d4225adf489104b1a05907fa0e42ab5a392",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/contactForm.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/email",
+      "title": "Email",
+      "dataRefs": {
+        "featureKey": "email"
+      },
+      "version": 1,
+      "dataHash": "040b22b1b6d0a30d3ad075da4e00b26e03e40e65e2dcc5e433f5cd35a144bbfa",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/email.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/telegram",
+      "title": "Telegram",
+      "dataRefs": {
+        "featureKey": "telegram"
+      },
+      "version": 1,
+      "dataHash": "3ccb74230dd06a42ba689029bf2a1738652a51c06b134c43eb2de13590854df9",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/telegram.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/messenger",
+      "title": "Messenger",
+      "dataRefs": {
+        "featureKey": "messenger"
+      },
+      "version": 1,
+      "dataHash": "4afd6bc720a6ae005896be22fbdda1c699f9debadef6da9a9e4239f44ff7c746",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/messenger.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/xTwitter",
+      "title": "X (Twitter)",
+      "dataRefs": {
+        "featureKey": "xTwitter"
+      },
+      "version": 1,
+      "dataHash": "0461587ad1cbb677849940d13bfd1948043dcc2c91d6c31c929df78002e171fa",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/xTwitter.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/instagram",
+      "title": "Instagram",
+      "dataRefs": {
+        "featureKey": "instagram"
+      },
+      "version": 1,
+      "dataHash": "7bfcb61ebab69b0d17349bcdacc7115ab685629f844259ced0c9722e38d02c8a",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/instagram.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/sms",
+      "title": "SMS",
+      "dataRefs": {
+        "featureKey": "sms"
+      },
+      "version": 1,
+      "dataHash": "e2f7adb220096f164f9c2f65ca3751b4c7083627843b3cd899e93a72de88cc61",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/sms.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/viber",
+      "title": "Viber",
+      "dataRefs": {
+        "featureKey": "viber"
+      },
+      "version": 1,
+      "dataHash": "9940f6d1e49e69d1e7e31231e1f69847c34a644c33bd674477d9637f1d5f5fd9",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/viber.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/phone",
+      "title": "Phone",
+      "dataRefs": {
+        "featureKey": "phone"
+      },
+      "version": 1,
+      "dataHash": "1c2e783ac8a6aa97b1a05c8f6dfccaa664f0fe1b7ce5fe8153a01e1cfb84afc2",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/phone.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/line",
+      "title": "Line",
+      "dataRefs": {
+        "featureKey": "line"
+      },
+      "version": 1,
+      "dataHash": "cd3f9bf3c4c4182f008ca0577b2f107eda385fee3d919b1917b88f748bde5d1f",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/line.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/whatsappBiz",
+      "title": "WhatsApp Business",
+      "dataRefs": {
+        "featureKey": "whatsappBiz"
+      },
+      "version": 1,
+      "dataHash": "3a2cc86c6a6a6ec223642fa5a87fd7be170bc51109ee0f499fc54baafcfe85b6",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/whatsappBiz.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/activeChatbots",
+      "title": "Active chatbots",
+      "dataRefs": {
+        "featureKey": "activeChatbots"
+      },
+      "version": 1,
+      "dataHash": "e9eaf8cc8b3ec417f90bf1ee298fb4e0e91068d7d35566fe56c03c9502b02c32",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/activeChatbots.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/webflow",
+      "title": "Webflow",
+      "dataRefs": {
+        "featureKey": "webflow"
+      },
+      "version": 1,
+      "dataHash": "ee7084f9211712d76d83027ac9306079489b45eb35be8acd98e0868dd6447565",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/webflow.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/bigCommerce",
+      "title": "BigCommerce",
+      "dataRefs": {
+        "featureKey": "bigCommerce"
+      },
+      "version": 1,
+      "dataHash": "9d2bd8aa7919d46285ac815792791db757a2ccfb151e23670d45e3261d9ecbbe",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/bigCommerce.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/wordpress",
+      "title": "WordPress",
+      "dataRefs": {
+        "featureKey": "wordpress"
+      },
+      "version": 1,
+      "dataHash": "6a96830a2e7ec8d8a73a22fdade72caeb1dbc0c77b75d63243cbe9f908c8bd55",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/wordpress.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/shopify",
+      "title": "Shopify",
+      "dataRefs": {
+        "featureKey": "shopify"
+      },
+      "version": 1,
+      "dataHash": "fefc71cdcaeb3eb5d577240a234b0d2fd41d959dd78e948b51b2f02fd764842f",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/shopify.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/woocommerce",
+      "title": "WooCommerce",
+      "dataRefs": {
+        "featureKey": "woocommerce"
+      },
+      "version": 1,
+      "dataHash": "f1dc5cbaa424bfda5685a80ec1b6ea793137b4765db39739f6ac7de0ff750629",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/woocommerce.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/adobeCommerce",
+      "title": "Adobe Commerce",
+      "dataRefs": {
+        "featureKey": "adobeCommerce"
+      },
+      "version": 1,
+      "dataHash": "8de525abd525fdc31814081d4a482def5922ce1bfef170bdb5d71b451cb288a0",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/adobeCommerce.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/prestashop",
+      "title": "Prestashop",
+      "dataRefs": {
+        "featureKey": "prestashop"
+      },
+      "version": 1,
+      "dataHash": "fdac0c4f8e051ac0ce46e4a4aad9dea7e0289dc8a6a3766ce081e832803532a0",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/prestashop.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/slack",
+      "title": "Slack",
+      "dataRefs": {
+        "featureKey": "slack"
+      },
+      "version": 1,
+      "dataHash": "c6f21cfc1866dd2db79168209bec9f547b9a99b320babd85ddcc247700ad04f3",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/slack.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/hubspot",
+      "title": "HubSpot",
+      "dataRefs": {
+        "featureKey": "hubspot"
+      },
+      "version": 1,
+      "dataHash": "43d501e8c78e9d371a21867fce092afd32e41ee90c4688594453b442bb822423",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/hubspot.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/pipedrive",
+      "title": "Pipedrive",
+      "dataRefs": {
+        "featureKey": "pipedrive"
+      },
+      "version": 1,
+      "dataHash": "416ecf3a2b78a79c21d6420f9f6f6b919ae1e751306535cd52dc6a8a1f2ba0b8",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/pipedrive.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/zoho",
+      "title": "Zoho CRM",
+      "dataRefs": {
+        "featureKey": "zoho"
+      },
+      "version": 1,
+      "dataHash": "d5ba5198869670319999924d7f22d0a7f59bd7531506151f559b69805ed370e1",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/zoho.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/segment",
+      "title": "Segment",
+      "dataRefs": {
+        "featureKey": "segment"
+      },
+      "version": 1,
+      "dataHash": "0bd4a7120b12980d09ed8195144f3d6ad3c98e82cdc2f0cb4a94dd79bb37f2bb",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/segment.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/zapier",
+      "title": "Zapier",
+      "dataRefs": {
+        "featureKey": "zapier"
+      },
+      "version": 1,
+      "dataHash": "ca4851480da4656ed43d5bea49a6a1eeb08c75c3bc756f9b45d9c54bfd6f2217",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/zapier.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/make",
+      "title": "Make",
+      "dataRefs": {
+        "featureKey": "make"
+      },
+      "version": 1,
+      "dataHash": "39b3fc7672caec1ec48d60a098532fd2abcadb029eb57e6c4a47b145d4397310",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/make.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/n8n",
+      "title": "n8n",
+      "dataRefs": {
+        "featureKey": "n8n"
+      },
+      "version": 1,
+      "dataHash": "c1a5eaaa4d72a6777ba10b1ea67a26936ad4314c399dff611b11caf65f57eae3",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/n8n.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/stripe",
+      "title": "Stripe",
+      "dataRefs": {
+        "featureKey": "stripe"
+      },
+      "version": 1,
+      "dataHash": "90708161fe3b67420fa347a7772e8a0637000c1c86e52d0dd3754390e5bee621",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/stripe.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/salesforce",
+      "title": "Salesforce",
+      "dataRefs": {
+        "featureKey": "salesforce"
+      },
+      "version": 1,
+      "dataHash": "282232bfd6b4f25a6328d90abccb2daab53be4075771684e25eff5696e6b8eb9",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/salesforce.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/helpDesk",
+      "title": "HelpDesk",
+      "dataRefs": {
+        "featureKey": "helpDesk"
+      },
+      "version": 1,
+      "dataHash": "140a392c0a06a5dd72842dc3deecc6177def7c270515c5e193351c6a06370dc2",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/helpDesk.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/freshdesk",
+      "title": "Freshdesk",
+      "dataRefs": {
+        "featureKey": "freshdesk"
+      },
+      "version": 1,
+      "dataHash": "4522b75439ab8bc3306d975764b626cfbb3c5147f48e80b64c31a965baaa4d25",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/freshdesk.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/zendesk",
+      "title": "Zendesk",
+      "dataRefs": {
+        "featureKey": "zendesk"
+      },
+      "version": 1,
+      "dataHash": "50ad2954da8c1c7b8a78efdff7e91a8971b9ed37cb11e03ec161894f7600fc0b",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/zendesk.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/wix",
+      "title": "Wix",
+      "dataRefs": {
+        "featureKey": "wix"
+      },
+      "version": 1,
+      "dataHash": "4a9c2b392ec0e22155c6459d76e330e761dacf35ae4c6ccd8b368c92d4baa80c",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/wix.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/squarespace",
+      "title": "Squarespace",
+      "dataRefs": {
+        "featureKey": "squarespace"
+      },
+      "version": 1,
+      "dataHash": "b7638f1d1f1a6248608b8e8f77fd69a8e92abde6db7d6a861280ef1f87109486",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/squarespace.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/custom",
+      "title": "Custom",
+      "dataRefs": {
+        "featureKey": "custom"
+      },
+      "version": 1,
+      "dataHash": "a1480d1c001188c7d76aa05128cad3e5e0b0f4751f762202508d93b08c50cce8",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/custom.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/webhooks",
+      "title": "Webhooks",
+      "dataRefs": {
+        "featureKey": "webhooks"
+      },
+      "version": 1,
+      "dataHash": "ae89f1cab22c8ee16d6d8308b1390a1bcbbd0b8f9ae1f58f610b3f8139d744f8",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/webhooks.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/javascriptAPI",
+      "title": "Javascript API",
+      "dataRefs": {
+        "featureKey": "javascriptAPI"
+      },
+      "version": 1,
+      "dataHash": "6ab0233f6e39674fc57a81913b8eff141a3ebbe04d6a202d16d71a62ec6c8aec",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/javascriptAPI.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/restapi",
+      "title": "REST API",
+      "dataRefs": {
+        "featureKey": "restapi"
+      },
+      "version": 1,
+      "dataHash": "9892da6d9f0b79e71bccfb9111ed09f806456047de7481b7564f485bea2c75b9",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/restapi.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/chatSDKs",
+      "title": "Chat SDKs",
+      "dataRefs": {
+        "featureKey": "chatSDKs"
+      },
+      "version": 1,
+      "dataHash": "884a8c093a40a1afc8a73846751c7b758cc37851c25135d5bd07cf4f3e4d4f38",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/chatSDKs.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/liveTyping",
+      "title": "Live Typing preview",
+      "dataRefs": {
+        "featureKey": "liveTyping"
+      },
+      "version": 1,
+      "dataHash": "bcbb35df9893ae26563720143c92ad2cb69eb7f2492c2d25e082319bd742cbf9",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/liveTyping.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/typingIndicator",
+      "title": "Typing Status Indicator",
+      "dataRefs": {
+        "featureKey": "typingIndicator"
+      },
+      "version": 1,
+      "dataHash": "6dbcd72c528fb6912938f14aea8edc837485094c585c366720a051cc8917410f",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/typingIndicator.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/widgetCustomization",
+      "title": "Widget Customization",
+      "dataRefs": {
+        "featureKey": "widgetCustomization"
+      },
+      "version": 1,
+      "dataHash": "63f011fc9241b01824bfd8a4b39b0ffb28581cbb80702c8883599013120ceda0",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/widgetCustomization.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/proactive",
+      "title": "Proactive Chat Messages",
+      "dataRefs": {
+        "featureKey": "proactive"
+      },
+      "version": 1,
+      "dataHash": "8320dbf7d9aa5ba6e4de7a0acfb12c418902452fe64794b3c151a73f893e284a",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/proactive.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/magicBrowse",
+      "title": "Magic Browse",
+      "dataRefs": {
+        "featureKey": "magicBrowse"
+      },
+      "version": 1,
+      "dataHash": "2365f6c44dba46b5b2bf0c5386541bdf06245a7d903a3f296f600c2d10352b9a",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/magicBrowse.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/liveTranslate",
+      "title": "Live Translate",
+      "dataRefs": {
+        "featureKey": "liveTranslate"
+      },
+      "version": 1,
+      "dataHash": "8e0b093c9afb890f312c4a29cfe454a6b4ca5e48d55efd812e4aa4fa7e67d551",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/liveTranslate.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/avChat",
+      "title": "Video & Audio chat",
+      "dataRefs": {
+        "featureKey": "avChat"
+      },
+      "version": 1,
+      "dataHash": "43ce829db7bac370e0836821066f96a8d259ea83202fddd1b36d531d9b44e48a",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/avChat.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/helpWidget",
+      "title": "Help Widget",
+      "dataRefs": {
+        "featureKey": "helpWidget"
+      },
+      "version": 1,
+      "dataHash": "fa5fcc037a13bde06f894e610c1a3e635495bcf498bfd179572fd2a139af6b38",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/helpWidget.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/whiteLabel",
+      "title": "White Label",
+      "dataRefs": {
+        "featureKey": "whiteLabel"
+      },
+      "version": 1,
+      "dataHash": "05ab567dacc047b858b263a4f47bb817676401548df59b86c25ce7d054c1444e",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/whiteLabel.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/chatWindowDocking",
+      "title": "Chat Window Docking",
+      "dataRefs": {
+        "featureKey": "chatWindowDocking"
+      },
+      "version": 1,
+      "dataHash": "7f1f321cf2408cc153ebd81bb1bedefe06a9603d7bec015f9f6ef06153c42205",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/chatWindowDocking.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/maxQueueAutoHide",
+      "title": "Max Queue Auto-hide/Auto-offline",
+      "dataRefs": {
+        "featureKey": "maxQueueAutoHide"
+      },
+      "version": 1,
+      "dataHash": "f4af800d30cc553964c533afd87993b7fad22a05f61ed2d8ef71942596016cea",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/maxQueueAutoHide.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/multilingualWidget",
+      "title": "Multilingual Chat Widget",
+      "dataRefs": {
+        "featureKey": "multilingualWidget"
+      },
+      "version": 1,
+      "dataHash": "44e682feac1f820523ef9f4cf39eaaf98a29b947bec8729d3a52530f4c8b5bb3",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/multilingualWidget.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/versionHistory",
+      "title": "Version History",
+      "dataRefs": {
+        "featureKey": "versionHistory"
+      },
+      "version": 1,
+      "dataHash": "b5e4effd006662c1f6e18fe9b4b342ff90556956fa3465fbf992afe7dbe0355e",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/versionHistory.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/liveChat",
+      "title": "LiveChat",
+      "dataRefs": {
+        "featureKey": "liveChat"
+      },
+      "version": 1,
+      "dataHash": "bf7cc5ddefd4efcee01af780bd88b7d0e25d50952ac8c6dbe703f6db93714bad",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/liveChat.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/aiKnowledge",
+      "title": "AI Knowledge Training",
+      "dataRefs": {
+        "featureKey": "aiKnowledge"
+      },
+      "version": 1,
+      "dataHash": "c866a5bc0a15e5eeefc31b0d036cfba1d4cb917e0dfb53147845e4dbacbcf61e",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/aiKnowledge.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/internalCopilot",
+      "title": "Internal AI Copilot",
+      "dataRefs": {
+        "featureKey": "internalCopilot"
+      },
+      "version": 1,
+      "dataHash": "90ab1236aed5872acbd4ff5e453499be60433ea1f245b29a3a7d6665e459f3fc",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/internalCopilot.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/voiceToText",
+      "title": "Voice-to-text",
+      "dataRefs": {
+        "featureKey": "voiceToText"
+      },
+      "version": 1,
+      "dataHash": "f0f177d3623e9d1bcbbb8299c6462ce5ca5bcc4d08f62711cd6d3ad3ee5dee71",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/voiceToText.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/multilingualAI",
+      "title": "Multilingual AI",
+      "dataRefs": {
+        "featureKey": "multilingualAI"
+      },
+      "version": 1,
+      "dataHash": "83b729839b579692e0064c4ffc250de00d6f9be0fe0a444c71436aec21e4199f",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/multilingualAI.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/aiWriting",
+      "title": "AI Writing Assistant",
+      "dataRefs": {
+        "featureKey": "aiWriting"
+      },
+      "version": 1,
+      "dataHash": "c1a79127c81fb710afa6b733bbb80ef323b0af10952c2d9aa62e763cf466dcbe",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/aiWriting.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/siteSearch",
+      "title": "AI-Powered Site Search",
+      "dataRefs": {
+        "featureKey": "siteSearch"
+      },
+      "version": 1,
+      "dataHash": "8c79d3d6d32aa0ef40534acc4d407d99c23096cdcac7ddecec5e4c1be96e05fe",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/siteSearch.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/aiSpam",
+      "title": "AI Inbox Spam Filter",
+      "dataRefs": {
+        "featureKey": "aiSpam"
+      },
+      "version": 1,
+      "dataHash": "1f962686c9104258ab06fc182ae7ec4d42b1e503ff41b04ed443d7d5083ed4a2",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/aiSpam.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/mcpServer",
+      "title": "MCP Server",
+      "dataRefs": {
+        "featureKey": "mcpServer"
+      },
+      "version": 1,
+      "dataHash": "7402eb45f2949b887e00a60717bbe7b7bc6dc33df39c5eaa616996aedd6baecc",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/mcpServer.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/autoTags",
+      "title": "Auto-tagging Of Conversations",
+      "dataRefs": {
+        "featureKey": "autoTags"
+      },
+      "version": 1,
+      "dataHash": "8e9921c308166f9b0efc7ff64f75b8042fa2fc9a5fd33e359f5679b96fa9203d",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/autoTags.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/summary",
+      "title": "Conversation Summary",
+      "dataRefs": {
+        "featureKey": "summary"
+      },
+      "version": 1,
+      "dataHash": "d54eb3bb4bb25244276eae5b66ecf25b33c8485f5ba459790ed2f37e49d34b0e",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/summary.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/aiAgent",
+      "title": "AI Agent",
+      "dataRefs": {
+        "featureKey": "aiAgent"
+      },
+      "version": 1,
+      "dataHash": "b4fac13a6ebfc80e1fcf9968c9e2d9a3c8720c1c6dda900cfe626ee5a7652b7f",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/aiAgent.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/aiConversationsQuota",
+      "title": "AI Conversations Quota",
+      "dataRefs": {
+        "featureKey": "aiConversationsQuota"
+      },
+      "version": 1,
+      "dataHash": "5fe90f2c89f7adb08f01e83c3c99d11eb99fc0f3c402f548845b5060d0926fad",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/aiConversationsQuota.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/trainingHistory",
+      "title": "Training History",
+      "dataRefs": {
+        "featureKey": "trainingHistory"
+      },
+      "version": 1,
+      "dataHash": "4b6d493c68c54bec701068954747608925b20a5a1ed9c2968a2c386c38afb630",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/trainingHistory.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/automaticBotBuilding",
+      "title": "Automatic Bot Building",
+      "dataRefs": {
+        "featureKey": "automaticBotBuilding"
+      },
+      "version": 1,
+      "dataHash": "2171802bb12a754b5bfaeef7a4057953f3167ffef27cffc169bcd9b1255c3472",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/automaticBotBuilding.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/aiAssist",
+      "title": "AI Assist",
+      "dataRefs": {
+        "featureKey": "aiAssist"
+      },
+      "version": 1,
+      "dataHash": "414a889899bead9289e43f6bc835c7c68495786e2cdc414118b2eaee596fc325",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/aiAssist.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/aiModelTraining",
+      "title": "AI Model Training",
+      "dataRefs": {
+        "featureKey": "aiModelTraining"
+      },
+      "version": 1,
+      "dataHash": "746906bfb27b7a4f3aeb9ddb8f48cd4b118bb82287b28dcd03ec8ec42fec42c0",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/aiModelTraining.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/multilingualAIb",
+      "title": "Multilingual AIb",
+      "dataRefs": {
+        "featureKey": "multilingualAIb"
+      },
+      "version": 1,
+      "dataHash": "6ebd72edaadf85ba0c95290ee93b15432be98bd7a099c603a45b02f563f1c3df",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/multilingualAIb.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/crmCustomAttrs",
+      "title": "Custom Attributes",
+      "dataRefs": {
+        "featureKey": "crmCustomAttrs"
+      },
+      "version": 1,
+      "dataHash": "6c4e9b9e62a0a4b75bed3ee93080c0dc47f2d87051eb42ec1a3e3222539d03b7",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/crmCustomAttrs.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/crmProfile",
+      "title": "Customer Profile",
+      "dataRefs": {
+        "featureKey": "crmProfile"
+      },
+      "version": 1,
+      "dataHash": "81f3251a0df5637a0be37ec05d5a865b2fb486f423d5c88ff0e5baa216a9f830",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/crmProfile.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/crmSegmentation",
+      "title": "Customer Segmentation",
+      "dataRefs": {
+        "featureKey": "crmSegmentation"
+      },
+      "version": 1,
+      "dataHash": "9c3618975924858b70ddca44843241ae2d62ceb3bc0f4999775cf03bf3c0c10d",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/crmSegmentation.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/crmSmartFilters",
+      "title": "Smart Filters",
+      "dataRefs": {
+        "featureKey": "crmSmartFilters"
+      },
+      "version": 1,
+      "dataHash": "f08255914681f19f3ba4ce816d300fae9985b4f74afd45130e8783ca2b2ea43d",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/crmSmartFilters.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/crmNotes",
+      "title": "Customer-based Notes",
+      "dataRefs": {
+        "featureKey": "crmNotes"
+      },
+      "version": 1,
+      "dataHash": "1d58c03d4bc3a5c4533021e8416b72763df782ed59f69fd3d4b11b4e672e9d68",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/crmNotes.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/crmLifecycle",
+      "title": "Customer Lifecycle Tracking",
+      "dataRefs": {
+        "featureKey": "crmLifecycle"
+      },
+      "version": 1,
+      "dataHash": "5ceb2e689676ecf8b874c4973f5eb66d2905799c2178e7eb22f086335043290c",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/crmLifecycle.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/crmTimeline",
+      "title": "Customer Timeline Activity",
+      "dataRefs": {
+        "featureKey": "crmTimeline"
+      },
+      "version": 1,
+      "dataHash": "e855a32a04a2076e8778aec67780133c8b0ed7dd3763475124290630f72ae2b7",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/crmTimeline.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/entities",
+      "title": "Entities",
+      "dataRefs": {
+        "featureKey": "entities"
+      },
+      "version": 1,
+      "dataHash": "0b5cfe87f54cf41616fb3cb74676ef7521ce49d67d39f968dc9ff67d38010db2",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/entities.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/noCodeBuilder",
+      "title": "No-code AI Chatbot Builder",
+      "dataRefs": {
+        "featureKey": "noCodeBuilder"
+      },
+      "version": 1,
+      "dataHash": "225e82018ef3be9068a3719549deadf7df2e83750a4513eb25ad7e448b70ee0c",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/noCodeBuilder.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/aiAnswers",
+      "title": "AI-generated Answers",
+      "dataRefs": {
+        "featureKey": "aiAnswers"
+      },
+      "version": 1,
+      "dataHash": "993a54731d767e4fc4affd4e12b3f94276d2d6a835f92af471e3cb6393b3a79b",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/aiAnswers.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/scenarioDrafts",
+      "title": "Scenario Drafts",
+      "dataRefs": {
+        "featureKey": "scenarioDrafts"
+      },
+      "version": 1,
+      "dataHash": "eb9114408468a0ae03ce89f956ef2aff8b1eba0fe536114171cc971eb985f908",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/scenarioDrafts.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/customInputs",
+      "title": "Custom Input Fields",
+      "dataRefs": {
+        "featureKey": "customInputs"
+      },
+      "version": 1,
+      "dataHash": "d87d0a18349110821c1e8556a72637018fe67541582bae0dbe97ff6aedd3e9c9",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/customInputs.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/conditionalFlows",
+      "title": "Conditional Flows",
+      "dataRefs": {
+        "featureKey": "conditionalFlows"
+      },
+      "version": 1,
+      "dataHash": "55c73129e6c0d4bb8f22668e3c2eab8a5e12c7104c8f4c5a80a5881c5f4f7e33",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/conditionalFlows.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/keywordTriggers",
+      "title": "Keyword-based Triggers",
+      "dataRefs": {
+        "featureKey": "keywordTriggers"
+      },
+      "version": 1,
+      "dataHash": "2c3d19b42fb3212ff5db0e8b40061f74506b78ba7dc3bab971b825eccd8c35f5",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/keywordTriggers.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/apiAutomation",
+      "title": "Automation via APIs",
+      "dataRefs": {
+        "featureKey": "apiAutomation"
+      },
+      "version": 1,
+      "dataHash": "7c54eccf6dfac15cc079f87625be8b87996c5927dd94d71ed095917a5cbc3052",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/apiAutomation.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/webhooks",
+      "title": "Webhook Actions",
+      "dataRefs": {
+        "featureKey": "webhooks"
+      },
+      "version": 1,
+      "dataHash": "ae89f1cab22c8ee16d6d8308b1390a1bcbbd0b8f9ae1f58f610b3f8139d744f8",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/webhooks.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/crmTriggers",
+      "title": "CRM-based Triggers",
+      "dataRefs": {
+        "featureKey": "crmTriggers"
+      },
+      "version": 1,
+      "dataHash": "cfe6c62ad781e33c23bed4188611d5c0550e1fa9008bad51817c0c97b2bf82b4",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/crmTriggers.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/iframes",
+      "title": "Iframes",
+      "dataRefs": {
+        "featureKey": "iframes"
+      },
+      "version": 1,
+      "dataHash": "5c99c3160f839bee58e8e5f4083b22fd1c8312fff7c9c83b7ce59e7db9a50eda",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/iframes.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/unlimitedTemplates",
+      "title": "Unlimited AI Chatbot Templates",
+      "dataRefs": {
+        "featureKey": "unlimitedTemplates"
+      },
+      "version": 1,
+      "dataHash": "200b605d2cffd57ccdfea249690548542b1475cfe6d6f6db0f2bb51d7c77e97b",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/unlimitedTemplates.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/aiTriggers",
+      "title": "AI-based Triggers",
+      "dataRefs": {
+        "featureKey": "aiTriggers"
+      },
+      "version": 1,
+      "dataHash": "8619ad6ec0a54848d03f9e0f5c7cd66a49a8ade1629dceaabf2989242f6bee89",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/aiTriggers.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/aiBlocks",
+      "title": "AI-agent Blocks",
+      "dataRefs": {
+        "featureKey": "aiBlocks"
+      },
+      "version": 1,
+      "dataHash": "a964b4101f62c9ab9359e148fb1e4bd852fd756a43c68916f12d3d18ef1ff6b0",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/aiBlocks.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/automationQuota",
+      "title": "Automation Quota (visitors/month)",
+      "dataRefs": {
+        "featureKey": "automationQuota"
+      },
+      "version": 1,
+      "dataHash": "867abd917c065fd6a814591682999bb987bca2bc096f39c8b1250291ee625c2d",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/automationQuota.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/abTesting",
+      "title": "A/B Testing",
+      "dataRefs": {
+        "featureKey": "abTesting"
+      },
+      "version": 1,
+      "dataHash": "32c243639735005242836d71998f1137e623f5aead37cb86aaed26c451bbdac4",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/abTesting.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/advancedButtonActions",
+      "title": "Advanced Button Actions",
+      "dataRefs": {
+        "featureKey": "advancedButtonActions"
+      },
+      "version": 1,
+      "dataHash": "5e287097b033c3b0fcaf134b4a40022e4e15bffe0fc8ae102f78a989fa6eb89e",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/advancedButtonActions.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/debugMode",
+      "title": "Debug Mode",
+      "dataRefs": {
+        "featureKey": "debugMode"
+      },
+      "version": 1,
+      "dataHash": "e350773aa45abaa3380b9541aa1ee11f2b63a1b89ac4d7cda042372a470eec11",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/debugMode.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/templatesLibrary",
+      "title": "Templates Library",
+      "dataRefs": {
+        "featureKey": "templatesLibrary"
+      },
+      "version": 1,
+      "dataHash": "8de8360473f814a7e63b3dec43e76adb9fe0ba337326ed657a6733cc72d170fe",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/templatesLibrary.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/ringToAllRouting",
+      "title": "Ring-to-all Routing",
+      "dataRefs": {
+        "featureKey": "ringToAllRouting"
+      },
+      "version": 1,
+      "dataHash": "5d930347ae7db750fbac35c490ed31eb0ed19868ce28ca11a28ac29a9d8e0b82",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/ringToAllRouting.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/priorityRouting",
+      "title": "Priority Routing",
+      "dataRefs": {
+        "featureKey": "priorityRouting"
+      },
+      "version": 1,
+      "dataHash": "0d9796269f69e868db92f12ac2c3582de28e085ea625403cbe3d33a03374a0b0",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/priorityRouting.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/utilizationRouting",
+      "title": "Utilization-based Routing",
+      "dataRefs": {
+        "featureKey": "utilizationRouting"
+      },
+      "version": 1,
+      "dataHash": "c73a13cf7695e3e99166996dc4807f9629fccd1de3c55531badc10f45def899b",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/utilizationRouting.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/randomRouting",
+      "title": "Random Routing",
+      "dataRefs": {
+        "featureKey": "randomRouting"
+      },
+      "version": 1,
+      "dataHash": "10981b07299907507b2f7b4b61955cb0bf49aa3868a8f5a4eb889e62d5e4168a",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/randomRouting.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/visualBuilder",
+      "title": "Visual Builder",
+      "dataRefs": {
+        "featureKey": "visualBuilder"
+      },
+      "version": 1,
+      "dataHash": "bf398f3a192e960efd5d81d37c7d63a960845d8e03ac3bea3d271714110c5426",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/visualBuilder.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/templates",
+      "title": "Templates",
+      "dataRefs": {
+        "featureKey": "templates"
+      },
+      "version": 1,
+      "dataHash": "d4bcba050af527dc0c87b8778ef3fe4dacc17de0cf3a3576f2cf91e7d742195b",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/templates.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/flows",
+      "title": "Flows",
+      "dataRefs": {
+        "featureKey": "flows"
+      },
+      "version": 1,
+      "dataHash": "8a6a4002d76fc24b1fd6c0281ff9f81e0dc58a8c4daa99b63e4833dca125f7f0",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/flows.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/embeddedApps",
+      "title": "Embedded Apps",
+      "dataRefs": {
+        "featureKey": "embeddedApps"
+      },
+      "version": 1,
+      "dataHash": "19748319b1082eb49dc09f3e136200d9f143c1ce0b1fa045454aeff2afff021c",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/embeddedApps.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/hcArticles",
+      "title": "Articles & Categories",
+      "dataRefs": {
+        "featureKey": "hcArticles"
+      },
+      "version": 1,
+      "dataHash": "2575fd940daed18397d858902f863528f2e21de1e84439360e134c4c1771ca3e",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/hcArticles.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/hcCustomization",
+      "title": "Customization",
+      "dataRefs": {
+        "featureKey": "hcCustomization"
+      },
+      "version": 1,
+      "dataHash": "d791c2f07e4746f1aca65e627cfad36fe7c8b3cddce62834cfe245c715f38fbb",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/hcCustomization.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/hcMultilingual",
+      "title": "Multilingual Help Center",
+      "dataRefs": {
+        "featureKey": "hcMultilingual"
+      },
+      "version": 1,
+      "dataHash": "2d88813c2937800162c31b52eff6f9f1137636d2ac14e5d049605132d74f7792",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/hcMultilingual.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/hcSdk",
+      "title": "Help Center SDK",
+      "dataRefs": {
+        "featureKey": "hcSdk"
+      },
+      "version": 1,
+      "dataHash": "82cc51c22998c0b539dc873ff84e2028a5f6b0dd1556403b211721c6b8f0aa1b",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/hcSdk.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/hcSearch",
+      "title": "Search",
+      "dataRefs": {
+        "featureKey": "hcSearch"
+      },
+      "version": 1,
+      "dataHash": "5037fa9aa205a292ce1fcdfc066e0bae2815f4a9be0168fa966af452c29a4307",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/hcSearch.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/hcFeedback",
+      "title": "Article Feedback",
+      "dataRefs": {
+        "featureKey": "hcFeedback"
+      },
+      "version": 1,
+      "dataHash": "f86207168c89affd1ff6467de4dc1c5a6df332678ee523a0a8c5262439ca88d8",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/hcFeedback.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/hcDomain",
+      "title": "Custom Domain Name",
+      "dataRefs": {
+        "featureKey": "hcDomain"
+      },
+      "version": 1,
+      "dataHash": "a45222c8bb4c1d6838145c4101a8533e7d7b2a8978527c26f3b0970e245592ea",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/hcDomain.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/hcSeo",
+      "title": "Sitemap & SEO Meta Data",
+      "dataRefs": {
+        "featureKey": "hcSeo"
+      },
+      "version": 1,
+      "dataHash": "b4bb57fadaa102e00d8315f161fa918e31e3cbeb13b2386ee63fa54c9b9c3fe9",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/hcSeo.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/interactionsPopularity",
+      "title": "Interactions Popularity",
+      "dataRefs": {
+        "featureKey": "interactionsPopularity"
+      },
+      "version": 1,
+      "dataHash": "2e16e93e9c64b0298df30ad5a0df45deae9486011bbdb8845389961bb75ac441",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/interactionsPopularity.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/prebuiltAnalytics",
+      "title": "Prebuilt Analytics",
+      "dataRefs": {
+        "featureKey": "prebuiltAnalytics"
+      },
+      "version": 1,
+      "dataHash": "9ae421d6904b7391049b9ee6388b12819dbcf2e9d06fd0bb79d97f21074ed940",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/prebuiltAnalytics.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/dataExport",
+      "title": "Data Export",
+      "dataRefs": {
+        "featureKey": "dataExport"
+      },
+      "version": 1,
+      "dataHash": "9aa68af4f1280497ad4555a8aef4fe022d0ad3184b32394eab096cffef2d8b4f",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/dataExport.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/customDash",
+      "title": "Custom Dashboards",
+      "dataRefs": {
+        "featureKey": "customDash"
+      },
+      "version": 1,
+      "dataHash": "5797506240fb45e72f5bc23960da01f24e82ce04f79e1f0a09d458bf36dc02a2",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/customDash.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/apiAnalytics",
+      "title": "API Analytics",
+      "dataRefs": {
+        "featureKey": "apiAnalytics"
+      },
+      "version": 1,
+      "dataHash": "621b5f5d570361eacdaac4315301b88fa79c7167b3e9435751ebdb81dda100be",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/apiAnalytics.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/chatEventTracking",
+      "title": "Chat Events Tracking (GA)",
+      "dataRefs": {
+        "featureKey": "chatEventTracking"
+      },
+      "version": 1,
+      "dataHash": "3d676312697a27b7cb04937cd684d39b7207bd72d9dfb450737193848ceab53a",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/chatEventTracking.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/visitorCurrentUrl",
+      "title": "Visitor Current URL Tracking",
+      "dataRefs": {
+        "featureKey": "visitorCurrentUrl"
+      },
+      "version": 1,
+      "dataHash": "00d66a8fdbe4407dc13f1d092eb950399d4520001ca9e6caf6c19f327239aa0a",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/visitorCurrentUrl.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/websiteMonitoring",
+      "title": "Website Monitoring",
+      "dataRefs": {
+        "featureKey": "websiteMonitoring"
+      },
+      "version": 1,
+      "dataHash": "7e57fc86172ead39c244e5d862d53b876406ccaae7a68fc89b60498e7de8c4a7",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/websiteMonitoring.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/filters",
+      "title": "Filters",
+      "dataRefs": {
+        "featureKey": "filters"
+      },
+      "version": 1,
+      "dataHash": "fce21d9d15e299af3b42f8baa74ef60abd3b9360bbaee3847abe9a410344f58f",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/filters.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/segments",
+      "title": "Segments",
+      "dataRefs": {
+        "featureKey": "segments"
+      },
+      "version": 1,
+      "dataHash": "aec79d35e891a350c765b49fdc1a88b860ce99976f2e74a9e3c12b5cad0facf8",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/segments.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/embedApps",
+      "title": "Embed Apps",
+      "dataRefs": {
+        "featureKey": "embedApps"
+      },
+      "version": 1,
+      "dataHash": "46be91106c1fb30ebaed91afa643ac1fe7bf315edfa9b98d348d6ebfb9b88b32",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/embedApps.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/busiestPeriod",
+      "title": "Busiest period",
+      "dataRefs": {
+        "featureKey": "busiestPeriod"
+      },
+      "version": 1,
+      "dataHash": "cbe99a168292386e2731468bb7de282d43075ee81d96181c585fc35356dab0fb",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/busiestPeriod.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/averageMessages",
+      "title": "Average messages",
+      "dataRefs": {
+        "featureKey": "averageMessages"
+      },
+      "version": 1,
+      "dataHash": "d1f1876a5febcf1da97db5afca1b71c86dd3dde158ed1735c67a93df573f0b19",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/averageMessages.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/allUsers",
+      "title": "All users",
+      "dataRefs": {
+        "featureKey": "allUsers"
+      },
+      "version": 1,
+      "dataHash": "0fbb1982835baa3e92719fb7629a34c68a985ffa7b00aad0087e61a5276f3687",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/allUsers.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/nodeMonitoring",
+      "title": "Node Monitoring",
+      "dataRefs": {
+        "featureKey": "nodeMonitoring"
+      },
+      "version": 1,
+      "dataHash": "51900fc744cca47c6ca3ab6a68273b352e6f857bd426abc425dbf05409ece9dc",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/nodeMonitoring.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/statusCustomization",
+      "title": "Customization",
+      "dataRefs": {
+        "featureKey": "statusCustomization"
+      },
+      "version": 1,
+      "dataHash": "c67bb4503467699a6edbf48265b043598ba083c8215ffe080adb66980a8d15d2",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/statusCustomization.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/statusNotif",
+      "title": "Notifications",
+      "dataRefs": {
+        "featureKey": "statusNotif"
+      },
+      "version": 1,
+      "dataHash": "c25a714ba3b0043e5868da00994c436ff208b210a54e9f2eef16f4fb764e1329",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/statusNotif.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/statusAnnouncement",
+      "title": "Announcement",
+      "dataRefs": {
+        "featureKey": "statusAnnouncement"
+      },
+      "version": 1,
+      "dataHash": "36ba3ab9deef6ce878ff7ece0900d4ccb1edbf63266a8e17e61f81d7eba783fa",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/statusAnnouncement.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/mfa",
+      "title": "Double-Factor Authentication",
+      "dataRefs": {
+        "featureKey": "mfa"
+      },
+      "version": 1,
+      "dataHash": "501775c0dbd074233ef638fd92c69493fec9f5d69ad0057a63575891afc9af9d",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/mfa.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/dpa",
+      "title": "Data Processing Agreement",
+      "dataRefs": {
+        "featureKey": "dpa"
+      },
+      "version": 1,
+      "dataHash": "10af84915e1aa8f4a37e3f6404c314c187a34f9f6a53fd5dd89b094167816e9b",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/dpa.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/tls",
+      "title": "TLS Encryption",
+      "dataRefs": {
+        "featureKey": "tls"
+      },
+      "version": 1,
+      "dataHash": "8a1944f4c3e26685d90d40b289f4aed2dc701b6cbbfca32e7d05022c98da16f4",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/tls.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/userManagement",
+      "title": "User management",
+      "dataRefs": {
+        "featureKey": "userManagement"
+      },
+      "version": 1,
+      "dataHash": "34ac7c751fce42536013f6eb3db427d5d521a45a297dfd72e6cbfbefa74ac9fe",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/userManagement.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/userExport",
+      "title": "User export",
+      "dataRefs": {
+        "featureKey": "userExport"
+      },
+      "version": 1,
+      "dataHash": "a2a0a32bfac2731979582a070b64d3f4ef5194c5fe29750a74db9b374cfa55e2",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/userExport.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/gDPRCompliance",
+      "title": "GDPR Compliance",
+      "dataRefs": {
+        "featureKey": "gDPRCompliance"
+      },
+      "version": 1,
+      "dataHash": "ce02465f372554d326bebbfe0397cd97de6cb2c6d2734138347188cab286be19",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/gDPRCompliance.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/sSO(Google,Microsoft,Apple)",
+      "title": "SSO (Google, Microsoft, Apple)",
+      "dataRefs": {
+        "featureKey": "sSO(Google,Microsoft,Apple)"
+      },
+      "version": 1,
+      "dataHash": "c8b5e7af13429a73255bcc738a2614c98d860862d9afe18c0efc6eb03a0b3dfb",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/sSO(Google,Microsoft,Apple).vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/dataRemoval",
+      "title": "Data removal",
+      "dataRefs": {
+        "featureKey": "dataRemoval"
+      },
+      "version": 1,
+      "dataHash": "f5a34f8f83ef96968be4a50b303d349b7588f8a1f5325bda1fe5806f464f9d2b",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/dataRemoval.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/automaticDataRemoval",
+      "title": "Automatic data removal",
+      "dataRefs": {
+        "featureKey": "automaticDataRemoval"
+      },
+      "version": 1,
+      "dataHash": "af640b628438ff40c3ac1a23574808b5263f35897484faa6c0e2818438685103",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/automaticDataRemoval.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/customSSO",
+      "title": "Custom SSO",
+      "dataRefs": {
+        "featureKey": "customSSO"
+      },
+      "version": 1,
+      "dataHash": "57c1c0812e7195e11dcdd06aea0614aa1f7c40b49172d85ece8b8de5136a0b78",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/customSSO.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/sandbox",
+      "title": "Sandbox Environment",
+      "dataRefs": {
+        "featureKey": "sandbox"
+      },
+      "version": 1,
+      "dataHash": "e5efa4cf4d2d532f2e3e86d67f635435cbf8d010a8a8fb813f6ea38e15b7330b",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/sandbox.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/auditLogs",
+      "title": "Audit Logs",
+      "dataRefs": {
+        "featureKey": "auditLogs"
+      },
+      "version": 1,
+      "dataHash": "7afd2f73f9da7c895cdba3fc23b35208eb98921a3cff847d9f02524c166b7a38",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/auditLogs.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/businessRulesAnalysis",
+      "title": "Business Rules Analysis",
+      "dataRefs": {
+        "featureKey": "businessRulesAnalysis"
+      },
+      "version": 1,
+      "dataHash": "27bf6d365e326ed8c41486ad28cd1a099437723ac72ca155412e748195e29340",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/businessRulesAnalysis.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/straightStart",
+      "title": "Straight-forward Start",
+      "dataRefs": {
+        "featureKey": "straightStart"
+      },
+      "version": 1,
+      "dataHash": "a71d42600c9c592f571da35b8aa140320d7fcd1c521a14f154d1aad671f5c6ba",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/straightStart.vue"
+    },
+    {
+      "type": "feature",
+      "slug": "/features/testingTool",
+      "title": "Testing tool",
+      "dataRefs": {
+        "featureKey": "testingTool"
+      },
+      "version": 1,
+      "dataHash": "b34841de691b11d648d13f1a168dba30d259720c664a90abf1ea7d747cf69016",
+      "contentHash": null,
+      "lastGenAt": null,
+      "lastGenCommit": null,
+      "promptSet": "v1",
+      "model": "gpt-4o-mini",
+      "status": "missing",
+      "contentPath": "pages/features/testingTool.vue"
     }
   ]
 }

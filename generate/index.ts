@@ -14,7 +14,8 @@ import {
   getFeaturePrompt,
   getCompareScaffold,
   getFeatureScaffold,
-  getIndexListScaffold
+  getIndexListScaffold,
+  type CompareGeneratedPayload
 } from './templates.ts';
 
 console.log('limit:', process.env.REQUEST_LIMIT);
@@ -70,7 +71,8 @@ const generateContentForPage = async (
       context.planValues
     );
     const raw = await getAiText({ model: page.model, system, user });
-    return getCompareScaffold(page.title, raw);
+    const parsed = JSON.parse(raw) as CompareGeneratedPayload;
+    return getCompareScaffold(page.title, parsed);
   }
 
   if (page.type === 'feature') {

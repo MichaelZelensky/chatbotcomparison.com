@@ -12,8 +12,9 @@ const getApiKey = (): string => {
   return key;
 };
 
-const getEndpoint = (): string =>
-  process.env.OPENAI_API_URL || 'https://api.openai.com/v1/chat/completions';
+const getEndpoint = (): string => {
+  return process.env.OPENAI_API_URL || 'https://api.openai.com/v1/chat/completions';
+}
 
 export const getAiText = async (args: OpenAiArgs): Promise<string> => {
   const apiKey = getApiKey();
