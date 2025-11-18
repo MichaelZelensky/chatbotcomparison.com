@@ -1,5 +1,5 @@
 <template>
-  <section class="prose max-w-none">
+  <section>
     <h1>All comparisons</h1>
     <ul class="mt-4">
       <li><NuxtLink to="/compare/chatbotcom-vs-crisp">Crisp Vs Chatbotcom</NuxtLink></li>

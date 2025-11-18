@@ -1,5 +1,5 @@
 <template>
-  <section class="prose max-w-none">
+  <section>
     <h1>All features</h1>
     <ul class="mt-4">
       <li><NuxtLink to="/features/abTesting">A/B Testing</NuxtLink></li>
