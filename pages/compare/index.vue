@@ -21,5 +21,8 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+  layout: 'content'
+});
 useSeoMeta({ title: 'All comparisons' });
 </script>

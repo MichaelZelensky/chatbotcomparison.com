@@ -1,96 +1,51 @@
 <template>
   <div class="comparison-page">
-    <h1>Crisp vs ChatBot.com comparison</h1>
+    <h1>Crisp Vs Chatbotcom comparison</h1>
 
-    <!-- Summary -->
     <p class="summary">
-      Side-by-side Crisp vs ChatBot.com comparison covering pricing, core features,
-      integrations, automation depth, and ideal use cases. This summary helps you
-      quickly understand which platform fits your customer support or chatbot
-      automation workflow better.
+      This is a comparison between Crisp and ChatBot.com, two popular chatbot solutions for businesses.
     </p>
 
-    <!-- Body -->
     <div class="body">
-      <p>
-        Crisp is a modern live chat and shared inbox platform focused on real-time
-        conversations, multi-channel messaging, and a fast onboarding experience.
-        It appeals to startups and small teams that need a lightweight communication
-        hub without committing to heavy automation tools. Features such as live
-        typing, mobile apps, shared inbox, and website chat make it easy to deploy
-        and simple for support teams to adopt.
+      <p class="body-paragraph">
+        Crisp offers a range of plans starting from a free tier that includes essential features for small teams, while ChatBot.com begins with a paid starter plan. Crisp's free plan allows up to 2 agents and includes features like unlimited conversations and a chat widget, making it suitable for startups. In contrast, ChatBot.com's starter plan at $52 includes 1 agent and 12,000 chats per year, which may appeal to businesses looking for a more structured approach.
       </p>
 
-      <p>
-        ChatBot.com is built around automation and chatbot design. It provides
-        structured visual flows, templates, and AI-assisted creation, making it ideal
-        for teams that want to automate FAQs, lead qualification, and support routing.
-        It integrates with helpdesks, CRMs, and major website builders. This makes it
-        more suitable for businesses that need predictable, scalable bot-driven
-        communication.
+      <p class="body-paragraph">
+        When it comes to pricing, Crisp's plans range from $0 for the free version to $295 for the Plus plan, which supports unlimited AI usage and up to 20 agents. ChatBot.com, on the other hand, has a more tiered pricing structure with its Team plan at $174 and Business plan at $424, which includes unlimited active chatbots and a higher chat volume. This pricing structure may be more suitable for larger organizations with extensive chatbot needs.
       </p>
 
-      <p>
-        In practice, Crisp works best when human agents handle most of the
-        conversations and automation is minimal. ChatBot.com works best when
-        structured bot flows, automation logic, and AI-driven interactions are a
-        priority. The decision depends on whether your team relies on manual chat
-        handling or prefers automated conversational workflows with occasional agent
-        involvement.
+      <p class="body-paragraph">
+        In terms of features, Crisp excels with its extensive integrations, including support for various e-commerce platforms and CRM systems, while also offering advanced functionalities like AI usage in higher-tier plans. ChatBot.com provides a robust visual builder and AI model training capabilities, which can be particularly beneficial for businesses looking to create complex chatbot flows. However, Crisp's focus on real-time notifications and proactive messaging may give it an edge in customer engagement.
+      </p>
+
+      <p class="body-paragraph">
+        Use cases for Crisp are ideal for businesses that require a straightforward, user-friendly interface with essential features for customer support. ChatBot.com is better suited for companies that need advanced chatbot functionalities and are willing to invest in a more comprehensive solution.
       </p>
     </div>
 
-    <!-- Conclusion -->
     <h2>Conclusion</h2>
     <p class="conclusion">
-      Choose Crisp if you want an affordable, chat-first communication tool centered
-      around human support teams. Choose ChatBot.com if automation, chatbot flows,
-      and scalable conversation logic are more important for your business. Many
-      companies combine live chat tools with automation platforms, so consider how
-      each provider fits into your broader support and workflow ecosystem.
+      Choose Crisp if you are a small to medium-sized business looking for a cost-effective solution with essential features and easy integrations. Opt for ChatBot.com if you require advanced capabilities and are prepared to invest in a more robust platform for extensive chatbot functionalities.
     </p>
   </div>
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+  layout: 'content'
+});
 useHead({
-  title: 'Crisp vs ChatBot.com comparison',
+  title: 'Crisp Vs Chatbotcom comparison',
   meta: [
     {
       name: 'description',
-      content:
-        'Crisp vs ChatBot.com comparison covering pricing, features, automation depth, integrations, and best use cases to help you choose the right chatbot or live chat platform.'
+      content: 'This is a comparison between Crisp and ChatBot.com, two popular chatbot solutions for businesses.'
     },
     {
       name: 'keywords',
-      content:
-        'crisp, chatbot.com, crisp vs chatbot.com, chatbot comparison, live chat tools, customer support automation, chatbot platforms'
+      content: 'crisp vs chatbotcom comparison, chatbot comparison, live chat, ai chatbot, customer support automation'
     }
   ]
 })
 </script>
-
-<style scoped>
-.comparison-page {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1.5rem 1rem;
-}
-
-.summary {
-  margin-bottom: 1.5rem;
-  font-size: 1.05rem;
-  line-height: 1.6;
-}
-
-.body p {
-  margin-bottom: 1rem;
-  line-height: 1.7;
-}
-
-.conclusion {
-  margin-top: 0.75rem;
-  line-height: 1.7;
-  font-weight: 500;
-}
-</style>

@@ -170,7 +170,7 @@
       <li><NuxtLink to="/features/visualBuilder">Visual Builder</NuxtLink></li>
       <li><NuxtLink to="/features/voiceToText">Voice-to-text</NuxtLink></li>
       <li><NuxtLink to="/features/webflow">Webflow</NuxtLink></li>
-      <li><NuxtLink to="/features/webhooks">Webhooks</NuxtLink></li>
+      <li><NuxtLink to="/features/webhooks">Webhook Actions</NuxtLink></li>
       <li><NuxtLink to="/features/webhooks">Webhook Actions</NuxtLink></li>
       <li><NuxtLink to="/features/websiteMonitoring">Website Monitoring</NuxtLink></li>
       <li><NuxtLink to="/features/whatsappBiz">WhatsApp Business</NuxtLink></li>

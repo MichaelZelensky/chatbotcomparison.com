@@ -1,8 +1,5 @@
 <template>
   <section>
-    <div class="flex items-center justify-between mb-2">
-      <h1 class="title">Chatbot Comparison</h1>
-    </div>
 
     <div class="mb-3 flex items-center gap-3">
       <ProviderFilterDropdown

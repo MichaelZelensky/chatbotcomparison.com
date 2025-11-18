@@ -38,8 +38,8 @@
       },
       "version": 1,
       "dataHash": "274b7da8b43be33890f42466b2ac46a4014ffbaea7c308c871719afec2be0362",
-      "contentHash": "c77c8790577915b2837e07f7b760b3282daf28b2a6a8ba081fb855a07213442f",
-      "lastGenAt": "2025-11-17T11:18:34.992Z",
+      "contentHash": "8ac5d9b5a4d4081d19369566f6d2a0eb7d7dfeb1d77c8e7ad9a15303bc05023d",
+      "lastGenAt": "2025-11-18T08:45:16.009Z",
       "lastGenCommit": null,
       "promptSet": "v1",
       "model": "gpt-4o-mini",
@@ -1546,7 +1546,7 @@
     {
       "type": "feature",
       "slug": "/features/webhooks",
-      "title": "Webhooks",
+      "title": "Webhook Actions",
       "dataRefs": {
         "featureKey": "webhooks"
       },
