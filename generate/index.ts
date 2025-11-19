@@ -43,6 +43,7 @@ const savePagesFile = (pagesFile: PagesFile) => {
     console.log('[dry-run] pages.json would be updated');
     return;
   }
+  console.log('- Writing file data/pages.json');
   writeFileSync(
     paths.pages,
     JSON.stringify(pagesFile, null, 2) + '\n',
@@ -70,6 +71,7 @@ const generateContentForPage = async (
       context.providers,
       context.planValues
     );
+    console.log(`- Sending request to OpenAI for ${page.slug} (type=compare, model=${page.model})`);
     const raw = await getAiText({ model: page.model, system, user });
     const parsed = JSON.parse(raw) as CompareGeneratedPayload;
     return getCompareScaffold(page.title, parsed);
@@ -77,6 +79,7 @@ const generateContentForPage = async (
 
   if (page.type === 'feature') {
     const { system, user } = getFeaturePrompt(page, context.planValues);
+    console.log(`- Sending request to OpenAI for ${page.slug} (type=feature, model=${page.model})`);
     const raw = await getAiText({ model: page.model, system, user });
     return getFeatureScaffold(page.title, raw);
   }
@@ -108,6 +111,7 @@ const writeFileMaybe = (path: string, content: string) => {
     console.log(`[dry-run] would write: ${path}`);
     return;
   }
+  console.log(`- Writing file ${path}`);
   writeTextFile(path, content);
 };
 
@@ -146,28 +150,37 @@ const main = async () => {
       continue;
     }
 
-    console.log(`[update] outdated → ${page.slug}`);
+    console.log(`[update] outdated -> ${page.slug}`);
 
     const sfc = await generateContentForPage(page, context);
 
     // Count logical "requests" even in dry-run, to mirror real behaviour
     usedRequests += 1;
 
-    const newHash = getHashOfString(sfc);
+    // Hash of generated file content, only for "identical content" optimisation
+    const fileHash = getHashOfString(sfc);
     const existingHash = getExistingFileHash(`${root}/${page.contentPath}`);
 
-    if (!dryRun && existingHash === newHash) {
-      console.log(`[skip] identical content → ${page.slug}`);
-      const stable = { ...page, contentHash: newHash, status: 'fresh' as const };
+    if (!dryRun && existingHash === fileHash) {
+      console.log(`[skip] identical content -> ${page.slug}`);
+
+      // Mark as fresh by storing CURRENT dataHash in contentHash
+      const stable = {
+        ...page,
+        contentHash: page.dataHash,
+        status: 'fresh' as const
+      };
+
       updatedPages.push(stable);
       continue;
     }
 
     writeFileMaybe(`${root}/${page.contentPath}`, sfc);
 
+    // Store dataHash as the "generation hash" for freshness comparison
     const next = {
       ...page,
-      contentHash: newHash,
+      contentHash: page.dataHash,
       status: 'fresh' as const,
       lastGenAt: new Date().toISOString()
     };

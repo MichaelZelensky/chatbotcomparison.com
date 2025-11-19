@@ -142,9 +142,8 @@ useHead({
 
 export const getFeatureScaffold = (title: string, body: string): string =>
   `<template>
-  <section class="prose max-w-none">
+  <section>
     <h1>${title}</h1>
-    <div class="card mt-4"><div class="small">This page is AI-generated</div></div>
     <div class="mt-6">
       ${body}
     </div>
@@ -161,7 +160,7 @@ export const getIndexListScaffold = (
   items: { href: string; label: string }[]
 ): string =>
   `<template>
-  <section class="prose max-w-none">
+  <section>
     <h1>${title}</h1>
     <ul class="mt-4">
       ${items
