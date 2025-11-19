@@ -9,6 +9,7 @@
       <li><NuxtLink to="/compare/chatbotcom-vs-zendesk">Chatbotcom Vs Zendesk</NuxtLink></li>
       <li><NuxtLink to="/compare/crisp-vs-liteed">Crisp Vs Liteed</NuxtLink></li>
       <li><NuxtLink to="/compare/crisp-vs-liveagent">Crisp Vs Liveagent</NuxtLink></li>
+      <li><NuxtLink to="/compare/crisp-vs-tidio">Crisp vs Tidio</NuxtLink></li>
       <li><NuxtLink to="/compare/crisp-vs-zendesk">Crisp Vs Zendesk</NuxtLink></li>
       <li><NuxtLink to="/compare/liteed-vs-liveagent">Liveagent Vs Liteed</NuxtLink></li>
       <li><NuxtLink to="/compare/liteed-vs-tidio">Tidio Vs Liteed</NuxtLink></li>
