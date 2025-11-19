@@ -6,7 +6,8 @@ import {
   getExistingFileHash,
   writeTextFile,
   getHashOfString,
-  ensureDir
+  ensureDir,
+  fileExists
 } from './fs-helpers.ts';
 import { getAiText } from './openai.ts';
 import {
@@ -88,14 +89,20 @@ const generateContentForPage = async (
 };
 
 const buildIndexes = (pages: PagesFile['pages']) => {
-  const compareItems = pages
-    .filter(x => x.generate !== false)
+  const existingPages = pages.filter(page => {
+    if (page.generate === false) {
+      return false;
+    }
+    const fullPath = `${root}/${page.contentPath}`;
+    return fileExists(fullPath);
+  });
+
+  const compareItems = existingPages
     .filter(x => x.type === 'compare')
     .sort((a, b) => a.slug.localeCompare(b.slug))
     .map(x => ({ href: x.slug, label: x.title }));
 
-  const featuresItems = pages
-    .filter(x => x.generate !== false)
+  const featuresItems = existingPages
     .filter(x => x.type === 'feature')
     .sort((a, b) => a.slug.localeCompare(b.slug))
     .map(x => ({ href: x.slug, label: x.title }));

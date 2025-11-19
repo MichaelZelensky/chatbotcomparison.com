@@ -123,6 +123,7 @@ ${bodyHtml}
 </template>
 
 <script setup lang="ts">
+definePageMeta({ layout: 'content' });
 useHead({
   title: '${escapeJsString(pageTitle)}',
   meta: [
@@ -151,6 +152,7 @@ export const getFeatureScaffold = (title: string, body: string): string =>
 </template>
 
 <script setup lang="ts">
+definePageMeta({ layout: 'content' });
 useSeoMeta({ title: '${title}' });
 </script>
 `;
@@ -173,6 +175,7 @@ export const getIndexListScaffold = (
 </template>
 
 <script setup lang="ts">
+definePageMeta({ layout: 'content' });
 useSeoMeta({ title: '${title}' });
 </script>
 `;

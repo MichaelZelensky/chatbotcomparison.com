@@ -18,3 +18,6 @@ export const getHashOfString = (src: string): string =>
 
 export const getExistingFileHash = (path: string): string | null =>
   existsSync(path) ? getHashOfString(readTextFile(path)) : null;
+
+export const fileExists = (path: string): boolean =>
+  existsSync(path);
