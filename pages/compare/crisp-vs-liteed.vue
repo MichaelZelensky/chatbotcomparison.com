@@ -1,6 +1,6 @@
 <template>
   <div class="comparison-page">
-    <h1>Crisp Vs Liteed comparison</h1>
+    <h1>Crisp vs Liteed comparison</h1>
 
     <p class="summary">
       This is a comparison between Crisp and Liteed, two popular customer support and chatbot solutions.
@@ -30,7 +30,7 @@
 <script setup lang="ts">
 definePageMeta({ layout: 'content' });
 useHead({
-  title: 'Crisp Vs Liteed comparison',
+  title: 'Crisp vs Liteed comparison',
   meta: [
     {
       name: 'description',

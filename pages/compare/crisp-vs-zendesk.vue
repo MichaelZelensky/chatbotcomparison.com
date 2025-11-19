@@ -1,6 +1,6 @@
 <template>
   <div class="comparison-page">
-    <h1>Crisp Vs Zendesk comparison</h1>
+    <h1>Crisp vs Zendesk comparison</h1>
 
     <p class="summary">
       This is a comparison between Crisp and Zendesk, two popular customer support platforms.
@@ -30,7 +30,7 @@
 <script setup lang="ts">
 definePageMeta({ layout: 'content' });
 useHead({
-  title: 'Crisp Vs Zendesk comparison',
+  title: 'Crisp vs Zendesk comparison',
   meta: [
     {
       name: 'description',

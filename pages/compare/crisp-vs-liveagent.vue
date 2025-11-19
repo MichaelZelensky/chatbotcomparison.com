@@ -1,6 +1,6 @@
 <template>
   <div class="comparison-page">
-    <h1>Crisp Vs Liveagent comparison</h1>
+    <h1>Crisp vs Liveagent comparison</h1>
 
     <p class="summary">
       This is a comparison between Crisp and LiveAgent, two popular customer support platforms.
@@ -30,7 +30,7 @@
 <script setup lang="ts">
 definePageMeta({ layout: 'content' });
 useHead({
-  title: 'Crisp Vs Liveagent comparison',
+  title: 'Crisp vs Liveagent comparison',
   meta: [
     {
       name: 'description',

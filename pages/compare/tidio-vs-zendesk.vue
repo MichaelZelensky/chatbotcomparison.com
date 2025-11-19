@@ -1,6 +1,6 @@
 <template>
   <div class="comparison-page">
-    <h1>Tidio Vs Zendesk comparison</h1>
+    <h1>Tidio vs Zendesk comparison</h1>
 
     <p class="summary">
       This is a comparison between Tidio and Zendesk, two popular customer support platforms.
@@ -30,7 +30,7 @@
 <script setup lang="ts">
 definePageMeta({ layout: 'content' });
 useHead({
-  title: 'Tidio Vs Zendesk comparison',
+  title: 'Tidio vs Zendesk comparison',
   meta: [
     {
       name: 'description',

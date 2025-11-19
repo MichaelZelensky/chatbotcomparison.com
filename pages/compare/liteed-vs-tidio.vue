@@ -1,6 +1,6 @@
 <template>
   <div class="comparison-page">
-    <h1>Tidio Vs Liteed comparison</h1>
+    <h1>Tidio vs Liteed comparison</h1>
 
     <p class="summary">
       This is a comparison between Tidio and Liteed, two popular chatbot solutions.
@@ -30,7 +30,7 @@
 <script setup lang="ts">
 definePageMeta({ layout: 'content' });
 useHead({
-  title: 'Tidio Vs Liteed comparison',
+  title: 'Tidio vs Liteed comparison',
   meta: [
     {
       name: 'description',

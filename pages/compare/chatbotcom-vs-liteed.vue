@@ -1,6 +1,6 @@
 <template>
   <div class="comparison-page">
-    <h1>Chatbotcom Vs Liteed comparison</h1>
+    <h1>Chatbotcom vs Liteed comparison</h1>
 
     <p class="summary">
       This is a comparison between ChatBot.com and Liteed, two leading chatbot platforms.
@@ -30,7 +30,7 @@
 <script setup lang="ts">
 definePageMeta({ layout: 'content' });
 useHead({
-  title: 'Chatbotcom Vs Liteed comparison',
+  title: 'Chatbotcom vs Liteed comparison',
   meta: [
     {
       name: 'description',

@@ -1,6 +1,6 @@
 <template>
   <div class="comparison-page">
-    <h1>Liveagent Vs Liteed comparison</h1>
+    <h1>Liveagent vs Liteed comparison</h1>
 
     <p class="summary">
       This is a comparison between LiveAgent and Liteed, two popular customer support solutions.
@@ -30,7 +30,7 @@
 <script setup lang="ts">
 definePageMeta({ layout: 'content' });
 useHead({
-  title: 'Liveagent Vs Liteed comparison',
+  title: 'Liveagent vs Liteed comparison',
   meta: [
     {
       name: 'description',

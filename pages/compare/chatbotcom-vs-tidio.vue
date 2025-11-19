@@ -1,6 +1,6 @@
 <template>
   <div class="comparison-page">
-    <h1>Tidio Vs Chatbotcom comparison</h1>
+    <h1>Tidio vs Chatbotcom comparison</h1>
 
     <p class="summary">
       This is a comparison between Tidio and ChatBot.com, two popular chatbot solutions for businesses.
@@ -30,7 +30,7 @@
 <script setup lang="ts">
 definePageMeta({ layout: 'content' });
 useHead({
-  title: 'Tidio Vs Chatbotcom comparison',
+  title: 'Tidio vs Chatbotcom comparison',
   meta: [
     {
       name: 'description',

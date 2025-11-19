@@ -1,6 +1,6 @@
 <template>
   <div class="comparison-page">
-    <h1>Zendesk Vs Liteed comparison</h1>
+    <h1>Zendesk vs Liteed comparison</h1>
 
     <p class="summary">
       This is a comparison between Zendesk and Liteed, two popular customer support platforms.
@@ -30,7 +30,7 @@
 <script setup lang="ts">
 definePageMeta({ layout: 'content' });
 useHead({
-  title: 'Zendesk Vs Liteed comparison',
+  title: 'Zendesk vs Liteed comparison',
   meta: [
     {
       name: 'description',

@@ -1,6 +1,6 @@
 <template>
   <div class="comparison-page">
-    <h1>Chatbotcom Vs Liveagent comparison</h1>
+    <h1>Chatbotcom vs Liveagent comparison</h1>
 
     <p class="summary">
       This is a comparison between ChatBot.com and LiveAgent, two popular customer support solutions.
@@ -30,7 +30,7 @@
 <script setup lang="ts">
 definePageMeta({ layout: 'content' });
 useHead({
-  title: 'Chatbotcom Vs Liveagent comparison',
+  title: 'Chatbotcom vs Liveagent comparison',
   meta: [
     {
       name: 'description',

@@ -1,6 +1,6 @@
 <template>
   <div class="comparison-page">
-    <h1>Chatbotcom Vs Zendesk comparison</h1>
+    <h1>Chatbotcom vs Zendesk comparison</h1>
 
     <p class="summary">
       This is a comparison between ChatBot.com and Zendesk, two leading chatbot solutions.
@@ -30,7 +30,7 @@
 <script setup lang="ts">
 definePageMeta({ layout: 'content' });
 useHead({
-  title: 'Chatbotcom Vs Zendesk comparison',
+  title: 'Chatbotcom vs Zendesk comparison',
   meta: [
     {
       name: 'description',

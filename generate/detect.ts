@@ -14,11 +14,18 @@ type DetectInputs = {
 export const getDesiredComparePages = (providers: Provider[]): PageRecord[] => {
   const slugs = providers.map(x => x.slug);
   const pairs = slugs.flatMap((x, i) => slugs.slice(i + 1).map(y => [x, y] as [string, string]));
-  const pages = pairs.map(pair => {
+
+  return pairs.map(pair => {
     const slug = getCompareSlug(pair[0], pair[1]);
-    const title = `${pair[0]} vs ${pair[1]}`.replace(/\b\w/g, x => x.toUpperCase());
+
+    const formatProvider = (s: string) =>
+      s.charAt(0).toUpperCase() + s.slice(1);
+
+    const title = `${formatProvider(pair[0])} vs ${formatProvider(pair[1])}`;
+
     const contentPath = `pages${slug}.vue`;
     const dataRefs = { providers: pair, features: [] };
+
     const record: PageRecord = {
       type: 'compare',
       slug,
@@ -36,7 +43,6 @@ export const getDesiredComparePages = (providers: Provider[]): PageRecord[] => {
     };
     return record;
   });
-  return pages;
 };
 
 export const getDesiredFeaturePages = (featureGroups: FeatureGroup[]): PageRecord[] => {

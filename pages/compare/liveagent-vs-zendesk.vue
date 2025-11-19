@@ -1,6 +1,6 @@
 <template>
   <div class="comparison-page">
-    <h1>Zendesk Vs Liveagent comparison</h1>
+    <h1>Zendesk vs Liveagent comparison</h1>
 
     <p class="summary">
       This is a comparison between Zendesk and LiveAgent, two popular customer support platforms.
@@ -30,7 +30,7 @@
 <script setup lang="ts">
 definePageMeta({ layout: 'content' });
 useHead({
-  title: 'Zendesk Vs Liveagent comparison',
+  title: 'Zendesk vs Liveagent comparison',
   meta: [
     {
       name: 'description',
