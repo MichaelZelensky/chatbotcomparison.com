@@ -28,6 +28,7 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({ layout: 'content' });
 useHead({
   title: 'Crisp Vs Chatbotcom comparison',
   meta: [
