@@ -7,7 +7,8 @@ import {
   writeTextFile,
   getHashOfString,
   ensureDir,
-  fileExists
+  fileExists,
+  deleteFileIfExists
 } from './fs-helpers.ts';
 import { getAiText } from './openai.ts';
 import {
@@ -16,7 +17,8 @@ import {
   getCompareScaffold,
   getFeatureScaffold,
   getIndexListScaffold,
-  type CompareGeneratedPayload
+  type CompareGeneratedPayload,
+  type FeatureGeneratedPayload
 } from './templates.ts';
 
 console.log('limit:', process.env.REQUEST_LIMIT);
@@ -57,7 +59,7 @@ const generateContentForPage = async (
   context: ReturnType<typeof detectPages>
 ) => {
   if (page.generate === false) {
-    console.log(`[skip] generate:false → ${page.slug}`);
+    console.log(`[skip] generate:false -> ${page.slug}`);
     return '';
   }
 
@@ -82,7 +84,8 @@ const generateContentForPage = async (
     const { system, user } = getFeaturePrompt(page, context.planValues);
     console.log(`- Sending request to OpenAI for ${page.slug} (type=feature, model=${page.model})`);
     const raw = await getAiText({ model: page.model, system, user });
-    return getFeatureScaffold(page.title, raw);
+    const parsed = JSON.parse(raw) as FeatureGeneratedPayload;
+    return getFeatureScaffold(page.title, parsed);
   }
 
   return '';
@@ -142,17 +145,39 @@ const main = async () => {
   let usedRequests = 0;
 
   for (const page of context.pages) {
-    const isBlocked = page.generate === false;
-    const shouldGenerate = !isBlocked && page.status !== 'fresh';
+    // Hard skip + delete for generate:false
+    if (page.generate === false) {
+      const fullPath = `${root}/${page.contentPath}`;
+      if (fileExists(fullPath)) {
+        if (dryRun) {
+          console.log(`[dry-run] would delete file ${fullPath} for ${page.slug}`);
+        } else {
+          console.log(`- Deleting file ${fullPath} for ${page.slug}`);
+          deleteFileIfExists(fullPath);
+        }
+      }
+      console.log(`[skip] generate:false -> ${page.slug}`);
+
+      const blockedPage = {
+        ...page,
+        contentHash: null,
+        status: 'missing' as const
+      };
+
+      updatedPages.push(blockedPage);
+      continue;
+    }
+
+    const shouldGenerate = page.status !== 'fresh';
 
     if (!shouldGenerate) {
-      console.log(`[ok] fresh → ${page.slug}`);
+      console.log(`[ok] fresh -> ${page.slug}`);
       updatedPages.push(page);
       continue;
     }
 
     if (usedRequests >= requestLimit) {
-      console.log(`[limit] request limit reached, skipping → ${page.slug}`);
+      console.log(`[limit] request limit reached, skipping -> ${page.slug}`);
       updatedPages.push(page);
       continue;
     }

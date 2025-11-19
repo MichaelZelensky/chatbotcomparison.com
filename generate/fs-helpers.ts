@@ -1,4 +1,4 @@
-import { mkdirSync, writeFileSync, readFileSync, existsSync } from 'node:fs';
+import { mkdirSync, writeFileSync, readFileSync, existsSync, unlinkSync } from 'node:fs';
 import { dirname } from 'node:path';
 import { createHash } from 'node:crypto';
 
@@ -21,3 +21,9 @@ export const getExistingFileHash = (path: string): string | null =>
 
 export const fileExists = (path: string): boolean =>
   existsSync(path);
+
+export const deleteFileIfExists = (path: string): void => {
+  if (existsSync(path)) {
+    unlinkSync(path);
+  }
+};

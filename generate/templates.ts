@@ -18,6 +18,10 @@ export type CompareGeneratedPayload = {
   conclusion: string;
 };
 
+export type FeatureGeneratedPayload = {
+  body: string[];
+};
+
 export const getComparePrompt = (
   page: PageRecord,
   providers: Provider[],
@@ -36,7 +40,7 @@ export const getComparePrompt = (
     'Return ONLY a compact JSON object with this exact shape: ' +
     '{ "summary": string, "body": string[], "conclusion": string }. ' +
     '"summary": one short paragraph that clearly states this is an "X vs Y comparison". ' +
-    '"body": 2–4 paragraphs as an array of plain-text strings, describing differences, pricing, features, and use cases. ' +
+    '"body": 2-4 paragraphs as an array of plain-text strings, describing differences, pricing, features, and use cases. ' +
     '"conclusion": one paragraph that clearly recommends when to choose each provider. ' +
     'Use only plain text (no HTML, no Markdown). ' +
     'Mention both providers by name several times and stay grounded in the supplied data.';
@@ -71,7 +75,13 @@ export const getFeaturePrompt = (
     provider,
     plans
   }));
-  const system = 'You generate Nuxt .vue pages. Output valid Vue SFC only.';
+
+  const system =
+    'You write SEO-focused feature descriptions for a Nuxt 3 page. ' +
+    'Return ONLY a compact JSON object with this exact shape: { "body": string[] }. ' +
+    '"body": 2-4 paragraphs as an array of plain-text strings, explaining what the feature is, why it matters, and how it affects real-world usage. ' +
+    'Use only plain text (no HTML, no Markdown).';
+
   const user = JSON.stringify({
     kind: 'feature',
     slug: page.slug,
@@ -79,6 +89,7 @@ export const getFeaturePrompt = (
     featureKey: refs.featureKey,
     matrix
   });
+
   return { system, user };
 };
 
@@ -141,21 +152,54 @@ useHead({
 `;
 };
 
-export const getFeatureScaffold = (title: string, body: string): string =>
-  `<template>
-  <section>
-    <h1>${title}</h1>
-    <div class="mt-6">
-      ${body}
+export const getFeatureScaffold = (
+  title: string,
+  generated: FeatureGeneratedPayload
+): string => {
+  const pageTitle = `${title} feature overview`;
+  const bodyParagraphs = generated.body || [];
+
+  const bodyHtml = bodyParagraphs
+    .map(
+      paragraph =>
+        `      <p class="body-paragraph">\n        ${escapeHtml(paragraph)}\n      </p>`
+    )
+    .join('\n\n');
+
+  const firstParagraph = bodyParagraphs[0] ?? `Overview of ${title}`;
+  const descriptionJs = escapeJsString(firstParagraph);
+  const keywordsSource =
+    `${title.toLowerCase()} feature, chatbot features, automation, customer support`;
+  const keywordsJs = escapeJsString(keywordsSource);
+
+  return `<template>
+  <div class="feature-page">
+    <h1>${pageTitle}</h1>
+
+    <div class="body">
+${bodyHtml}
     </div>
-  </section>
+  </div>
 </template>
 
 <script setup lang="ts">
 definePageMeta({ layout: 'content' });
-useSeoMeta({ title: '${title}' });
+useHead({
+  title: '${escapeJsString(pageTitle)}',
+  meta: [
+    {
+      name: 'description',
+      content: '${descriptionJs}'
+    },
+    {
+      name: 'keywords',
+      content: '${keywordsJs}'
+    }
+  ]
+})
 </script>
 `;
+};
 
 export const getIndexListScaffold = (
   title: string,
