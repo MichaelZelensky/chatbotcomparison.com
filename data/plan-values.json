@@ -1100,7 +1100,10 @@
       "ticketFileAttachmentSize": "50MB",
       "incomingEmailAuthentication": true,
       "webWidget": true, 
-      "mobileSdks": true
+      "mobileSdks": true,
+      "sessionInitiationProtocol": true,
+      "bringYourOwnCarrier": true
+      
       
 
     },
@@ -1166,7 +1169,18 @@
       "partnerEditionCti": true, 
       "answerInBrowserAndForwardToPhone": true,
       "outboundCallerId": true, 
-      "callRouting": "Group routing"
+      "callRouting": "Group routing",
+      "failover": true,
+      "customizedGreetings": true,
+      "queueSizeAndWaitTime": true,
+      "sessionInitiationProtocol": true,
+      "bringYourOwnCarrier": true, 
+      "automaticTicketCreation": true, 
+      "callRecording": true, 
+      "muteHoldWarmTransfer": true,
+      "localAndTollFreeNumbers": "Add-on",
+      "inboundAndOutboundMinutes": "Add-on", 
+      "contactCenter": "Add-on"
     },
     "suiteProfessional": {
       "planPrice": "€115",
@@ -1234,7 +1248,28 @@
       "partnerEditionCti": true, 
       "answerInBrowserAndForwardToPhone": true,
       "outboundCallerId": "External number for outbound caller ID", 
-      "callRouting": "Group, overflow, and after-hours routing"
+      "callRouting": "Group, overflow, and after-hours routing",
+      "failover": true,
+      "customizedGreetings": true,
+      "queueSizeAndWaitTime": true,
+      "sessionInitiationProtocol": true,
+      "bringYourOwnCarrier": true, 
+      "automaticTicketCreation": true, 
+      "callRecording": true, 
+      "muteHoldWarmTransfer": true,
+      "businessHours": "Single",
+      "conferenceCalling": true, 
+      "callBlocking": true, 
+      "interactiveVoiceResponse": true, 
+      "priorityNumbers": true, 
+      "requestACallback": true, 
+      "callWrapUpTimeLimits": true, 
+      "callRecordingControls": true, 
+      "callMonitoringAndBarging": true, 
+      "callQualityNotifications": true,
+      "localAndTollFreeNumbers": "Add-on",
+      "inboundAndOutboundMinutes": "Add-on", 
+      "contactCenter": "Add-on"
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1307,7 +1342,30 @@
       "partnerEditionCti": true, 
       "answerInBrowserAndForwardToPhone": true,
       "outboundCallerId": "External number for outbound caller ID", 
-      "callRouting": "Group, overflow, and after-hours routing"
+      "callRouting": "Group, overflow, and after-hours routing",
+      "failover": "On demand",
+      "customizedGreetings": true,
+      "queueSizeAndWaitTime": "Extended",
+      "sessionInitiationProtocol": true,
+      "bringYourOwnCarrier": true, 
+      "automaticTicketCreation": true, 
+      "callRecording": true, 
+      "muteHoldWarmTransfer": true,
+      "businessHours": "Multiple",
+      "conferenceCalling": true, 
+      "callBlocking": true, 
+      "interactiveVoiceResponse": true, 
+      "priorityNumbers": true, 
+      "requestACallback": true, 
+      "callWrapUpTimeLimits": true, 
+      "callRecordingControls": true, 
+      "callMonitoringAndBarging": true, 
+      "callQualityNotifications": true,
+      "callOfferingTimeLimit": true, 
+      "callUsageUptimeSla": true,
+      "localAndTollFreeNumbers": "Add-on",
+      "inboundAndOutboundMinutes": "Add-on", 
+      "contactCenter": "Add-on"
 
     }
   },
