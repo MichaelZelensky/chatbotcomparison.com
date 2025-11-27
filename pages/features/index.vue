@@ -5,24 +5,31 @@
       <li><NuxtLink to="/features/additionalAgentPrice">Additional Agents (per month)</NuxtLink></li>
       <li><NuxtLink to="/features/agentsIncluded">Agents Included</NuxtLink></li>
       <li><NuxtLink to="/features/aiUsage">AI Usage</NuxtLink></li>
+      <li><NuxtLink to="/features/allChats">All chats</NuxtLink></li>
+      <li><NuxtLink to="/features/allMessages">All messages</NuxtLink></li>
       <li><NuxtLink to="/features/banning">Visitor Banning</NuxtLink></li>
       <li><NuxtLink to="/features/billableConversations">Billable Conversations Limit</NuxtLink></li>
       <li><NuxtLink to="/features/cannedResponses">Canned Responses</NuxtLink></li>
       <li><NuxtLink to="/features/chatsPackage">Chats Package</NuxtLink></li>
+      <li><NuxtLink to="/features/chatWidget">Chat widget</NuxtLink></li>
       <li><NuxtLink to="/features/cloudBased">Cloud-based</NuxtLink></li>
+      <li><NuxtLink to="/features/contactForm">Contact Form</NuxtLink></li>
       <li><NuxtLink to="/features/customEmailDomain">Custom Email Domain</NuxtLink></li>
       <li><NuxtLink to="/features/customerPortal">Customer Portal</NuxtLink></li>
       <li><NuxtLink to="/features/customerProfiles">Customer Profiles</NuxtLink></li>
       <li><NuxtLink to="/features/desktopApps">Desktop Apps</NuxtLink></li>
       <li><NuxtLink to="/features/developerApis">Developer APIs</NuxtLink></li>
+      <li><NuxtLink to="/features/email">Email</NuxtLink></li>
       <li><NuxtLink to="/features/fileSharing">File Sharing</NuxtLink></li>
       <li><NuxtLink to="/features/followups">Follow-up Reminders</NuxtLink></li>
       <li><NuxtLink to="/features/freeTrial">Free Trial</NuxtLink></li>
       <li><NuxtLink to="/features/fullHistory">Full Conversations' history</NuxtLink></li>
       <li><NuxtLink to="/features/hybridTicketStream">Hybrid Ticket Stream</NuxtLink></li>
+      <li><NuxtLink to="/features/instagram">Instagram</NuxtLink></li>
       <li><NuxtLink to="/features/internalChat">Internal Agent Chat</NuxtLink></li>
       <li><NuxtLink to="/features/internalNotes">Internal Notes</NuxtLink></li>
       <li><NuxtLink to="/features/liveMap">Live Geolocation Map</NuxtLink></li>
+      <li><NuxtLink to="/features/messenger">Messenger</NuxtLink></li>
       <li><NuxtLink to="/features/mobileApps">Mobile Apps</NuxtLink></li>
       <li><NuxtLink to="/features/paidChats">Paid chats</NuxtLink></li>
       <li><NuxtLink to="/features/planPrice">Plan Price (per month)</NuxtLink></li>
@@ -30,11 +37,14 @@
       <li><NuxtLink to="/features/realtimeNotif">Real-time Notifications</NuxtLink></li>
       <li><NuxtLink to="/features/roundRobin">Round-robin Routing</NuxtLink></li>
       <li><NuxtLink to="/features/tags">Tags</NuxtLink></li>
+      <li><NuxtLink to="/features/teamcollaboration">Team Collaboration</NuxtLink></li>
+      <li><NuxtLink to="/features/telegram">Telegram</NuxtLink></li>
       <li><NuxtLink to="/features/transcript">Conversation Transcript</NuxtLink></li>
       <li><NuxtLink to="/features/triage">Conversation Triage</NuxtLink></li>
       <li><NuxtLink to="/features/universalInbox">Universal Inbox</NuxtLink></li>
       <li><NuxtLink to="/features/unlimitedConvos">Unlimited Conversations</NuxtLink></li>
       <li><NuxtLink to="/features/workingHours">Working Hours Settings</NuxtLink></li>
+      <li><NuxtLink to="/features/xTwitter">X (Twitter)</NuxtLink></li>
     </ul>
   </section>
 </template>
