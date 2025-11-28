@@ -55,5 +55,13 @@
       { "name": "Enterprise", "slug": "enterprise" }
 
     ]
+  },
+  {
+    "name": "Liteed",
+    "slug": "liteed",
+    "homepage": "https://www.liteed.com/chatbot",
+    "plans": [
+      { "name": "Free Beta", "slug": "free-beta" }
+    ]
   }
 ]
