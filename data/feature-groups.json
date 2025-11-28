@@ -1,17 +1,17 @@
+
 [
   {
     "id": "pricing",
     "label": "Pricing",
     "rows": [
       { "key": "planPrice", "label": "Plan Price (per month)", "type": "text", "description": "The monthly cost of your subscription plan." },
-      { "key": "agentsIncluded", "label": "Agents Included", "type": "string", "description": "Number of agent licenses included in your plan at no extra cost." },
+      { "key": "agentsIncluded", "label": "Agents Included", "type": "number", "description": "Number of agent licenses included in your plan at no extra cost." },
       { "key": "additionalAgentPrice", "label": "Additional Agents (per month)", "type": "text", "description": "Add more seats to your plan and scale your team as needed." },
       { "key": "customerProfiles", "label": "Customer Profiles", "type": "number", "description": "Maximum number of unique customer profiles you can manage in your workspace." },
       { "key": "aiUsage", "label": "AI Usage", "type": "text", "description": "Number of AI-powered actions (like summaries or replies) available per day." },
       { "key": "billableConversations", "label": "Billable Conversations Limit", "type": "text", "description": "Monthly limit for human-handled conversations (if applicable)." },
       { "key": "freeTrial", "label": "Free Trial", "type": "text", "description": "Length and conditions of the free trial (e.g., days, credit card required or not)." },
-<<<<<<< HEAD
-      { "key": "chatsPackage", "label": "Chats Package", "type": "text", "description": "Your plan includes a limited number of free chats. Each additional chat costs $0.03. Empty or unanswered chats don’t count — you won’t pay for them." },
+      { "key": "chatsPackage", "label": "Chats Package", "type": "text", "description": "Number of chats included into the plan." },
       { "key": "paidChats", "label": "Paid Chats", "type": "boolean", "description": "Chats beyond the free plan." },
       { "key": "alternativePaymentMethods", "label": "Alternative Payment Methods", "type": "boolean", "description": "Pay via purchase orders or annual invoices instead of a company card." },
       { "key": "payWithCrypto", "label": "Pay With Crypto", "type": "boolean", "description": "Pay with crypto like USDC on Ethereum, Solana, or Polygon." },
@@ -23,12 +23,7 @@
       { "key": "essentialPlan", "label": "Essential plan", "type": "text", "description": "Represents the core subscription tier offering essential features for standard use." },
       { "key": "advancedPlan", "label": "Advanced plan", "type": "text", "description": "Indicates availability of the advanced subscription tier or add-on option." }
 
-
-=======
-      { "key": "chatsPackage", "label": "Chats Package", "type": "text", "description": "Number of chats included into the plan." },
-      { "key": "paidChats", "label": "Paid chats", "type": "text", "description": "Chats beyond the free plan." }
->>>>>>> origin/main
-    ]
+        ]
   },
   {
     "id": "teamInbox",
@@ -60,12 +55,9 @@
       { "key": "tags", "label": "Tags", "type": "boolean", "description": "Tag conversations for search and reporting." },
       { "key": "teamcollaboration", "label": "Team Collaboration", "type": "boolean", "description": "Invite your teammates and build chatbots together." }, 
       { "key": "allChats", "label": "All chats", "type": "boolean", "description": "Total chats in a period." },
-<<<<<<< HEAD
+      { "key": "allMessages", "label": "All messages", "type": "boolean", "description": "Total messages received by your chatbot." }
       { "key": "allMessages", "label": "All messages", "type": "boolean", "description": "Total messages received by your chatbot." },
       { "key": "visitorNotes", "label": "Visitor notes", "type": "boolean", "description": "Allows agents to add internal notes about a visitor or conversation for future reference." }
-=======
-      { "key": "allMessages", "label": "All messages", "type": "boolean", "description": "Total messages received by your chatbot." }
->>>>>>> origin/main
     ]
   },
   {
@@ -84,7 +76,10 @@
       { "key": "phone", "label": "Phone", "type": "boolean", "description": "Answer phone calls and trigger outbound calls directly from the platform." },
       { "key": "line", "label": "Line", "type": "boolean", "description": "Receive and reply to Line messages in the shared inbox." },
       { "key": "whatsappBiz", "label": "WhatsApp Business", "type": "boolean", "description": "Receive and reply to WhatsApp Business messages in the shared inbox." },
-<<<<<<< HEAD
+      { "key": "activeChatbots", "label": "Active chatbots", "type": "text", "description": "A legal agreement ensuring data is handled in line with regulations." },
+      { "key": "webflow", "label": "Webflow", "type": "text", "description": "Add chatbot to your Webflow site." },
+      { "key": "bigCommerce", "label": "BigCommerce", "type": "text", "description": "Connect your chatbot to BigCommerce." }
+    ]
       { "key": "activeChatbots", "label": "Active chatbots", "type": "number", "description": "Maximum number of chatbots you can have active at the same time under this plan." },
       { "key": "webflow", "label": "Webflow", "type": "boolean", "description": "Add ChatBot to your Webflow site." },
       { "key": "bigCommerce", "label": "BigCommerce", "type": "boolean", "description": "Connect your ChatBot to BigCommerce." },
@@ -155,12 +150,6 @@
 
 
      ]
-=======
-      { "key": "activeChatbots", "label": "Active chatbots", "type": "text", "description": "A legal agreement ensuring data is handled in line with regulations." },
-      { "key": "webflow", "label": "Webflow", "type": "text", "description": "Add chatbot to your Webflow site." },
-      { "key": "bigCommerce", "label": "BigCommerce", "type": "text", "description": "Connect your chatbot to BigCommerce." }
-    ]
->>>>>>> origin/main
   },  
   {
     "id": "integrations",
@@ -189,17 +178,12 @@
       { "key": "custom", "label": "Custom", "type": "boolean", "description": "Create custom integrations with your tools and services." },
       { "key": "webhooks", "label": "Webhooks", "type": "boolean", "description": "Exchange data between your backend and chatbot to customize flows." },
       { "key": "javascriptAPI", "label": "Javascript API", "type": "boolean", "description": "Control Chat Widget behavior on your website with JavaScript." },
-<<<<<<< HEAD
-      { "key": "rESTAPI", "label": "REST API", "type": "boolean", "description": "Manage chatbot data and actions through secure HTTP requests." },
+      { "key": "restapi", "label": "REST API", "type": "boolean", "description": "Manage chatbot data and actions through secure HTTP requests." },
       { "key": "nativeShopifyActions", "label": "Native Shopify actions", "type": "boolean", "description": "Enables direct Shopify actions such as order lookups or refunds from within the chat interface." },
       { "key": "openAPI", "label": "OpenAPI", "type": "boolean", "description": "Provides an open API for developers to integrate, extend, or automate system functionality." },
       { "key": "slackNotifications", "label": "Slack notifications", "type": "boolean", "description": "Sends notifications to Slack based on new conversations or updates." },
       { "key": "apiKeys", "label": "API keys", "type": "boolean", "description": "Allows generating API keys for connecting external systems or automations." },
       { "key": "integrations", "label": "Integrations", "type": "boolean", "description": "Supports connecting external systems and services directly with the platform." }
-=======
-      { "key": "restapi", "label": "REST API", "type": "boolean", "description": "Manage chatbot data and actions through secure HTTP requests." }
-
->>>>>>> origin/main
     ]
   },
   {
@@ -220,48 +204,7 @@
       { "key": "maxQueueAutoHide", "label": "Max Queue Auto-hide/Auto-offline", "type": "boolean", "description": "Hide or switch widget offline automatically when queue length exceeds a limit." },
       { "key": "multilingualWidget", "label": "Multilingual Chat Widget", "type": "boolean", "description": "Offer the chat widget in 40+ languages; configure per-widget language options." },
       { "key": "versionHistory", "label": "Version History", "type": "boolean", "description": "Access ten last versions of your chatbots and restore previous ones if needed." },
-      { "key": "liveChat", "label": "LiveChat", "type": "boolean", "description": "Connect LiveChat to combine AI efficiency with human support." },
-      { "key": "chatPage", "label": "Chat page", "type": "boolean", "description": "Provides a dedicated webpage where customers can start a chat outside the main site widget." },
-      { "key": "noPlatformBranding", "label": "No platform branding", "type": "boolean", "description": "Removes default platform branding from the chat widget. May require an add-on or higher-tier plan." },
-      { "key": "customBranding", "label": "Custom branding", "type": "boolean", "description": "Allows applying custom brand elements such as logo, colors, and visual identity across the chat experience." },
-      { "key": "contactFormsButtons", "label": "Contact forms – Contact us buttons", "type": "text", "description": "Number of 'Contact us' buttons or contact form entry points that can be added." },
-      { "key": "contactFormsInPage", "label": "Contact forms – In page", "type": "text", "description": "Number of embedded in-page contact forms supported under this plan." },
-      { "key": "liveChatButtons", "label": "Live chat button", "type": "text", "description": "Number of live chat button placements supported under this plan." },
-      { "key": "proactiveChatInvitations", "label": "Proactive chat invitations", "type": "boolean", "description": "Allows triggering chat invitations to visitors based on behavior or conditions." },
-      { "key": "feedbackButtons", "label": "Feedback buttons", "type": "boolean", "description": "Adds feedback buttons to collect customer ratings or reactions." },
-      { "key": "chatTranscripts", "label": "Chat transcripts", "type": "boolean", "description": "Allows downloading or viewing transcripts of chat conversations." },
-      { "key": "fileSharingOverChat", "label": "File sharing over chat", "type": "boolean", "description": "Allows sending and receiving files directly in the chat window." },
-      { "key": "mobileChatWindow", "label": "Mobile chat window", "type": "boolean", "description": "Optimized chat widget experience for mobile devices." },
-      { "key": "chatWelcomeMessageSetting", "label": "Chat welcome message setting", "type": "boolean", "description": "Allows setting a custom welcome message that appears when a chat starts." },
-      { "key": "chatSatisfactionSurveys", "label": "Chat satisfaction surveys", "type": "boolean", "description": "Sends post-chat rating prompts to collect customer satisfaction feedback." },
-      { "key": "contactFormWidgetsCustomization", "label": "Contact form widgets customization", "type": "boolean", "description": "Allows customizing the appearance and behavior of contact form widgets." },
-      { "key": "chatWidgetsCustomization", "label": "Chat widgets customization", "type": "boolean", "description": "Allows customizing design and layout of chat widgets to match brand style." },
-      { "key": "soundConfiguration", "label": "Sound configuration", "type": "boolean", "description": "Allows configuring notification and chat sound settings." },
-      { "key": "callWidgetsCustomization", "label": "Call widgets customization", "type": "boolean", "description": "Allows customizing the appearance and layout of call widgets." },
-      { "key": "videoCallWidgetsCustomization", "label": "Video call widgets customization", "type": "boolean", "description": "Allows customizing the appearance and layout of video call widgets." },
-      { "key": "brandingFree", "label": "Branding free", "type": "text", "description": "Removes default platform branding from chat widgets. May require a paid add-on depending on the plan." },
-      { "key": "multipleLanguageSupport", "label": "Multiple language support", "type": "boolean", "description": "Allows using the platform interface and communication tools in multiple languages." },
-      { "key": "multipleWebsiteSupport", "label": "Multiple website support", "type": "boolean", "description": "Allows using the chat or help center across multiple websites or domains." },
-      { "key": "multibrandSupport", "label": "Multibrand support", "type": "boolean", "description": "Supports managing multiple brands with separate configurations or appearance settings." },
-      { "key": "webWidget", "label": "Web widget", "type": "boolean", "description": "Provides a web-based widget that can be embedded on websites for customer interactions." },
-      { "key": "mobileSdks", "label": "Mobile SDKs: iOS SDK, Android SDK, and Unity SDK", "type": "boolean", "description": "Offers mobile software development kits for iOS, Android, and Unity applications." },
-      { "key": "widgetCustomization", "label": "Widget customization", "type": "boolean", "description": "Allows adjusting the appearance and behavior of the chat widget." },
-      { "key": "preChatForm", "label": "Pre-chat form", "type": "boolean", "description": "Shows a form to collect user information before starting a chat." },
-      { "key": "unlimitedConcurrentChats", "label": "Unlimited concurrent chats", "type": "boolean", "description": "Allows agents to handle an unlimited number of chats at the same time." },
-      { "key": "shortcuts", "label": "Shortcuts", "type": "boolean", "description": "Provides quick reply shortcuts for frequently used responses." },
-      { "key": "automaticTranslation", "label": "Automatic translation", "type": "boolean", "description": "Automatically translates messages between agents and customers during conversations." },
-      { "key": "sendAndReceiveFiles", "label": "Send and receive files", "type": "boolean", "description": "Enables file sharing within the chat interface." },
-      { "key": "conversationRating", "label": "Conversation rating", "type": "boolean", "description": "Allows customers to rate their chat experience after a conversation." },
-      { "key": "transfersBetweenAgentsAndDepartments", "label": "Transfers between agents & departments", "type": "boolean", "description": "Allows transferring chats between agents or departments." },
-      { "key": "richMessageTypes", "label": "Rich message types", "type": "boolean", "description": "Supports interactive or enhanced message formats such as cards, buttons, or structured replies." },
-      { "key": "conversationHistory", "label": "Conversation history", "type": "boolean", "description": "Allows viewing past conversations with the customer within the chat interface." },
-      { "key": "reEngagement", "label": "Re-engagement", "type": "boolean", "description": "Enables sending follow-up messages to re-engage customers after a conversation." },
-      { "key": "whisperMode", "label": "Whisper mode", "type": "boolean", "description": "Allows agents or supervisors to leave internal notes visible only to team members during a live chat." },
-      { "key": "warmTransfer", "label": "Warm transfer", "type": "boolean", "description": "Enables transferring a conversation with context so the next agent sees the full background." },
-      { "key": "sendProactiveMessages", "label": "Send proactive messages", "type": "boolean", "description": "Allows sending messages to customers proactively, before they initiate contact." },
-      { "key": "widgetUnbranding", "label": "Widget unbranding", "type": "boolean", "description": "Removes platform branding from the chat widget." }
-
-
+      { "key": "liveChat", "label": "LiveChat", "type": "boolean", "description": "Connect LiveChat to combine AI efficiency with human support." }
 
     ]
   },
@@ -285,32 +228,7 @@
       { "key": "automaticBotBuilding", "label": "Automatic Bot Building", "type": "boolean", "description": "Get a fully functional chatbot based on your existing business data." },
       { "key": "aiAssist", "label": "AI Assist", "type": "boolean", "description": "Use AI to instantly and accurately answer customer questions." },
       { "key": "aiModelTraining", "label": "AI Model Training", "type": "boolean", "description": "Review and fine-tune answers generated by AI." },
-      { "key": "multilingualAIb", "label": "Multilingual AIb", "type": "boolean", "description": "Use AI to answer customer questions in any language." },
-      { "key": "aiAgentConversations", "label": "AI Agent conversations", "type": "text", "description": "Number of conversations handled by the AI agent included in the plan. Some plans include a free lifetime quota (e.g., first 50 conversations), with higher limits or custom options available on paid tiers." },
-      { "key": "lyroTasks", "label": "Lyro tasks", "type": "boolean", "description": "AI agent task automation feature that allows Lyro to handle customer requests or actions automatically within the plan." },
-      { "key": "lyroConnect", "label": "Lyro Connect", "type": "boolean", "description": "Enables connecting the AI agent (Lyro) with external tools or communication channels." },
-      { "key": "lyroCustomName", "label": "Lyro custom name", "type": "boolean", "description": "Allows assigning a custom name to the AI agent (Lyro)." },
-      { "key": "lyroProductRecommendation", "label": "Lyro product recommendation", "type": "boolean", "description": "Provides AI-based product recommendations available with a paid AI agent quota or on higher-tier plans." },
-      { "key": "copilot", "label": "Copilot", "type": "boolean", "description": "Helps support agents during customer chats by suggesting AI-generated replies, summaries, and context insights in real time." },
-      { "key": "aiReplyAssistant", "label": "AI reply assistant", "type": "boolean", "description": "Automatically drafts or suggests message replies using AI." },
-      { "key": "aiAnswerAssistant", "label": "AI Answer Assistant", "type": "boolean", "description": "Suggests or generates reply messages using AI to assist agents." },
-      { "key": "aiChatbot", "label": "AI Chatbot", "type": "boolean", "description": "Enables automated chat conversations handled by AI without agent involvement." },
-      { "key": "aiAgentsForEmail", "label": "AI agents for email", "type": "boolean", "description": "Enables AI-powered agents to handle or assist with email conversations." },
-      { "key": "generativeReplies", "label": "Generative replies", "type": "boolean", "description": "Enables AI-generated reply suggestions for faster agent responses." },
-      { "key": "aiAgentPersona", "label": "AI agent persona", "type": "boolean", "description": "Allows defining a personalized AI agent behavior style or persona." },
-      { "key": "instructions", "label": "Instructions", "type": "boolean", "description": "Supports adding custom instructions to guide AI agent behavior." },
-      { "key": "escalationsAndDataCapture", "label": "Escalations and data capture", "type": "boolean", "description": "Enables AI-driven escalation flows and automatic data collection during conversations." },
-      { "key": "aiAgentBuilder", "label": "AI agent builder", "type": "boolean", "description": "Provides tools to create, configure, and manage AI agents." },
-      { "key": "integrationsAndActions", "label": "Integrations & actions", "type": "boolean", "description": "Allows AI agents to trigger integrations or actions in connected systems." },
-      { "key": "reasoningControls", "label": "Reasoning controls", "type": "text", "description": "Settings that control how the AI reasons and responds; may require an Advanced AI Agents add-on." },
-      { "key": "essentialLanguageSupport", "label": "Essential language support", "type": "boolean", "description": "Provides access to the basic set of supported languages." },
-      { "key": "advancedLanguageSupport", "label": "Advanced language support", "type": "text", "description": "Provides access to the extended set of supported languages; requires the Advanced AI Agents add-on." },
-      { "key": "includedAutomatedResolutions", "label": "Included automated resolutions", "type": "text", "description": "Number of automated resolutions included in the plan, such as 5 ARs per agent per month." },
-      { "key": "committedAutomatedResolutions", "label": "Committed automated resolutions (volume discounts available)", "type": "text", "description": "Pre-purchased automated resolutions billed at a fixed rate; volume discounts may apply." },
-      { "key": "payAsYouGoAutomatedResolutions", "label": "Pay-as-you-go automated resolutions", "type": "text", "description": "Automated resolutions billed on a usage basis without commitment." }
-
-
-
+      { "key": "multilingualAIb", "label": "Multilingual AIb", "type": "boolean", "description": "Use AI to answer customer questions in any language." }
     ]
   },
   {
@@ -324,9 +242,7 @@
       { "key": "crmNotes", "label": "Customer-based Notes", "type": "boolean", "description": "Leave internal notes on customer profiles for better collaboration." },
       { "key": "crmLifecycle", "label": "Customer Lifecycle Tracking", "type": "boolean", "description": "Track and analyze the journey from lead to loyal customer." },
       { "key": "crmTimeline", "label": "Customer Timeline Activity", "type": "boolean", "description": "View a chronological history of interactions and events per customer." },
-      { "key": "entities", "label": "Entities", "type": "boolean", "description": "Validate user data to personalize chat flows." },
-      { "key": "contactsAndGroups","label":"Contacts & Groups","type":"boolean","description":"Allows storing contacts and organizing them into groups for easier management and segmentation."},
-      { "key": "departments", "label": "Departments", "type": "text", "description": "Number of departments supported within the workspace, such as 2 or Unlimited." }
+      { "key": "entities", "label": "Entities", "type": "boolean", "description": "Validate user data to personalize chat flows." }
 
     ]
   },
@@ -359,8 +275,7 @@
       { "key": "visualBuilder", "label": "Visual Builder", "type": "boolean", "description": "Preview and modify your chatbot using a simple drag-and-drop builder." },
       { "key": "templates", "label": "Templates", "type": "boolean", "description": "Use chatbot templates designed for specific business cases." },
       { "key": "flows", "label": "Flows", "type": "boolean", "description": "Organize your chatbot into subflows for a better editing experience." },
-<<<<<<< HEAD
-      { "key": "momentsSDK", "label": "Moments SDK", "type": "boolean", "description": "Embed any website or web application in an iframe during the conversation." },
+      { "key": "embeddedApps", "label": "Embedded Apps", "type": "boolean", "description": "Embed apps in the chat window." },
       { "key": "visitorsReachedViaFlows", "label": "Visitors Reached via Flows", "type": "text", "description": "Defines how many unique visitors can be automatically engaged or messaged through chatbot Flows each month." },
       { "key": "salesFlowsTemplates", "label": "Sales Flows Templates", "type": "boolean", "description": "Offers ready-to-use chatbot flow templates focused on driving sales and improving conversion rates." },
       { "key": "faqFlowsTemplates", "label": "FAQ Flows Templates", "type": "boolean", "description": "Provides predefined chatbot flow templates for automatically answering common customer questions." },
@@ -394,10 +309,6 @@
       { "key": "skillsBasedRouting", "label": "Skills-based routing", "type": "boolean", "description": "Routes conversations to agents based on their skills or expertise." },
       { "key": "businessHours", "label": "Business hours", "type": "text", "description": "Indicates the type or number of business hours configurations available, such as Single." }
 
-
-=======
-      { "key": "embeddedApps", "label": "Embedded Apps", "type": "boolean", "description": "Embed apps in the chat window." }
->>>>>>> origin/main
     ]
   },
   {
@@ -412,37 +323,7 @@
       { "key": "hcFeedback", "label": "Article Feedback", "type": "boolean", "description": "Let users rate and comment on help articles." },
       { "key": "hcDomain", "label": "Custom Domain Name", "type": "boolean", "description": "Use your own branded domain for the help center." },
       { "key": "hcSeo", "label": "Sitemap & SEO Meta Data", "type": "boolean", "description": "Optimize the help center for search engines with sitemaps and metadata." },
-      { "key": "interactionsPopularity", "label": "Interactions Popularity", "type": "boolean", "description": "See popularity metrics per interaction within a chatbot." },
-      { "key": "helpCenter", "label": "Help center", "type": "boolean", "description": "Chatbot install, use & customize—all in one place." },
-      { "key": "emailSupport", "label": "Email support", "type": "boolean", "description": "Briefly contact the support team via email." },
-      { "key": "chatSupport", "label": "Chat support", "type": "boolean", "description": "Connect with our support via live chat." },
-      { "key": "serviceLevelAgreements(SLAs)", "label": "Service level agreements (SLAs)", "type": "boolean", "description": "Ensures reliable uptime and fast support for business continuity." },
-      { "key": "personalOnboarding", "label": "Personal onboarding", "type": "boolean", "description": "Get a guided ChatBot tour from our expert." },
-      { "key": "prioritySupport", "label": "Priority support", "type": "boolean", "description": "Support inquiries handled with top priority." },
-      { "key": "legalAssistance", "label": "Legal assistance", "type": "boolean", "description": "We’ll prepare and review the legal documents you need to start." },
-      { "key": "botBuildingService", "label": "Bot building service", "type": "boolean", "description": "Custom chatbots created to fit your business needs." },
-      { "key": "botMaintenance", "label": "Bot maintenance", "type": "boolean", "description": "Our experts monitor and optimize your chatbots over time." },
-      { "key": "dedicatedAccountManager", "label": "Dedicated account manager", "type": "boolean", "description": "A dedicated manager assists with your ChatBot license and setup." },
-      { "key": "importZendeskArticles", "label": "Import Zendesk articles", "type": "boolean", "description": "Imports existing help center articles from external platforms into the knowledge base." },
-      { "key": "customerPortal", "label": "Customer Portal", "type": "boolean", "description": "Provides customers with a portal to view and manage their support requests." },
-      { "key": "customerForum", "label": "Customer forum", "type": "boolean", "description": "Provides a community forum where customers can ask questions and share feedback." },
-      { "key": "ticketHistory","label": "Ticket history", "type": "text", "description": "Allows viewing past support tickets and their conversation history."},
-      { "key": "mergeTickets","label": "Merge tickets","type": "boolean", "description": "Allows combining duplicate or related tickets into a single thread."},
-      { "key": "customTicketFields","label":"Custom ticket fields","type":"boolean","description": "Lets you define custom fields to collect additional ticket information."},
-      { "key": "splitTickets","label":"Split tickets","type":"boolean","description":"Allows splitting one conversation into multiple tickets."},
-      { "key": "internalTickets","label":"Internal tickets","type":"boolean","description":"Supports creating tickets for internal-only use without customer visibility."},
-      { "key": "attachments","label":"Attachments","type":"boolean","description":"Allows sending and receiving files within tickets and conversations."},
-      { "key": "ticketSatisfactionSurvey","label":"Ticket satisfaction survey","type":"boolean","description":"Allows sending satisfaction surveys after ticket resolution."},
-      { "key": "agentNotesToTickets","label":"Agent notes to tickets","type":"boolean","description":"Allows agents to add internal notes to tickets for internal collaboration."},
-      { "key": "customerMailTemplates", "label": "Customer mail templates", "type": "boolean", "description": "Provides customizable email templates for replying to customers." },
-      { "key": "knowledgeBase", "label": "Knowledge base", "type": "text", "description": "Provides a searchable knowledge base for customers to find self-help articles." },
-      { "key": "additionalKnowledgeBase", "label": "Additional knowledge base", "type": "text",  "description": "Allows adding extra knowledge base instances. May require a paid add-on per additional KB." },
-      { "key": "customDomainParking", "label": "Custom domain parking", "type": "boolean","description": "Allows hosting the customer portal or knowledge base under a custom domain." },
-      { "key": "assistedDomainParking", "label": "Assisted domain parking", "type": "boolean", "description": "Provides assistance with setting up a custom domain for the help center or knowledge base." },
-      { "key": "customSystemEmailTemplates", "label": "Customisation of system email templates", "type": "boolean", "description": "Allows editing and customizing the default system email templates sent to users or customers." },
-      { "key": "ticketFileAttachmentSize", "label": "Ticket file attachment size", "type": "text", "description": "Maximum allowed size for file attachments in tickets, such as 50MB." }
-
-
+      { "key": "interactionsPopularity", "label": "Interactions Popularity", "type": "boolean", "description": "See popularity metrics per interaction within a chatbot." }
     ]
   },
   {
@@ -461,7 +342,7 @@
       { "key": "embedApps", "label": "Embed Apps", "type": "boolean", "description": " Open any web application inside the ongoing chat." },
       { "key": "busiestPeriod", "label": "Busiest period", "type": "boolean", "description": "Heatmap showing your chatbot’s workload by time of day." },
       { "key": "averageMessages", "label": "Average messages", "type": "boolean", "description": "Average messages per chatbot conversation." },
-<<<<<<< HEAD
+      { "key": "allUsers", "label": "All users", "type": "boolean", "description": "Total users who interacted with your chatbot." }
       { "key": "allUsers", "label": "All users", "type": "boolean", "description": "Total users who interacted with your chatbot." },
       { "key": "faqUpload", "label": "FAQ upload", "type": "boolean", "description": "Allows uploading FAQ files to populate the knowledge base." },
       { "key": "faqScraper", "label": "FAQ scraper", "type": "boolean", "description": "Extracts Q&A from an existing FAQ page." },
@@ -490,9 +371,6 @@
       { "key": "advancedAiAgentReporting", "label": "Advanced AI agent reporting", "type": "text", "description": "Provides advanced reporting features for AI agents; requires the Advanced AI Agents add-on." }
 
       
-=======
-      { "key": "allUsers", "label": "All users", "type": "boolean", "description": "Total users who interacted with your chatbot." }
->>>>>>> origin/main
     ]
   },
   {
@@ -518,8 +396,7 @@
       { "key": "sSO(Google,Microsoft,Apple)", "label": "SSO (Google, Microsoft, Apple)", "type": "boolean", "description": "Sign in using your Google, Microsoft, Apple, or Text account." },
       { "key": "dataRemoval", "label": "Data removal", "type": "boolean", "description": "Remove user and chat data." },
       { "key": "automaticDataRemoval", "label": "Automatic data removal", "type": "boolean", "description": "Automatically delete user and chat data after a set period." },
-<<<<<<< HEAD
-      { "key": "customSSO", "label": "Custom SSO", "type": "boolean", "description": "Seamlessly authenticate across your enterprise apps with ChatBot single sign-on support." },
+      { "key": "customSSO", "label": "Custom SSO", "type": "boolean", "description": "Seamlessly authenticate across your enterprise apps with single sign-on support." },
       { "key": "securityAssistance", "label": "Security assistance", "type": "boolean", "description": "Get expert advice on securing ChatBot in your company." },
       { "key": "permissions", "label": "Permissions", "type": "boolean", "description": "Allows defining user roles and access levels to control permissions within the workspace." },
       { "key": "customRoles", "label": "Custom roles", "type": "text", "description": "Allows creating custom permission roles for agents. Limits may vary by plan." },
@@ -536,10 +413,6 @@
       { "key": "incomingEmailAuthentication", "label": "Incoming email authentication: SPF, DKIM, DMARC", "type": "boolean", "description": "Supports email authentication standards such as SPF, DKIM, and DMARC for secure message verification." },
       { "key": "automaticEmailArchiving", "label": "Automatic email archiving", "type": "boolean", "description": "Automatically stores and archives email messages for future reference." }
 
-
-=======
-      { "key": "customSSO", "label": "Custom SSO", "type": "boolean", "description": "Seamlessly authenticate across your enterprise apps with single sign-on support." }
->>>>>>> origin/main
     ]
   },
   {
@@ -548,35 +421,19 @@
     "rows": [
       { "key": "sandbox", "label": "Sandbox Environment", "type": "boolean", "description": "Test workflows and configurations in an isolated environment." },
       { "key": "auditLogs", "label": "Audit Logs", "type": "boolean", "description": "Track all changes and activities across the system." },
-      { "key": "businessRulesAnalysis", "label": "Business Rules Analysis", "type": "boolean", "description": "Analyze the impact of business rules and automations." },
-      { "key": "multiproject", "label": "Multiproject", "type": "boolean", "description": "Allows managing multiple projects or workspaces under a single account." },
-      { "key": "dedicatedSuccessManager", "label": "Dedicated Success Manager", "type": "boolean", "description": "Assigns a dedicated customer success manager for ongoing support and optimization." },
-      { "key": "trainingSessions", "label": "Training sessions", "type": "boolean", "description": "Includes scheduled training sessions to help your team use the platform effectively." },
-      { "key": "accountReviews", "label": "Account reviews", "type": "boolean", "description": "Provides periodic reviews of account setup and performance to optimize results." },
-      { "key": "aiConfigurationService", "label": "AI configuration service", "type": "boolean", "description": "Includes assistance with configuring and fine-tuning AI features." },
-      { "key": "chatbotSetupService", "label": "Chatbot setup service", "type": "boolean", "description": "Provides help with setting up and deploying chatbots." },
-      { "key": "ivrSetupService", "label": "IVR setup service", "type": "boolean", "description": "Includes assistance with setting up IVR call flows and routing." },
-      { "key": "productSetupTraining", "label": "Product setup training", "type": "boolean", "description": "Includes guided training on how to use and configure the product." },
-      { "key": "consultingServices", "label": "Consulting services", "type": "boolean", "description": "Provides expert consulting assistance for setup, optimization, or workflow planning." },
-      { "key": "prioritySupport", "label": "Priority support", "type": "boolean", "description": "Provides faster response and resolution times compared to standard support." },
-      { "key": "dedicatedAccountManager", "label": "Dedicated account manager", "type": "boolean", "description": "Assigns a dedicated specialist to assist with ongoing account needs." },
-      { "key": "scheduledReleaseManagement", "label": "Scheduled release management", "type": "boolean", "description": "Allows coordinating product updates and releases to fit your workflow schedule." },
-      { "key": "serviceReviewCallAndReports", "label": "Service review call and reports", "type": "boolean", "description": "Includes periodic performance review calls and service usage reports." },
-      { "key": "customBillingSetup", "label": "Custom billing setup", "type": "boolean", "description": "Allows configuring invoicing and billing terms according to business requirements." }
-
+      { "key": "businessRulesAnalysis", "label": "Business Rules Analysis", "type": "boolean", "description": "Analyze the impact of business rules and automations." }
     ]
   },
   {
     "id": "uiux",
     "label": "UI/UX",
     "rows": [
-      { "key": "straightStart", "label": "Straight-forward Start", "type": "boolean", "description": "Chat can start immediately without registration, explicit consent gates, or other blockers." } ,
-      { "key": "multilanguage", "label": "Multilanguage", "type": "boolean", "description": "Supports multiple interface or chat languages to serve users in different locales." },
-      { "key":"wysiwygEditor","label":"WYSIWYG editor","type":"boolean","description":"Provides a visual rich-text editor for composing ticket replies."},
-      { "key":"multipleTicketTabs","label":"Multiple ticket tabs","type":"boolean","description":"Allows working with multiple open tickets at the same time in separate tabs."},
-      { "key": "designCustomizationAssistance", "label": "Design customization assistance", "type": "boolean", "description": "Provides support or guidance in customizing the visual design of widgets or interface components." },
-      { "key": "iphoneAndroidApps", "label": "iPhone/Android apps", "type": "boolean", "description": "Provides native mobile applications for iOS and Android devices." }
-
+      {
+        "key": "straightStart",
+        "label": "Straight-forward Start",
+        "type": "boolean",
+        "description": "Chat can start immediately without registration, explicit consent gates, or other blockers."
+      }
     ]
   },
   {
