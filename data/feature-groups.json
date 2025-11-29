@@ -55,7 +55,7 @@
       { "key": "tags", "label": "Tags", "type": "boolean", "description": "Tag conversations for search and reporting." },
       { "key": "teamcollaboration", "label": "Team Collaboration", "type": "boolean", "description": "Invite your teammates and build chatbots together." }, 
       { "key": "allChats", "label": "All chats", "type": "boolean", "description": "Total chats in a period." },
-      { "key": "allMessages", "label": "All messages", "type": "boolean", "description": "Total messages received by your chatbot." }
+      { "key": "allMessages", "label": "All messages", "type": "boolean", "description": "Total messages received by your chatbot." },
       { "key": "allMessages", "label": "All messages", "type": "boolean", "description": "Total messages received by your chatbot." },
       { "key": "visitorNotes", "label": "Visitor notes", "type": "boolean", "description": "Allows agents to add internal notes about a visitor or conversation for future reference." }
     ]
@@ -76,11 +76,7 @@
       { "key": "phone", "label": "Phone", "type": "boolean", "description": "Answer phone calls and trigger outbound calls directly from the platform." },
       { "key": "line", "label": "Line", "type": "boolean", "description": "Receive and reply to Line messages in the shared inbox." },
       { "key": "whatsappBiz", "label": "WhatsApp Business", "type": "boolean", "description": "Receive and reply to WhatsApp Business messages in the shared inbox." },
-      { "key": "activeChatbots", "label": "Active chatbots", "type": "text", "description": "A legal agreement ensuring data is handled in line with regulations." },
-      { "key": "webflow", "label": "Webflow", "type": "text", "description": "Add chatbot to your Webflow site." },
-      { "key": "bigCommerce", "label": "BigCommerce", "type": "text", "description": "Connect your chatbot to BigCommerce." }
-    ]
-      { "key": "activeChatbots", "label": "Active chatbots", "type": "number", "description": "Maximum number of chatbots you can have active at the same time under this plan." },
+      { "key": "activeChatbots", "label": "Active chatbots", "type": "text", "description": "Maximum number of chatbots you can have active at the same time under this plan." },
       { "key": "webflow", "label": "Webflow", "type": "boolean", "description": "Add ChatBot to your Webflow site." },
       { "key": "bigCommerce", "label": "BigCommerce", "type": "boolean", "description": "Connect your ChatBot to BigCommerce." },
       { "key": "liveChat", "label": "Live Chat", "type": "boolean", "description": "Enables real-time text conversations between website visitors and support agents through an embedded chat window." },
@@ -132,25 +128,8 @@
       { "key": "localAndTollFreeNumbers", "label": "Local and toll-free numbers", "type": "boolean", "description": "Supports using local or toll-free phone numbers for inbound and outbound calling." },
       { "key": "inboundAndOutboundMinutes", "label": "Inbound and outbound minutes", "type": "text", "description": "Indicates the number of included inbound and outbound call minutes in the plan." },
       { "key": "contactCenter", "label": "Contact Center", "type": "text", "description": "Provides access to contact center capabilities; available as an add-on." }
-
-
-
-      
-
-
-
-
-
-
-
-      
-
-
-
-
-
-     ]
-  },  
+    ]
+  }, 
   {
     "id": "integrations",
     "label": "Integrations & Apps",
@@ -205,7 +184,6 @@
       { "key": "multilingualWidget", "label": "Multilingual Chat Widget", "type": "boolean", "description": "Offer the chat widget in 40+ languages; configure per-widget language options." },
       { "key": "versionHistory", "label": "Version History", "type": "boolean", "description": "Access ten last versions of your chatbots and restore previous ones if needed." },
       { "key": "liveChat", "label": "LiveChat", "type": "boolean", "description": "Connect LiveChat to combine AI efficiency with human support." }
-
     ]
   },
   {
@@ -243,7 +221,6 @@
       { "key": "crmLifecycle", "label": "Customer Lifecycle Tracking", "type": "boolean", "description": "Track and analyze the journey from lead to loyal customer." },
       { "key": "crmTimeline", "label": "Customer Timeline Activity", "type": "boolean", "description": "View a chronological history of interactions and events per customer." },
       { "key": "entities", "label": "Entities", "type": "boolean", "description": "Validate user data to personalize chat flows." }
-
     ]
   },
   {
@@ -308,7 +285,6 @@
       { "key": "slaLevels", "label": "SLA levels", "type": "text", "description": "Number of SLA priority levels that can be configured." },
       { "key": "skillsBasedRouting", "label": "Skills-based routing", "type": "boolean", "description": "Routes conversations to agents based on their skills or expertise." },
       { "key": "businessHours", "label": "Business hours", "type": "text", "description": "Indicates the type or number of business hours configurations available, such as Single." }
-
     ]
   },
   {
@@ -342,9 +318,7 @@
       { "key": "embedApps", "label": "Embed Apps", "type": "boolean", "description": " Open any web application inside the ongoing chat." },
       { "key": "busiestPeriod", "label": "Busiest period", "type": "boolean", "description": "Heatmap showing your chatbot’s workload by time of day." },
       { "key": "averageMessages", "label": "Average messages", "type": "boolean", "description": "Average messages per chatbot conversation." },
-      { "key": "allUsers", "label": "All users", "type": "boolean", "description": "Total users who interacted with your chatbot." }
-      { "key": "allUsers", "label": "All users", "type": "boolean", "description": "Total users who interacted with your chatbot." },
-      { "key": "faqUpload", "label": "FAQ upload", "type": "boolean", "description": "Allows uploading FAQ files to populate the knowledge base." },
+      { "key": "allUsers", "label": "All users", "type": "boolean", "description": "Total users who interacted with your chatbot." },      { "key": "faqUpload", "label": "FAQ upload", "type": "boolean", "description": "Allows uploading FAQ files to populate the knowledge base." },
       { "key": "faqScraper", "label": "FAQ scraper", "type": "boolean", "description": "Extracts Q&A from an existing FAQ page." },
       { "key": "websiteScraper", "label": "Website scraper", "type": "boolean", "description": "Scans website content to build the knowledge base." },
       { "key": "basicAnalytics", "label": "Basic analytics", "type": "boolean", "description": "Provides essential performance metrics such as chat volume, response time, and agent activity." },
@@ -369,8 +343,6 @@
       { "key": "automatedResolutionsReporting", "label": "Automated resolutions reporting", "type": "boolean", "description": "Provides reporting on cases resolved automatically by AI or automation tools." },
       { "key": "essentialAiAgentReporting", "label": "Essential AI agent reporting", "type": "boolean", "description": "Includes basic reporting and insights on AI agent performance." },
       { "key": "advancedAiAgentReporting", "label": "Advanced AI agent reporting", "type": "text", "description": "Provides advanced reporting features for AI agents; requires the Advanced AI Agents add-on." }
-
-      
     ]
   },
   {
@@ -412,7 +384,6 @@
       { "key": "sso", "label": "SSO", "type": "boolean", "description": "Allows users to sign in using Single Sign-On authentication." },
       { "key": "incomingEmailAuthentication", "label": "Incoming email authentication: SPF, DKIM, DMARC", "type": "boolean", "description": "Supports email authentication standards such as SPF, DKIM, and DMARC for secure message verification." },
       { "key": "automaticEmailArchiving", "label": "Automatic email archiving", "type": "boolean", "description": "Automatically stores and archives email messages for future reference." }
-
     ]
   },
   {
