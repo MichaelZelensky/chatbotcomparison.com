@@ -820,9 +820,10 @@
       "slack": true,
       "phone": true,
       "email": true,
-      "straightStart": true
+      "straightStart": true,
+      "generativeSearch": true
     },
-    "suite-growth": {
+    "suiteTeam": {
       "planPrice": "$89",
       "freeTrial": "14 days",
       "aiUsage": "Essential AI agents",
@@ -837,9 +838,18 @@
       "slack": true,
       "phone": true,
       "email": true,
-      "straightStart": true
+      "straightStart": true,
+      "knowledgeBuilder": true,
+      "contextualSelfService": true,
+      "multilingualContent": "1 default language", 
+      "articleViewPermissions": "All registered users", 
+      "structuredContent": "Up to 2 levels deep",
+      "themeCustomization": "Basic, Standard themes", 
+      "multipleHelpCenters": "1", 
+      "search": "Help center",
+      "generativeSearch": true
     },
-    "suite-professional": {
+    "suiteProfessional": {
       "planPrice": "$149",
       "freeTrial": "14 days",
       "aiUsage": "Advanced AI + persona customization",
@@ -925,7 +935,18 @@
       "callQualityNotifications": true,
       "localAndTollFreeNumbers": "Add-on",
       "inboundAndOutboundMinutes": "Add-on", 
-      "contactCenter": "Add-on"
+      "contactCenter": "Add-on",
+      "knowledgeBuilder": true,
+      "contextualSelfService": true,
+      "multilingualContent": "40+ languages", 
+      "articleViewPermissions": "All registered users, custom user segment", 
+      "structuredContent": "Up to 2 levels deep",
+      "themeCustomization": "Intermediate, Standard +, Custom +, Marketplace Themes", 
+      "multipleHelpCenters": "Up to 5", 
+      "search": "Help center + community forums",
+      "generativeSearch": true, 
+      "customerPortal": true, 
+      "serviceCatalog": true
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1020,8 +1041,18 @@
       "callUsageUptimeSla": true,
       "localAndTollFreeNumbers": "Add-on",
       "inboundAndOutboundMinutes": "Add-on", 
-      "contactCenter": "Add-on"
-
+      "contactCenter": "Add-on",
+      "knowledgeBuilder": true,
+      "contextualSelfService": true,
+      "multilingualContent": "40+ languages", 
+      "articleViewPermissions": "AAll registered users,custom user segments (multiple)", 
+      "structuredContent": "Up to 6 levels deep",
+      "themeCustomization": "Advanced, Standard +, Custom +, Marketplace +, Multiple templates", 
+      "multipleHelpCenters": "Up to 300", 
+      "search": "Federated search for multiple help centers + community forums",
+      "generativeSearch": true, 
+      "customerPortal": true, 
+      "serviceCatalog": true
     }
   },
   "liveagent": {

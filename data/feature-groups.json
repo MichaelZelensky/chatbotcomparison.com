@@ -299,7 +299,18 @@
       { "key": "hcFeedback", "label": "Article Feedback", "type": "boolean", "description": "Let users rate and comment on help articles." },
       { "key": "hcDomain", "label": "Custom Domain Name", "type": "boolean", "description": "Use your own branded domain for the help center." },
       { "key": "hcSeo", "label": "Sitemap & SEO Meta Data", "type": "boolean", "description": "Optimize the help center for search engines with sitemaps and metadata." },
-      { "key": "interactionsPopularity", "label": "Interactions Popularity", "type": "boolean", "description": "See popularity metrics per interaction within a chatbot." }
+      { "key": "interactionsPopularity", "label": "Interactions Popularity", "type": "boolean", "description": "See popularity metrics per interaction within a chatbot." },
+      { "key": "knowledgeBuilder", "label": "Knowledge builder", "type": "boolean", "description": "Provides tools to create and manage knowledge content for customer self-service." },
+      { "key": "contextualSelfService", "label": "Contextual self-service", "type": "boolean", "description": "Enables customers to access relevant self-service information based on their current context." },
+      { "key": "multilingualContent", "label": "Multilingual content", "type": "text", "description": "Indicates the number of supported languages, such as 1 default language or 40+ languages." },
+      { "key": "articleViewPermissions", "label": "Article view permissions", "type": "text", "description": "Defines who can view help center articles, such as all registered users." },
+      { "key": "structuredContent", "label": "Structured content", "type": "text", "description": "Specifies the supported depth of structured content, such as up to 2 levels." },
+      { "key": "themeCustomization", "label": "Theme customization", "type": "boolean", "description": "Allows customizing the visual design and layout of the help center theme." },
+      { "key": "multipleHelpCenters", "label": "Multiple help centers", "type": "text", "description": "Indicates how many help centers can be created under the plan, such as 1 or Unlimited." },
+      { "key": "search", "label": "Search", "type": "text", "description": "Specifies the search capability limits or indexing depth available in the plan." },
+      { "key": "generativeSearch", "label": "Generative search", "type": "boolean", "description": "Enables AI-powered search that generates relevant results based on customer queries." },
+      { "key": "customerPortal", "label": "Customer portal", "type": "boolean", "description": "Provides a customer-facing portal for submitting and tracking requests." },
+      { "key": "serviceCatalog", "label": "Service Catalog", "type": "boolean", "description": "Allows displaying a catalog of services that customers can browse and request." }
     ]
   },
   {
