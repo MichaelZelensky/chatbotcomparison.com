@@ -847,7 +847,11 @@
       "themeCustomization": "Basic, Standard themes", 
       "multipleHelpCenters": "1", 
       "search": "Help center",
-      "generativeSearch": true
+      "generativeSearch": true,
+      "richTextWysiwygEditor": true,
+      "seoReady": true,
+      "bulkActions": "Basic",
+      "knowledgeConnectors": true
     },
     "suiteProfessional": {
       "planPrice": "$149",
@@ -946,7 +950,15 @@
       "search": "Help center + community forums",
       "generativeSearch": true, 
       "customerPortal": true, 
-      "serviceCatalog": true
+      "serviceCatalog": true,
+      "richTextWysiwygEditor": true,
+      "seoReady": true,
+      "bulkActions": "Intermediate",
+      "flagAndCreateKnowledge": true, 
+      "knowledgeConnectors": true, 
+      "contentAndRevisionHistory": true, 
+      "articleListsAndLabels": true,
+      "copilotGenerativeAiToolsForKnowledge": "Add-on"
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1052,7 +1064,18 @@
       "search": "Federated search for multiple help centers + community forums",
       "generativeSearch": true, 
       "customerPortal": true, 
-      "serviceCatalog": true
+      "serviceCatalog": true,
+      "richTextWysiwygEditor": true,
+      "seoReady": true,
+      "bulkActions": "Advanced",
+      "flagAndCreateKnowledge": true, 
+      "knowledgeConnectors": true, 
+      "contentAndRevisionHistory": true, 
+      "articleListsAndLabels": true, 
+      "approvalAndPublishingWorkflows": true, 
+      "scheduledPublishingAndVerification": true, 
+      "contentBlocks": true,
+      "copilotGenerativeAiToolsForKnowledge": "Add-on"
     }
   },
   "liveagent": {
