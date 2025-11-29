@@ -4,6 +4,7 @@
     <ul class="mt-4">
       <li><NuxtLink to="/features/activeChatbots">Active chatbots</NuxtLink></li>
       <li><NuxtLink to="/features/additionalAgentPrice">Additional Agents (per month)</NuxtLink></li>
+      <li><NuxtLink to="/features/adobeCommerce">Adobe Commerce</NuxtLink></li>
       <li><NuxtLink to="/features/agentsIncluded">Agents Included</NuxtLink></li>
       <li><NuxtLink to="/features/aiUsage">AI Usage</NuxtLink></li>
       <li><NuxtLink to="/features/allChats">All chats</NuxtLink></li>
@@ -26,21 +27,27 @@
       <li><NuxtLink to="/features/followups">Follow-up Reminders</NuxtLink></li>
       <li><NuxtLink to="/features/freeTrial">Free Trial</NuxtLink></li>
       <li><NuxtLink to="/features/fullHistory">Full Conversations' history</NuxtLink></li>
+      <li><NuxtLink to="/features/hubspot">HubSpot</NuxtLink></li>
       <li><NuxtLink to="/features/hybridTicketStream">Hybrid Ticket Stream</NuxtLink></li>
       <li><NuxtLink to="/features/instagram">Instagram</NuxtLink></li>
       <li><NuxtLink to="/features/internalChat">Internal Agent Chat</NuxtLink></li>
       <li><NuxtLink to="/features/internalNotes">Internal Notes</NuxtLink></li>
       <li><NuxtLink to="/features/line">Line</NuxtLink></li>
       <li><NuxtLink to="/features/liveMap">Live Geolocation Map</NuxtLink></li>
+      <li><NuxtLink to="/features/make">Make</NuxtLink></li>
       <li><NuxtLink to="/features/messenger">Messenger</NuxtLink></li>
       <li><NuxtLink to="/features/mobileApps">Mobile Apps</NuxtLink></li>
       <li><NuxtLink to="/features/paidChats">Paid chats</NuxtLink></li>
       <li><NuxtLink to="/features/phone">Phone</NuxtLink></li>
+      <li><NuxtLink to="/features/pipedrive">Pipedrive</NuxtLink></li>
       <li><NuxtLink to="/features/planPrice">Plan Price (per month)</NuxtLink></li>
+      <li><NuxtLink to="/features/prestashop">Prestashop</NuxtLink></li>
       <li><NuxtLink to="/features/ratings">Conversation Ratings</NuxtLink></li>
       <li><NuxtLink to="/features/realtimeNotif">Real-time Notifications</NuxtLink></li>
       <li><NuxtLink to="/features/roundRobin">Round-robin Routing</NuxtLink></li>
+      <li><NuxtLink to="/features/segment">Segment</NuxtLink></li>
       <li><NuxtLink to="/features/shopify">Shopify</NuxtLink></li>
+      <li><NuxtLink to="/features/slack">Slack</NuxtLink></li>
       <li><NuxtLink to="/features/sms">SMS</NuxtLink></li>
       <li><NuxtLink to="/features/tags">Tags</NuxtLink></li>
       <li><NuxtLink to="/features/teamcollaboration">Team Collaboration</NuxtLink></li>
@@ -52,9 +59,12 @@
       <li><NuxtLink to="/features/viber">Viber</NuxtLink></li>
       <li><NuxtLink to="/features/webflow">Webflow</NuxtLink></li>
       <li><NuxtLink to="/features/whatsappBiz">WhatsApp Business</NuxtLink></li>
+      <li><NuxtLink to="/features/woocommerce">WooCommerce</NuxtLink></li>
       <li><NuxtLink to="/features/wordpress">WordPress</NuxtLink></li>
       <li><NuxtLink to="/features/workingHours">Working Hours Settings</NuxtLink></li>
       <li><NuxtLink to="/features/xTwitter">X (Twitter)</NuxtLink></li>
+      <li><NuxtLink to="/features/zapier">Zapier</NuxtLink></li>
+      <li><NuxtLink to="/features/zoho">Zoho CRM</NuxtLink></li>
     </ul>
   </section>
 </template>
