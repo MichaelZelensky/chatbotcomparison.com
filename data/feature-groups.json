@@ -221,7 +221,8 @@
       { "key": "crmNotes", "label": "Customer-based Notes", "type": "boolean", "description": "Leave internal notes on customer profiles for better collaboration." },
       { "key": "crmLifecycle", "label": "Customer Lifecycle Tracking", "type": "boolean", "description": "Track and analyze the journey from lead to loyal customer." },
       { "key": "crmTimeline", "label": "Customer Timeline Activity", "type": "boolean", "description": "View a chronological history of interactions and events per customer." },
-      { "key": "entities", "label": "Entities", "type": "boolean", "description": "Validate user data to personalize chat flows." }
+      { "key": "entities", "label": "Entities", "type": "boolean", "description": "Validate user data to personalize chat flows." },
+      { "key": "userProfilesAndAliases", "label": "User profiles and aliases", "type": "text", "description": "Indicates the availability and capabilities of user profiles and alias management within the plan." }
     ]
   },
   {
@@ -321,7 +322,15 @@
       { "key": "articleListsAndLabels", "label": "Article lists & labels", "type": "boolean", "description": "Allows organizing articles into lists and adding labels for better navigation." },
       { "key": "approvalAndPublishingWorkflows", "label": "Approval and publishing workflows", "type": "boolean", "description": "Enables approval processes and controlled publishing workflows for content." },
       { "key": "scheduledPublishingAndVerification", "label": "Scheduled publishing and verification", "type": "boolean", "description": "Allows scheduling content publishing and verification tasks." },
-      { "key": "contentBlocks", "label": "Content blocks", "type": "boolean", "description": "Provides reusable content blocks for consistent knowledge base formatting." }
+      { "key": "contentBlocks", "label": "Content blocks", "type": "boolean", "description": "Provides reusable content blocks for consistent knowledge base formatting." },
+      { "key": "integratedSearch", "label": "Integrated search", "type": "boolean", "description": "Enables users to search across the help center and community from a unified search bar." },
+      { "key": "similarPosts", "label": "Similar posts", "type": "boolean", "description": "Automatically suggests related posts to users during browsing or posting." },
+      { "key": "escalatePostsToTickets", "label": "Escalate posts to tickets", "type": "boolean", "description": "Allows converting community posts into support tickets." },
+      { "key": "communityModerators", "label": "Community moderators and moderator groups", "type": "boolean", "description": "Supports assigning moderators and organizing them into groups to manage community content." },
+      { "key": "contentModerationQueue", "label": "Content moderation queue", "type": "boolean", "description": "Provides a queue for reviewing flagged or pending community content before it goes live." },
+      { "key": "aiSpamProtection", "label": "AI-powered spam protection", "type": "boolean", "description": "Uses AI to detect and block spammy or abusive content in the community." },
+      { "key": "userBadges", "label": "User badges", "type": "boolean", "description": "Enables assigning visual badges to community users based on activity or role." }
+
 
 
     ]

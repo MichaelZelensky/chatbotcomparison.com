@@ -958,7 +958,15 @@
       "knowledgeConnectors": true, 
       "contentAndRevisionHistory": true, 
       "articleListsAndLabels": true,
-      "copilotGenerativeAiToolsForKnowledge": "Add-on"
+      "copilotGenerativeAiToolsForKnowledge": "Add-on",
+      "userProfilesAndAliases": "Registered users",
+      "integratedSearch": true, 
+      "similarPosts": true, 
+      "escalatePostsToTickets": true, 
+      "communityModerators": true, 
+      "contentModerationQueue": true, 
+      "aiSpamProtection": true, 
+      "userBadges": true
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1075,7 +1083,15 @@
       "approvalAndPublishingWorkflows": true, 
       "scheduledPublishingAndVerification": true, 
       "contentBlocks": true,
-      "copilotGenerativeAiToolsForKnowledge": "Add-on"
+      "copilotGenerativeAiToolsForKnowledge": "Add-on",
+      "userProfilesAndAliases": "Registered users",
+      "integratedSearch": true, 
+      "similarPosts": true, 
+      "escalatePostsToTickets": true, 
+      "communityModerators": true, 
+      "contentModerationQueue": true, 
+      "aiSpamProtection": true, 
+      "userBadges": true
     }
   },
   "liveagent": {
