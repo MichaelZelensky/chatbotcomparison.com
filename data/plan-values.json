@@ -821,7 +821,14 @@
       "phone": true,
       "email": true,
       "straightStart": true,
-      "generativeSearch": true
+      "generativeSearch": true,
+      "unifiedAgentWorkspace": true, 
+      "translatedInterface": true, 
+      "essentialsCard": true, 
+      "interactionHistory": true,
+      "groupContactsByOrganization": "Single",
+      "customUserAndOrganizationFields": true, 
+      "customAndGroupViews": true
     },
     "suiteTeam": {
       "planPrice": "$89",
@@ -851,7 +858,15 @@
       "richTextWysiwygEditor": true,
       "seoReady": true,
       "bulkActions": "Basic",
-      "knowledgeConnectors": true
+      "knowledgeConnectors": true,
+      "unifiedAgentWorkspace": true, 
+      "translatedInterface": true, 
+      "essentialsCard": true, 
+      "interactionHistory": true,
+      "groupContactsByOrganization": "Single",
+      "customUserAndOrganizationFields": true, 
+      "customAndGroupViews": true,
+      "supportMobileApp": true
     },
     "suiteProfessional": {
       "planPrice": "$149",
@@ -966,7 +981,21 @@
       "communityModerators": true, 
       "contentModerationQueue": true, 
       "aiSpamProtection": true, 
-      "userBadges": true
+      "userBadges": true,
+      "unifiedAgentWorkspace": true, 
+      "approvals": true, 
+      "translatedInterface": true, 
+      "essentialsCard": true, 
+      "interactionHistory": true,
+      "groupContactsByOrganization": "Multiple",
+      "customUserAndOrganizationFields": true, 
+      "customAndGroupViews": true,  
+      "dynamicContent": true, 
+      "customerSatisfactionRatings":true,
+      "customAgentStatuses": "Up to 5",
+      "supportMobileApp": true,
+      "appBuilder": "Up to 5 app conversations", 
+      "copilotGenerativeAiToolsForAgents": "Add-on"
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1091,7 +1120,23 @@
       "communityModerators": true, 
       "contentModerationQueue": true, 
       "aiSpamProtection": true, 
-      "userBadges": true
+      "userBadges": true,
+      "unifiedAgentWorkspace": true, 
+      "approvals": true, 
+      "translatedInterface": true, 
+      "essentialsCard": true, 
+      "interactionHistory": true,
+      "groupContactsByOrganization": "Multiple",
+      "customUserAndOrganizationFields": true, 
+      "customAndGroupViews": true, 
+      "customLayouts": true, 
+      "dynamicContent": true, 
+      "customerSatisfactionRatings":true,
+      "customAgentStatuses": "Up to 100",
+      "supportMobileApp": true,
+      "dynamicContextualWorkspaces": true,
+      "appBuilder": "Up to 10 app conversations", 
+      "copilotGenerativeAiToolsForAgents": "Add-on"
     }
   },
   "liveagent": {
