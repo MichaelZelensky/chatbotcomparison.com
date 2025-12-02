@@ -20,7 +20,7 @@
       { "key": "seats","label": "Seats","type": "text","description": "Number of agent seats included in the plan by default. May be 'Custom' for flexible or negotiated plans."},
       { "key": "perAgentAnnual", "label": "Per agent/month billed annually", "type": "text", "description": "Price per agent when billed annually." },
       { "key": "perAgentMonthly", "label": "Per agent/month billed monthly", "type": "text", "description": "Price per agent when billed monthly." },
-      { "key": "essentialPlan", "label": "Essential plan", "type": "text", "description": "Represents the core subscription tier offering essential features for standard use." },
+      { "key": "essentialPlan", "label": "Essential plan", "type": "boolean", "description": "Represents the core subscription tier offering essential features for standard use." },
       { "key": "advancedPlan", "label": "Advanced plan", "type": "text", "description": "Indicates availability of the advanced subscription tier or add-on option." }
 
         ]
@@ -61,7 +61,9 @@
       { "key": "unifiedAgentWorkspace", "label": "Unified agent workspace", "type": "boolean", "description": "Provides a consolidated workspace where agents can manage all customer interactions." },
       { "key": "customAndGroupViews", "label": "Custom & group views", "type": "boolean", "description": "Enables creating personalized and group-based views for organizing work." },
       { "key": "customAgentStatuses", "label": "Custom agent statuses", "type": "text", "description": "Indicates whether custom agent availability statuses can be created and managed." },
-      { "key": "dynamicContextualWorkspaces", "label": "Dynamic, Contextual workspaces", "type": "boolean", "description": "Automatically adjusts the agent workspace based on the context of the ticket or interaction." }
+      { "key": "dynamicContextualWorkspaces", "label": "Dynamic, Contextual workspaces", "type": "boolean", "description": "Automatically adjusts the agent workspace based on the context of the ticket or interaction." },
+      { "key": "sideConversations", "label": "Side conversations", "type": "boolean", "description": "Allows agents to create and manage side conversations within a ticket to collaborate with other teams or partners." }
+
 
     ]
   },
@@ -104,7 +106,7 @@
       { "key": "contactForm", "label": "Contact form", "type": "boolean", "description": "Enables a built-in contact form for collecting customer inquiries." },
       { "key": "socialAndBusinessChannels", "label": "Social and business channels", "type": "boolean", "description": "Provides support for connecting social media and business communication channels." },
       { "key": "voicemail", "label": "Voicemail", "type": "boolean", "description": "Allows callers to leave voice messages when agents are unavailable." },
-      { "key": "textMessages", "label": "Text messages", "type": "text", "description": "Provides SMS messaging capabilities; available as an add-on." },
+      { "key": "textMessages", "label": "Text messages", "type": "boolean", "description": "Provides SMS messaging capabilities; available as an add-on." },
       { "key": "embeddedVoice", "label": "Embedded voice", "type": "boolean", "description": "Allows voice calling directly through the embedded voice channel." },
       { "key": "displayNumberInWebWidget", "label": "Display a number using web widget", "type": "boolean", "description": "Displays a phone number inside the web widget for quick access." },
       { "key": "partnerEditionCti", "label": "Partner Edition (Computer Telephony Integration)", "type": "boolean", "description": "Enables CTI features for integrating phone systems with the platform." },
@@ -113,7 +115,7 @@
       { "key": "callRouting", "label": "Call routing", "type": "text", "description": "Supports advanced routing options such as group routing, overflow routing, and after-hours routing." },
       { "key": "failover", "label": "Failover", "type": "text", "description": "Provides failover capabilities; may be available on demand depending on the plan." },
       { "key": "customizedGreetings", "label": "Customized greetings", "type": "boolean", "description": "Allows setting personalized greetings for incoming calls or messages." },
-      { "key": "queueSizeAndWaitTime", "label": "Queue size and wait time", "type": "text", "description": "Displays queue size and estimated wait times; may be available on demand depending on the plan." },
+      { "key": "queueSizeAndWaitTime", "label": "Queue size and wait time", "type": "string", "description": "Displays queue size and estimated wait times; may be available on demand depending on the plan." },
       { "key": "sessionInitiationProtocol", "label": "Session Initiation Protocol (SIP)", "type": "boolean", "description": "Enables SIP-based calling and integration with external phone systems." },
       { "key": "bringYourOwnCarrier", "label": "Bring Your Own Carrier (BYOC)", "type": "boolean", "description": "Allows using your own telephony carrier for handling calls." },
       { "key": "automaticTicketCreation", "label": "Automatic ticket creation", "type": "boolean", "description": "Creates support tickets automatically when new interactions are received." },
@@ -168,8 +170,8 @@
       { "key": "slackNotifications", "label": "Slack notifications", "type": "boolean", "description": "Sends notifications to Slack based on new conversations or updates." },
       { "key": "apiKeys", "label": "API keys", "type": "boolean", "description": "Allows generating API keys for connecting external systems or automations." },
       { "key": "integrations", "label": "Integrations", "type": "boolean", "description": "Supports connecting external systems and services directly with the platform." },
-      { "key": "appBuilder", "label": "App Builder", "type": "text", "description": "Indicates availability of tools for building custom apps within the platform." }
-
+      { "key": "appBuilder", "label": "App Builder", "type": "text", "description": "Indicates availability of tools for building custom apps within the platform." },
+      { "key": "prebuiltAppsAndIntegrations", "label": "Prebuilt apps & integrations", "type": "boolean", "description": "Provides access to prebuilt apps and integrations that extend platform functionality." }
     ]
   },
   {
@@ -234,7 +236,10 @@
       { "key": "essentialsCard", "label": "Essentials card", "type": "boolean", "description": "Displays key customer or ticket information in a compact summary card." },
       { "key": "interactionHistory", "label": "Interaction history", "type": "boolean", "description": "Provides a full history of past interactions with a customer." },
       { "key": "groupContactsByOrganization", "label": "Group contacts by organization", "type": "text", "description": "Indicates how contacts can be grouped or organized by company or organization within the system." },
-      { "key": "customUserAndOrganizationFields", "label": "Custom user and organization fields", "type": "boolean", "description": "Allows adding custom fields to user and organization profiles." }
+      { "key": "customUserAndOrganizationFields", "label": "Custom user and organization fields", "type": "boolean", "description": "Allows adding custom fields to user and organization profiles." },
+      { "key": "lightAgents", "label": "Light agents", "type": "text", "description": "Indicates the availability or limits of light agent roles within the plan." },
+      { "key": "lightAgentsAddon", "label": "Light agents add-on", "type": "text", "description": "Specifies whether additional light agents can be added as an add-on." }
+
     ]
   },
   {

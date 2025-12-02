@@ -828,7 +828,8 @@
       "interactionHistory": true,
       "groupContactsByOrganization": "Single",
       "customUserAndOrganizationFields": true, 
-      "customAndGroupViews": true
+      "customAndGroupViews": true,
+      "prebuiltAppsAndIntegrations": true
     },
     "suiteTeam": {
       "planPrice": "$89",
@@ -866,7 +867,9 @@
       "groupContactsByOrganization": "Single",
       "customUserAndOrganizationFields": true, 
       "customAndGroupViews": true,
-      "supportMobileApp": true
+      "supportMobileApp": true,
+      "lightAgentsAddon": "Add-on",
+      "prebuiltAppsAndIntegrations": true
     },
     "suiteProfessional": {
       "planPrice": "$149",
@@ -995,7 +998,11 @@
       "customAgentStatuses": "Up to 5",
       "supportMobileApp": true,
       "appBuilder": "Up to 5 app conversations", 
-      "copilotGenerativeAiToolsForAgents": "Add-on"
+      "copilotGenerativeAiToolsForAgents": "Add-on",
+      "lightAgents": "Up to 100",
+      "lightAgentsAddon": "Add-on",
+      "sideConversations": true,
+      "prebuiltAppsAndIntegrations": true
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1136,7 +1143,11 @@
       "supportMobileApp": true,
       "dynamicContextualWorkspaces": true,
       "appBuilder": "Up to 10 app conversations", 
-      "copilotGenerativeAiToolsForAgents": "Add-on"
+      "copilotGenerativeAiToolsForAgents": "Add-on",
+      "lightAgents": "Up to 1000",
+      "lightAgentsAddon": "Add-on",
+      "sideConversations": true,
+      "prebuiltAppsAndIntegrations": true
     }
   },
   "liveagent": {
