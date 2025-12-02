@@ -829,7 +829,8 @@
       "groupContactsByOrganization": "Single",
       "customUserAndOrganizationFields": true, 
       "customAndGroupViews": true,
-      "prebuiltAppsAndIntegrations": true
+      "prebuiltAppsAndIntegrations": true,
+      "triggers": true
     },
     "suiteTeam": {
       "planPrice": "$89",
@@ -869,7 +870,8 @@
       "customAndGroupViews": true,
       "supportMobileApp": true,
       "lightAgentsAddon": "Add-on",
-      "prebuiltAppsAndIntegrations": true
+      "prebuiltAppsAndIntegrations": true,
+      "triggers": true
     },
     "suiteProfessional": {
       "planPrice": "$149",
@@ -1002,7 +1004,8 @@
       "lightAgents": "Up to 100",
       "lightAgentsAddon": "Add-on",
       "sideConversations": true,
-      "prebuiltAppsAndIntegrations": true
+      "prebuiltAppsAndIntegrations": true,
+      "triggers": true
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1147,7 +1150,8 @@
       "lightAgents": "Up to 1000",
       "lightAgentsAddon": "Add-on",
       "sideConversations": true,
-      "prebuiltAppsAndIntegrations": true
+      "prebuiltAppsAndIntegrations": true,
+      "triggers": true
     }
   },
   "liveagent": {

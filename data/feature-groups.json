@@ -304,7 +304,9 @@
       { "key": "slaLevels", "label": "SLA levels", "type": "text", "description": "Number of SLA priority levels that can be configured." },
       { "key": "skillsBasedRouting", "label": "Skills-based routing", "type": "boolean", "description": "Routes conversations to agents based on their skills or expertise." },
       { "key": "businessHours", "label": "Business hours", "type": "text", "description": "Indicates the type or number of business hours configurations available, such as Single." },
-      { "key": "approvals", "label": "Approvals", "type": "boolean", "description": "Enables approval flows for requests or actions within the system." }
+      { "key": "approvals", "label": "Approvals", "type": "boolean", "description": "Enables approval flows for requests or actions within the system." },
+      { "key": "triggers", "label": "Triggers", "type": "boolean", "description": "Allows creating automated triggers that perform actions based on ticket conditions." }
+
     ]
   },
   {
