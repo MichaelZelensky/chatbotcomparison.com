@@ -840,7 +840,12 @@
       "prebuiltAnalyticsDashboards": true, 
       "dataExports": true, 
       "benchmark": true,
-      "refreshRate": "24 hours"
+      "refreshRate": "24 hours",
+      "dataStorage": "10 GB + 50 MB/agent",
+      "fileStorage": "10 GB + 2 GB/agent",
+      "externalKnowledgeStorage": "100 MB",
+      "externalProfiles": true,
+      "additionalDataStorage": "Add-on"
     },
     "suiteTeam": {
       "planPrice": "$89",
@@ -893,8 +898,17 @@
       "benchmark": true, 
       "voiceUsageReporting": true, 
       "googleAnalyticsForHelpCenter": true,
-      "refreshRate": "24 hours"
-      
+      "refreshRate": "24 hours",
+      "dataStorage": "10 GB + 50 MB/agent",
+      "fileStorage": "10 GB + 2 GB/agent",
+      "customObjects": "Up to 3 objects (5 lookup fields/object)",
+      "externalKnowledgeStorage": "500 MB",
+      "platformEvents":"In beta",
+      "externalEvents" :"Up to 150K/month",
+      "eventRetentionPeriod":"90 days",
+      "externalProfiles": true, 
+      "devicesDataLog": true,
+      "additionalDataStorage": "Add-on"
     },
     "suiteProfessional": {
       "planPrice": "$149",
@@ -1057,7 +1071,18 @@
       "liveAgentActivityDashboard": "Default view",
       "preBuiltLiveDashboard": true,
       "refreshRate": "1 hour for pre-built and custom dashboards",
-      "copilotReportingAndInsights": "Add-on"
+      "copilotReportingAndInsights": "Add-on",
+      "dataStorage": "10 GB + 100 MB/agent",
+      "fileStorage": "10 GB + 5 GB/agent",
+      "customObjects": "Up to 30 objects (10 lookup fields/object)",
+      "externalKnowledgeStorage": "500 MB",
+      "platformEvents":"In beta",
+      "externalEvents" :"Up to 350K/month",
+      "eventRetentionPeriod":"1 year",
+      "externalProfiles": true, 
+      "devicesDataLog": true,
+      "awsEventsConnector": "Add-on",
+      "additionalDataStorage": "Add-on"
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1238,7 +1263,18 @@
       "customizableLiveDashboards": true, 
       "visualDataAlerts": true,
       "refreshRate": "Real-time for prebuilt live dashboards 1 hour for custom dashboards",
-      "copilotReportingAndInsights": "Add-on"
+      "copilotReportingAndInsights": "Add-on",
+      "dataStorage": "10 GB + 200 MB/agent",
+      "fileStorage": "10 GB + 10 GB/agent",
+      "customObjects": "Up to 50 objects (10 lookup fields/object)",
+      "externalKnowledgeStorage": "1 GB",
+      "platformEvents":"In beta",
+      "externalEvents" :"Up to 750K/month",
+      "eventRetentionPeriod":"1 year",
+      "externalProfiles": true, 
+      "devicesDataLog": true, 
+      "awsEventsConnector": "Add-on",
+      "additionalDataStorage": "Add-on"
     }
   },
   "liveagent": {
