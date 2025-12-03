@@ -836,7 +836,11 @@
       "predefinedResponsesMacros": true,
       "customBusinessRules": true,
       "articleRecommendations": "Help center",
-      "unifiedStaffManagement": true
+      "unifiedStaffManagement": true,
+      "prebuiltAnalyticsDashboards": true, 
+      "dataExports": true, 
+      "benchmark": true,
+      "refreshRate": "24 hours"
     },
     "suiteTeam": {
       "planPrice": "$89",
@@ -883,7 +887,14 @@
       "predefinedResponsesMacros": true,
       "customBusinessRules": true,
       "articleRecommendations": true,
-      "unifiedStaffManagement": true
+      "unifiedStaffManagement": true,
+      "prebuiltAnalyticsDashboards": true, 
+      "dataExports": true, 
+      "benchmark": true, 
+      "voiceUsageReporting": true, 
+      "googleAnalyticsForHelpCenter": true,
+      "refreshRate": "24 hours"
+      
     },
     "suiteProfessional": {
       "planPrice": "$149",
@@ -1034,7 +1045,19 @@
       "businessHours": "Single",
       "versionManagement": true,
       "sandbox": "Add-on",
-      "additionalSandboxes": true
+      "additionalSandboxes": true,
+      "prebuiltAnalyticsDashboards": true, 
+      "dataExports": true, 
+      "benchmark": true, 
+      "voiceUsageReporting": true, 
+      "googleAnalyticsForHelpCenter": true, 
+      "customDataExploration": true,
+      "scheduledDashboardDelivery": "Users only",
+      "dashboardSharing": "Users and end-users",
+      "liveAgentActivityDashboard": "Default view",
+      "preBuiltLiveDashboard": true,
+      "refreshRate": "1 hour for pre-built and custom dashboards",
+      "copilotReportingAndInsights": "Add-on"
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1201,7 +1224,21 @@
       "auditLogs": true ,
       "versionManagement": true,
       "sandbox": "Up to 2 Sandboxes included",
-      "additionalSandboxes": true
+      "additionalSandboxes": true,
+      "prebuiltAnalyticsDashboards": true, 
+      "dataExports": true, 
+      "benchmark": true, 
+      "voiceUsageReporting": true, 
+      "googleAnalyticsForHelpCenter": true, 
+      "customDataExploration": true,
+      "scheduledDashboardDelivery": "Users and end-users",
+      "dashboardSharing": "Users and end-users",
+      "liveAgentActivityDashboard": "Customizable views plus live agent status drill-in",
+      "preBuiltLiveDashboard": true, 
+      "customizableLiveDashboards": true, 
+      "visualDataAlerts": true,
+      "refreshRate": "Real-time for prebuilt live dashboards 1 hour for custom dashboards",
+      "copilotReportingAndInsights": "Add-on"
     }
   },
   "liveagent": {

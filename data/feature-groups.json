@@ -218,7 +218,8 @@
       { "key": "copilotGenerativeAiToolsForAgents", "label": "Copilot: Generative AI tools for agents", "type": "text", "description": "Indicates availability of AI-powered tools that assist agents with generative responses and guidance." },
       { "key": "copilotIntelligentTriage", "label": "Copilot: Intelligent triage", "type": "text", "description": "Uses AI to categorize and prioritize incoming requests automatically." },
       { "key": "copilotActionableInsights", "label": "Copilot: Actionable insights and suggestions", "type": "text", "description": "Provides AI-driven insights and suggestions to improve support efficiency." },
-      { "key": "copilotMacroInsightsForAdmins", "label": "Copilot: Macro insights for admins", "type": "text", "description": "Delivers AI-based analysis of macro performance to help optimize workflows." }
+      { "key": "copilotMacroInsightsForAdmins", "label": "Copilot: Macro insights for admins", "type": "text", "description": "Delivers AI-based analysis of macro performance to help optimize workflows." },
+      { "key": "copilotReportingAndInsights", "label": "Copilot: Reporting and insights", "type": "text", "description": "Provides AI-powered reporting enhancements and actionable insights." }
     ]
   },
   {
@@ -406,7 +407,20 @@
       { "key": "automatedResolutionsReporting", "label": "Automated resolutions reporting", "type": "boolean", "description": "Provides reporting on cases resolved automatically by AI or automation tools." },
       { "key": "essentialAiAgentReporting", "label": "Essential AI agent reporting", "type": "boolean", "description": "Includes basic reporting and insights on AI agent performance." },
       { "key": "advancedAiAgentReporting", "label": "Advanced AI agent reporting", "type": "text", "description": "Provides advanced reporting features for AI agents; requires the Advanced AI Agents add-on." },
-      { "key": "customerSatisfactionRatings", "label": "Customer satisfaction ratings (CSAT) & follow-up survey", "type": "boolean", "description": "Enables CSAT collection and follow-up surveys for customer feedback." }
+      { "key": "customerSatisfactionRatings", "label": "Customer satisfaction ratings (CSAT) & follow-up survey", "type": "boolean", "description": "Enables CSAT collection and follow-up surveys for customer feedback." },
+      { "key": "prebuiltAnalyticsDashboards", "label": "Prebuilt analytics dashboards", "type": "boolean", "description": "Provides ready-made dashboards with key performance metrics." },
+      { "key": "dataExports", "label": "Data exports", "type": "boolean", "description": "Allows exporting account data for reporting or analysis." },
+      { "key": "benchmark", "label": "Benchmark", "type": "boolean", "description": "Provides industry benchmark comparisons for performance insights." },
+      { "key": "voiceUsageReporting", "label": "Voice usage reporting", "type": "boolean", "description": "Offers detailed analytics on voice call usage and performance." },
+      { "key": "googleAnalyticsForHelpCenter", "label": "Google Analytics for help center", "type": "boolean", "description": "Enables integration with Google Analytics for tracking help center activity." },
+      { "key": "customDataExploration", "label": "Custom data exploration", "type": "boolean", "description": "Provides tools to explore and analyze data using custom queries and views." },
+      { "key": "scheduledDashboardDelivery", "label": "Scheduled dashboard delivery", "type": "text", "description": "Indicates availability of automated dashboard delivery on a scheduled basis." },
+      { "key": "dashboardSharing", "label": "Dashboard sharing", "type": "text", "description": "Shows whether dashboards can be shared with other users or teams." },
+      { "key": "liveAgentActivityDashboard", "label": "Live agent activity dashboard", "type": "text", "description": "Indicates availability of real-time dashboards tracking agent activity." },
+      { "key": "preBuiltLiveDashboard", "label": "Pre-built live dashboard", "type": "boolean", "description": "Provides access to ready-made live dashboards showing real-time performance metrics." },
+      { "key": "customizableLiveDashboards", "label": "Customizable live dashboards", "type": "boolean", "description": "Allows building and customizing real-time dashboards with chosen metrics." },
+      { "key": "visualDataAlerts", "label": "Visual data alerts", "type": "boolean", "description": "Enables real-time visual alerts based on performance thresholds." },
+      { "key": "refreshRate", "label": "Refresh rate", "type": "text", "description": "Specifies how frequently dashboard data is refreshed." }
     ]
   },
   {
