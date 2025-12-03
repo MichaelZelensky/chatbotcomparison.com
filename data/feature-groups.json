@@ -305,8 +305,14 @@
       { "key": "skillsBasedRouting", "label": "Skills-based routing", "type": "boolean", "description": "Routes conversations to agents based on their skills or expertise." },
       { "key": "businessHours", "label": "Business hours", "type": "text", "description": "Indicates the type or number of business hours configurations available, such as Single." },
       { "key": "approvals", "label": "Approvals", "type": "boolean", "description": "Enables approval flows for requests or actions within the system." },
-      { "key": "triggers", "label": "Triggers", "type": "boolean", "description": "Allows creating automated triggers that perform actions based on ticket conditions." }
-
+      { "key": "triggers", "label": "Triggers", "type": "boolean", "description": "Allows creating automated triggers that perform actions based on ticket conditions." },
+      { "key": "ticketSharingBetweenAccounts", "label": "Ticket sharing between multiple accounts", "type": "text", "description": "Enables sharing tickets across multiple accounts through defined workflows." },
+      { "key": "conversationRouting", "label": "Conversation routing", "type": "text", "description": "Routes conversations to the appropriate agent based on availability, capacity, skills, and priority." },
+      { "key": "multipleTicketForms", "label": "Multiple ticket forms", "type": "boolean", "description": "Allows creating and using multiple ticket form layouts for different request types." },
+      { "key": "conditionalTicketFields", "label": "Conditional ticket fields", "type": "boolean", "description": "Displays ticket fields dynamically based on conditions such as selections or ticket state." },
+      { "key": "serviceLevelAgreements", "label": "Service level agreements (SLA)", "type": "boolean", "description": "Enables defining response and resolution time targets based on SLA policies." },
+      { "key": "skillsBasedRouting", "label": "Skills-based routing", "type": "boolean", "description": "Routes conversations or tickets to agents based on their skills and expertise." },
+      { "key": "guidedMode", "label": "Guided mode", "type": "boolean", "description": "Directs agents through tickets sequentially to ensure efficient handling and workflow discipline." }
     ]
   },
   {

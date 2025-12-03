@@ -830,7 +830,9 @@
       "customUserAndOrganizationFields": true, 
       "customAndGroupViews": true,
       "prebuiltAppsAndIntegrations": true,
-      "triggers": true
+      "triggers": true,
+      "ticketSharingBetweenAccounts": "Manual",
+      "conversationRouting": "Based on agent status and capacity"
     },
     "suiteTeam": {
       "planPrice": "$89",
@@ -871,7 +873,9 @@
       "supportMobileApp": true,
       "lightAgentsAddon": "Add-on",
       "prebuiltAppsAndIntegrations": true,
-      "triggers": true
+      "triggers": true,
+      "ticketSharingBetweenAccounts": "true",
+      "conversationRouting": "Based on agent status and capacity"
     },
     "suiteProfessional": {
       "planPrice": "$149",
@@ -1005,7 +1009,13 @@
       "lightAgentsAddon": "Add-on",
       "sideConversations": true,
       "prebuiltAppsAndIntegrations": true,
-      "triggers": true
+      "triggers": true,
+      "ticketSharingBetweenAccounts": "true",
+      "conversationRouting": "Based on agent status, capacity, skill, and ticket priority",
+      "multipleTicketForms": true, 
+      "conditionalTicketFields": true, 
+      "serviceLevelAgreements": true, 
+      "skillsBasedRouting": true
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1151,7 +1161,14 @@
       "lightAgentsAddon": "Add-on",
       "sideConversations": true,
       "prebuiltAppsAndIntegrations": true,
-      "triggers": true
+      "triggers": true,
+      "ticketSharingBetweenAccounts": "Automated",
+      "conversationRouting": "Based on agent status, capacity, skill, and ticket priority",
+      "multipleTicketForms": true, 
+      "conditionalTicketFields": true, 
+      "serviceLevelAgreements": true, 
+      "skillsBasedRouting": true, 
+      "guidedMode": true
     }
   },
   "liveagent": {
