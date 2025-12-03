@@ -832,7 +832,10 @@
       "prebuiltAppsAndIntegrations": true,
       "triggers": true,
       "ticketSharingBetweenAccounts": "Manual",
-      "conversationRouting": "Based on agent status and capacity"
+      "conversationRouting": "Based on agent status and capacity",
+      "predefinedResponsesMacros": true,
+      "customBusinessRules": true,
+      "articleRecommendations": "Help center"
     },
     "suiteTeam": {
       "planPrice": "$89",
@@ -875,7 +878,10 @@
       "prebuiltAppsAndIntegrations": true,
       "triggers": true,
       "ticketSharingBetweenAccounts": "true",
-      "conversationRouting": "Based on agent status and capacity"
+      "conversationRouting": "Based on agent status and capacity",
+      "predefinedResponsesMacros": true,
+      "customBusinessRules": true,
+      "articleRecommendations": true
     },
     "suiteProfessional": {
       "planPrice": "$149",
@@ -1015,7 +1021,13 @@
       "multipleTicketForms": true, 
       "conditionalTicketFields": true, 
       "serviceLevelAgreements": true, 
-      "skillsBasedRouting": true
+      "skillsBasedRouting": true,
+      "predefinedResponsesMacros": true,
+      "customBusinessRules": true,
+      "articleRecommendations": true,
+      "copilotIntelligentTriage": "Add-on", 
+      "copilotActionableInsights":"Add-on", 
+      "copilotMacroInsightsForAdmins": "Add-on"
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1168,7 +1180,14 @@
       "conditionalTicketFields": true, 
       "serviceLevelAgreements": true, 
       "skillsBasedRouting": true, 
-      "guidedMode": true
+      "guidedMode": true,
+      "predefinedResponsesMacros": true,
+      "customBusinessRules": true,
+      "articleRecommendations": true,
+      "businessRulesAnalysis": true,
+      "copilotIntelligentTriage": "Add-on", 
+      "copilotActionableInsights":"Add-on", 
+      "copilotMacroInsightsForAdmins": "Add-on"
     }
   },
   "liveagent": {
