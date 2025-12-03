@@ -845,7 +845,8 @@
       "fileStorage": "10 GB + 2 GB/agent",
       "externalKnowledgeStorage": "100 MB",
       "externalProfiles": true,
-      "additionalDataStorage": "Add-on"
+      "additionalDataStorage": "Add-on",
+      "apiAccess": true
     },
     "suiteTeam": {
       "planPrice": "$89",
@@ -908,7 +909,8 @@
       "eventRetentionPeriod":"90 days",
       "externalProfiles": true, 
       "devicesDataLog": true,
-      "additionalDataStorage": "Add-on"
+      "additionalDataStorage": "Add-on",
+      "apiAccess": true
     },
     "suiteProfessional": {
       "planPrice": "$149",
@@ -1082,7 +1084,10 @@
       "externalProfiles": true, 
       "devicesDataLog": true,
       "awsEventsConnector": "Add-on",
-      "additionalDataStorage": "Add-on"
+      "additionalDataStorage": "Add-on",
+      "privateCustomAppsIntegrations": "5 App conversations, see conversation limits",
+      "apiAccess": true,
+      "additionalApiVolume": "Add-on"
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1274,7 +1279,10 @@
       "externalProfiles": true, 
       "devicesDataLog": true, 
       "awsEventsConnector": "Add-on",
-      "additionalDataStorage": "Add-on"
+      "additionalDataStorage": "Add-on",
+      "privateCustomAppsIntegrations": "10 App conversations, see conversation limits",
+      "apiAccess": true,
+      "additionalApiVolume": "Add-on"
     }
   },
   "liveagent": {

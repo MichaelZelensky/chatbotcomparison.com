@@ -171,7 +171,10 @@
       { "key": "appBuilder", "label": "App Builder", "type": "text", "description": "Indicates availability of tools for building custom apps within the platform." },
       { "key": "prebuiltAppsAndIntegrations", "label": "Prebuilt apps & integrations", "type": "boolean", "description": "Provides access to prebuilt apps and integrations that extend platform functionality." },
       { "key": "customObjects", "label": "Custom objects", "type": "text", "description": "Indicates whether the platform supports creating and managing custom data objects." },
-      { "key": "externalKnowledgeStorage", "label": "External knowledge storage", "type": "text", "description": "Indicates availability of storing knowledge content in external systems." }
+      { "key": "externalKnowledgeStorage", "label": "External knowledge storage", "type": "text", "description": "Indicates availability of storing knowledge content in external systems." },
+      { "key": "privateCustomAppsIntegrations", "label": "Private custom apps & integrations", "type": "text", "description": "Indicates whether private, custom-built apps and integrations are supported within the plan." },
+      { "key": "apiAccess", "label": "API access", "type": "boolean", "description": "Provides access to the platform's API for building integrations and automations." },
+      { "key": "additionalApiVolume", "label": "Additional API volume (10+ agents required)", "type": "text", "description": "Indicates the availability of additional API request volume for larger teams." }
     ]
   },
   {
