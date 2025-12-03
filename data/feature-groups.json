@@ -61,9 +61,8 @@
       { "key": "customAndGroupViews", "label": "Custom & group views", "type": "boolean", "description": "Enables creating personalized and group-based views for organizing work." },
       { "key": "customAgentStatuses", "label": "Custom agent statuses", "type": "text", "description": "Indicates whether custom agent availability statuses can be created and managed." },
       { "key": "dynamicContextualWorkspaces", "label": "Dynamic, Contextual workspaces", "type": "boolean", "description": "Automatically adjusts the agent workspace based on the context of the ticket or interaction." },
-      { "key": "sideConversations", "label": "Side conversations", "type": "boolean", "description": "Allows agents to create and manage side conversations within a ticket to collaborate with other teams or partners." }
-
-
+      { "key": "sideConversations", "label": "Side conversations", "type": "boolean", "description": "Allows agents to create and manage side conversations within a ticket to collaborate with other teams or partners." },
+      { "key": "unifiedStaffManagement", "label": "Unified staff management", "type": "boolean", "description": "Provides unified tools for managing staff roles, permissions, and workloads." }
     ]
   },
   {
@@ -316,7 +315,9 @@
       { "key": "guidedMode", "label": "Guided mode", "type": "boolean", "description": "Directs agents through tickets sequentially to ensure efficient handling and workflow discipline." },
       { "key": "predefinedResponsesMacros", "label": "Pre-defined responses (macros)", "type": "boolean", "description": "Provides reusable pre-defined responses to speed up agent workflow." },
       { "key": "customBusinessRules", "label": "Custom business rules (triggers & automations)", "type": "boolean", "description": "Allows creating automated rules that control ticket actions and workflow." },
-      { "key": "businessRulesAnalysis", "label": "Business rules analysis", "type": "boolean", "description": "Analyzes business rules to optimize workflows and improve ticket handling efficiency." }
+      { "key": "businessRulesAnalysis", "label": "Business rules analysis", "type": "boolean", "description": "Analyzes business rules to optimize workflows and improve ticket handling efficiency." },
+      { "key": "businessHours", "label": "Business hours", "type": "text", "description": "Indicates the type or number of business hours schedules available in the plan." },
+      { "key": "versionManagement", "label": "Version management", "type": "boolean", "description": "Enables managing and maintaining versions of configurations or settings." }
     ]
   },
   {
@@ -446,7 +447,9 @@
       { "key": "auditLog", "label": "Audit Log", "type": "boolean", "description": "Provides a log of system actions and changes for security and compliance review." },
       { "key": "sso", "label": "SSO", "type": "boolean", "description": "Allows users to sign in using Single Sign-On authentication." },
       { "key": "incomingEmailAuthentication", "label": "Incoming email authentication: SPF, DKIM, DMARC", "type": "boolean", "description": "Supports email authentication standards such as SPF, DKIM, and DMARC for secure message verification." },
-      { "key": "automaticEmailArchiving", "label": "Automatic email archiving", "type": "boolean", "description": "Automatically stores and archives email messages for future reference." }
+      { "key": "automaticEmailArchiving", "label": "Automatic email archiving", "type": "boolean", "description": "Automatically stores and archives email messages for future reference." },
+      { "key": "customAgentRoles", "label": "Custom agent roles", "type": "boolean", "description": "Allows creating and assigning custom agent permission roles." },
+      { "key": "auditLogs", "label": "Audit logs", "type": "boolean", "description": "Provides a detailed log of system and user activity for tracking changes." }
     ]
   },
   {
@@ -455,7 +458,9 @@
     "rows": [
       { "key": "sandbox", "label": "Sandbox Environment", "type": "boolean", "description": "Test workflows and configurations in an isolated environment." },
       { "key": "auditLogs", "label": "Audit Logs", "type": "boolean", "description": "Track all changes and activities across the system." },
-      { "key": "businessRulesAnalysis", "label": "Business Rules Analysis", "type": "boolean", "description": "Analyze the impact of business rules and automations." }
+      { "key": "businessRulesAnalysis", "label": "Business Rules Analysis", "type": "boolean", "description": "Analyze the impact of business rules and automations." },
+      { "key": "sandbox", "label": "Sandbox", "type": "text", "description": "Indicates the type and availability of sandbox environments for testing and configuration." },
+      { "key": "additionalSandboxes", "label": "Additional Sandboxes", "type": "boolean", "description": "Allows adding extra sandbox environments for extended testing needs." }
     ]
   },
   {
