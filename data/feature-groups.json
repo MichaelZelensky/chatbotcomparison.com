@@ -62,7 +62,8 @@
       { "key": "customAgentStatuses", "label": "Custom agent statuses", "type": "text", "description": "Indicates whether custom agent availability statuses can be created and managed." },
       { "key": "dynamicContextualWorkspaces", "label": "Dynamic, Contextual workspaces", "type": "boolean", "description": "Automatically adjusts the agent workspace based on the context of the ticket or interaction." },
       { "key": "sideConversations", "label": "Side conversations", "type": "boolean", "description": "Allows agents to create and manage side conversations within a ticket to collaborate with other teams or partners." },
-      { "key": "unifiedStaffManagement", "label": "Unified staff management", "type": "boolean", "description": "Provides unified tools for managing staff roles, permissions, and workloads." }
+      { "key": "unifiedStaffManagement", "label": "Unified staff management", "type": "boolean", "description": "Provides unified tools for managing staff roles, permissions, and workloads." },
+      { "key": "departmentSpaces", "label": "Department spaces", "type": "boolean", "description": "Provides separate spaces for organizing work by department." }
     ]
   },
   {
@@ -477,7 +478,21 @@
       { "key": "externalProfiles", "label": "External profiles", "type": "boolean", "description": "Allows storing and viewing customer profiles received from external systems." },
       { "key": "devicesDataLog", "label": "Devices data log", "type": "boolean", "description": "Enables logging device-related data for diagnostic or operational purposes." },
       { "key": "awsEventsConnector", "label": "AWS Events Connector", "type": "text", "description": "Indicates availability of the connector for streaming events to AWS services." },
-      { "key": "additionalDataStorage", "label": "Additional data storage", "type": "text", "description": "Specifies options for expanding data storage capacity beyond the plan’s base limits." }
+      { "key": "additionalDataStorage", "label": "Additional data storage", "type": "text", "description": "Specifies options for expanding data storage capacity beyond the plan’s base limits." },
+      { "key": "userAuthenticationOptions", "label": "User authentication options: Native, SSO, and 2FA", "type": "boolean", "description": "Provides multiple user authentication methods including native login, SSO, and two-factor authentication." },
+      { "key": "secureAccessOptions", "label": "Secure access options: IP restrictions, password complexity, session length", "type": "boolean", "description": "Enables security controls such as IP restrictions, strong password policies, and configurable session settings." },
+      { "key": "agentDeviceManagement", "label": "Agent device management", "type": "boolean", "description": "Allows managing and securing devices used by agents." },
+      { "key": "dataEncryption", "label": "Data encryption at rest and in motion", "type": "boolean", "description": "Ensures all stored and transmitted data is encrypted." },
+      { "key": "hostMapping", "label": "Host mapping", "type": "boolean", "description": "Allows mapping a custom domain to the support environment." },
+      { "key": "disasterRecovery", "label": "Disaster recovery", "type": "boolean", "description": "Provides systems and processes ensuring platform recovery in case of service disruption." },
+      { "key": "creditCardRedaction", "label": "Credit card redaction", "type": "boolean", "description": "Automatically detects and removes credit card information from messages and tickets to protect sensitive data." },
+      { "key": "dataCenterLocation", "label": "Data center location", "type": "text", "description": "Indicates available data center locations and whether region selection is included in the plan." },
+      { "key": "hipaaEnabled", "label": "HIPAA enabled", "type": "text", "description": "Indicates whether the plan supports HIPAA compliance features." },
+      { "key": "accessLog", "label": "Access log", "type": "text", "description": "Indicates availability of detailed logs of user and system access." },
+      { "key": "advancedEncryption", "label": "Advanced encryption", "type": "text", "description": "Specifies the level of enhanced encryption supported for sensitive data." },
+      { "key": "advancedDataRetentionPolicies", "label": "Advanced data retention policies", "type": "text", "description": "Defines advanced retention rules for storing and managing data." },
+      { "key": "advancedRedaction", "label": "Advanced redaction", "type": "text", "description": "Indicates availability of enhanced tools for redacting sensitive information." },
+      { "key": "dataMasking", "label": "Data masking", "type": "text", "description": "Specifies whether data masking is available for hiding sensitive fields." }
     ]
   },
   {

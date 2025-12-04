@@ -846,7 +846,13 @@
       "externalKnowledgeStorage": "100 MB",
       "externalProfiles": true,
       "additionalDataStorage": "Add-on",
-      "apiAccess": true
+      "apiAccess": true,
+      "userAuthenticationOptions": true,
+      "secureAccessOptions": true,
+      "agentDeviceManagement": true,
+      "dataEncryption": true,
+      "hostMapping": true,  
+      "disasterRecovery": true
     },
     "suiteTeam": {
       "planPrice": "$89",
@@ -910,7 +916,13 @@
       "externalProfiles": true, 
       "devicesDataLog": true,
       "additionalDataStorage": "Add-on",
-      "apiAccess": true
+      "apiAccess": true,
+      "userAuthenticationOptions": true,
+      "secureAccessOptions": true,
+      "agentDeviceManagement": true,
+      "dataEncryption": true,
+      "hostMapping": true,  
+      "disasterRecovery": true
     },
     "suiteProfessional": {
       "planPrice": "$149",
@@ -1087,7 +1099,16 @@
       "additionalDataStorage": "Add-on",
       "privateCustomAppsIntegrations": "5 App conversations, see conversation limits",
       "apiAccess": true,
-      "additionalApiVolume": "Add-on"
+      "additionalApiVolume": "Add-on",
+      "userAuthenticationOptions": true,
+      "secureAccessOptions": true,
+      "agentDeviceManagement": true,
+      "dataEncryption": true,
+      "hostMapping": true,  
+      "disasterRecovery": true,
+      "creditCardRedaction": true,
+      "dataCenterLocation": "Add-on",
+      "hipaaEnabled": "HIPAA Enabled"
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1282,7 +1303,22 @@
       "additionalDataStorage": "Add-on",
       "privateCustomAppsIntegrations": "10 App conversations, see conversation limits",
       "apiAccess": true,
-      "additionalApiVolume": "Add-on"
+      "additionalApiVolume": "Add-on",
+      "userAuthenticationOptions": true,
+      "secureAccessOptions": true,
+      "agentDeviceManagement": true,
+      "dataEncryption": true,
+      "hostMapping": true,  
+      "disasterRecovery": true,
+      "creditCardRedaction": true,
+      "dataCenterLocation": true,
+      "hipaaEnabled": "HIPAA Enabled",
+      "departmentSpaces": true,
+      "accessLog": "Add-on",
+      "advancedEncryption": "Add-on",
+      "advancedDataRetentionPolicies": "Add-on",
+      "advancedRedaction": "Add-on",
+      "dataMasking": "Add-on"
     }
   },
   "liveagent": {
