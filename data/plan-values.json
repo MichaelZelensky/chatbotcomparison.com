@@ -852,7 +852,16 @@
       "agentDeviceManagement": true,
       "dataEncryption": true,
       "hostMapping": true,  
-      "disasterRecovery": true
+      "disasterRecovery": true,
+      "digitalSupport": true,  
+      "accessHelpCenterAndCommunity": true,
+      "digitalOnboardingResources": true,
+      "onDemandTraining": true,
+      "guidedLearningPaths": true,
+      "premierPlansProactiveSupport": "Add-on",
+      "professionalServices": "Add-on",
+      "customTrainingAndCertifications": "Add-on",
+      "handsOnHelpAssist": "Add-on"
     },
     "suiteTeam": {
       "planPrice": "$89",
@@ -922,7 +931,16 @@
       "agentDeviceManagement": true,
       "dataEncryption": true,
       "hostMapping": true,  
-      "disasterRecovery": true
+      "disasterRecovery": true,
+      "digitalSupport": true,  
+      "accessHelpCenterAndCommunity": true,
+      "digitalOnboardingResources": true,
+      "onDemandTraining": true,
+      "guidedLearningPaths": true,
+      "premierPlansProactiveSupport": "Add-on",
+      "professionalServices": "Add-on",
+      "customTrainingAndCertifications": "Add-on",
+      "handsOnHelpAssist": "Add-on"
     },
     "suiteProfessional": {
       "planPrice": "$149",
@@ -1115,7 +1133,16 @@
       "monthlyActiveUsers": "1,000 included ($50/pack of additional 2,500 MAUs)",
       "notificationsPerMonth": "1,000 included ($50/pack of additional 25,000 Notifications)",
       "channels": true,
-      "orchestrationApis": true
+      "orchestrationApis": true,
+      "digitalSupport": true,  
+      "accessHelpCenterAndCommunity": true,
+      "digitalOnboardingResources": true,
+      "onDemandTraining": true,
+      "guidedLearningPaths": true,
+      "premierPlansProactiveSupport": "Add-on",
+      "professionalServices": "Add-on",
+      "customTrainingAndCertifications": "Add-on",
+      "handsOnHelpAssist": "Add-on"
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1332,7 +1359,16 @@
       "monthlyActiveUsers": "1,000 included ($50/pack of additional 2,500 MAUs)",
       "notificationsPerMonth": "1,000 included ($50/pack of additional 25,000 Notifications)",
       "channels": true,
-      "orchestrationApis": true
+      "orchestrationApis": true,
+      "digitalSupport": true,  
+      "accessHelpCenterAndCommunity": true,
+      "digitalOnboardingResources": true,
+      "onDemandTraining": true,
+      "guidedLearningPaths": true,
+      "premierPlansProactiveSupport": "Add-on",
+      "professionalServices": "Add-on",
+      "customTrainingAndCertifications": "Add-on",
+      "handsOnHelpAssist": "Add-on"
     }
   },
   "liveagent": {

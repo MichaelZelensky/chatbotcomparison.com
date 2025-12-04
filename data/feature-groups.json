@@ -376,7 +376,12 @@
       { "key": "aiSpamProtection", "label": "AI-powered spam protection", "type": "boolean", "description": "Uses AI to detect and block spammy or abusive content in the community." },
       { "key": "userBadges", "label": "User badges", "type": "boolean", "description": "Enables assigning visual badges to community users based on activity or role." },
       { "key": "dynamicContent", "label": "Dynamic content", "type": "boolean", "description": "Allows displaying different content dynamically based on user or context." },
-      { "key": "articleRecommendations", "label": "Article recommendations", "type": "text", "description": "Displays relevant help articles based on the customer’s question or issue." }
+      { "key": "articleRecommendations", "label": "Article recommendations", "type": "text", "description": "Displays relevant help articles based on the customer’s question or issue." },
+      { "key": "digitalSupport", "label": "Digital support", "type": "boolean", "description": "Provides access to digital support resources for product usage and troubleshooting." },
+      { "key": "accessHelpCenterAndCommunity", "label": "Access to Help Center and Community", "type": "boolean", "description": "Allows access to the self-service Help Center and Community resources." },
+      { "key": "digitalOnboardingResources", "label": "Digital onboarding and adoption resources", "type": "boolean", "description": "Includes digital guides and resources that help users onboard and adopt the product efficiently." },
+      { "key": "onDemandTraining", "label": "Getting started on-demand training", "type": "boolean", "description": "Provides access to on-demand training for getting started with the product." },
+      { "key": "guidedLearningPaths", "label": "Guided learning paths", "type": "boolean", "description": "Offers structured, guided learning paths for deeper product understanding." }
     ]
   },
   {
@@ -510,7 +515,11 @@
       { "key": "auditLogs", "label": "Audit Logs", "type": "boolean", "description": "Track all changes and activities across the system." },
       { "key": "businessRulesAnalysis", "label": "Business Rules Analysis", "type": "boolean", "description": "Analyze the impact of business rules and automations." },
       { "key": "sandbox", "label": "Sandbox", "type": "text", "description": "Indicates the type and availability of sandbox environments for testing and configuration." },
-      { "key": "additionalSandboxes", "label": "Additional Sandboxes", "type": "boolean", "description": "Allows adding extra sandbox environments for extended testing needs." }
+      { "key": "additionalSandboxes", "label": "Additional Sandboxes", "type": "boolean", "description": "Allows adding extra sandbox environments for extended testing needs." },
+      { "key": "premierPlansProactiveSupport", "label": "Premier plans - 24/7 Proactive support & engagement", "type": "text", "description": "Indicates availability of 24/7 proactive support and engagement services." },
+      { "key": "professionalServices", "label": "Professional Services", "type": "text", "description": "Shows whether professional service packages such as training, certifications, or guided assistance are included." },
+      { "key": "customTrainingAndCertifications", "label": "Custom training and certifications", "type": "text", "description": "Indicates the availability of customized training programs and certification options." },
+      { "key": "handsOnHelpAssist", "label": "Hands-on help with Assist", "type": "text", "description": "Shows whether hands-on assistance with Assist is included in the plan." }
     ]
   },
   {
