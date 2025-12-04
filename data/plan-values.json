@@ -455,6 +455,7 @@
     "plus": {
       "planPrice": "From $749",
       "freeTrial": "7 days",
+      "agentsIncluded": "Custom",
       "aiUsage": "Copilot + advanced",
       "billableConversations": "Custom",
       "cloudBased": true,
@@ -525,6 +526,7 @@
     "premium": {
       "planPrice": "From $2,999",
       "freeTrial": "7 days",
+      "agentsIncluded": "Custom",
       "aiUsage": "Managed AI + premium support",
       "billableConversations": "Custom / Unlimited",
       "cloudBased": true,
