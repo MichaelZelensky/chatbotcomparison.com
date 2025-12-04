@@ -175,7 +175,12 @@
       { "key": "externalKnowledgeStorage", "label": "External knowledge storage", "type": "text", "description": "Indicates availability of storing knowledge content in external systems." },
       { "key": "privateCustomAppsIntegrations", "label": "Private custom apps & integrations", "type": "text", "description": "Indicates whether private, custom-built apps and integrations are supported within the plan." },
       { "key": "apiAccess", "label": "API access", "type": "boolean", "description": "Provides access to the platform's API for building integrations and automations." },
-      { "key": "additionalApiVolume", "label": "Additional API volume (10+ agents required)", "type": "text", "description": "Indicates the availability of additional API request volume for larger teams." }
+      { "key": "additionalApiVolume", "label": "Additional API volume (10+ agents required)", "type": "text", "description": "Indicates the availability of additional API request volume for larger teams." },
+      { "key": "messagingPlatformThirdPartyChatbots", "label": "Messaging platform (3rd party chatbots)", "type": "boolean", "description": "Allows connecting third-party chatbots to the messaging platform." },
+      { "key": "accessToConversationToolsAndApis", "label": "Access to conversation tools and APIs", "type": "boolean", "description": "Provides access to conversation-related tools and APIs." },
+      { "key": "basicPlatformSupport", "label": "Basic Platform Support", "type": "boolean", "description": "Includes basic support for the platform." },
+      { "key": "channels", "label": "Channels", "type": "boolean", "description": "Provides access to supported messaging and communication channels." },
+      { "key": "orchestrationApis", "label": "Orchestration APIs (Switchboard)", "type": "boolean", "description": "Enables orchestration APIs for coordinating bots, agents, and automated workflows." }
     ]
   },
   {
@@ -225,7 +230,9 @@
       { "key": "copilotIntelligentTriage", "label": "Copilot: Intelligent triage", "type": "text", "description": "Uses AI to categorize and prioritize incoming requests automatically." },
       { "key": "copilotActionableInsights", "label": "Copilot: Actionable insights and suggestions", "type": "text", "description": "Provides AI-driven insights and suggestions to improve support efficiency." },
       { "key": "copilotMacroInsightsForAdmins", "label": "Copilot: Macro insights for admins", "type": "text", "description": "Delivers AI-based analysis of macro performance to help optimize workflows." },
-      { "key": "copilotReportingAndInsights", "label": "Copilot: Reporting and insights", "type": "text", "description": "Provides AI-powered reporting enhancements and actionable insights." }
+      { "key": "copilotReportingAndInsights", "label": "Copilot: Reporting and insights", "type": "text", "description": "Provides AI-powered reporting enhancements and actionable insights." },
+      { "key": "monthlyActiveUsers", "label": "Monthly Active Users per month", "type": "text", "description": "Indicates the number of monthly active users included in the plan." },
+      { "key": "notificationsPerMonth", "label": "Notifications per month", "type": "text", "description": "Specifies the number of notifications allowed per month under the plan." }
     ]
   },
   {

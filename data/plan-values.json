@@ -1108,7 +1108,14 @@
       "disasterRecovery": true,
       "creditCardRedaction": true,
       "dataCenterLocation": "Add-on",
-      "hipaaEnabled": "HIPAA Enabled"
+      "hipaaEnabled": "HIPAA Enabled",
+      "messagingPlatformThirdPartyChatbots": true, 
+      "accessToConversationToolsAndApis": true,
+      "basicPlatformSupport": true,
+      "monthlyActiveUsers": "1,000 included ($50/pack of additional 2,500 MAUs)",
+      "notificationsPerMonth": "1,000 included ($50/pack of additional 25,000 Notifications)",
+      "channels": true,
+      "orchestrationApis": true
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1318,7 +1325,14 @@
       "advancedEncryption": "Add-on",
       "advancedDataRetentionPolicies": "Add-on",
       "advancedRedaction": "Add-on",
-      "dataMasking": "Add-on"
+      "dataMasking": "Add-on",
+      "messagingPlatformThirdPartyChatbots": true, 
+      "accessToConversationToolsAndApis": true,
+      "basicPlatformSupport": true,
+      "monthlyActiveUsers": "1,000 included ($50/pack of additional 2,500 MAUs)",
+      "notificationsPerMonth": "1,000 included ($50/pack of additional 25,000 Notifications)",
+      "channels": true,
+      "orchestrationApis": true
     }
   },
   "liveagent": {
