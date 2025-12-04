@@ -864,7 +864,7 @@
       "handsOnHelpAssist": "Add-on"
     },
     "suiteTeam": {
-      "planPrice": "$89",
+      "planPrice": "€55",
       "freeTrial": "14 days",
       "aiUsage": "Essential AI agents",
       "essentialPlan": true,
@@ -943,7 +943,7 @@
       "handsOnHelpAssist": "Add-on"
     },
     "suiteProfessional": {
-      "planPrice": "$149",
+      "planPrice": "€115",
       "freeTrial": "14 days",
       "aiUsage": "Advanced AI + persona customization",
       "essentialPlan": true,

@@ -5,7 +5,7 @@
     "label": "Pricing",
     "rows": [
       { "key": "planPrice", "label": "Plan Price (per month)", "type": "text", "description": "The monthly cost of your subscription plan." },
-      { "key": "agentsIncluded", "label": "Agents Included", "type": "number", "description": "Number of agent licenses included in your plan at no extra cost." },
+      { "key": "agentsIncluded", "label": "Agents Included", "type": "string", "description": "Number of agent licenses included in your plan at no extra cost." },
       { "key": "additionalAgentPrice", "label": "Additional Agents (per month)", "type": "text", "description": "Add more seats to your plan and scale your team as needed." },
       { "key": "customerProfiles", "label": "Customer Profiles", "type": "number", "description": "Maximum number of unique customer profiles you can manage in your workspace." },
       { "key": "aiUsage", "label": "AI Usage", "type": "text", "description": "Number of AI-powered actions (like summaries or replies) available per day." },
