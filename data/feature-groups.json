@@ -22,7 +22,7 @@
       { "key": "perAgentMonthly", "label": "Per agent/month billed monthly", "type": "text", "description": "Price per agent when billed monthly." },
       { "key": "essentialPlan", "label": "Essential plan", "type": "boolean", "description": "Represents the core subscription tier offering essential features for standard use." },
       { "key": "advancedPlan", "label": "Advanced plan", "type": "text", "description": "Indicates availability of the advanced subscription tier or add-on option." }
-        ]
+    ]
   },
   {
     "id": "teamInbox",
@@ -63,7 +63,9 @@
       { "key": "dynamicContextualWorkspaces", "label": "Dynamic, Contextual workspaces", "type": "boolean", "description": "Automatically adjusts the agent workspace based on the context of the ticket or interaction." },
       { "key": "sideConversations", "label": "Side conversations", "type": "boolean", "description": "Allows agents to create and manage side conversations within a ticket to collaborate with other teams or partners." },
       { "key": "unifiedStaffManagement", "label": "Unified staff management", "type": "boolean", "description": "Provides unified tools for managing staff roles, permissions, and workloads." },
-      { "key": "departmentSpaces", "label": "Department spaces", "type": "boolean", "description": "Provides separate spaces for organizing work by department." }
+      { "key": "departmentSpaces", "label": "Department spaces", "type": "boolean", "description": "Provides separate spaces for organizing work by department." },
+      { "key": "ticketing", "label": "Ticketing", "type": "boolean", "description": "System for managing customer support requests as tickets." },
+      { "key": "chatPage", "label": "Chat page", "type": "boolean", "description": "Provides a dedicated page for handling and viewing live chat conversations." }
     ]
   },
   {
@@ -180,7 +182,8 @@
       { "key": "accessToConversationToolsAndApis", "label": "Access to conversation tools and APIs", "type": "boolean", "description": "Provides access to conversation-related tools and APIs." },
       { "key": "basicPlatformSupport", "label": "Basic Platform Support", "type": "boolean", "description": "Includes basic support for the platform." },
       { "key": "channels", "label": "Channels", "type": "boolean", "description": "Provides access to supported messaging and communication channels." },
-      { "key": "orchestrationApis", "label": "Orchestration APIs (Switchboard)", "type": "boolean", "description": "Enables orchestration APIs for coordinating bots, agents, and automated workflows." }
+      { "key": "orchestrationApis", "label": "Orchestration APIs (Switchboard)", "type": "boolean", "description": "Enables orchestration APIs for coordinating bots, agents, and automated workflows." },
+      { "key": "mobileSdk", "label": "Mobile SDK", "type": "boolean", "description": "Provides mobile SDKs for integrating chat and messaging features into iOS and Android applications." }
     ]
   },
   {
@@ -201,7 +204,8 @@
       { "key": "maxQueueAutoHide", "label": "Max Queue Auto-hide/Auto-offline", "type": "boolean", "description": "Hide or switch widget offline automatically when queue length exceeds a limit." },
       { "key": "multilingualWidget", "label": "Multilingual Chat Widget", "type": "boolean", "description": "Offer the chat widget in 40+ languages; configure per-widget language options." },
       { "key": "versionHistory", "label": "Version History", "type": "boolean", "description": "Access ten last versions of your chatbots and restore previous ones if needed." },
-      { "key": "liveChat", "label": "LiveChat", "type": "boolean", "description": "Connect LiveChat to combine AI efficiency with human support." }
+      { "key": "liveChat", "label": "LiveChat", "type": "boolean", "description": "Connect LiveChat to combine AI efficiency with human support." },
+      { "key": "basicWidgetCustomization", "label": "Basic widget customization", "type": "boolean", "description": "Allows making basic visual and functional customizations to the chat widget." }
     ]
   },
   {
@@ -232,7 +236,13 @@
       { "key": "copilotMacroInsightsForAdmins", "label": "Copilot: Macro insights for admins", "type": "text", "description": "Delivers AI-based analysis of macro performance to help optimize workflows." },
       { "key": "copilotReportingAndInsights", "label": "Copilot: Reporting and insights", "type": "text", "description": "Provides AI-powered reporting enhancements and actionable insights." },
       { "key": "monthlyActiveUsers", "label": "Monthly Active Users per month", "type": "text", "description": "Indicates the number of monthly active users included in the plan." },
-      { "key": "notificationsPerMonth", "label": "Notifications per month", "type": "text", "description": "Specifies the number of notifications allowed per month under the plan." }
+      { "key": "notificationsPerMonth", "label": "Notifications per month", "type": "text", "description": "Specifies the number of notifications allowed per month under the plan." },
+      { "key": "guidance", "label": "Guidance", "type": "text", "description": "Provides contextual guidance or recommendations to agents during their work." },
+      { "key": "productRecommendation", "label": "Product recommendation", "type": "text", "description": "Provides automated or assisted product recommendations during customer interactions." },
+      { "key": "lyroConnect", "label": "Lyro Connect", "type": "text", "description": "Indicates availability or requirements for connecting Lyro with other systems or data sources." },
+      { "key": "lyroCustomName", "label": "Lyro custom name", "type": "text", "description": "Allows assigning a custom display name to the Lyro AI agent." },
+      { "key": "advancedCopilot", "label": "Advanced Copilot", "type": "text", "description": "Provides advanced AI copilot capabilities for enhanced assistance and automation." },
+      { "key": "aiReplyAssistant", "label": "AI reply assistant", "type": "boolean", "description": "Assists agents by generating AI-powered reply suggestions during conversations." }
     ]
   },
   {
@@ -253,7 +263,8 @@
       { "key": "groupContactsByOrganization", "label": "Group contacts by organization", "type": "text", "description": "Indicates how contacts can be grouped or organized by company or organization within the system." },
       { "key": "customUserAndOrganizationFields", "label": "Custom user and organization fields", "type": "boolean", "description": "Allows adding custom fields to user and organization profiles." },
       { "key": "lightAgents", "label": "Light agents", "type": "text", "description": "Indicates the availability or limits of light agent roles within the plan." },
-      { "key": "lightAgentsAddon", "label": "Light agents add-on", "type": "text", "description": "Specifies whether additional light agents can be added as an add-on." }
+      { "key": "lightAgentsAddon", "label": "Light agents add-on", "type": "text", "description": "Specifies whether additional light agents can be added as an add-on." },
+      { "key": "departments", "label": "Departments", "type": "text", "description": "Number of departments supported within the workspace, such as 2 or Unlimited." }
     ]
   },
   {
@@ -331,7 +342,9 @@
       { "key": "customBusinessRules", "label": "Custom business rules (triggers & automations)", "type": "boolean", "description": "Allows creating automated rules that control ticket actions and workflow." },
       { "key": "businessRulesAnalysis", "label": "Business rules analysis", "type": "boolean", "description": "Analyzes business rules to optimize workflows and improve ticket handling efficiency." },
       { "key": "businessHours", "label": "Business hours", "type": "text", "description": "Indicates the type or number of business hours schedules available in the plan." },
-      { "key": "versionManagement", "label": "Version management", "type": "boolean", "description": "Enables managing and maintaining versions of configurations or settings." }
+      { "key": "versionManagement", "label": "Version management", "type": "boolean", "description": "Enables managing and maintaining versions of configurations or settings." },
+      { "key": "ticketingAutomations", "label": "Ticketing automations", "type": "boolean", "description": "Automates ticket workflows using predefined rules and actions." },
+      { "key": "actions", "label": "Actions", "type": "boolean", "description": "Allows performing predefined actions or operations as part of workflows or automation." }
     ]
   },
   {
@@ -381,7 +394,9 @@
       { "key": "accessHelpCenterAndCommunity", "label": "Access to Help Center and Community", "type": "boolean", "description": "Allows access to the self-service Help Center and Community resources." },
       { "key": "digitalOnboardingResources", "label": "Digital onboarding and adoption resources", "type": "boolean", "description": "Includes digital guides and resources that help users onboard and adopt the product efficiently." },
       { "key": "onDemandTraining", "label": "Getting started on-demand training", "type": "boolean", "description": "Provides access to on-demand training for getting started with the product." },
-      { "key": "guidedLearningPaths", "label": "Guided learning paths", "type": "boolean", "description": "Offers structured, guided learning paths for deeper product understanding." }
+      { "key": "guidedLearningPaths", "label": "Guided learning paths", "type": "boolean", "description": "Offers structured, guided learning paths for deeper product understanding." },
+      { "key": "importHelpCenterArticles", "label": "Import help center articles", "type": "boolean", "description": "Allows importing existing help center articles from an external support platform." },
+      { "key": "fileUploadSize", "label": "File upload size", "type": "text", "description": "Maximum supported file upload size, such as 100 MB." }
     ]
   },
   {
@@ -400,7 +415,8 @@
       { "key": "embedApps", "label": "Embed Apps", "type": "boolean", "description": " Open any web application inside the ongoing chat." },
       { "key": "busiestPeriod", "label": "Busiest period", "type": "boolean", "description": "Heatmap showing your chatbot’s workload by time of day." },
       { "key": "averageMessages", "label": "Average messages", "type": "boolean", "description": "Average messages per chatbot conversation." },
-      { "key": "allUsers", "label": "All users", "type": "boolean", "description": "Total users who interacted with your chatbot." },      { "key": "faqUpload", "label": "FAQ upload", "type": "boolean", "description": "Allows uploading FAQ files to populate the knowledge base." },
+      { "key": "allUsers", "label": "All users", "type": "boolean", "description": "Total users who interacted with your chatbot." },      
+      { "key": "faqUpload", "label": "FAQ upload", "type": "boolean", "description": "Allows uploading FAQ files to populate the knowledge base." },
       { "key": "faqScraper", "label": "FAQ scraper", "type": "boolean", "description": "Extracts Q&A from an existing FAQ page." },
       { "key": "websiteScraper", "label": "Website scraper", "type": "boolean", "description": "Scans website content to build the knowledge base." },
       { "key": "basicAnalytics", "label": "Basic analytics", "type": "boolean", "description": "Provides essential performance metrics such as chat volume, response time, and agent activity." },
@@ -438,7 +454,8 @@
       { "key": "preBuiltLiveDashboard", "label": "Pre-built live dashboard", "type": "boolean", "description": "Provides access to ready-made live dashboards showing real-time performance metrics." },
       { "key": "customizableLiveDashboards", "label": "Customizable live dashboards", "type": "boolean", "description": "Allows building and customizing real-time dashboards with chosen metrics." },
       { "key": "visualDataAlerts", "label": "Visual data alerts", "type": "boolean", "description": "Enables real-time visual alerts based on performance thresholds." },
-      { "key": "refreshRate", "label": "Refresh rate", "type": "text", "description": "Specifies how frequently dashboard data is refreshed." }
+      { "key": "refreshRate", "label": "Refresh rate", "type": "text", "description": "Specifies how frequently dashboard data is refreshed." },
+      { "key": "customAnalytics", "label": "Custom analytics", "type": "boolean", "description": "Provides access to customizable analytics and reporting beyond standard metrics." }
     ]
   },
   {
@@ -504,7 +521,9 @@
       { "key": "advancedEncryption", "label": "Advanced encryption", "type": "text", "description": "Specifies the level of enhanced encryption supported for sensitive data." },
       { "key": "advancedDataRetentionPolicies", "label": "Advanced data retention policies", "type": "text", "description": "Defines advanced retention rules for storing and managing data." },
       { "key": "advancedRedaction", "label": "Advanced redaction", "type": "text", "description": "Indicates availability of enhanced tools for redacting sensitive information." },
-      { "key": "dataMasking", "label": "Data masking", "type": "text", "description": "Specifies whether data masking is available for hiding sensitive fields." }
+      { "key": "dataMasking", "label": "Data masking", "type": "text", "description": "Specifies whether data masking is available for hiding sensitive fields." },
+      { "key": "superAdminRole", "label": "Super admin role", "type": "boolean", "description": "Provides a super administrator role with full system-wide permissions and control." },
+      { "key": "compliance", "label": "Compliance", "type": "boolean", "description": "Indicates whether the platform meets applicable compliance and regulatory standards." }
     ]
   },
   {
@@ -519,7 +538,16 @@
       { "key": "premierPlansProactiveSupport", "label": "Premier plans - 24/7 Proactive support & engagement", "type": "text", "description": "Indicates availability of 24/7 proactive support and engagement services." },
       { "key": "professionalServices", "label": "Professional Services", "type": "text", "description": "Shows whether professional service packages such as training, certifications, or guided assistance are included." },
       { "key": "customTrainingAndCertifications", "label": "Custom training and certifications", "type": "text", "description": "Indicates the availability of customized training programs and certification options." },
-      { "key": "handsOnHelpAssist", "label": "Hands-on help with Assist", "type": "text", "description": "Shows whether hands-on assistance with Assist is included in the plan." }
+      { "key": "handsOnHelpAssist", "label": "Hands-on help with Assist", "type": "text", "description": "Shows whether hands-on assistance with Assist is included in the plan." },
+      { "key": "aiManagedService", "label": "AI as a managed service", "type": "boolean", "description": "Provides a managed AI service with setup, tuning, and ongoing management." },
+      { "key": "guaranteedAiResolutionRate", "label": "Guaranteed 50% AI resolution rate", "type": "boolean", "description": "Includes a guaranteed minimum AI resolution rate of 50%." },
+      { "key": "payPerResolutionBilling", "label": "Pay-per-resolution billing", "type": "boolean", "description": "Bills based on the number of issues resolved by AI." },
+      { "key": "analysisAndMonitoring", "label": "Analysis & monitoring", "type": "boolean", "description": "Includes ongoing performance monitoring and analysis of AI results." },
+      { "key": "trainingSessions", "label": "Training sessions", "type": "boolean", "description": "Provides access to structured training sessions for onboarding and product usage." }, 
+      { "key": "dedicatedSuccessManager", "label": "Dedicated Success Manager", "type": "boolean", "description": "Provides access to a dedicated success manager for ongoing guidance and account support." },
+      { "key": "accountReviews", "label": "Account reviews", "type": "boolean", "description": "Provides regular reviews of account performance, usage, and optimization opportunities." },
+      { "key": "priorityServiceAndPremiumSupport", "label": "Priority Service + Premium Support", "type": "boolean", "description": "Provides prioritized assistance and premium-level customer support services." },
+      { "key": "dedicatedServicesTeam", "label": "Dedicated services team", "type": "boolean", "description": "Provides access to a dedicated team of specialists for ongoing support and service delivery." }
     ]
   },
   {
@@ -533,9 +561,9 @@
         "description": "Chat can start immediately without registration, explicit consent gates, or other blockers.",
         "key": "translatedInterface", "label": "Translated interface", "type": "boolean", "description": "Allows the agent interface to be displayed in multiple languages.",
         "key": "customLayouts", "label": "Custom Layouts", "type": "boolean", "description": "Provides the ability to customize layout structures for records and pages.",
-        "key": "supportMobileApp", "label": "Support mobile app", "type": "boolean", "description": "Provides access to a mobile app for managing support requests on the go."
-
-      }
+        "key": "supportMobileApp", "label": "Support mobile app", "type": "boolean", "description": "Provides access to a mobile app for managing support requests on the go.",
+        "key": "multilanguage", "label": "Multilanguage", "type": "boolean", "description": "Allows using the platform interface and customer-facing features in multiple languages.",
+        "key": "customBranding", "label": "Custom branding", "type": "text", "description": "Allows full customization of branding, including logo, colors, and removal of platform branding." }
     ]
   },
   {
