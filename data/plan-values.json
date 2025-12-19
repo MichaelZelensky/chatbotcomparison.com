@@ -1178,7 +1178,8 @@
       "premierPlansProactiveSupport": "Add-on",
       "professionalServices": "Add-on",
       "customTrainingAndCertifications": "Add-on",
-      "handsOnHelpAssist": "Add-on"
+      "handsOnHelpAssist": "Add-on",
+      "aiAgentsForMessaging": "Requires messaging"
     },
     "suiteTeam": {
       "planPrice": "€55",
@@ -1316,7 +1317,8 @@
       "professionalServices": "Add-on",
       "customTrainingAndCertifications": "Add-on",
       "handsOnHelpAssist": "Add-on",
-     "departments": "2 departments"
+     "departments": "2 departments",
+     "aiAgentsForMessaging": true 
     },
     "suiteProfessional": {
       "planPrice": "€115",
@@ -1518,7 +1520,8 @@
       "professionalServices": "Add-on",
       "customTrainingAndCertifications": "Add-on",
       "handsOnHelpAssist": "Add-on",
-      "departments": "Unlimited"
+      "departments": "Unlimited",
+      "aiAgentsForMessaging": true
     },
     "suiteEnterprise": {
       "planPrice": "€169",
@@ -1580,8 +1583,7 @@
       "reEngagement": true, 
       "whisperMode": true, 
       "warmTransfer": true, 
-      "sendProactiveMessages": true,
-      "skillsBasedRouting": true, 
+      "sendProactiveMessages": true, 
       "widgetUnbranding": true,
       "socialAndBusinessChannels": true,
       "voicemail": true,
@@ -1600,7 +1602,6 @@
       "automaticTicketCreation": true, 
       "callRecording": true, 
       "muteHoldWarmTransfer": true,
-      "businessHours": "Multiple",
       "conferenceCalling": true, 
       "callBlocking": true, 
       "interactiveVoiceResponse": true, 
@@ -1746,7 +1747,8 @@
       "professionalServices": "Add-on",
       "customTrainingAndCertifications": "Add-on",
       "handsOnHelpAssist": "Add-on",
-      "departments": "Unlimited"
+      "departments": "Unlimited",
+      "aiAgentsForMessaging": true
     }
   },
   "liveagent": {

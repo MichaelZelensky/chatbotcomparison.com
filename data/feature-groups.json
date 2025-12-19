@@ -183,7 +183,19 @@
       { "key": "basicPlatformSupport", "label": "Basic Platform Support", "type": "boolean", "description": "Includes basic support for the platform." },
       { "key": "channels", "label": "Channels", "type": "boolean", "description": "Provides access to supported messaging and communication channels." },
       { "key": "orchestrationApis", "label": "Orchestration APIs (Switchboard)", "type": "boolean", "description": "Enables orchestration APIs for coordinating bots, agents, and automated workflows." },
-      { "key": "mobileSdk", "label": "Mobile SDK", "type": "boolean", "description": "Provides mobile SDKs for integrating chat and messaging features into iOS and Android applications." }
+      { "key": "mobileSdk", "label": "Mobile SDK", "type": "boolean", "description": "Provides mobile SDKs for integrating chat and messaging features into iOS and Android applications." },
+      { "key": "prebuiltAppsAndIntegrations", "label": "Prebuilt apps & integrations", "type": "boolean", "description": "Access to marketplace apps and prebuilt integrations with common tools." },
+      { "key": "apiAccess", "label": "API access", "type": "boolean", "description": "Provides access to APIs for building custom integrations and automations." },
+      { "key": "additionalApiVolume", "label": "Additional API volume", "type": "text", "description": "Add-on capacity for higher API rate limits or larger API usage volumes." },
+      { "key": "orchestrationApis", "label": "Orchestration APIs", "type": "boolean", "description": "APIs for orchestrating customer engagement and messaging workflows across channels." },
+      { "key": "platformEvents", "label": "Platform events", "type": "text", "description": "Platform event streaming / event framework availability (may be beta or plan-dependent)." },
+      { "key": "externalEvents", "label": "External events", "type": "text", "description": "Monthly allowance for external event ingestion or tracking." },
+      { "key": "eventRetentionPeriod", "label": "Event retention period", "type": "text", "description": "How long event data is retained for analysis, routing, or automation." },
+      { "key": "awsEventsConnector", "label": "AWS events connector", "type": "text", "description": "Connector to ingest events from AWS services (often an add-on)." },
+      { "key": "privateCustomAppsIntegrations", "label": "Private custom apps & integrations", "type": "text", "description": "Support for privately built apps/integrations, sometimes with conversation limits or quotas." },
+      { "key": "appBuilder", "label": "App builder", "type": "text", "description": "Tools to build custom apps that extend the agent workspace and workflows." },
+      { "key": "messagingPlatformThirdPartyChatbots", "label": "Messaging platform third-party chatbots", "type": "boolean", "description": "Allows connecting third-party chatbots to the messaging platform." },
+      { "key": "accessToConversationToolsAndApis", "label": "Access to conversation tools & APIs", "type": "boolean", "description": "Access to APIs and tooling for conversation handling, routing, and channel integrations." }
     ]
   },
   {
@@ -205,7 +217,22 @@
       { "key": "multilingualWidget", "label": "Multilingual Chat Widget", "type": "boolean", "description": "Offer the chat widget in 40+ languages; configure per-widget language options." },
       { "key": "versionHistory", "label": "Version History", "type": "boolean", "description": "Access ten last versions of your chatbots and restore previous ones if needed." },
       { "key": "liveChat", "label": "LiveChat", "type": "boolean", "description": "Connect LiveChat to combine AI efficiency with human support." },
-      { "key": "basicWidgetCustomization", "label": "Basic widget customization", "type": "boolean", "description": "Allows making basic visual and functional customizations to the chat widget." }
+      { "key": "basicWidgetCustomization", "label": "Basic widget customization", "type": "boolean", "description": "Allows making basic visual and functional customizations to the chat widget." },
+      { "key": "webWidget", "label": "Web widget", "type": "boolean", "description": "Provides an embeddable website widget for live chat and/or messaging." },
+      { "key": "widgetCustomization", "label": "Widget customization", "type": "boolean", "description": "Allows customizing widget appearance and behavior to match your brand and workflows." },
+      { "key": "preChatForm", "label": "Pre-chat form", "type": "boolean", "description": "Collects details from visitors before the conversation starts (e.g., email, topic, order ID)." },
+      { "key": "unlimitedConcurrentChats", "label": "Unlimited concurrent chats", "type": "boolean", "description": "Allows agents to handle an unlimited number of concurrent chats (subject to plan limits/policies)." },
+      { "key": "shortcuts", "label": "Shortcuts", "type": "boolean", "description": "Keyboard shortcuts and quick actions to speed up handling conversations." },
+      { "key": "automaticTranslation", "label": "Automatic translation", "type": "boolean", "description": "Automatically translates messages to support multilingual conversations." },
+      { "key": "sendAndReceiveFiles", "label": "Send & receive files", "type": "boolean", "description": "Enables file sharing between agents and customers in the widget." },
+      { "key": "conversationRating", "label": "Conversation rating", "type": "boolean", "description": "Collects customer feedback ratings after conversations." },
+      { "key": "richMessageTypes", "label": "Rich message types", "type": "boolean", "description": "Supports richer message formats (e.g., buttons, cards, quick replies) in messaging." },
+      { "key": "conversationHistory", "label": "Conversation history", "type": "boolean", "description": "Stores conversation history so agents can view context and past interactions." },
+      { "key": "reEngagement", "label": "Re-engagement", "type": "boolean", "description": "Lets you re-engage customers and continue conversations over time." },
+      { "key": "whisperMode", "label": "Whisper mode", "type": "boolean", "description": "Allows internal agent-only messages during live handling to coordinate without the customer seeing." },
+      { "key": "warmTransfer", "label": "Warm transfer", "type": "boolean", "description": "Transfers conversations between agents/teams with context preserved." },
+      { "key": "sendProactiveMessages", "label": "Send proactive messages", "type": "boolean", "description": "Enables proactive outreach messages to visitors/customers based on rules or triggers." },
+      { "key": "widgetUnbranding", "label": "Widget unbranding", "type": "boolean", "description": "Removes platform branding from the widget (often enterprise-only or plan-dependent)." }
     ]
   },
   {
@@ -242,7 +269,27 @@
       { "key": "lyroConnect", "label": "Lyro Connect", "type": "text", "description": "Indicates availability or requirements for connecting Lyro with other systems or data sources." },
       { "key": "lyroCustomName", "label": "Lyro custom name", "type": "text", "description": "Allows assigning a custom display name to the Lyro AI agent." },
       { "key": "advancedCopilot", "label": "Advanced Copilot", "type": "text", "description": "Provides advanced AI copilot capabilities for enhanced assistance and automation." },
-      { "key": "aiReplyAssistant", "label": "AI reply assistant", "type": "boolean", "description": "Assists agents by generating AI-powered reply suggestions during conversations." }
+      { "key": "aiReplyAssistant", "label": "AI reply assistant", "type": "boolean", "description": "Assists agents by generating AI-powered reply suggestions during conversations." },
+      { "key": "aiAgentsForEmail", "label": "AI agents for email", "type": "boolean", "description": "Enables AI agents to automatically handle and respond to customer emails." },
+      { "key": "aiAgentsForMessaging", "label": "AI agents for messaging", "type": "text", "description": "Enable AI agents for messaging channels; may require messaging to be enabled." },
+      { "key": "generativeReplies", "label": "Generative replies", "type": "boolean", "description": "Uses AI to generate suggested replies for agents during conversations." },
+      { "key": "aiAgentPersona", "label": "AI agent persona", "type": "boolean", "description": "Allows defining a custom persona that controls how the AI agent communicates and behaves." },
+      { "key": "aiAgentPersona", "label": "AI agent persona", "type": "boolean", "description": "Allows defining a specific personality or behavior style for AI agents." },
+      { "key": "instructions", "label": "Instructions", "type": "boolean", "description": "Enables providing instructions that guide how AI agents should respond and act." },
+      { "key": "escalationsAndDataCapture", "label": "Escalations and data capture", "type": "boolean", "description": "Allows AI agents to escalate conversations and capture structured data when needed." },
+      { "key": "aiAgentBuilder", "label": "AI agent builder", "type": "text", "description": "Access to tools for building and configuring AI agents (may require an add-on depending on plan)." },
+      { "key": "integrationsAndActions", "label": "Integrations & actions", "type": "text", "description": "Enables the AI to trigger integrations or perform actions (may require an add-on depending on plan)." },
+      { "key": "reasoningControls", "label": "Reasoning controls", "type": "text", "description": "Provides controls over AI behavior and decision-making (may require an add-on depending on plan)." },
+      { "key": "includedAutomatedResolutions", "label": "Included automated resolutions", "type": "text", "description": "The number of automated resolutions included in the plan per agent and per month." },
+      { "key": "committedAutomatedResolutions", "label": "Committed automated resolutions", "type": "text", "description": "Discounted unit price for automated resolutions when purchased as a committed volume." },
+      { "key": "payAsYouGoAutomatedResolutions", "label": "Pay-as-you-go automated resolutions", "type": "text", "description": "Unit price for automated resolutions billed on a pay-as-you-go basis." },
+      { "key": "automatedResolutionsReporting", "label": "Automated resolutions reporting", "type": "boolean", "description": "Reporting and analytics focused on automated resolutions and AI outcomes." },
+      { "key": "essentialAiAgentReporting", "label": "Essential AI agent reporting", "type": "boolean", "description": "Basic reporting for essential AI agent performance and usage." },
+      { "key": "advancedAiAgentReporting", "label": "Advanced AI agent reporting", "type": "text", "description": "Advanced reporting and insights for AI agents (may require an add-on depending on plan)." },
+      { "key": "essentialLanguageSupport", "label": "Essential language support", "type": "boolean", "description": "Baseline language support for AI and/or agent workflows." },
+      { "key": "advancedLanguageSupport", "label": "Advanced language support", "type": "text", "description": "Enhanced language support for AI and/or messaging (may require an add-on depending on plan)." }
+
+      
     ]
   },
   {
@@ -455,7 +502,24 @@
       { "key": "customizableLiveDashboards", "label": "Customizable live dashboards", "type": "boolean", "description": "Allows building and customizing real-time dashboards with chosen metrics." },
       { "key": "visualDataAlerts", "label": "Visual data alerts", "type": "boolean", "description": "Enables real-time visual alerts based on performance thresholds." },
       { "key": "refreshRate", "label": "Refresh rate", "type": "text", "description": "Specifies how frequently dashboard data is refreshed." },
-      { "key": "customAnalytics", "label": "Custom analytics", "type": "boolean", "description": "Provides access to customizable analytics and reporting beyond standard metrics." }
+      { "key": "customAnalytics", "label": "Custom analytics", "type": "boolean", "description": "Provides access to customizable analytics and reporting beyond standard metrics." },
+      { "key": "prebuiltAnalyticsDashboards", "label": "Prebuilt analytics dashboards", "type": "boolean", "description": "Includes standard dashboards for support performance and operational metrics." },
+      { "key": "benchmark", "label": "Benchmark", "type": "boolean", "description": "Benchmarking insights to compare performance against industry or platform benchmarks." },
+      { "key": "refreshRate", "label": "Refresh rate", "type": "text", "description": "How frequently dashboards and analytics data are refreshed." },
+      { "key": "customDash", "label": "Custom dashboards", "type": "boolean", "description": "Allows creating custom dashboards beyond the prebuilt ones." },
+      { "key": "dataExport", "label": "Data export", "type": "boolean", "description": "Supports exporting analytics data for external reporting and BI." },
+      { "key": "dataExports", "label": "Data exports", "type": "boolean", "description": "Supports exporting analytics data (alternate key used in some plan definitions)." },
+      { "key": "apiAnalytics", "label": "API analytics", "type": "boolean", "description": "Analytics access through APIs for programmatic reporting and dashboards." },
+      { "key": "voiceUsageReporting", "label": "Voice usage reporting", "type": "boolean", "description": "Reports for voice channel usage, minutes, and call-related performance." },
+      { "key": "googleAnalyticsForHelpCenter", "label": "Google Analytics for help center", "type": "boolean", "description": "Integration to track help center usage through Google Analytics." },
+      { "key": "customDataExploration", "label": "Custom data exploration", "type": "boolean", "description": "Advanced exploration of analytics datasets for deeper reporting and analysis." },
+      { "key": "scheduledDashboardDelivery", "label": "Scheduled dashboard delivery", "type": "text", "description": "Delivers dashboards on a schedule to users and/or end-users (plan-dependent)." },
+      { "key": "dashboardSharing", "label": "Dashboard sharing", "type": "text", "description": "Sharing permissions and options for dashboards (users and/or end-users)." },
+      { "key": "liveAgentActivityDashboard", "label": "Live agent activity dashboard", "type": "text", "description": "Real-time view of agent activity and operational status (plan-dependent)." },
+      { "key": "preBuiltLiveDashboard", "label": "Prebuilt live dashboard", "type": "boolean", "description": "Includes prebuilt real-time dashboards for live operations monitoring." },
+      { "key": "customizableLiveDashboards", "label": "Customizable live dashboards", "type": "boolean", "description": "Allows customizing real-time dashboards and drill-down views (often enterprise)." },
+      { "key": "visualDataAlerts", "label": "Visual data alerts", "type": "boolean", "description": "Alerts based on metrics and thresholds, surfaced in dashboards (often enterprise)." },
+      { "key": "copilotReportingAndInsights", "label": "Copilot reporting & insights", "type": "text", "description": "AI-driven reporting, insights, and recommendations (often add-on)." }
     ]
   },
   {
@@ -523,7 +587,30 @@
       { "key": "advancedRedaction", "label": "Advanced redaction", "type": "text", "description": "Indicates availability of enhanced tools for redacting sensitive information." },
       { "key": "dataMasking", "label": "Data masking", "type": "text", "description": "Specifies whether data masking is available for hiding sensitive fields." },
       { "key": "superAdminRole", "label": "Super admin role", "type": "boolean", "description": "Provides a super administrator role with full system-wide permissions and control." },
-      { "key": "compliance", "label": "Compliance", "type": "boolean", "description": "Indicates whether the platform meets applicable compliance and regulatory standards." }
+      { "key": "compliance", "label": "Compliance", "type": "boolean", "description": "Indicates whether the platform meets applicable compliance and regulatory standards." },
+      { "key": "incomingEmailAuthentication", "label": "Incoming email authentication", "type": "boolean", "description": "Supports email authentication for inbound email (e.g., domain verification and trust controls)." },
+      { "key": "userAuthenticationOptions", "label": "User authentication options", "type": "boolean", "description": "Authentication options for end-users and agents (SSO-like options may be plan-dependent)." },
+      { "key": "secureAccessOptions", "label": "Secure access options", "type": "boolean", "description": "Security settings for access control and secure sign-in to the platform." },
+      { "key": "agentDeviceManagement", "label": "Agent device management", "type": "boolean", "description": "Controls for managing and securing agent devices accessing the platform." },
+      { "key": "dataEncryption", "label": "Data encryption", "type": "boolean", "description": "Encryption for data in transit and/or at rest." },
+      { "key": "hostMapping", "label": "Host mapping", "type": "boolean", "description": "Supports custom host mapping (custom domains) for help center or customer-facing experiences." },
+      { "key": "disasterRecovery", "label": "Disaster recovery", "type": "boolean", "description": "Disaster recovery capabilities to ensure platform resilience and continuity." },
+      { "key": "auditLogs", "label": "Audit logs", "type": "boolean", "description": "Audit logging of administrative actions and key system events." },
+      { "key": "creditCardRedaction", "label": "Credit card redaction", "type": "boolean", "description": "Automatically redacts credit card data to support compliance and reduce risk." },
+      { "key": "dataCenterLocation", "label": "Data center location", "type": "text", "description": "Controls or options for where customer data is hosted (often add-on or plan-specific)." },
+      { "key": "hipaaEnabled", "label": "HIPAA enabled", "type": "text", "description": "HIPAA compliance support and configuration availability (plan-specific)." },
+      { "key": "accessLog", "label": "Access log", "type": "text", "description": "Access logging features, often provided as an enterprise add-on." },
+      { "key": "advancedEncryption", "label": "Advanced encryption", "type": "text", "description": "Advanced encryption options beyond the default encryption controls (often add-on)." },
+      { "key": "advancedDataRetentionPolicies", "label": "Advanced data retention policies", "type": "text", "description": "Advanced retention and data lifecycle policies (often add-on)." },
+      { "key": "advancedRedaction", "label": "Advanced redaction", "type": "text", "description": "Advanced redaction controls to remove sensitive data from tickets and conversations." },
+      { "key": "dataMasking", "label": "Data masking", "type": "text", "description": "Masks sensitive information in UI and exports to support compliance (often add-on)." },
+      { "key": "ticketFileAttachmentSize", "label": "Ticket file attachment size", "type": "text", "description": "Maximum file size allowed for ticket attachments." },
+      { "key": "dataStorage", "label": "Data storage", "type": "text", "description": "Included data storage quota for the account (often base + per-agent allowance)." },
+      { "key": "fileStorage", "label": "File storage", "type": "text", "description": "Included file storage quota for attachments and uploaded files (often base + per-agent allowance)." },
+      { "key": "externalKnowledgeStorage", "label": "External knowledge storage", "type": "text", "description": "Storage allowance for external knowledge sources used by AI or knowledge tools." },
+      { "key": "additionalDataStorage", "label": "Additional data storage", "type": "text", "description": "Add-on option to increase data storage quota." },
+      { "key": "monthlyActiveUsers", "label": "Monthly active users (MAUs)", "type": "text", "description": "Included MAUs for messaging/engagement features; additional packs may be purchased." },
+      { "key": "notificationsPerMonth", "label": "Notifications per month", "type": "text", "description": "Monthly notification quota for messaging/engagement; additional packs may be purchased." }
     ]
   },
   {
