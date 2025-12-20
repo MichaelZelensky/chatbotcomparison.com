@@ -133,7 +133,7 @@
       { "key": "callQualityNotifications", "label": "Call quality notifications", "type": "boolean", "description": "Alerts agents or admins when call quality issues are detected." },
       { "key": "callOfferingTimeLimit", "label": "Call offering time limit", "type": "boolean", "description": "Allows setting a time limit for how long a call is offered to an agent." },
       { "key": "callUsageUptimeSla", "label": "Call usage 99.95% uptime SLA", "type": "text", "description": "Specifies the guaranteed uptime SLA for call usage, such as 99.95%." },
-      { "key": "localAndTollFreeNumbers", "label": "Local and toll-free numbers", "type": "boolean", "description": "Supports using local or toll-free phone numbers for inbound and outbound calling." },
+      { "key": "localAndTollFreeNumbers", "label": "Local and toll-free numbers", "type": "text", "description": "Supports using local or toll-free phone numbers for inbound and outbound calling." },
       { "key": "inboundAndOutboundMinutes", "label": "Inbound and outbound minutes", "type": "text", "description": "Indicates the number of included inbound and outbound call minutes in the plan." },
       { "key": "contactCenter", "label": "Contact Center", "type": "text", "description": "Provides access to contact center capabilities; available as an add-on." }
     ]
@@ -184,18 +184,7 @@
       { "key": "channels", "label": "Channels", "type": "boolean", "description": "Provides access to supported messaging and communication channels." },
       { "key": "orchestrationApis", "label": "Orchestration APIs (Switchboard)", "type": "boolean", "description": "Enables orchestration APIs for coordinating bots, agents, and automated workflows." },
       { "key": "mobileSdk", "label": "Mobile SDK", "type": "boolean", "description": "Provides mobile SDKs for integrating chat and messaging features into iOS and Android applications." },
-      { "key": "prebuiltAppsAndIntegrations", "label": "Prebuilt apps & integrations", "type": "boolean", "description": "Access to marketplace apps and prebuilt integrations with common tools." },
-      { "key": "apiAccess", "label": "API access", "type": "boolean", "description": "Provides access to APIs for building custom integrations and automations." },
-      { "key": "additionalApiVolume", "label": "Additional API volume", "type": "text", "description": "Add-on capacity for higher API rate limits or larger API usage volumes." },
-      { "key": "orchestrationApis", "label": "Orchestration APIs", "type": "boolean", "description": "APIs for orchestrating customer engagement and messaging workflows across channels." },
-      { "key": "platformEvents", "label": "Platform events", "type": "text", "description": "Platform event streaming / event framework availability (may be beta or plan-dependent)." },
-      { "key": "externalEvents", "label": "External events", "type": "text", "description": "Monthly allowance for external event ingestion or tracking." },
-      { "key": "eventRetentionPeriod", "label": "Event retention period", "type": "text", "description": "How long event data is retained for analysis, routing, or automation." },
-      { "key": "awsEventsConnector", "label": "AWS events connector", "type": "text", "description": "Connector to ingest events from AWS services (often an add-on)." },
-      { "key": "privateCustomAppsIntegrations", "label": "Private custom apps & integrations", "type": "text", "description": "Support for privately built apps/integrations, sometimes with conversation limits or quotas." },
-      { "key": "appBuilder", "label": "App builder", "type": "text", "description": "Tools to build custom apps that extend the agent workspace and workflows." },
-      { "key": "messagingPlatformThirdPartyChatbots", "label": "Messaging platform third-party chatbots", "type": "boolean", "description": "Allows connecting third-party chatbots to the messaging platform." },
-      { "key": "accessToConversationToolsAndApis", "label": "Access to conversation tools & APIs", "type": "boolean", "description": "Access to APIs and tooling for conversation handling, routing, and channel integrations." }
+      { "key": "awsEventsConnector", "label": "AWS events connector", "type": "text", "description": "Connector to ingest events from AWS services (often an add-on)." }
     ]
   },
   {
@@ -219,7 +208,6 @@
       { "key": "liveChat", "label": "LiveChat", "type": "boolean", "description": "Connect LiveChat to combine AI efficiency with human support." },
       { "key": "basicWidgetCustomization", "label": "Basic widget customization", "type": "boolean", "description": "Allows making basic visual and functional customizations to the chat widget." },
       { "key": "webWidget", "label": "Web widget", "type": "boolean", "description": "Provides an embeddable website widget for live chat and/or messaging." },
-      { "key": "widgetCustomization", "label": "Widget customization", "type": "boolean", "description": "Allows customizing widget appearance and behavior to match your brand and workflows." },
       { "key": "preChatForm", "label": "Pre-chat form", "type": "boolean", "description": "Collects details from visitors before the conversation starts (e.g., email, topic, order ID)." },
       { "key": "unlimitedConcurrentChats", "label": "Unlimited concurrent chats", "type": "boolean", "description": "Allows agents to handle an unlimited number of concurrent chats (subject to plan limits/policies)." },
       { "key": "shortcuts", "label": "Shortcuts", "type": "boolean", "description": "Keyboard shortcuts and quick actions to speed up handling conversations." },
@@ -311,7 +299,7 @@
       { "key": "customUserAndOrganizationFields", "label": "Custom user and organization fields", "type": "boolean", "description": "Allows adding custom fields to user and organization profiles." },
       { "key": "lightAgents", "label": "Light agents", "type": "text", "description": "Indicates the availability or limits of light agent roles within the plan." },
       { "key": "lightAgentsAddon", "label": "Light agents add-on", "type": "text", "description": "Specifies whether additional light agents can be added as an add-on." },
-      { "key": "departments", "label": "Departments", "type": "text", "description": "Number of departments supported within the workspace, such as 2 or Unlimited." }
+      { "key": "departments", "label": "Departments", "type": "string", "description": "Number of departments supported within the workspace, such as 2 or Unlimited." }
     ]
   },
   {
@@ -354,15 +342,13 @@
       { "key": "automatedSatisfactionSurvey", "label": "Automated satisfaction survey", "type": "boolean", "description": "Automatically sends post-chat surveys to collect customer satisfaction feedback." },
       { "key": "automatedConversationSolving", "label": "Automated conversation solving", "type": "boolean", "description": "Automatically marks or resolves conversations when certain criteria are met, such as inactivity or completed responses." },
       { "key": "macros", "label": "Macros", "type": "boolean", "description": "Lets agents create reusable message or action shortcuts to automate repetitive tasks." },
-      { "key": "departments", "label": "Departments", "type": "boolean", "description": "Enables organizing agents into departments or teams for structured chat routing and management." },
       { "key": "flowsBuildingAndStrategyAssistance", "label": "Flows building and strategy assistance", "type": "boolean", "description": "Provides guidance and support in designing conversation flows and overall chatbot strategy." },
       { "key": "ticketMassActions", "label":"Ticket mass actions", "type":"boolean", "description":"Performs bulk updates or changes across multiple tickets at once."},
       { "key": "toSolveAlgorithm", "label":"To Solve Algorithm", "type":"boolean", "description":"Automatically prioritizes or routes tickets to speed up resolution."},
       { "key": "customTags","label":"Custom tags","type":"boolean","description":"Enables adding custom tags to categorize and organize tickets."},
       { "key": "customTicketFilters","label":"Custom ticket filters","type":"text","description":"Allows creating custom ticket filters. Limits vary by plan (e.g., filters per agent)."},
       { "key": "ticketTransfers","label":"Ticket transfers","type":"boolean","description":"Allows transferring tickets between agents or departments."},
-      { "key": "businessHours","label":"Business hours","type":"boolean","description":"Allows setting working hours to control agent and automation availability."},
-      { "key": "departments","label":"Departments","type":"text","description":"Number of departments or teams that can be created for organizing agents and routing tickets."},
+      { "key": "businessHours","label":"Business hours","type":"string","description":"Allows setting working hours to control agent and automation availability."},
       { "key": "rolesInDepartments","label":"Roles in departments","type":"boolean","description":"Allows assigning different roles or permissions within individual departments."},
       { "key": "cannedMessages","label":"Canned messages","type":"text","description":"Number of saved predefined reply messages available to agents."},
       { "key": "predefinedAnswers","label":"Predefined answers","type":"text", "description":"Number of predefined answer templates available to agents."},
@@ -375,7 +361,6 @@
       { "key": "slaRules", "label": "SLA rules", "type": "text", "description": "Availability and number of SLA-based workflow rules supported in the plan." },
       { "key": "slaLevels", "label": "SLA levels", "type": "text", "description": "Number of SLA priority levels that can be configured." },
       { "key": "skillsBasedRouting", "label": "Skills-based routing", "type": "boolean", "description": "Routes conversations to agents based on their skills or expertise." },
-      { "key": "businessHours", "label": "Business hours", "type": "text", "description": "Indicates the type or number of business hours configurations available, such as Single." },
       { "key": "approvals", "label": "Approvals", "type": "boolean", "description": "Enables approval flows for requests or actions within the system." },
       { "key": "triggers", "label": "Triggers", "type": "boolean", "description": "Allows creating automated triggers that perform actions based on ticket conditions." },
       { "key": "ticketSharingBetweenAccounts", "label": "Ticket sharing between multiple accounts", "type": "text", "description": "Enables sharing tickets across multiple accounts through defined workflows." },
@@ -383,12 +368,10 @@
       { "key": "multipleTicketForms", "label": "Multiple ticket forms", "type": "boolean", "description": "Allows creating and using multiple ticket form layouts for different request types." },
       { "key": "conditionalTicketFields", "label": "Conditional ticket fields", "type": "boolean", "description": "Displays ticket fields dynamically based on conditions such as selections or ticket state." },
       { "key": "serviceLevelAgreements", "label": "Service level agreements (SLA)", "type": "boolean", "description": "Enables defining response and resolution time targets based on SLA policies." },
-      { "key": "skillsBasedRouting", "label": "Skills-based routing", "type": "boolean", "description": "Routes conversations or tickets to agents based on their skills and expertise." },
       { "key": "guidedMode", "label": "Guided mode", "type": "boolean", "description": "Directs agents through tickets sequentially to ensure efficient handling and workflow discipline." },
       { "key": "predefinedResponsesMacros", "label": "Pre-defined responses (macros)", "type": "boolean", "description": "Provides reusable pre-defined responses to speed up agent workflow." },
       { "key": "customBusinessRules", "label": "Custom business rules (triggers & automations)", "type": "boolean", "description": "Allows creating automated rules that control ticket actions and workflow." },
       { "key": "businessRulesAnalysis", "label": "Business rules analysis", "type": "boolean", "description": "Analyzes business rules to optimize workflows and improve ticket handling efficiency." },
-      { "key": "businessHours", "label": "Business hours", "type": "text", "description": "Indicates the type or number of business hours schedules available in the plan." },
       { "key": "versionManagement", "label": "Version management", "type": "boolean", "description": "Enables managing and maintaining versions of configurations or settings." },
       { "key": "ticketingAutomations", "label": "Ticketing automations", "type": "boolean", "description": "Automates ticket workflows using predefined rules and actions." },
       { "key": "actions", "label": "Actions", "type": "boolean", "description": "Allows performing predefined actions or operations as part of workflows or automation." }
@@ -412,7 +395,7 @@
       { "key": "multilingualContent", "label": "Multilingual content", "type": "text", "description": "Indicates the number of supported languages, such as 1 default language or 40+ languages." },
       { "key": "articleViewPermissions", "label": "Article view permissions", "type": "text", "description": "Defines who can view help center articles, such as all registered users." },
       { "key": "structuredContent", "label": "Structured content", "type": "text", "description": "Specifies the supported depth of structured content, such as up to 2 levels." },
-      { "key": "themeCustomization", "label": "Theme customization", "type": "boolean", "description": "Allows customizing the visual design and layout of the help center theme." },
+      { "key": "themeCustomization", "label": "Theme customization", "type": "text", "description": "Allows customizing the visual design and layout of the help center theme." },
       { "key": "multipleHelpCenters", "label": "Multiple help centers", "type": "text", "description": "Indicates how many help centers can be created under the plan, such as 1 or Unlimited." },
       { "key": "search", "label": "Search", "type": "text", "description": "Specifies the search capability limits or indexing depth available in the plan." },
       { "key": "generativeSearch", "label": "Generative search", "type": "boolean", "description": "Enables AI-powered search that generates relevant results based on customer queries." },
@@ -499,27 +482,10 @@
       { "key": "dashboardSharing", "label": "Dashboard sharing", "type": "text", "description": "Shows whether dashboards can be shared with other users or teams." },
       { "key": "liveAgentActivityDashboard", "label": "Live agent activity dashboard", "type": "text", "description": "Indicates availability of real-time dashboards tracking agent activity." },
       { "key": "preBuiltLiveDashboard", "label": "Pre-built live dashboard", "type": "boolean", "description": "Provides access to ready-made live dashboards showing real-time performance metrics." },
-      { "key": "customizableLiveDashboards", "label": "Customizable live dashboards", "type": "boolean", "description": "Allows building and customizing real-time dashboards with chosen metrics." },
+      { "key": "customizableLiveDashboards", "label": "Customizable live dashboards", "type": "text", "description": "Allows building and customizing real-time dashboards with chosen metrics." },
       { "key": "visualDataAlerts", "label": "Visual data alerts", "type": "boolean", "description": "Enables real-time visual alerts based on performance thresholds." },
       { "key": "refreshRate", "label": "Refresh rate", "type": "text", "description": "Specifies how frequently dashboard data is refreshed." },
-      { "key": "customAnalytics", "label": "Custom analytics", "type": "boolean", "description": "Provides access to customizable analytics and reporting beyond standard metrics." },
-      { "key": "prebuiltAnalyticsDashboards", "label": "Prebuilt analytics dashboards", "type": "boolean", "description": "Includes standard dashboards for support performance and operational metrics." },
-      { "key": "benchmark", "label": "Benchmark", "type": "boolean", "description": "Benchmarking insights to compare performance against industry or platform benchmarks." },
-      { "key": "refreshRate", "label": "Refresh rate", "type": "text", "description": "How frequently dashboards and analytics data are refreshed." },
-      { "key": "customDash", "label": "Custom dashboards", "type": "boolean", "description": "Allows creating custom dashboards beyond the prebuilt ones." },
-      { "key": "dataExport", "label": "Data export", "type": "boolean", "description": "Supports exporting analytics data for external reporting and BI." },
-      { "key": "dataExports", "label": "Data exports", "type": "boolean", "description": "Supports exporting analytics data (alternate key used in some plan definitions)." },
-      { "key": "apiAnalytics", "label": "API analytics", "type": "boolean", "description": "Analytics access through APIs for programmatic reporting and dashboards." },
-      { "key": "voiceUsageReporting", "label": "Voice usage reporting", "type": "boolean", "description": "Reports for voice channel usage, minutes, and call-related performance." },
-      { "key": "googleAnalyticsForHelpCenter", "label": "Google Analytics for help center", "type": "boolean", "description": "Integration to track help center usage through Google Analytics." },
-      { "key": "customDataExploration", "label": "Custom data exploration", "type": "boolean", "description": "Advanced exploration of analytics datasets for deeper reporting and analysis." },
-      { "key": "scheduledDashboardDelivery", "label": "Scheduled dashboard delivery", "type": "text", "description": "Delivers dashboards on a schedule to users and/or end-users (plan-dependent)." },
-      { "key": "dashboardSharing", "label": "Dashboard sharing", "type": "text", "description": "Sharing permissions and options for dashboards (users and/or end-users)." },
-      { "key": "liveAgentActivityDashboard", "label": "Live agent activity dashboard", "type": "text", "description": "Real-time view of agent activity and operational status (plan-dependent)." },
-      { "key": "preBuiltLiveDashboard", "label": "Prebuilt live dashboard", "type": "boolean", "description": "Includes prebuilt real-time dashboards for live operations monitoring." },
-      { "key": "customizableLiveDashboards", "label": "Customizable live dashboards", "type": "boolean", "description": "Allows customizing real-time dashboards and drill-down views (often enterprise)." },
-      { "key": "visualDataAlerts", "label": "Visual data alerts", "type": "boolean", "description": "Alerts based on metrics and thresholds, surfaced in dashboards (often enterprise)." },
-      { "key": "copilotReportingAndInsights", "label": "Copilot reporting & insights", "type": "text", "description": "AI-driven reporting, insights, and recommendations (often add-on)." }
+      { "key": "customAnalytics", "label": "Custom analytics", "type": "boolean", "description": "Provides access to customizable analytics and reporting beyond standard metrics." }
     ]
   },
   {
@@ -588,39 +554,16 @@
       { "key": "dataMasking", "label": "Data masking", "type": "text", "description": "Specifies whether data masking is available for hiding sensitive fields." },
       { "key": "superAdminRole", "label": "Super admin role", "type": "boolean", "description": "Provides a super administrator role with full system-wide permissions and control." },
       { "key": "compliance", "label": "Compliance", "type": "boolean", "description": "Indicates whether the platform meets applicable compliance and regulatory standards." },
-      { "key": "incomingEmailAuthentication", "label": "Incoming email authentication", "type": "boolean", "description": "Supports email authentication for inbound email (e.g., domain verification and trust controls)." },
-      { "key": "userAuthenticationOptions", "label": "User authentication options", "type": "boolean", "description": "Authentication options for end-users and agents (SSO-like options may be plan-dependent)." },
-      { "key": "secureAccessOptions", "label": "Secure access options", "type": "boolean", "description": "Security settings for access control and secure sign-in to the platform." },
-      { "key": "agentDeviceManagement", "label": "Agent device management", "type": "boolean", "description": "Controls for managing and securing agent devices accessing the platform." },
-      { "key": "dataEncryption", "label": "Data encryption", "type": "boolean", "description": "Encryption for data in transit and/or at rest." },
-      { "key": "hostMapping", "label": "Host mapping", "type": "boolean", "description": "Supports custom host mapping (custom domains) for help center or customer-facing experiences." },
-      { "key": "disasterRecovery", "label": "Disaster recovery", "type": "boolean", "description": "Disaster recovery capabilities to ensure platform resilience and continuity." },
-      { "key": "auditLogs", "label": "Audit logs", "type": "boolean", "description": "Audit logging of administrative actions and key system events." },
-      { "key": "creditCardRedaction", "label": "Credit card redaction", "type": "boolean", "description": "Automatically redacts credit card data to support compliance and reduce risk." },
-      { "key": "dataCenterLocation", "label": "Data center location", "type": "text", "description": "Controls or options for where customer data is hosted (often add-on or plan-specific)." },
-      { "key": "hipaaEnabled", "label": "HIPAA enabled", "type": "text", "description": "HIPAA compliance support and configuration availability (plan-specific)." },
-      { "key": "accessLog", "label": "Access log", "type": "text", "description": "Access logging features, often provided as an enterprise add-on." },
-      { "key": "advancedEncryption", "label": "Advanced encryption", "type": "text", "description": "Advanced encryption options beyond the default encryption controls (often add-on)." },
-      { "key": "advancedDataRetentionPolicies", "label": "Advanced data retention policies", "type": "text", "description": "Advanced retention and data lifecycle policies (often add-on)." },
-      { "key": "advancedRedaction", "label": "Advanced redaction", "type": "text", "description": "Advanced redaction controls to remove sensitive data from tickets and conversations." },
-      { "key": "dataMasking", "label": "Data masking", "type": "text", "description": "Masks sensitive information in UI and exports to support compliance (often add-on)." },
-      { "key": "ticketFileAttachmentSize", "label": "Ticket file attachment size", "type": "text", "description": "Maximum file size allowed for ticket attachments." },
-      { "key": "dataStorage", "label": "Data storage", "type": "text", "description": "Included data storage quota for the account (often base + per-agent allowance)." },
-      { "key": "fileStorage", "label": "File storage", "type": "text", "description": "Included file storage quota for attachments and uploaded files (often base + per-agent allowance)." },
-      { "key": "externalKnowledgeStorage", "label": "External knowledge storage", "type": "text", "description": "Storage allowance for external knowledge sources used by AI or knowledge tools." },
-      { "key": "additionalDataStorage", "label": "Additional data storage", "type": "text", "description": "Add-on option to increase data storage quota." },
-      { "key": "monthlyActiveUsers", "label": "Monthly active users (MAUs)", "type": "text", "description": "Included MAUs for messaging/engagement features; additional packs may be purchased." },
-      { "key": "notificationsPerMonth", "label": "Notifications per month", "type": "text", "description": "Monthly notification quota for messaging/engagement; additional packs may be purchased." }
+      { "key": "ticketFileAttachmentSize", "label": "Ticket file attachment size", "type": "text", "description": "Maximum file size allowed for ticket attachments." }
     ]
   },
   {
     "id": "enterprise",
     "label": "Enterprise-only",
     "rows": [
-      { "key": "sandbox", "label": "Sandbox Environment", "type": "boolean", "description": "Test workflows and configurations in an isolated environment." },
+      { "key": "sandbox", "label": "Sandbox Environment", "type": "string", "description": "Test workflows and configurations in an isolated environment." },
       { "key": "auditLogs", "label": "Audit Logs", "type": "boolean", "description": "Track all changes and activities across the system." },
       { "key": "businessRulesAnalysis", "label": "Business Rules Analysis", "type": "boolean", "description": "Analyze the impact of business rules and automations." },
-      { "key": "sandbox", "label": "Sandbox", "type": "text", "description": "Indicates the type and availability of sandbox environments for testing and configuration." },
       { "key": "additionalSandboxes", "label": "Additional Sandboxes", "type": "boolean", "description": "Allows adding extra sandbox environments for extended testing needs." },
       { "key": "premierPlansProactiveSupport", "label": "Premier plans - 24/7 Proactive support & engagement", "type": "text", "description": "Indicates availability of 24/7 proactive support and engagement services." },
       { "key": "professionalServices", "label": "Professional Services", "type": "text", "description": "Shows whether professional service packages such as training, certifications, or guided assistance are included." },
@@ -638,20 +581,16 @@
     ]
   },
   {
-    "id": "uiux",
-    "label": "UI/UX",
-    "rows": [
-      {
-        "key": "straightStart",
-        "label": "Straight-forward Start",
-        "type": "boolean",
-        "description": "Chat can start immediately without registration, explicit consent gates, or other blockers.",
-        "key": "translatedInterface", "label": "Translated interface", "type": "boolean", "description": "Allows the agent interface to be displayed in multiple languages.",
-        "key": "customLayouts", "label": "Custom Layouts", "type": "boolean", "description": "Provides the ability to customize layout structures for records and pages.",
-        "key": "supportMobileApp", "label": "Support mobile app", "type": "boolean", "description": "Provides access to a mobile app for managing support requests on the go.",
-        "key": "multilanguage", "label": "Multilanguage", "type": "boolean", "description": "Allows using the platform interface and customer-facing features in multiple languages.",
-        "key": "customBranding", "label": "Custom branding", "type": "text", "description": "Allows full customization of branding, including logo, colors, and removal of platform branding." }
-    ]
+  "id": "uiux",
+  "label": "UI/UX",
+  "rows": [
+    { "key": "straightStart", "label": "Straight-forward Start", "type": "boolean", "description": "Chat can start immediately without registration, explicit consent gates, or other blockers." },
+    { "key": "translatedInterface", "label": "Translated interface", "type": "boolean", "description": "Allows the agent interface to be displayed in multiple languages." },
+    { "key": "customLayouts", "label": "Custom Layouts", "type": "boolean", "description": "Provides the ability to customize layout structures for records and pages." },
+    { "key": "supportMobileApp", "label": "Support mobile app", "type": "boolean", "description": "Provides access to a mobile app for managing support requests on the go." },
+    { "key": "multilanguage", "label": "Multilanguage", "type": "boolean", "description": "Allows using the platform interface and customer-facing features in multiple languages." },
+    { "key": "customBranding", "label": "Custom branding", "type": "text", "description": "Allows full customization of branding, including logo, colors, and removal of platform branding." }
+  ]
   },
   {
     "id": "testing",
