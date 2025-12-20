@@ -4,6 +4,7 @@
       "planPrice": "$0",
       "agentsIncluded": 2,
       "customerProfiles": 100,
+      "aiUsage": "0",
       "cloudBased": true,
       "mobileApps": true,
       "desktopApps": true,
@@ -185,7 +186,8 @@
       "dpa": true,
       "tls": true,
       "replication": true,
-      "straightStart": true
+      "straightStart": true,
+      "search": true
     },
     "plus": {
       "planPrice": "$295",
@@ -303,7 +305,8 @@
       "dpa": true,
       "tls": true,
       "replication": true,
-      "straightStart": true
+      "straightStart": true,
+      "search": true
     }
   },
   "tidio": {

@@ -262,7 +262,6 @@
       { "key": "aiAgentsForMessaging", "label": "AI agents for messaging", "type": "text", "description": "Enable AI agents for messaging channels; may require messaging to be enabled." },
       { "key": "generativeReplies", "label": "Generative replies", "type": "boolean", "description": "Uses AI to generate suggested replies for agents during conversations." },
       { "key": "aiAgentPersona", "label": "AI agent persona", "type": "boolean", "description": "Allows defining a custom persona that controls how the AI agent communicates and behaves." },
-      { "key": "aiAgentPersona", "label": "AI agent persona", "type": "boolean", "description": "Allows defining a specific personality or behavior style for AI agents." },
       { "key": "instructions", "label": "Instructions", "type": "boolean", "description": "Enables providing instructions that guide how AI agents should respond and act." },
       { "key": "escalationsAndDataCapture", "label": "Escalations and data capture", "type": "boolean", "description": "Allows AI agents to escalate conversations and capture structured data when needed." },
       { "key": "aiAgentBuilder", "label": "AI agent builder", "type": "text", "description": "Access to tools for building and configuring AI agents (may require an add-on depending on plan)." },
@@ -276,8 +275,6 @@
       { "key": "advancedAiAgentReporting", "label": "Advanced AI agent reporting", "type": "text", "description": "Advanced reporting and insights for AI agents (may require an add-on depending on plan)." },
       { "key": "essentialLanguageSupport", "label": "Essential language support", "type": "boolean", "description": "Baseline language support for AI and/or agent workflows." },
       { "key": "advancedLanguageSupport", "label": "Advanced language support", "type": "text", "description": "Enhanced language support for AI and/or messaging (may require an add-on depending on plan)." }
-
-      
     ]
   },
   {
@@ -554,7 +551,8 @@
       { "key": "dataMasking", "label": "Data masking", "type": "text", "description": "Specifies whether data masking is available for hiding sensitive fields." },
       { "key": "superAdminRole", "label": "Super admin role", "type": "boolean", "description": "Provides a super administrator role with full system-wide permissions and control." },
       { "key": "compliance", "label": "Compliance", "type": "boolean", "description": "Indicates whether the platform meets applicable compliance and regulatory standards." },
-      { "key": "ticketFileAttachmentSize", "label": "Ticket file attachment size", "type": "text", "description": "Maximum file size allowed for ticket attachments." }
+      { "key": "ticketFileAttachmentSize", "label": "Ticket file attachment size", "type": "text", "description": "Maximum file size allowed for ticket attachments." },
+      { "key": "replication", "label": "Data replication", "type": "boolean", "description": "Ensures data is replicated across infrastructure for redundancy, reliability, and fault tolerance." }
     ]
   },
   {
