@@ -38,10 +38,10 @@
     "slug": "zendesk",
     "homepage": "https://www.zendesk.com/",
     "plans": [
-      { "name": "Suite Team", "slug": "suite-team" },
-      { "name": "Suite Growth", "slug": "suite-growth" },
-      { "name": "Suite Professional", "slug": "suite-professional" },
-      { "name": "Suite Enterprise", "slug": "suite-enterprise" }
+      { "name": "Support Team", "slug": "supportTeam" },
+      { "name": "Suite Team", "slug": "suiteTeam" },
+      { "name": "Suite Professional", "slug": "suiteProfessional" },
+      { "name": "Suite Enterprise", "slug": "suiteEnterprise" }
     ]
   },
   {
@@ -49,7 +49,11 @@
     "slug": "liveagent",
     "homepage": "https://www.liveagent.com/",
     "plans": [
-      { "name": "Per Agent", "slug": "per-agent" }
+      { "name": "Small business", "slug": "small" },
+      { "name": "Medium business", "slug": "medium" },
+      { "name": "Large business", "slug": "large" },
+      { "name": "Enterprise", "slug": "enterprise" }
+
     ]
   },
   {
