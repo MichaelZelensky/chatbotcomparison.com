@@ -482,7 +482,8 @@
       { "key": "customizableLiveDashboards", "label": "Customizable live dashboards", "type": "text", "description": "Allows building and customizing real-time dashboards with chosen metrics." },
       { "key": "visualDataAlerts", "label": "Visual data alerts", "type": "boolean", "description": "Enables real-time visual alerts based on performance thresholds." },
       { "key": "refreshRate", "label": "Refresh rate", "type": "text", "description": "Specifies how frequently dashboard data is refreshed." },
-      { "key": "customAnalytics", "label": "Custom analytics", "type": "boolean", "description": "Provides access to customizable analytics and reporting beyond standard metrics." }
+      { "key": "customAnalytics", "label": "Custom analytics", "type": "boolean", "description": "Provides access to customizable analytics and reporting beyond standard metrics." },
+      { "key": "ticketHistoryReport", "label": "Ticket history reports", "type": "boolean", "description": "Ticket history reporting with date-range filters and breakdowns by department, agent and status." }
     ]
   },
   {
