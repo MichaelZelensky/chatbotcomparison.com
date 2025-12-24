@@ -65,7 +65,8 @@
       { "key": "unifiedStaffManagement", "label": "Unified staff management", "type": "boolean", "description": "Provides unified tools for managing staff roles, permissions, and workloads." },
       { "key": "departmentSpaces", "label": "Department spaces", "type": "boolean", "description": "Provides separate spaces for organizing work by department." },
       { "key": "ticketing", "label": "Ticketing", "type": "boolean", "description": "System for managing customer support requests as tickets." },
-      { "key": "chatPage", "label": "Chat page", "type": "boolean", "description": "Provides a dedicated page for handling and viewing live chat conversations." }
+      { "key": "chatPage", "label": "Chat page", "type": "boolean", "description": "Provides a dedicated page for handling and viewing live chat conversations." },
+      { "key": "ticketHistory", "label": "Ticket history", "type": "boolean", "description": "Store and access all past tickets, conversations, and call records." }
     ]
   },
   {
@@ -460,7 +461,7 @@
       { "key": "departmentReport", "label": "Department report", "type": "boolean", "description": "Shows metrics and performance insights for each department." },
       { "key": "channelReport", "label": "Channel report", "type": "boolean", "description": "Displays performance statistics segmented by communication channel." },
       { "key": "tagReport", "label": "Tag report", "type": "boolean", "description": "Reports on ticket volume and workflow patterns based on tags." },
-      { "key": "ticketHistoryReport", "label": "Ticket history", "type": "boolean", "description": "Provides historical data and trends across support tickets." },
+      { "key": "ticketHistoryReport", "label": "Ticket history reports", "type": "boolean", "description": "Provides historical data and trends across support tickets." },
       { "key": "myWorkReport", "label": "My work report", "type": "boolean", "description": "Displays a personal workload and activity summary for each agent." },
       { "key": "agentAvailability", "label": "Agent availability for calls, chats, tickets", "type": "boolean", "description": "Shows real-time agent availability across all communication types." },
       { "key": "callChatAvailability", "label": "Call & chat availability", "type": "boolean", "description": "Shows which agents are available to handle calls or chats." },
