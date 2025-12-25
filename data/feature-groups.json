@@ -146,7 +146,8 @@
       { "key": "callUsageUptimeSla", "label": "Call usage 99.95% uptime SLA", "type": "text", "description": "Specifies the guaranteed uptime SLA for call usage, such as 99.95%." },
       { "key": "localAndTollFreeNumbers", "label": "Local and toll-free numbers", "type": "text", "description": "Supports using local or toll-free phone numbers for inbound and outbound calling." },
       { "key": "inboundAndOutboundMinutes", "label": "Inbound and outbound minutes", "type": "text", "description": "Indicates the number of included inbound and outbound call minutes in the plan." },
-      { "key": "contactCenter", "label": "Contact Center", "type": "text", "description": "Provides access to contact center capabilities; available as an add-on." }
+      { "key": "contactCenter", "label": "Contact Center", "type": "text", "description": "Provides access to contact center capabilities; available as an add-on." },
+      { "key": "twitter", "label": "Twitter", "type": "boolean", "description": "Support customers via Twitter/X messages." }
     ]
   }, 
   {
@@ -356,7 +357,7 @@
       { "key": "customTags","label":"Custom tags","type":"boolean","description":"Enables adding custom tags to categorize and organize tickets."},
       { "key": "customTicketFilters","label":"Custom ticket filters","type":"text","description":"Allows creating custom ticket filters. Limits vary by plan (e.g., filters per agent)."},
       { "key": "ticketTransfers","label":"Ticket transfers","type":"boolean","description":"Allows transferring tickets between agents or departments."},
-      { "key": "businessHours","label":"Business hours","type":"string","description":"Allows setting working hours to control agent and automation availability."},
+      { "key": "businessHours","label":"Business hours","type":"boolean","description":"Allows setting working hours to control agent and automation availability."},
       { "key": "rolesInDepartments","label":"Roles in departments","type":"boolean","description":"Allows assigning different roles or permissions within individual departments."},
       { "key": "cannedMessages","label":"Canned messages","type":"text","description":"Number of saved predefined reply messages available to agents."},
       { "key": "predefinedAnswers","label":"Predefined answers","type":"text", "description":"Number of predefined answer templates available to agents."},
