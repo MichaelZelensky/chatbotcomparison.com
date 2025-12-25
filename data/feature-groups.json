@@ -66,7 +66,17 @@
       { "key": "departmentSpaces", "label": "Department spaces", "type": "boolean", "description": "Provides separate spaces for organizing work by department." },
       { "key": "ticketing", "label": "Ticketing", "type": "boolean", "description": "System for managing customer support requests as tickets." },
       { "key": "chatPage", "label": "Chat page", "type": "boolean", "description": "Provides a dedicated page for handling and viewing live chat conversations." },
-      { "key": "ticketHistory", "label": "Ticket history", "type": "boolean", "description": "Store and access all past tickets, conversations, and call records." }
+      { "key": "ticketHistory", "label": "Ticket history", "type": "boolean", "description": "Store and access all past tickets, conversations, and call records." },
+      { "key": "mergeTickets", "label": "Merge tickets", "type": "boolean", "description": "Merge multiple tickets into one to avoid duplicates and keep full context." },
+      { "key": "splitTickets", "label": "Split tickets", "type": "boolean", "description": "Split a ticket into separate tickets when multiple issues are reported in one conversation." },
+      { "key": "internalTickets", "label": "Internal tickets", "type": "boolean", "description": "Create internal-only tickets for internal requests, handoffs, or internal tasks." },
+      { "key": "attachments", "label": "Attachments", "type": "boolean", "description": "Allow adding and viewing file attachments inside tickets." },
+      { "key": "agentNotesToTickets", "label": "Agent notes to tickets", "type": "boolean", "description": "Allow agents to add internal notes to tickets (not visible to customers)." },
+      { "key": "multipleTicketTabs", "label": "Multiple ticket tabs", "type": "boolean", "description": "Work with multiple tickets at the same time using tabs." },
+      { "key": "customTicketFields", "label": "Custom ticket fields", "type": "boolean", "description": "Create custom fields to capture structured information in tickets." },
+      { "key": "ticketSatisfactionSurvey", "label": "Ticket satisfaction survey", "type": "boolean", "description": "Collect satisfaction feedback (CSAT) for resolved tickets." },
+      { "key": "contactsAndGroups", "label": "Contacts & Groups", "type": "boolean", "description": "Manage contacts and organize them into groups for routing, visibility, or segmentation." },
+      { "key": "customerMailTemplates", "label": "Customer mail templates", "type": "boolean", "description": "Use templates for customer emails (replies, notifications, and ticket updates)." }
     ]
   },
   {
