@@ -298,7 +298,10 @@
       { "key": "essentialAiAgentReporting", "label": "Essential AI agent reporting", "type": "boolean", "description": "Basic reporting for essential AI agent performance and usage." },
       { "key": "advancedAiAgentReporting", "label": "Advanced AI agent reporting", "type": "text", "description": "Advanced reporting and insights for AI agents (may require an add-on depending on plan)." },
       { "key": "essentialLanguageSupport", "label": "Essential language support", "type": "boolean", "description": "Baseline language support for AI and/or agent workflows." },
-      { "key": "advancedLanguageSupport", "label": "Advanced language support", "type": "text", "description": "Enhanced language support for AI and/or messaging (may require an add-on depending on plan)." }
+      { "key": "advancedLanguageSupport", "label": "Advanced language support", "type": "text", "description": "Enhanced language support for AI and/or messaging (may require an add-on depending on plan)." },
+      { "key": "aiAnswerAssistant", "label": "AI Answer Assistant", "type": "boolean", "description": "AI assistant that suggests answers or helps agents respond faster." },
+      { "key": "aiChatbot", "label": "AI Chatbot", "type": "boolean", "description": "AI chatbot that can handle customer questions and automate support conversations." }
+
     ]
   },
   {
