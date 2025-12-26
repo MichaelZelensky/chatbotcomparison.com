@@ -2207,7 +2207,8 @@
       "contactFormInPage": "200",
       "contactFormButtons": "200",
       "systemEmailTemplatesCustomization": true,
-      "dataCenterRegions": true
+      "dataCenterRegions": true,
+      "serviceReviewCallsReports": true
      }
   },
   "liteed": {

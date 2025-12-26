@@ -611,7 +611,18 @@
       { "key": "accountReviews", "label": "Account reviews", "type": "boolean", "description": "Provides regular reviews of account performance, usage, and optimization opportunities." },
       { "key": "priorityServiceAndPremiumSupport", "label": "Priority Service + Premium Support", "type": "boolean", "description": "Provides prioritized assistance and premium-level customer support services." },
       { "key": "dedicatedServicesTeam", "label": "Dedicated services team", "type": "boolean", "description": "Provides access to a dedicated team of specialists for ongoing support and service delivery." },
-      { "key": "assistedDomainParking", "label": "Assisted domain parking", "type": "boolean", "description": "Assisted setup for custom domain parking and configuration." }
+      { "key": "assistedDomainParking", "label": "Assisted domain parking", "type": "boolean", "description": "Assisted setup for custom domain parking and configuration." },
+      { "key": "designCustomizationAssistance", "label": "Design customization assistance", "type": "boolean", "description": "Assisted UI/design customization help from the vendor team." },
+      { "key": "aiConfigurationService", "label": "AI configuration service", "type": "text", "description": "Vendor-assisted AI setup/configuration. Availability depends on the plan." },
+      { "key": "chatbotSetupService", "label": "Chatbot setup service", "type": "text", "description": "Vendor-assisted chatbot setup and implementation service." },
+      { "key": "ivrSetupService", "label": "IVR setup service", "type": "text", "description": "Vendor-assisted IVR setup service. Availability depends on the plan." },
+      { "key": "productSetupTraining", "label": "Product setup training", "type": "text", "description": "Training sessions for product setup and onboarding. Availability depends on the plan." },
+      { "key": "consultingServices", "label": "Consulting services", "type": "text", "description": "Consulting services for implementation and optimization (plan-dependent)." },
+      { "key": "prioritySupport", "label": "Priority support", "type": "boolean", "description": "Priority response times and escalations for support." },
+      { "key": "dedicatedAccountManager", "label": "Dedicated account manager", "type": "boolean", "description": "Dedicated account manager for enterprise customers." },
+      { "key": "scheduledReleaseManagement", "label": "Scheduled release management", "type": "boolean", "description": "Planned/scheduled release and change management support." },
+      { "key": "serviceReviewCallsReports", "label": "Service review call and reports", "type": "boolean", "description": "Regular service review calls and performance reports." },
+      { "key": "customBillingSetup", "label": "Custom billing setup", "type": "boolean", "description": "Custom billing setup (invoice, PO, special billing arrangements)." }
     ]
   },
   {
