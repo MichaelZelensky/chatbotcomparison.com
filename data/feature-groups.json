@@ -451,9 +451,7 @@
       { "key": "additionalKnowledgeBase", "label": "Additional knowledge base", "type": "text", "description": "Ability to add extra knowledge bases/help centers. Limits depend on the plan." },
       { "key": "customerForum", "label": "Customer forum", "type": "boolean", "description": "Community forum for customers to ask questions and share answers." },
       { "key": "wysiwygEditor", "label": "WYSIWYG editor", "type": "boolean", "description": "Rich-text WYSIWYG editor for articles, replies, or content creation." },
-      { "key": "customDomainParking", "label": "Custom domain parking", "type": "boolean", "description": "Use your own custom domain for customer-facing portals/help center." },
-      { "key": "feedbackButtons", "label": "Feedback buttons", "type": "boolean", "description": "Buttons (e.g. thumbs up/down) that allow users to provide quick feedback on help center articles, such as whether the content was helpful." }
-    ]
+      { "key": "customDomainParking", "label": "Custom domain parking", "type": "boolean", "description": "Use your own custom domain for customer-facing portals/help center." }    ]
   },
   {
     "id": "analytics",
