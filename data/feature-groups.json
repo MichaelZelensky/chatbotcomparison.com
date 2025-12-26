@@ -245,7 +245,7 @@
       { "key": "videoCallWidgetsCustomization", "label": "Video call widgets customization", "type": "boolean", "description": "Customize the video call widget appearance and behavior." },
       { "key": "contactFormInPage", "label": "Contact forms – In page", "type": "text", "description": "Allows embedding contact forms directly into website pages. Value indicates the number of in-page contact forms included in the plan." },
       { "key": "contactFormsButtons", "label": "Contact forms – Contact us buttons", "type": "text", "description": "Allows adding \"Contact us\" buttons that open a contact form or start a conversation. The value represents the number of contact form buttons included in the plan." },
-      { "key": "proactiveInvites", "label": "Proactive chat invitations", "type": "boolean", "description": "Automatically invites website visitors to start a chat based on rules such as time on page, current URL, or visitor behavior." }
+      { "key": "fileSharingOverChat", "label": "File sharing over chat", "type": "boolean", "description": "Allows agents and customers to send and receive files directly within chat conversations." }
 
     ]
   },
