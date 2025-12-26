@@ -585,7 +585,9 @@
       { "key": "superAdminRole", "label": "Super admin role", "type": "boolean", "description": "Provides a super administrator role with full system-wide permissions and control." },
       { "key": "compliance", "label": "Compliance", "type": "boolean", "description": "Indicates whether the platform meets applicable compliance and regulatory standards." },
       { "key": "ticketFileAttachmentSize", "label": "Ticket file attachment size", "type": "text", "description": "Maximum file size allowed for ticket attachments." },
-      { "key": "replication", "label": "Data replication", "type": "boolean", "description": "Ensures data is replicated across infrastructure for redundancy, reliability, and fault tolerance." }
+      { "key": "replication", "label": "Data replication", "type": "boolean", "description": "Ensures data is replicated across infrastructure for redundancy, reliability, and fault tolerance." },
+      { "key": "systemEmailTemplatesCustomization", "label": "Customisation of system email templates", "type": "boolean", "description": "Customize system email templates for notifications and customer emails." },
+      { "key": "dataCenterRegions", "label": "EU/US/UK/SG Data Center", "type": "boolean", "description": "Availability of multiple data center regions (EU/US/UK/SG) for data hosting." }
     ]
   },
   {

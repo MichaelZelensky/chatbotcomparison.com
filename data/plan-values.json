@@ -1852,7 +1852,9 @@
       "liveChatButton": "2",
       "chatWelcomeMessage": true,
       "contactFormInPage": "3",
-      "contactFormButtons": "3"
+      "contactFormButtons": "3",
+      "systemEmailTemplatesCustomization": true,
+      "dataCenterRegions": true
     },
     
     "medium": {
@@ -1962,7 +1964,9 @@
       "proactiveInvites": true,
       "chatWelcomeMessage": true,
       "contactFormInPage": "10",
-      "contactFormButtons": "10"
+      "contactFormButtons": "10",
+      "systemEmailTemplatesCustomization": true,
+      "dataCenterRegions": true
     },
     "large": {
       "planPrice":"$49",
@@ -2078,8 +2082,9 @@
       "proactiveInvites": true,
       "chatWelcomeMessage": true,
       "contactFormInPage": "50",
-      "contactFormButtons": "50"
-      
+      "contactFormButtons": "50",
+      "systemEmailTemplatesCustomization": true,
+      "dataCenterRegions": true
     },
     "enterprise": {
       "planPrice":"$69",
@@ -2200,7 +2205,9 @@
       "proactiveInvites": true,
       "chatWelcomeMessage": true,
       "contactFormInPage": "200",
-      "contactFormButtons": "200"
+      "contactFormButtons": "200",
+      "systemEmailTemplatesCustomization": true,
+      "dataCenterRegions": true
      }
   },
   "liteed": {
