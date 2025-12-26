@@ -882,13 +882,11 @@
       "embeddedApps": true,
       "gDPRCompliance": true,
       "256-bitSLLEncryption": true,
-      "sSO(Google,Microsoft,Apple)": true,
+      "ssoSocialProviders": true,
       "dataRemoval": true,
       "helpCenter": true,
       "emailSupport": true,
       "chatSupport": true
-
-
     },
     "team": {
       "planPrice": "$174",
@@ -948,13 +946,11 @@
       "momentsSDK": true,
       "gDPRCompliance": true,
       "256-bitSLLEncryption": true,
-      "sSO(Google,Microsoft,Apple)": true,
+      "ssoSocialProviders": true,
       "dataRemoval": true,
       "helpCenter": true,
       "emailSupport": true,
       "chatSupport": true
-    
-
     },
     "business": {
       "planPrice": "$424",
@@ -1015,13 +1011,12 @@
       "momentsSDK": true,
       "gDPRCompliance": true,
       "256-bitSLLEncryption": true,
-      "sSO(Google,Microsoft,Apple)": true,
+      "ssoSocialProviders": true,
       "dataRemoval": true,
       "automaticDataRemovalTool": true,
       "helpCenter": true,
       "emailSupport": true,
       "chatSupport": true
-     
     },
     "enterprise": {
       "planPrice": "Custom",
@@ -1081,7 +1076,7 @@
       "momentsSDK": true,
       "gDPRCompliance": true,
       "256-bitSLLEncryption": true,
-      "sSO(Google,Microsoft,Apple)": true,
+      "ssoSocialProviders": true,
       "dataRemoval": true,
       "automaticDataRemoval": true,
       "customSSOTool": true,
@@ -1098,7 +1093,6 @@
       "botBuildingService": true,
       "botMaintenance": true,
       "dedicatedAccountManager": true
-
     }
   },
   "zendesk": {

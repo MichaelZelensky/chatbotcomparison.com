@@ -47,7 +47,6 @@
       { "key": "ratings", "label": "Conversation Ratings", "type": "boolean", "description": "Send automated surveys to measure customer satisfaction (CSAT)." },
       { "key": "followups", "label": "Follow-up Reminders", "type": "boolean", "description": "Schedule predefined or custom reminders on each conversation with detailed notes." },
       { "key": "roundRobin", "label": "Round-robin Routing", "type": "boolean", "description": "Assign conversations automatically to available agents in a fair, rotating manner." },
-      { "key": "customerPortal", "label": "Customer Portal", "type": "boolean", "description": "Offer a dedicated portal where customers can open new tickets or track existing ones." },
       { "key": "internalChat", "label": "Internal Agent Chat", "type": "boolean", "description": "Agents can chat internally without leaving the dashboard." },
       { "key": "universalInbox", "label": "Universal Inbox", "type": "boolean", "description": "Centralized inbox to handle conversations from all channels." },
       { "key": "hybridTicketStream", "label": "Hybrid Ticket Stream", "type": "boolean", "description": "Single thread follows a customer across channels." },
@@ -243,10 +242,8 @@
       { "key": "soundConfiguration", "label": "Sound configuration", "type": "boolean", "description": "Configure notification sounds for agents and chat events." },
       { "key": "callWidgetsCustomization", "label": "Call widgets customization", "type": "boolean", "description": "Customize call widget appearance and behavior (if voice widget is available)." },
       { "key": "videoCallWidgetsCustomization", "label": "Video call widgets customization", "type": "boolean", "description": "Customize the video call widget appearance and behavior." },
-      { "key": "contactFormInPage", "label": "Contact forms – In page", "type": "text", "description": "Allows embedding contact forms directly into website pages. Value indicates the number of in-page contact forms included in the plan." },
       { "key": "contactFormsButtons", "label": "Contact forms – Contact us buttons", "type": "text", "description": "Allows adding \"Contact us\" buttons that open a contact form or start a conversation. The value represents the number of contact form buttons included in the plan." },
       { "key": "fileSharingOverChat", "label": "File sharing over chat", "type": "boolean", "description": "Allows agents and customers to send and receive files directly within chat conversations." }
-
     ]
   },
   {
@@ -296,14 +293,12 @@
       { "key": "includedAutomatedResolutions", "label": "Included automated resolutions", "type": "text", "description": "The number of automated resolutions included in the plan per agent and per month." },
       { "key": "committedAutomatedResolutions", "label": "Committed automated resolutions", "type": "text", "description": "Discounted unit price for automated resolutions when purchased as a committed volume." },
       { "key": "payAsYouGoAutomatedResolutions", "label": "Pay-as-you-go automated resolutions", "type": "text", "description": "Unit price for automated resolutions billed on a pay-as-you-go basis." },
-      { "key": "automatedResolutionsReporting", "label": "Automated resolutions reporting", "type": "boolean", "description": "Reporting and analytics focused on automated resolutions and AI outcomes." },
       { "key": "essentialAiAgentReporting", "label": "Essential AI agent reporting", "type": "boolean", "description": "Basic reporting for essential AI agent performance and usage." },
       { "key": "advancedAiAgentReporting", "label": "Advanced AI agent reporting", "type": "text", "description": "Advanced reporting and insights for AI agents (may require an add-on depending on plan)." },
       { "key": "essentialLanguageSupport", "label": "Essential language support", "type": "boolean", "description": "Baseline language support for AI and/or agent workflows." },
       { "key": "advancedLanguageSupport", "label": "Advanced language support", "type": "text", "description": "Enhanced language support for AI and/or messaging (may require an add-on depending on plan)." },
       { "key": "aiAnswerAssistant", "label": "AI Answer Assistant", "type": "boolean", "description": "AI assistant that suggests answers or helps agents respond faster." },
       { "key": "aiChatbot", "label": "AI Chatbot", "type": "boolean", "description": "AI chatbot that can handle customer questions and automate support conversations." }
-
     ]
   },
   {
@@ -397,7 +392,6 @@
       { "key": "guidedMode", "label": "Guided mode", "type": "boolean", "description": "Directs agents through tickets sequentially to ensure efficient handling and workflow discipline." },
       { "key": "predefinedResponsesMacros", "label": "Pre-defined responses (macros)", "type": "boolean", "description": "Provides reusable pre-defined responses to speed up agent workflow." },
       { "key": "customBusinessRules", "label": "Custom business rules (triggers & automations)", "type": "boolean", "description": "Allows creating automated rules that control ticket actions and workflow." },
-      { "key": "businessRulesAnalysis", "label": "Business rules analysis", "type": "boolean", "description": "Analyzes business rules to optimize workflows and improve ticket handling efficiency." },
       { "key": "versionManagement", "label": "Version management", "type": "boolean", "description": "Enables managing and maintaining versions of configurations or settings." },
       { "key": "ticketingAutomations", "label": "Ticketing automations", "type": "boolean", "description": "Automates ticket workflows using predefined rules and actions." },
       { "key": "actions", "label": "Actions", "type": "boolean", "description": "Allows performing predefined actions or operations as part of workflows or automation." }
@@ -539,7 +533,7 @@
       { "key": "userManagement", "label": "User management", "type": "boolean", "description": "Access and manage collected user data and chat history efficiently." },
       { "key": "userExport", "label": "User export", "type": "boolean", "description": "Export user data for reporting and third-party integrations." },
       { "key": "gDPRCompliance", "label": "GDPR Compliance", "type": "boolean", "description": "Ensure chatbot compliance with GDPR regulations. Data & Security." },
-      { "key": "sSO(Google,Microsoft,Apple)", "label": "SSO (Google, Microsoft, Apple)", "type": "boolean", "description": "Sign in using your Google, Microsoft, Apple, or Text account." },
+      { "key": "ssoSocialProviders", "label": "SSO (Google, Microsoft, Apple)", "type": "boolean", "description": "Sign in using your Google, Microsoft, Apple, or Text account." },
       { "key": "dataRemoval", "label": "Data removal", "type": "boolean", "description": "Remove user and chat data." },
       { "key": "automaticDataRemoval", "label": "Automatic data removal", "type": "boolean", "description": "Automatically delete user and chat data after a set period." },
       { "key": "customSSO", "label": "Custom SSO", "type": "boolean", "description": "Seamlessly authenticate across your enterprise apps with single sign-on support." },
@@ -567,7 +561,6 @@
       { "key": "eventRetentionPeriod", "label": "Event retention period", "type": "text", "description": "Specifies how long event data is retained before deletion." },
       { "key": "externalProfiles", "label": "External profiles", "type": "boolean", "description": "Allows storing and viewing customer profiles received from external systems." },
       { "key": "devicesDataLog", "label": "Devices data log", "type": "boolean", "description": "Enables logging device-related data for diagnostic or operational purposes." },
-      { "key": "awsEventsConnector", "label": "AWS Events Connector", "type": "text", "description": "Indicates availability of the connector for streaming events to AWS services." },
       { "key": "additionalDataStorage", "label": "Additional data storage", "type": "text", "description": "Specifies options for expanding data storage capacity beyond the plan’s base limits." },
       { "key": "userAuthenticationOptions", "label": "User authentication options: Native, SSO, and 2FA", "type": "boolean", "description": "Provides multiple user authentication methods including native login, SSO, and two-factor authentication." },
       { "key": "secureAccessOptions", "label": "Secure access options: IP restrictions, password complexity, session length", "type": "boolean", "description": "Enables security controls such as IP restrictions, strong password policies, and configurable session settings." },
