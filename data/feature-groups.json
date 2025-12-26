@@ -610,7 +610,8 @@
       { "key": "dedicatedSuccessManager", "label": "Dedicated Success Manager", "type": "boolean", "description": "Provides access to a dedicated success manager for ongoing guidance and account support." },
       { "key": "accountReviews", "label": "Account reviews", "type": "boolean", "description": "Provides regular reviews of account performance, usage, and optimization opportunities." },
       { "key": "priorityServiceAndPremiumSupport", "label": "Priority Service + Premium Support", "type": "boolean", "description": "Provides prioritized assistance and premium-level customer support services." },
-      { "key": "dedicatedServicesTeam", "label": "Dedicated services team", "type": "boolean", "description": "Provides access to a dedicated team of specialists for ongoing support and service delivery." }
+      { "key": "dedicatedServicesTeam", "label": "Dedicated services team", "type": "boolean", "description": "Provides access to a dedicated team of specialists for ongoing support and service delivery." },
+      { "key": "assistedDomainParking", "label": "Assisted domain parking", "type": "boolean", "description": "Assisted setup for custom domain parking and configuration." }
     ]
   },
   {
