@@ -1848,7 +1848,11 @@
       "liveMap": true,
       "crmProfile": true,
       "shopify": true,
-      "pipedrive": true
+      "pipedrive": true,
+      "liveChatButton": "2",
+      "chatWelcomeMessage": true,
+      "contactFormInPage": "3",
+      "contactFormButtons": "3"
     },
     
     "medium": {
@@ -1953,9 +1957,12 @@
       "eventRules": "150",
       "timeRules": "30",  
       "slaRules": "5", 
-      "slaLevels": "5"
-
-
+      "slaLevels": "5",
+      "liveChatButton": "5",
+      "proactiveInvites": true,
+      "chatWelcomeMessage": true,
+      "contactFormInPage": "10",
+      "contactFormButtons": "10"
     },
     "large": {
       "planPrice":"$49",
@@ -2066,7 +2073,12 @@
       "eventRules": "500",
       "timeRules": "100",  
       "slaRules": "50", 
-      "slaLevels": "20"
+      "slaLevels": "20",
+      "liveChatButton": "50",
+      "proactiveInvites": true,
+      "chatWelcomeMessage": true,
+      "contactFormInPage": "50",
+      "contactFormButtons": "50"
       
     },
     "enterprise": {
@@ -2183,7 +2195,12 @@
       "eventRules": "1000",
        "timeRules": "200",  
       "slaRules": "100", 
-      "slaLevels": "100"
+      "slaLevels": "100",
+      "liveChatButton": "100",
+      "proactiveInvites": true,
+      "chatWelcomeMessage": true,
+      "contactFormInPage": "200",
+      "contactFormButtons": "200"
      }
   },
   "liteed": {

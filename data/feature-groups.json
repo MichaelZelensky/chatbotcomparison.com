@@ -106,7 +106,7 @@
       { "key": "emailTicketingIncomingAccounts", "label": "Email ticketing – Incoming email accounts", "type": "text",  "description": "Number of incoming email addresses that can be connected for ticket creation." },
       { "key": "emailTicketingOutgoingAccounts", "label": "Email ticketing – Outgoing email accounts", "type": "text", "description": "Number of outgoing email accounts that can be used to send replies from the system." },
       { "key": "callCenter", "label": "Call center", "type": "boolean", "description": "Includes built-in call center functionality for handling voice calls." },
-      { "key": "messengerInstagram","label":"Messenger + Instagram","type":"string","description": "Supports Instagram messaging when the Messenger channel is connected."},
+      { "key": "messengerInstagram","label":"Messenger + Instagram","type":"text","description": "Supports Instagram messaging when the Messenger channel is connected."},
       { "key": "whatsapp","label":"WhatsApp","type":"text","description": "Supports WhatsApp as a communication channel."},
       { "key": "videoCall","label":"Video call functionality","type":"boolean","description": "Allows conducting real-time video calls with customers."},
       { "key": "callQueueing", "label": "Call Queueing", "type": "boolean", "description": "Places callers in a waiting queue when all agents are busy." },
@@ -232,7 +232,21 @@
       { "key": "whisperMode", "label": "Whisper mode", "type": "boolean", "description": "Allows internal agent-only messages during live handling to coordinate without the customer seeing." },
       { "key": "warmTransfer", "label": "Warm transfer", "type": "boolean", "description": "Transfers conversations between agents/teams with context preserved." },
       { "key": "sendProactiveMessages", "label": "Send proactive messages", "type": "boolean", "description": "Enables proactive outreach messages to visitors/customers based on rules or triggers." },
-      { "key": "widgetUnbranding", "label": "Widget unbranding", "type": "boolean", "description": "Removes platform branding from the widget (often enterprise-only or plan-dependent)." }
+      { "key": "widgetUnbranding", "label": "Widget unbranding", "type": "boolean", "description": "Removes platform branding from the widget (often enterprise-only or plan-dependent)." },
+      
+      { "key": "liveChatButton", "label": "Live chat button", "type": "boolean", "description": "Show a live chat button on the website to start a conversation." },
+      { "key": "proactiveInvites", "label": "Proactive chat invitations", "type": "boolean", "description": "Automatically invite visitors to chat based on rules (time on page, exit intent, etc.)." },
+      { "key": "chatTranscripts", "label": "Chat transcripts", "type": "boolean", "description": "Store and export chat transcripts for review and history." },
+      { "key": "mobileChatWindow", "label": "Mobile chat window", "type": "boolean", "description": "Mobile-optimized chat widget experience." },
+      { "key": "chatWelcomeMessage", "label": "Chat welcome message setting", "type": "boolean", "description": "Configure automated welcome messages shown when a visitor opens the widget." },
+      { "key": "contactFormInPage", "label": "Contact forms – In page", "type": "boolean", "description": "Embed contact forms directly into a page (not only as a button/widget)." },
+      { "key": "contactFormButtons", "label": "Contact forms – Contact us buttons", "type": "boolean", "description": "Add 'Contact us' buttons that open a form or start a conversation." },
+      { "key": "contactFormWidgetsCustomization", "label": "Contact form widgets customization", "type": "boolean", "description": "Customize the look and behavior of contact form widgets." },
+      { "key": "chatWidgetsCustomization", "label": "Chat widgets customization", "type": "boolean", "description": "Customize chat widget design and behavior (colors, position, triggers, etc.)." },
+      { "key": "soundConfiguration", "label": "Sound configuration", "type": "boolean", "description": "Configure notification sounds for agents and chat events." },
+      { "key": "callWidgetsCustomization", "label": "Call widgets customization", "type": "boolean", "description": "Customize call widget appearance and behavior (if voice widget is available)." },
+      { "key": "videoCallWidgetsCustomization", "label": "Video call widgets customization", "type": "boolean", "description": "Customize the video call widget appearance and behavior." }
+
     ]
   },
   {
