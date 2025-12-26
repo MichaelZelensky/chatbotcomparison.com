@@ -447,7 +447,12 @@
       { "key": "onDemandTraining", "label": "Getting started on-demand training", "type": "boolean", "description": "Provides access to on-demand training for getting started with the product." },
       { "key": "guidedLearningPaths", "label": "Guided learning paths", "type": "boolean", "description": "Offers structured, guided learning paths for deeper product understanding." },
       { "key": "importHelpCenterArticles", "label": "Import help center articles", "type": "boolean", "description": "Allows importing existing help center articles from an external support platform." },
-      { "key": "fileUploadSize", "label": "File upload size", "type": "boolean", "description": "Maximum supported file upload size, such as 100 MB." }
+      { "key": "fileUploadSize", "label": "File upload size", "type": "boolean", "description": "Maximum supported file upload size, such as 100 MB." },
+      { "key": "knowledgeBase", "label": "Knowledge base", "type": "boolean", "description": "Built-in knowledge base / help center for self-service content." },
+      { "key": "additionalKnowledgeBase", "label": "Additional knowledge base", "type": "text", "description": "Ability to add extra knowledge bases/help centers. Limits depend on the plan." },
+      { "key": "customerForum", "label": "Customer forum", "type": "boolean", "description": "Community forum for customers to ask questions and share answers." },
+      { "key": "wysiwygEditor", "label": "WYSIWYG editor", "type": "boolean", "description": "Rich-text WYSIWYG editor for articles, replies, or content creation." },
+      { "key": "customDomainParking", "label": "Custom domain parking", "type": "boolean", "description": "Use your own custom domain for customer-facing portals/help center." }
     ]
   },
   {
