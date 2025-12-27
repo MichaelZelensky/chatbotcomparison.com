@@ -395,7 +395,8 @@
       { "key": "customBusinessRules", "label": "Custom business rules (triggers & automations)", "type": "boolean", "description": "Allows creating automated rules that control ticket actions and workflow." },
       { "key": "versionManagement", "label": "Version management", "type": "boolean", "description": "Enables managing and maintaining versions of configurations or settings." },
       { "key": "ticketingAutomations", "label": "Ticketing automations", "type": "boolean", "description": "Automates ticket workflows using predefined rules and actions." },
-      { "key": "actions", "label": "Actions", "type": "boolean", "description": "Allows performing predefined actions or operations as part of workflows or automation." }
+      { "key": "actions", "label": "Actions", "type": "boolean", "description": "Allows performing predefined actions or operations as part of workflows or automation." },
+      { "key": "moments", "label": "Moments", "type": "boolean", "description": "Event-based actions triggered by specific user behaviors." }
     ]
   },
   {
