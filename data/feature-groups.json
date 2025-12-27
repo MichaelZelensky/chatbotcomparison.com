@@ -21,7 +21,8 @@
       { "key": "perAgentAnnual", "label": "Per agent/month billed annually", "type": "text", "description": "Price per agent when billed annually." },
       { "key": "perAgentMonthly", "label": "Per agent/month billed monthly", "type": "text", "description": "Price per agent when billed monthly." },
       { "key": "essentialPlan", "label": "Essential plan", "type": "boolean", "description": "Represents the core subscription tier offering essential features for standard use." },
-      { "key": "advancedPlan", "label": "Advanced plan", "type": "text", "description": "Indicates availability of the advanced subscription tier or add-on option." }
+      { "key": "advancedPlan", "label": "Advanced plan", "type": "text", "description": "Indicates availability of the advanced subscription tier or add-on option." },
+      { "key": "activeChatbots", "label": "Active chatbots", "type": "number", "description": "Maximum number of chatbots that can be active at the same time." }
     ]
   },
   {

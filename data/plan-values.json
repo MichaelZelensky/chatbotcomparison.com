@@ -885,7 +885,8 @@
       "dataRemoval": true,
       "helpCenter": true,
       "emailSupport": true,
-      "chatSupport": true
+      "chatSupport": true,
+      "userManagement": true
     },
     "team": {
       "planPrice": "$142",
@@ -949,7 +950,8 @@
       "dataRemoval": true,
       "helpCenter": true,
       "emailSupport": true,
-      "chatSupport": true
+      "chatSupport": true,
+      "userManagement": true
     },
     "business": {
       "planPrice": "$424",
@@ -1014,7 +1016,8 @@
       "automaticDataRemovalTool": true,
       "helpCenter": true,
       "emailSupport": true,
-      "chatSupport": true
+      "chatSupport": true,
+      "userManagement": true
     },
     "enterprise": {
       "planPrice": "Custom",
@@ -1088,7 +1091,8 @@
       "alternativePaymentMethods": true,
       "botBuildingService": true,
       "botMaintenance": true,
-      "dedicatedAccountManager": true
+      "dedicatedAccountManager": true,
+      "userManagement": true
     }
   },
   "zendesk": {
