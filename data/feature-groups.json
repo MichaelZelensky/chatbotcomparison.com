@@ -10,7 +10,7 @@
       { "key": "customerProfiles", "label": "Customer Profiles", "type": "number", "description": "Maximum number of unique customer profiles you can manage in your workspace." },
       { "key": "aiUsage", "label": "AI Usage", "type": "text", "description": "Number of AI-powered actions (like summaries or replies) available per day." },
       { "key": "billableConversations", "label": "Billable Conversations Limit", "type": "text", "description": "Monthly limit for human-handled conversations (if applicable)." },
-      { "key": "freeTrial", "label": "Free Trial", "type": "text", "description": "Length and conditions of the free trial (e.g., days, credit card required or not)." },
+      { "key": "freeTrial", "label": "Free Trial", "type": "boolean", "description": "Length and conditions of the free trial (e.g., days, credit card required or not)." },
       { "key": "chatsPackage", "label": "Chats Package", "type": "text", "description": "Number of chats included into the plan." },
       { "key": "paidChats", "label": "Paid Chats", "type": "boolean", "description": "Chats beyond the free plan." },
       { "key": "alternativePaymentMethods", "label": "Alternative Payment Methods", "type": "boolean", "description": "Pay via purchase orders or annual invoices instead of a company card." },
