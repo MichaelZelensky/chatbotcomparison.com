@@ -1088,7 +1088,6 @@
       "legalAssistance": true,
       "securityAssistance": true,
       "alternativePaymentMethods": true,
-      "payWithCrypto": true,
       "botBuildingService": true,
       "botMaintenance": true,
       "dedicatedAccountManager": true
