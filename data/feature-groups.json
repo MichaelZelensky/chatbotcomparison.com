@@ -453,7 +453,11 @@
       { "key": "additionalKnowledgeBase", "label": "Additional knowledge base", "type": "text", "description": "Ability to add extra knowledge bases/help centers. Limits depend on the plan." },
       { "key": "customerForum", "label": "Customer forum", "type": "boolean", "description": "Community forum for customers to ask questions and share answers." },
       { "key": "wysiwygEditor", "label": "WYSIWYG editor", "type": "boolean", "description": "Rich-text WYSIWYG editor for articles, replies, or content creation." },
-      { "key": "customDomainParking", "label": "Custom domain parking", "type": "boolean", "description": "Use your own custom domain for customer-facing portals/help center." }    ]
+      { "key": "customDomainParking", "label": "Custom domain parking", "type": "boolean", "description": "Use your own custom domain for customer-facing portals/help center." },
+      { "key": "helpCenter", "label": "Help center", "type": "boolean", "description": "Access to documentation and self-service help resources." },
+      { "key": "emailSupport", "label": "Email support", "type": "boolean", "description": "Support provided via email." },
+      { "key": "chatSupport", "label": "Chat support", "type": "boolean", "description": "Support provided via live chat." }
+    ]
   },
   {
     "id": "analytics",
