@@ -1080,7 +1080,6 @@
       "ssoSocialProviders": true,
       "dataRemoval": true,
       "automaticDataRemoval": true,
-      "customSSOTool": true,
       "helpCenter": true,
       "emailSupport": true,
       "chatSupport": true,
@@ -1093,7 +1092,8 @@
       "botBuildingService": true,
       "botMaintenance": true,
       "dedicatedAccountManager": true,
-      "userManagement": true
+      "userManagement": true,
+      "customSSO": true
     }
   },
   "zendesk": {
