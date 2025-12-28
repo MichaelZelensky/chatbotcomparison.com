@@ -1083,7 +1083,6 @@
       "helpCenter": true,
       "emailSupport": true,
       "chatSupport": true,
-      "serviceLevelAgreements(SLAs)": true,
       "personalOnboarding": true,
       "prioritySupport": true,
       "legalAssistance": true,
@@ -1093,7 +1092,9 @@
       "botMaintenance": true,
       "dedicatedAccountManager": true,
       "userManagement": true,
-      "customSSO": true
+      "customSSO": true,
+      "slas": true,
+      "payWithCrypto": true
     }
   },
   "zendesk": {

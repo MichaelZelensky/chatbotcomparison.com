@@ -618,7 +618,11 @@
       { "key": "dedicatedAccountManager", "label": "Dedicated account manager", "type": "boolean", "description": "Dedicated account manager for enterprise customers." },
       { "key": "scheduledReleaseManagement", "label": "Scheduled release management", "type": "boolean", "description": "Planned/scheduled release and change management support." },
       { "key": "serviceReviewCallsReports", "label": "Service review call and reports", "type": "boolean", "description": "Regular service review calls and performance reports." },
-      { "key": "customBillingSetup", "label": "Custom billing setup", "type": "boolean", "description": "Custom billing setup (invoice, PO, special billing arrangements)." }
+      { "key": "customBillingSetup", "label": "Custom billing setup", "type": "boolean", "description": "Custom billing setup (invoice, PO, special billing arrangements)." },
+      { "key": "personalOnboarding", "label": "Personal onboarding", "type": "boolean", "description": "Personalized onboarding assistance." },
+      { "key": "legalAssistance", "label": "Legal assistance", "type": "boolean", "description": "Legal support related to platform usage." },
+      { "key": "botBuildingService", "label": "Bot building service", "type": "boolean", "description": "Professional service for building chatbots." },
+      { "key": "botMaintenance", "label": "Bot maintenance", "type": "boolean", "description": "Ongoing chatbot maintenance services." }
     ]
   },
   {
