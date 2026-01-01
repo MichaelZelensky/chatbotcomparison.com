@@ -1,6 +1,6 @@
 <template>
   <div class="comparison-page">
-    <h1>ChatBot.com vs Liteed: Feature, Pricing, and Use Case Comparison</h1>
+    <h1>ChatBot.com vs Liteed</h1>
 
     <p class="summary">
       This comparison reviews ChatBot.com and Liteed, two chatbot platforms designed for different business needs, pricing expectations, and stages of adoption.
